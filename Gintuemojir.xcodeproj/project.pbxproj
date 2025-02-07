@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041E0B882D54613B00BE6C0E /* GTEMAiChateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B872D54613B00BE6C0E /* GTEMAiChateCell.swift */; };
+		041E0B8B2D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B892D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift */; };
+		041E0B8C2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B8A2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib */; };
+		041E0B8F2D54903500BE6C0E /* GTEMusVifedertMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B8D2D54903500BE6C0E /* GTEMusVifedertMojito.swift */; };
+		041E0B902D54903500BE6C0E /* GTEMusVifedertMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B8E2D54903500BE6C0E /* GTEMusVifedertMojito.xib */; };
+		041E0B932D549D5400BE6C0E /* GTEMCommenttMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B912D549D5400BE6C0E /* GTEMCommenttMojito.swift */; };
+		041E0B942D549D5400BE6C0E /* GTEMCommenttMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B922D549D5400BE6C0E /* GTEMCommenttMojito.xib */; };
+		041E0B972D54A8B500BE6C0E /* GTEMblancelMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B952D54A8B500BE6C0E /* GTEMblancelMojito.swift */; };
+		041E0B982D54A8B500BE6C0E /* GTEMblancelMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B962D54A8B500BE6C0E /* GTEMblancelMojito.xib */; };
+		041E0B9B2D54AF7400BE6C0E /* GTEMblancelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B992D54AF7400BE6C0E /* GTEMblancelCell.swift */; };
+		041E0B9C2D54AF7400BE6C0E /* GTEMblancelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B9A2D54AF7400BE6C0E /* GTEMblancelCell.xib */; };
+		041E0BA42D55D92700BE6C0E /* GTEMHTLEditMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0BA32D55D92700BE6C0E /* GTEMHTLEditMojito.xib */; };
+		041E0BA52D55D92700BE6C0E /* GTEMHTLEditMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0BA22D55D92700BE6C0E /* GTEMHTLEditMojito.swift */; };
+		0439A6662D533035004C86C2 /* GTEMPlayerMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6652D533035004C86C2 /* GTEMPlayerMojito.swift */; };
+		0439A6682D5354FC004C86C2 /* GTEMCombingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */; };
+		0439A66A2D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6692D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift */; };
+		0448DC822D3E4EAF000E638C /* MOjiToGTEH.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0448DC812D3E4EAF000E638C /* MOjiToGTEH.plist */; };
+		0448DC842D3E542E000E638C /* GTEHVieedeol.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0448DC832D3E542E000E638C /* GTEHVieedeol.plist */; };
+		04AB58012D39EBA400DDC681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB57F72D39EBA400DDC681 /* AppDelegate.swift */; };
+		04AB58042D39EBA400DDC681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AB57F82D39EBA400DDC681 /* Assets.xcassets */; };
+		04AB58062D39EBA400DDC681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AB57FB2D39EBA400DDC681 /* LaunchScreen.storyboard */; };
+		04AB580A2D39F73400DDC681 /* GTEMBeginMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58082D39F73400DDC681 /* GTEMBeginMoJito.swift */; };
+		04AB580B2D39F73400DDC681 /* GTEMBeginMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58092D39F73400DDC681 /* GTEMBeginMoJito.xib */; };
+		04AB580E2D3A02CA00DDC681 /* GTEMLogsininerMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB580C2D3A02CA00DDC681 /* GTEMLogsininerMoJito.swift */; };
+		04AB580F2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB580D2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib */; };
+		04AB58122D3A095A00DDC681 /* GTEMELAurrMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58102D3A095A00DDC681 /* GTEMELAurrMoJito.swift */; };
+		04AB58132D3A095A00DDC681 /* GTEMELAurrMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58112D3A095A00DDC681 /* GTEMELAurrMoJito.xib */; };
+		04AB58152D3A293900DDC681 /* GTEMoMaintabarJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58142D3A293900DDC681 /* GTEMoMaintabarJito.swift */; };
+		04AB58192D3A2C6400DDC681 /* GTEMVigerMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58172D3A2C6400DDC681 /* GTEMVigerMoJito.swift */; };
+		04AB581A2D3A2C6400DDC681 /* GTEMVigerMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58182D3A2C6400DDC681 /* GTEMVigerMoJito.xib */; };
+		04AB581F2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB581D2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift */; };
+		04AB58202D3A2C9600DDC681 /* GTEMHomwerMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB581E2D3A2C9600DDC681 /* GTEMHomwerMoJito.xib */; };
+		04AB58232D3A2CA200DDC681 /* GTEMWoderMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58212D3A2CA200DDC681 /* GTEMWoderMoJito.swift */; };
+		04AB58242D3A2CA200DDC681 /* GTEMWoderMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58222D3A2CA200DDC681 /* GTEMWoderMoJito.xib */; };
+		04AB58292D3A372000DDC681 /* GTEHomeHeadeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58272D3A372000DDC681 /* GTEHomeHeadeCell.swift */; };
+		04AB582A2D3A372000DDC681 /* GTEHomeHeadeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58282D3A372000DDC681 /* GTEHomeHeadeCell.xib */; };
+		04AB582D2D3A3AE500DDC681 /* GTEHChatroomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB582B2D3A3AE500DDC681 /* GTEHChatroomeCell.swift */; };
+		04AB582E2D3A3AE500DDC681 /* GTEHChatroomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB582C2D3A3AE500DDC681 /* GTEHChatroomeCell.xib */; };
+		04E127F42D3F4EAC0004430E /* GTEMPopularMOjito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127F22D3F4EAC0004430E /* GTEMPopularMOjito.swift */; };
+		04E127F52D3F4EAC0004430E /* GTEMPopularMOjito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E127F32D3F4EAC0004430E /* GTEMPopularMOjito.xib */; };
+		04E127F82D3F50990004430E /* GTEMPopularliasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127F62D3F50990004430E /* GTEMPopularliasCell.swift */; };
+		04E127F92D3F50990004430E /* GTEMPopularliasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E127F72D3F50990004430E /* GTEMPopularliasCell.xib */; };
+		04E127FD2D3F71510004430E /* GTEMMoRemoteMeaageJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127FB2D3F71510004430E /* GTEMMoRemoteMeaageJito.swift */; };
+		04E127FE2D3F71510004430E /* GTEMMoRemoteMeaageJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E127FC2D3F71510004430E /* GTEMMoRemoteMeaageJito.xib */; };
+		04E128012D3F717B0004430E /* GTEMSearchinMeaageJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127FF2D3F717B0004430E /* GTEMSearchinMeaageJito.swift */; };
+		04E128022D3F717B0004430E /* GTEMSearchinMeaageJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128002D3F717B0004430E /* GTEMSearchinMeaageJito.xib */; };
+		04E128052D3F71D50004430E /* GTEMAICholeMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128032D3F71D50004430E /* GTEMAICholeMoJito.swift */; };
+		04E128062D3F71D50004430E /* GTEMAICholeMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128042D3F71D50004430E /* GTEMAICholeMoJito.xib */; };
+		04E1280A2D3F72390004430E /* GTEMAholeRoomSetupMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128082D3F72390004430E /* GTEMAholeRoomSetupMoJito.swift */; };
+		04E1280B2D3F72390004430E /* GTEMAholeRoomSetupMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128092D3F72390004430E /* GTEMAholeRoomSetupMoJito.xib */; };
+		04E1280F2D3F72840004430E /* GTEMAcholeDeatilMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1280D2D3F72840004430E /* GTEMAcholeDeatilMoJito.swift */; };
+		04E128102D3F72840004430E /* GTEMAcholeDeatilMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E1280E2D3F72840004430E /* GTEMAcholeDeatilMoJito.xib */; };
+		04E128132D3F730D0004430E /* GTEMStepDetaillMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128112D3F730D0004430E /* GTEMStepDetaillMoJito.swift */; };
+		04E128142D3F730D0004430E /* GTEMStepDetaillMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128122D3F730D0004430E /* GTEMStepDetaillMoJito.xib */; };
+		04E128172D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128152D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift */; };
+		04E128182D3F988B0004430E /* GTEMrepoaweDetaillMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128162D3F988B0004430E /* GTEMrepoaweDetaillMoJito.xib */; };
+		04E1281B2D4098C60004430E /* GTEVideocerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128192D4098C60004430E /* GTEVideocerCell.swift */; };
+		04E1281C2D4098C60004430E /* GTEVideocerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E1281A2D4098C60004430E /* GTEVideocerCell.xib */; };
+		04E1281F2D40EBE00004430E /* GTESetingMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1281D2D40EBE00004430E /* GTESetingMojito.swift */; };
+		04E128202D40EBE00004430E /* GTESetingMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E1281E2D40EBE00004430E /* GTESetingMojito.xib */; };
+		04E128232D40F18F0004430E /* GTETiaAchleCenterMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128212D40F18F0004430E /* GTETiaAchleCenterMojito.swift */; };
+		04E128242D40F18F0004430E /* GTETiaAchleCenterMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128222D40F18F0004430E /* GTETiaAchleCenterMojito.xib */; };
+		04E128272D40FA660004430E /* GTETiaVideoPostMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128252D40FA660004430E /* GTETiaVideoPostMojito.swift */; };
+		04E128282D40FA660004430E /* GTETiaVideoPostMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128262D40FA660004430E /* GTETiaVideoPostMojito.xib */; };
+		8A035C6CBFB5329802227BAE /* Pods_Gintuemojir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65057D74C17694EED63C749F /* Pods_Gintuemojir.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		041E0B872D54613B00BE6C0E /* GTEMAiChateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMAiChateCell.swift; sourceTree = "<group>"; };
+		041E0B892D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMusernmeaasfeMojito.swift; sourceTree = "<group>"; };
+		041E0B8A2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMusernmeaasfeMojito.xib; sourceTree = "<group>"; };
+		041E0B8D2D54903500BE6C0E /* GTEMusVifedertMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMusVifedertMojito.swift; sourceTree = "<group>"; };
+		041E0B8E2D54903500BE6C0E /* GTEMusVifedertMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMusVifedertMojito.xib; sourceTree = "<group>"; };
+		041E0B912D549D5400BE6C0E /* GTEMCommenttMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMCommenttMojito.swift; sourceTree = "<group>"; };
+		041E0B922D549D5400BE6C0E /* GTEMCommenttMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMCommenttMojito.xib; sourceTree = "<group>"; };
+		041E0B952D54A8B500BE6C0E /* GTEMblancelMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMblancelMojito.swift; sourceTree = "<group>"; };
+		041E0B962D54A8B500BE6C0E /* GTEMblancelMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMblancelMojito.xib; sourceTree = "<group>"; };
+		041E0B992D54AF7400BE6C0E /* GTEMblancelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMblancelCell.swift; sourceTree = "<group>"; };
+		041E0B9A2D54AF7400BE6C0E /* GTEMblancelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMblancelCell.xib; sourceTree = "<group>"; };
+		041E0BA22D55D92700BE6C0E /* GTEMHTLEditMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMHTLEditMojito.swift; sourceTree = "<group>"; };
+		041E0BA32D55D92700BE6C0E /* GTEMHTLEditMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMHTLEditMojito.xib; sourceTree = "<group>"; };
+		0439A6652D533035004C86C2 /* GTEMPlayerMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMPlayerMojito.swift; sourceTree = "<group>"; };
+		0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMCombingUser.swift; sourceTree = "<group>"; };
+		0439A6692D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMMojitallRoomtalkCell.swift; sourceTree = "<group>"; };
+		0448DC812D3E4EAF000E638C /* MOjiToGTEH.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MOjiToGTEH.plist; sourceTree = "<group>"; };
+		0448DC832D3E542E000E638C /* GTEHVieedeol.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GTEHVieedeol.plist; sourceTree = "<group>"; };
+		04AB57DF2D39EB9B00DDC681 /* Gintuemojir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gintuemojir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04AB57F72D39EBA400DDC681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04AB57F82D39EBA400DDC681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04AB57F92D39EBA400DDC681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AB57FA2D39EBA400DDC681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04AB58082D39F73400DDC681 /* GTEMBeginMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMBeginMoJito.swift; sourceTree = "<group>"; };
+		04AB58092D39F73400DDC681 /* GTEMBeginMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMBeginMoJito.xib; sourceTree = "<group>"; };
+		04AB580C2D3A02CA00DDC681 /* GTEMLogsininerMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMLogsininerMoJito.swift; sourceTree = "<group>"; };
+		04AB580D2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMLogsininerMoJito.xib; sourceTree = "<group>"; };
+		04AB58102D3A095A00DDC681 /* GTEMELAurrMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMELAurrMoJito.swift; sourceTree = "<group>"; };
+		04AB58112D3A095A00DDC681 /* GTEMELAurrMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMELAurrMoJito.xib; sourceTree = "<group>"; };
+		04AB58142D3A293900DDC681 /* GTEMoMaintabarJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMoMaintabarJito.swift; sourceTree = "<group>"; };
+		04AB58172D3A2C6400DDC681 /* GTEMVigerMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMVigerMoJito.swift; sourceTree = "<group>"; };
+		04AB58182D3A2C6400DDC681 /* GTEMVigerMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMVigerMoJito.xib; sourceTree = "<group>"; };
+		04AB581D2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMHomwerMoJito.swift; sourceTree = "<group>"; };
+		04AB581E2D3A2C9600DDC681 /* GTEMHomwerMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMHomwerMoJito.xib; sourceTree = "<group>"; };
+		04AB58212D3A2CA200DDC681 /* GTEMWoderMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMWoderMoJito.swift; sourceTree = "<group>"; };
+		04AB58222D3A2CA200DDC681 /* GTEMWoderMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMWoderMoJito.xib; sourceTree = "<group>"; };
+		04AB58272D3A372000DDC681 /* GTEHomeHeadeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEHomeHeadeCell.swift; sourceTree = "<group>"; };
+		04AB58282D3A372000DDC681 /* GTEHomeHeadeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEHomeHeadeCell.xib; sourceTree = "<group>"; };
+		04AB582B2D3A3AE500DDC681 /* GTEHChatroomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEHChatroomeCell.swift; sourceTree = "<group>"; };
+		04AB582C2D3A3AE500DDC681 /* GTEHChatroomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEHChatroomeCell.xib; sourceTree = "<group>"; };
+		04E127F22D3F4EAC0004430E /* GTEMPopularMOjito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMPopularMOjito.swift; sourceTree = "<group>"; };
+		04E127F32D3F4EAC0004430E /* GTEMPopularMOjito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMPopularMOjito.xib; sourceTree = "<group>"; };
+		04E127F62D3F50990004430E /* GTEMPopularliasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMPopularliasCell.swift; sourceTree = "<group>"; };
+		04E127F72D3F50990004430E /* GTEMPopularliasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMPopularliasCell.xib; sourceTree = "<group>"; };
+		04E127FB2D3F71510004430E /* GTEMMoRemoteMeaageJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMMoRemoteMeaageJito.swift; sourceTree = "<group>"; };
+		04E127FC2D3F71510004430E /* GTEMMoRemoteMeaageJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMMoRemoteMeaageJito.xib; sourceTree = "<group>"; };
+		04E127FF2D3F717B0004430E /* GTEMSearchinMeaageJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMSearchinMeaageJito.swift; sourceTree = "<group>"; };
+		04E128002D3F717B0004430E /* GTEMSearchinMeaageJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMSearchinMeaageJito.xib; sourceTree = "<group>"; };
+		04E128032D3F71D50004430E /* GTEMAICholeMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMAICholeMoJito.swift; sourceTree = "<group>"; };
+		04E128042D3F71D50004430E /* GTEMAICholeMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMAICholeMoJito.xib; sourceTree = "<group>"; };
+		04E128082D3F72390004430E /* GTEMAholeRoomSetupMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMAholeRoomSetupMoJito.swift; sourceTree = "<group>"; };
+		04E128092D3F72390004430E /* GTEMAholeRoomSetupMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMAholeRoomSetupMoJito.xib; sourceTree = "<group>"; };
+		04E1280D2D3F72840004430E /* GTEMAcholeDeatilMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMAcholeDeatilMoJito.swift; sourceTree = "<group>"; };
+		04E1280E2D3F72840004430E /* GTEMAcholeDeatilMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMAcholeDeatilMoJito.xib; sourceTree = "<group>"; };
+		04E128112D3F730D0004430E /* GTEMStepDetaillMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMStepDetaillMoJito.swift; sourceTree = "<group>"; };
+		04E128122D3F730D0004430E /* GTEMStepDetaillMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMStepDetaillMoJito.xib; sourceTree = "<group>"; };
+		04E128152D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMrepoaweDetaillMoJito.swift; sourceTree = "<group>"; };
+		04E128162D3F988B0004430E /* GTEMrepoaweDetaillMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMrepoaweDetaillMoJito.xib; sourceTree = "<group>"; };
+		04E128192D4098C60004430E /* GTEVideocerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEVideocerCell.swift; sourceTree = "<group>"; };
+		04E1281A2D4098C60004430E /* GTEVideocerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEVideocerCell.xib; sourceTree = "<group>"; };
+		04E1281D2D40EBE00004430E /* GTESetingMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTESetingMojito.swift; sourceTree = "<group>"; };
+		04E1281E2D40EBE00004430E /* GTESetingMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTESetingMojito.xib; sourceTree = "<group>"; };
+		04E128212D40F18F0004430E /* GTETiaAchleCenterMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTETiaAchleCenterMojito.swift; sourceTree = "<group>"; };
+		04E128222D40F18F0004430E /* GTETiaAchleCenterMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTETiaAchleCenterMojito.xib; sourceTree = "<group>"; };
+		04E128252D40FA660004430E /* GTETiaVideoPostMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTETiaVideoPostMojito.swift; sourceTree = "<group>"; };
+		04E128262D40FA660004430E /* GTETiaVideoPostMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTETiaVideoPostMojito.xib; sourceTree = "<group>"; };
+		65057D74C17694EED63C749F /* Pods_Gintuemojir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gintuemojir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9262D8580A5D865F65F7EAE0 /* Pods-Gintuemojir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gintuemojir.release.xcconfig"; path = "Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir.release.xcconfig"; sourceTree = "<group>"; };
+		DCFEBCA9A0874BC8E687EC56 /* Pods-Gintuemojir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gintuemojir.debug.xcconfig"; path = "Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04AB57DC2D39EB9B00DDC681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A035C6CBFB5329802227BAE /* Pods_Gintuemojir.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04AB57D62D39EB9B00DDC681 = {
+			isa = PBXGroup;
+			children = (
+				04AB58002D39EBA400DDC681 /* Gintuemojir */,
+				04AB57E02D39EB9B00DDC681 /* Products */,
+				3DE29B3B1CAC8EF55074CABA /* Pods */,
+				C9E956FA35856426B3B817CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04AB57E02D39EB9B00DDC681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04AB57DF2D39EB9B00DDC681 /* Gintuemojir.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04AB58002D39EBA400DDC681 /* Gintuemojir */ = {
+			isa = PBXGroup;
+			children = (
+				04AB581C2D3A2C7D00DDC681 /* MineGTEA */,
+				04AB581B2D3A2C7200DDC681 /* HomeGTEA */,
+				04AB58162D3A2C2800DDC681 /* VideoGTEM */,
+				04AB57F72D39EBA400DDC681 /* AppDelegate.swift */,
+				04AB57F82D39EBA400DDC681 /* Assets.xcassets */,
+				04AB57F92D39EBA400DDC681 /* Info.plist */,
+				04AB57FB2D39EBA400DDC681 /* LaunchScreen.storyboard */,
+				04AB58082D39F73400DDC681 /* GTEMBeginMoJito.swift */,
+				04AB58092D39F73400DDC681 /* GTEMBeginMoJito.xib */,
+				04AB580C2D3A02CA00DDC681 /* GTEMLogsininerMoJito.swift */,
+				04AB580D2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib */,
+				04AB58102D3A095A00DDC681 /* GTEMELAurrMoJito.swift */,
+				04AB58112D3A095A00DDC681 /* GTEMELAurrMoJito.xib */,
+				04AB58142D3A293900DDC681 /* GTEMoMaintabarJito.swift */,
+				0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */,
+			);
+			path = Gintuemojir;
+			sourceTree = "<group>";
+		};
+		04AB58162D3A2C2800DDC681 /* VideoGTEM */ = {
+			isa = PBXGroup;
+			children = (
+				04AB58172D3A2C6400DDC681 /* GTEMVigerMoJito.swift */,
+				04AB58182D3A2C6400DDC681 /* GTEMVigerMoJito.xib */,
+				04E128192D4098C60004430E /* GTEVideocerCell.swift */,
+				04E1281A2D4098C60004430E /* GTEVideocerCell.xib */,
+				04E128252D40FA660004430E /* GTETiaVideoPostMojito.swift */,
+				04E128262D40FA660004430E /* GTETiaVideoPostMojito.xib */,
+				0439A6652D533035004C86C2 /* GTEMPlayerMojito.swift */,
+				041E0B912D549D5400BE6C0E /* GTEMCommenttMojito.swift */,
+				041E0B922D549D5400BE6C0E /* GTEMCommenttMojito.xib */,
+				041E0B952D54A8B500BE6C0E /* GTEMblancelMojito.swift */,
+				041E0B962D54A8B500BE6C0E /* GTEMblancelMojito.xib */,
+				041E0B992D54AF7400BE6C0E /* GTEMblancelCell.swift */,
+				041E0B9A2D54AF7400BE6C0E /* GTEMblancelCell.xib */,
+			);
+			path = VideoGTEM;
+			sourceTree = "<group>";
+		};
+		04AB581B2D3A2C7200DDC681 /* HomeGTEA */ = {
+			isa = PBXGroup;
+			children = (
+				04E1280C2D3F72700004430E /* RooomwerDetail */,
+				04E128072D3F72260004430E /* CreateRoomo */,
+				04E127FA2D3F6F480004430E /* GTEM_Puplar */,
+				04AB581D2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift */,
+				04AB581E2D3A2C9600DDC681 /* GTEMHomwerMoJito.xib */,
+				04AB58272D3A372000DDC681 /* GTEHomeHeadeCell.swift */,
+				04AB58282D3A372000DDC681 /* GTEHomeHeadeCell.xib */,
+				04AB582B2D3A3AE500DDC681 /* GTEHChatroomeCell.swift */,
+				04AB582C2D3A3AE500DDC681 /* GTEHChatroomeCell.xib */,
+				0448DC812D3E4EAF000E638C /* MOjiToGTEH.plist */,
+				0448DC832D3E542E000E638C /* GTEHVieedeol.plist */,
+				04E127FB2D3F71510004430E /* GTEMMoRemoteMeaageJito.swift */,
+				04E127FC2D3F71510004430E /* GTEMMoRemoteMeaageJito.xib */,
+				04E127FF2D3F717B0004430E /* GTEMSearchinMeaageJito.swift */,
+				04E128002D3F717B0004430E /* GTEMSearchinMeaageJito.xib */,
+				04E128032D3F71D50004430E /* GTEMAICholeMoJito.swift */,
+				04E128042D3F71D50004430E /* GTEMAICholeMoJito.xib */,
+				041E0B872D54613B00BE6C0E /* GTEMAiChateCell.swift */,
+			);
+			path = HomeGTEA;
+			sourceTree = "<group>";
+		};
+		04AB581C2D3A2C7D00DDC681 /* MineGTEA */ = {
+			isa = PBXGroup;
+			children = (
+				04AB58212D3A2CA200DDC681 /* GTEMWoderMoJito.swift */,
+				04AB58222D3A2CA200DDC681 /* GTEMWoderMoJito.xib */,
+				04E1281D2D40EBE00004430E /* GTESetingMojito.swift */,
+				04E1281E2D40EBE00004430E /* GTESetingMojito.xib */,
+				04E128212D40F18F0004430E /* GTETiaAchleCenterMojito.swift */,
+				04E128222D40F18F0004430E /* GTETiaAchleCenterMojito.xib */,
+				041E0B892D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift */,
+				041E0B8A2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib */,
+				041E0B8D2D54903500BE6C0E /* GTEMusVifedertMojito.swift */,
+				041E0B8E2D54903500BE6C0E /* GTEMusVifedertMojito.xib */,
+				041E0BA22D55D92700BE6C0E /* GTEMHTLEditMojito.swift */,
+				041E0BA32D55D92700BE6C0E /* GTEMHTLEditMojito.xib */,
+			);
+			path = MineGTEA;
+			sourceTree = "<group>";
+		};
+		04E127FA2D3F6F480004430E /* GTEM_Puplar */ = {
+			isa = PBXGroup;
+			children = (
+				04E127F22D3F4EAC0004430E /* GTEMPopularMOjito.swift */,
+				04E127F32D3F4EAC0004430E /* GTEMPopularMOjito.xib */,
+				04E127F62D3F50990004430E /* GTEMPopularliasCell.swift */,
+				04E127F72D3F50990004430E /* GTEMPopularliasCell.xib */,
+				04E128112D3F730D0004430E /* GTEMStepDetaillMoJito.swift */,
+				04E128122D3F730D0004430E /* GTEMStepDetaillMoJito.xib */,
+			);
+			path = GTEM_Puplar;
+			sourceTree = "<group>";
+		};
+		04E128072D3F72260004430E /* CreateRoomo */ = {
+			isa = PBXGroup;
+			children = (
+				04E128082D3F72390004430E /* GTEMAholeRoomSetupMoJito.swift */,
+				04E128092D3F72390004430E /* GTEMAholeRoomSetupMoJito.xib */,
+			);
+			path = CreateRoomo;
+			sourceTree = "<group>";
+		};
+		04E1280C2D3F72700004430E /* RooomwerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				04E1280D2D3F72840004430E /* GTEMAcholeDeatilMoJito.swift */,
+				04E1280E2D3F72840004430E /* GTEMAcholeDeatilMoJito.xib */,
+				04E128152D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift */,
+				04E128162D3F988B0004430E /* GTEMrepoaweDetaillMoJito.xib */,
+				0439A6692D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift */,
+			);
+			path = RooomwerDetail;
+			sourceTree = "<group>";
+		};
+		3DE29B3B1CAC8EF55074CABA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCFEBCA9A0874BC8E687EC56 /* Pods-Gintuemojir.debug.xcconfig */,
+				9262D8580A5D865F65F7EAE0 /* Pods-Gintuemojir.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9E956FA35856426B3B817CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65057D74C17694EED63C749F /* Pods_Gintuemojir.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04AB57DE2D39EB9B00DDC681 /* Gintuemojir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04AB57F22D39EB9C00DDC681 /* Build configuration list for PBXNativeTarget "Gintuemojir" */;
+			buildPhases = (
+				20A4A69EA67EE3B51D99ED98 /* [CP] Check Pods Manifest.lock */,
+				04AB57DB2D39EB9B00DDC681 /* Sources */,
+				04AB57DC2D39EB9B00DDC681 /* Frameworks */,
+				04AB57DD2D39EB9B00DDC681 /* Resources */,
+				EC7F7B6A3B47D765CF3C0E9F /* [CP] Embed Pods Frameworks */,
+				5226163ED99FC06FA327FA0E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gintuemojir;
+			productName = Gintuemojir;
+			productReference = 04AB57DF2D39EB9B00DDC681 /* Gintuemojir.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04AB57D72D39EB9B00DDC681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = GTEM;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					04AB57DE2D39EB9B00DDC681 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 04AB57DA2D39EB9B00DDC681 /* Build configuration list for PBXProject "Gintuemojir" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04AB57D62D39EB9B00DDC681;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 04AB57E02D39EB9B00DDC681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04AB57DE2D39EB9B00DDC681 /* Gintuemojir */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04AB57DD2D39EB9B00DDC681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E128142D3F730D0004430E /* GTEMStepDetaillMoJito.xib in Resources */,
+				04E1281C2D4098C60004430E /* GTEVideocerCell.xib in Resources */,
+				04AB58042D39EBA400DDC681 /* Assets.xcassets in Resources */,
+				0448DC842D3E542E000E638C /* GTEHVieedeol.plist in Resources */,
+				04E128102D3F72840004430E /* GTEMAcholeDeatilMoJito.xib in Resources */,
+				041E0B942D549D5400BE6C0E /* GTEMCommenttMojito.xib in Resources */,
+				04E128202D40EBE00004430E /* GTESetingMojito.xib in Resources */,
+				04AB58062D39EBA400DDC681 /* LaunchScreen.storyboard in Resources */,
+				04AB582E2D3A3AE500DDC681 /* GTEHChatroomeCell.xib in Resources */,
+				04AB580F2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib in Resources */,
+				041E0BA42D55D92700BE6C0E /* GTEMHTLEditMojito.xib in Resources */,
+				04E127F92D3F50990004430E /* GTEMPopularliasCell.xib in Resources */,
+				04E128242D40F18F0004430E /* GTETiaAchleCenterMojito.xib in Resources */,
+				04E128062D3F71D50004430E /* GTEMAICholeMoJito.xib in Resources */,
+				04E1280B2D3F72390004430E /* GTEMAholeRoomSetupMoJito.xib in Resources */,
+				0448DC822D3E4EAF000E638C /* MOjiToGTEH.plist in Resources */,
+				04E127FE2D3F71510004430E /* GTEMMoRemoteMeaageJito.xib in Resources */,
+				04AB58132D3A095A00DDC681 /* GTEMELAurrMoJito.xib in Resources */,
+				04AB58242D3A2CA200DDC681 /* GTEMWoderMoJito.xib in Resources */,
+				04E127F52D3F4EAC0004430E /* GTEMPopularMOjito.xib in Resources */,
+				041E0B982D54A8B500BE6C0E /* GTEMblancelMojito.xib in Resources */,
+				041E0B8C2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib in Resources */,
+				04E128022D3F717B0004430E /* GTEMSearchinMeaageJito.xib in Resources */,
+				04E128182D3F988B0004430E /* GTEMrepoaweDetaillMoJito.xib in Resources */,
+				04AB58202D3A2C9600DDC681 /* GTEMHomwerMoJito.xib in Resources */,
+				041E0B9C2D54AF7400BE6C0E /* GTEMblancelCell.xib in Resources */,
+				04AB581A2D3A2C6400DDC681 /* GTEMVigerMoJito.xib in Resources */,
+				04AB582A2D3A372000DDC681 /* GTEHomeHeadeCell.xib in Resources */,
+				04E128282D40FA660004430E /* GTETiaVideoPostMojito.xib in Resources */,
+				041E0B902D54903500BE6C0E /* GTEMusVifedertMojito.xib in Resources */,
+				04AB580B2D39F73400DDC681 /* GTEMBeginMoJito.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20A4A69EA67EE3B51D99ED98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gintuemojir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5226163ED99FC06FA327FA0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC7F7B6A3B47D765CF3C0E9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04AB57DB2D39EB9B00DDC681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04AB58292D3A372000DDC681 /* GTEHomeHeadeCell.swift in Sources */,
+				041E0B8F2D54903500BE6C0E /* GTEMusVifedertMojito.swift in Sources */,
+				04AB58232D3A2CA200DDC681 /* GTEMWoderMoJito.swift in Sources */,
+				04E1281F2D40EBE00004430E /* GTESetingMojito.swift in Sources */,
+				0439A66A2D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift in Sources */,
+				041E0B882D54613B00BE6C0E /* GTEMAiChateCell.swift in Sources */,
+				04E1280F2D3F72840004430E /* GTEMAcholeDeatilMoJito.swift in Sources */,
+				041E0B972D54A8B500BE6C0E /* GTEMblancelMojito.swift in Sources */,
+				04AB580A2D39F73400DDC681 /* GTEMBeginMoJito.swift in Sources */,
+				04E128052D3F71D50004430E /* GTEMAICholeMoJito.swift in Sources */,
+				04E128272D40FA660004430E /* GTETiaVideoPostMojito.swift in Sources */,
+				04E127FD2D3F71510004430E /* GTEMMoRemoteMeaageJito.swift in Sources */,
+				04E128132D3F730D0004430E /* GTEMStepDetaillMoJito.swift in Sources */,
+				04E127F42D3F4EAC0004430E /* GTEMPopularMOjito.swift in Sources */,
+				041E0B9B2D54AF7400BE6C0E /* GTEMblancelCell.swift in Sources */,
+				04E128012D3F717B0004430E /* GTEMSearchinMeaageJito.swift in Sources */,
+				04E128232D40F18F0004430E /* GTETiaAchleCenterMojito.swift in Sources */,
+				041E0B8B2D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift in Sources */,
+				041E0BA52D55D92700BE6C0E /* GTEMHTLEditMojito.swift in Sources */,
+				04AB58152D3A293900DDC681 /* GTEMoMaintabarJito.swift in Sources */,
+				0439A6662D533035004C86C2 /* GTEMPlayerMojito.swift in Sources */,
+				04E127F82D3F50990004430E /* GTEMPopularliasCell.swift in Sources */,
+				04AB580E2D3A02CA00DDC681 /* GTEMLogsininerMoJito.swift in Sources */,
+				04AB58012D39EBA400DDC681 /* AppDelegate.swift in Sources */,
+				041E0B932D549D5400BE6C0E /* GTEMCommenttMojito.swift in Sources */,
+				04E128172D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift in Sources */,
+				04AB582D2D3A3AE500DDC681 /* GTEHChatroomeCell.swift in Sources */,
+				04AB58192D3A2C6400DDC681 /* GTEMVigerMoJito.swift in Sources */,
+				04AB581F2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift in Sources */,
+				0439A6682D5354FC004C86C2 /* GTEMCombingUser.swift in Sources */,
+				04E1281B2D4098C60004430E /* GTEVideocerCell.swift in Sources */,
+				04AB58122D3A095A00DDC681 /* GTEMELAurrMoJito.swift in Sources */,
+				04E1280A2D3F72390004430E /* GTEMAholeRoomSetupMoJito.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04AB57FB2D39EBA400DDC681 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04AB57FA2D39EBA400DDC681 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04AB57F32D39EB9C00DDC681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCFEBCA9A0874BC8E687EC56 /* Pods-Gintuemojir.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZJ9G935YV;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gintuemojir/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linqian.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04AB57F42D39EB9C00DDC681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9262D8580A5D865F65F7EAE0 /* Pods-Gintuemojir.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZJ9G935YV;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gintuemojir/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linqian.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		04AB57F52D39EB9C00DDC681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04AB57F62D39EB9C00DDC681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04AB57DA2D39EB9B00DDC681 /* Build configuration list for PBXProject "Gintuemojir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AB57F52D39EB9C00DDC681 /* Debug */,
+				04AB57F62D39EB9C00DDC681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04AB57F22D39EB9C00DDC681 /* Build configuration list for PBXNativeTarget "Gintuemojir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AB57F32D39EB9C00DDC681 /* Debug */,
+				04AB57F42D39EB9C00DDC681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04AB57D72D39EB9B00DDC681 /* Project object */;
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GTEMELAurrMoJito" customModule="Gintuemojir" customModuleProvider="target">
+            <connections>
+                <outlet property="agreeBakGTEm" destination="3bn-8W-OQb" id="XiB-5e-wcp"/>
+                <outlet property="cananlBakGTEm" destination="l8m-xO-pli" id="Yeu-Bd-fgy"/>
+                <outlet property="gtemTisder" destination="9bF-DP-wg4" id="ND5-vd-RWH"/>
+                <outlet property="inputerkoGTEm" destination="wcU-nI-yCZ" id="zsp-Js-fRg"/>
+                <outlet property="peerieeBakGTEm" destination="iRw-C1-1EV" id="HuE-Ww-xDn"/>
+                <outlet property="peetermeBakGTEm" destination="YMq-Ry-GbA" id="NsD-Kl-NIN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GINT_alertbg" translatesAutoresizingMaskIntoConstraints="NO" id="4px-l1-XYx">
+                    <rect key="frame" x="0.0" y="85" width="375" height="613"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8m-xO-pli">
+                    <rect key="frame" x="36" y="624" width="139" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8pV-cg-KiH"/>
+                        <constraint firstAttribute="width" constant="139" id="Lt0-in-JrO"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="GUECancel"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRT-d8-bc0">
+                    <rect key="frame" x="160.66666666666666" y="716" width="54" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="S73-zx-2xR"/>
+                        <constraint firstAttribute="width" constant="54" id="coT-bC-Afo"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="Geu_dias"/>
+                    <connections>
+                        <action selector="navibakerinhGTEM:" destination="-1" eventType="touchUpInside" id="tPU-Ec-zXa"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELUA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-DP-wg4">
+                    <rect key="frame" x="158.66666666666666" y="112" width="57.666666666666657" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="DOt-5c-SGs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.043137254901960784" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu" translatesAutoresizingMaskIntoConstraints="NO" id="wcU-nI-yCZ">
+                    <rect key="frame" x="36" y="156" width="303" height="449"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRw-C1-1EV">
+                    <rect key="frame" x="16" y="708" width="117" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="117" id="PrN-Ry-bxu"/>
+                        <constraint firstAttribute="height" constant="35" id="uNU-Wk-KK8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Privacy service">
+                        <color key="titleColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMq-Ry-GbA">
+                    <rect key="frame" x="242" y="708" width="117" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="117" id="Ivo-H5-Ll0"/>
+                        <constraint firstAttribute="height" constant="35" id="OTN-5Q-yg0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Terms of use">
+                        <color key="titleColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bn-8W-OQb">
+                    <rect key="frame" x="200" y="624" width="139" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="139" id="Imt-OY-eGk"/>
+                        <constraint firstAttribute="height" constant="44" id="LhO-ZD-7mR"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="GUECagreeen"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YMq-Ry-GbA" firstAttribute="centerY" secondItem="iRw-C1-1EV" secondAttribute="centerY" id="04E-CL-mS5"/>
+                <constraint firstItem="iRw-C1-1EV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="62f-gH-yJx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LRT-d8-bc0" secondAttribute="bottom" constant="8" id="8WH-n7-69Y"/>
+                <constraint firstItem="4px-l1-XYx" firstAttribute="top" secondItem="9bF-DP-wg4" secondAttribute="top" constant="-27" id="9yf-PD-gyM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YMq-Ry-GbA" secondAttribute="trailing" constant="16" id="CBQ-NL-XFH"/>
+                <constraint firstItem="LRT-d8-bc0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EYg-Yo-Dn2"/>
+                <constraint firstItem="4px-l1-XYx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="IKS-ft-6Tk"/>
+                <constraint firstItem="4px-l1-XYx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KFe-p1-xjU"/>
+                <constraint firstItem="wcU-nI-yCZ" firstAttribute="top" secondItem="9bF-DP-wg4" secondAttribute="bottom" constant="17" id="M5U-Mn-M2B"/>
+                <constraint firstItem="9bF-DP-wg4" firstAttribute="centerX" secondItem="wcU-nI-yCZ" secondAttribute="centerX" id="OD7-Vw-MZQ"/>
+                <constraint firstItem="iRw-C1-1EV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-35" id="Uu8-Hh-HUv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wcU-nI-yCZ" secondAttribute="trailing" constant="36" id="dOh-6Y-FLy"/>
+                <constraint firstItem="4px-l1-XYx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dom-U5-QID"/>
+                <constraint firstItem="LRT-d8-bc0" firstAttribute="top" secondItem="4px-l1-XYx" secondAttribute="bottom" constant="18" id="fPH-9d-qac"/>
+                <constraint firstItem="3bn-8W-OQb" firstAttribute="top" secondItem="wcU-nI-yCZ" secondAttribute="bottom" constant="19" id="hSh-97-3lF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3bn-8W-OQb" secondAttribute="trailing" constant="36" id="inB-7u-gQn"/>
+                <constraint firstItem="wcU-nI-yCZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="kor-D0-Ivy"/>
+                <constraint firstItem="l8m-xO-pli" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="qSV-gd-fl6"/>
+                <constraint firstItem="l8m-xO-pli" firstAttribute="top" secondItem="4px-l1-XYx" secondAttribute="bottom" constant="-74" id="rfm-eC-Fv0"/>
+                <constraint firstItem="3bn-8W-OQb" firstAttribute="centerY" secondItem="l8m-xO-pli" secondAttribute="centerY" id="sSv-lS-4Yq"/>
+            </constraints>
+            <point key="canvasLocation" x="135.19999999999999" y="19.95073891625616"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GINT_alertbg" width="344" height="560"/>
+        <image name="GUECagreeen" width="140" height="44"/>
+        <image name="GUECancel" width="140" height="44"/>
+        <image name="Geu_dias" width="28" height="28"/>
+    </resources>
+</document>

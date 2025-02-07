@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>AochleName</key>
+		<string>Mojito</string>
+		<key>Aochlematerial</key>
+		<string>White Rum, Fresh Mint Leaves, Lime Juice, Soda Water, Granulated Sugar, Ice Cubes</string>
+		<key>AochlePicture</key>
+		<string>Aochle0</string>
+		<key>AochleStep0</key>
+		<string>In the bottom of a tall glass, put 10 - 15 fresh mint leaves and a teaspoon of granulated sugar. Use a muddler to gently crush them to release the mint aroma.</string>
+		<key>AochleStep1</key>
+		<string>Add an ounce of lime juice and continue to mash gently.</string>
+		<key>AochleStep2</key>
+		<string>Fill the glass three-quarters full with ice cubes and pour in two ounces of white rum.</string>
+		<key>AochleStep3</key>
+		<string>Slowly pour in soda water until the glass is full. Stir gently to mix well. Garnish with a sprig of fresh mint.</string>
+	</dict>
+	<dict>
+		<key>AochleName</key>
+		<string>Sex on the Beach</string>
+		<key>Aochlematerial</key>
+		<string>Vodka, Peach Schnapps, Cranberry Juice, Orange Juice, Orange Slices for decoration</string>
+		<key>AochlePicture</key>
+		<string>Aochle1</string>
+		<key>AochleStep0</key>
+		<string>Add ice cubes to a shaker. Put in 1.5 ounces of vodka, 0.5 ounce of peach schnapps, 2 ounces of cranberry juice and 2 ounces of orange juice.</string>
+		<key>AochleStep1</key>
+		<string>Shake the shaker evenly. Strain the liquid through a strainer into a highball glass.</string>
+		<key>AochleStep2</key>
+		<string>Place an orange slice on the rim for decoration.</string>
+		<key>AochleStep3</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>AochleName</key>
+		<string>Margarita</string>
+		<key>Aochlematerial</key>
+		<string>Tequila, Cointreau, Fresh Lime Juice, Coarse Salt, Lime Wedges for decoration</string>
+		<key>AochlePicture</key>
+		<string>Aochle2</string>
+		<key>AochleStep0</key>
+		<string>Rub the rim of a cocktail glass with a lime wedge. Then, turn the rim upside down and dip it into a plate of coarse salt to create a salted rim.</string>
+		<key>AochleStep1</key>
+		<string>Put ice cubes into a shaker, pour in Tequila, Cointreau and Fresh Lime Juice.</string>
+		<key>AochleStep2</key>
+		<string> Shake the shaker vigorously until the mixture is well blended. Strain the liquid through a strainer into a prepared cocktail glass.</string>
+		<key>AochleStep3</key>
+		<string>Finally, place a lime wedge on the rim for decoration.</string>
+	</dict>
+	<dict>
+		<key>AochleName</key>
+		<string>Cosmopolitan</string>
+		<key>Aochlematerial</key>
+		<string>Vodka, Cointreau, Cranberry Juice, Fresh Lime Juice, Orange Peel for decoration</string>
+		<key>AochlePicture</key>
+		<string>Aochle3</string>
+		<key>AochleStep0</key>
+		<string>Add ice cubes to a shaker. Put in 1.5 ounces of vodka, 0.5 ounce of Cointreau, 2 ounces of cranberry juice and 0.5 ounce of fresh lime juice.</string>
+		<key>AochleStep1</key>
+		<string>Shake the shaker until frost forms on the outside. Strain the liquid through a strainer into a martini glass.</string>
+		<key>AochleStep2</key>
+		<string>Take an orange peel and gently rub it around the rim of the glass to release the orange oil. Then drop the orange peel into the glass as decoration.</string>
+		<key>AochleStep3</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>AochleName</key>
+		<string>Piña Colada</string>
+		<key>Aochlematerial</key>
+		<string>Rum, Coconut Cream, Pineapple Juice, Ice Cubes, Pineapple Slices for decoration</string>
+		<key>AochlePicture</key>
+		<string>Aochle4</string>
+		<key>AochleStep0</key>
+		<string>Combine 1.5 ounces of rum, 1 ounce of coconut cream and 3 ounces of pineapple juice in a blender. Add a handful of ice cubes. </string>
+		<key>AochleStep1</key>
+		<string>Blend the mixture until it becomes a smooth, slushy consistency.</string>
+		<key>AochleStep2</key>
+		<string>Pour the blended mixture into a tall glass. Place a slice of pineapple on the rim for decoration.</string>
+		<key>AochleStep3</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>AochleName</key>
+		<string>Daiquiri</string>
+		<key>Aochlematerial</key>
+		<string>White Rum, Fresh Lime Juice, Granulated Sugar, Ice Cubes, Lime Wedges for decoration</string>
+		<key>AochlePicture</key>
+		<string>Aochle5</string>
+		<key>AochleStep0</key>
+		<string>Fill a shaker with ice cubes. Pour in 2 ounces of white rum, 1 ounce of fresh lime juice and 0.5 ounce of granulated sugar.</string>
+		<key>AochleStep1</key>
+		<string>Shake the shaker vigorously to dissolve the sugar completely and blend the ingredients well.</string>
+		<key>AochleStep2</key>
+		<string>Strain the liquid through a strainer into a cocktail glass. Place a lime wedge on the rim for decoration.</string>
+		<key>AochleStep3</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>AochleName</key>
+		<string>Long Island Iced Tea</string>
+		<key>Aochlematerial</key>
+		<string>Vodka, Rum, Gin, Tequila, Cointreau, Lemon Juice, Coke, Ice Cubes, Lemon Wedges for decoration</string>
+		<key>AochlePicture</key>
+		<string>Aochle6</string>
+		<key>AochleStep0</key>
+		<string>Put ice cubes into a shaker. Add 0.5 ounce each of vodka, rum, gin, tequila and Cointreau, and 0.5 ounce of lemon juice.</string>
+		<key>AochleStep1</key>
+		<string>Shake the shaker evenly. Strain the liquid through a strainer into a highball glass.</string>
+		<key>AochleStep2</key>
+		<string>Slowly pour in coke until the glass is three-quarters full. Place a lemon wedge on the rim for decoration.</string>
+		<key>AochleStep3</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>AochleName</key>
+		<string>Singapore Sling</string>
+		<key>Aochlematerial</key>
+		<string>Gin, Cherry Brandy, Lemon Juice, Soda Water, Grenadine Syrup, Ice Cubes, Cherries and Orange Slices for decoration</string>
+		<key>AochlePicture</key>
+		<string>Aochle7</string>
+		<key>AochleStep0</key>
+		<string>Add ice cubes to a shaker. Put in 1.5 ounces of gin, 0.5 ounce of cherry brandy, 0.5 ounce of lemon juice and 0.5 ounce of grenadine syrup.</string>
+		<key>AochleStep1</key>
+		<string>Shake the shaker evenly. Strain the liquid through a strainer into a highball glass.</string>
+		<key>AochleStep2</key>
+		<string>Slowly pour in soda water until the glass is three-quarters full. Place a cherries and an orange slice on the rim for decoration.</string>
+		<key>AochleStep3</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
