@@ -38,7 +38,7 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         contenAiAchole.estimatedRowHeight = 50
         contenAiAchole.separatorStyle = .none
         
-        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("htldeleteuser"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
         
     }
 

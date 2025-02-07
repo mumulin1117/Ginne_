@@ -30,7 +30,7 @@ class GTEMusVifedertMojito: GTEMUserAboutAchole {
            
         }
         vbiguBackgGTEm.image = UIImage(named: realingUserDtaGTEm["teacherphoto"] ?? "")
-        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("htldeleteuser"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 6){
             SVProgressHUD.showInfo(withStatus: "Sorry, your call was hung up!")
             

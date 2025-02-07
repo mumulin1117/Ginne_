@@ -72,13 +72,13 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
             
                
                 
-                var banlanceHTLC =  Int(GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] ?? "0") ?? 0
+                var oweneddddGTEm =  Int(GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] ?? "0") ?? 0
                 
-                banlanceHTLC = banlanceHTLC + self.dataGTEM[self.recordingSelGTEm.row].2
+                oweneddddGTEm = oweneddddGTEm + self.dataGTEM[self.recordingSelGTEm.row].2
                 
-                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"]  = "\(banlanceHTLC)"
+                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"]  = "\(oweneddddGTEm)"
                 
-                self.wallentblanceGTEm.text = "\(banlanceHTLC)"
+                self.wallentblanceGTEm.text = "\(oweneddddGTEm)"
                
                 SVProgressHUD.showSuccess(withStatus: "Successful payment!")
                

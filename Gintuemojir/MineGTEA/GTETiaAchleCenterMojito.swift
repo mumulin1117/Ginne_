@@ -110,7 +110,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         }
         
         
-        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("htldeleteuser"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
     }
 
     
@@ -118,37 +118,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         self.navigationController?.popViewController(animated: true)
     }
   
-    
-//    @IBAction func actioneportIngRoome(_ sender: Any) {
-        
-//        let gtemTitle = "Block->->Report".components(separatedBy: "->->")
-//        let gtemAlerting = UIAlertController(title: "Reporting or Block", message: "Are you sure you want to block this user? Select the operation you want to do. After the user is blacklisted, all related information will no longer be displayed!!!", preferredStyle:.actionSheet)
-//        
-//        let gtemCloacAction = UIAlertAction(title: gtemTitle[0], style: .default) { acvf in
-//            SVProgressHUD.show()
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                SVProgressHUD.showSuccess(withStatus: "The user has been blacklisted!")
-//               
-//                GTEMCombingUser.lovderGTEm.removeSomeUserFrom(WhoINfoHTL:self.realingUserDtaGTEm)
-//                
-//            }
-//           
-//        }
-//     
-//        let gtemrepowrAction = UIAlertAction(title: gtemTitle[1], style: .default) { acvf in
-//            self.navigationController?.pushViewController(GTEMrepoaweDetaillMoJito.init(), animated: true)
-//        }
-//           
-//        gtemAlerting.addAction(gtemCloacAction)
-//        
-//        gtemAlerting.addAction(gtemrepowrAction)
-//           
-//            
-//        self.present(gtemAlerting, animated: true)
-        
-        
-//    }
-    
+
     
     
     @IBAction func benginToplaingVirwwr(_ sender: UIButton) {
@@ -331,8 +301,7 @@ class GTEMUserAboutAchole: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
                 SVProgressHUD.showSuccess(withStatus: "The user has been blacklisted!")
                
-//                
-//                GTEMCombingUser.lovderGTEm.removeSomeUserFrom(WhoINfoHTL:self.realingUserDtaGTEm)
+
                 let onlyID = self.realingUserDtaGTEm["gtemID"] ?? ""
 
                 
@@ -342,7 +311,7 @@ class GTEMUserAboutAchole: UIViewController {
                 
                 GTEMCombingUser.lovderGTEm.videoTotaluserGTEm = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.filter { !($0["gtemID"]  == onlyID) }
                 
-                NotificationCenter.default.post(name: NSNotification.Name.init("htldeleteuser"), object: nil)
+                NotificationCenter.default.post(name: NSNotification.Name.init("removeunlikeuserGTEm"), object: nil)
             }
            
         }

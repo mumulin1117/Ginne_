@@ -1,5 +1,5 @@
 //
-//  GTEMHTLEditMojito.swift
+//  GTEMHEditMojito.swift
 //  Gintuemojir
 //
 //  Created by Gintuemojir on 2025/2/7.
@@ -8,7 +8,7 @@
 import UIKit
 import SVProgressHUD
 
-class GTEMHTLEditMojito: UIViewController , UIImagePickerControllerDelegate & UINavigationControllerDelegate{
+class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINavigationControllerDelegate{
     @IBOutlet weak var gtemMinHeader: UIImageView!
     
     @IBOutlet weak var enterefTEGTEm: UITextField!

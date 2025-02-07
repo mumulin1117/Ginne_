@@ -27,8 +27,6 @@ class GTEmAcholeRoom {
 
 class GTEMCombingUser: NSObject {
    
-    
-    
     static let lovderGTEm = GTEMCombingUser.init()
     
      var videoTotaluserGTEm:Array<Dictionary<String,String>> = Array<Dictionary<String,String>>()
@@ -47,41 +45,7 @@ class GTEMCombingUser: NSObject {
     var fhhowerAllGTEm = [[String: String]]()
     
     var fnnceAllGTEm = [[String: String]]()
-    
-//    var llloooggStatuelGTEm:Bool{
-//        get{
-//            return UserDefaults.standard.bool(forKey: "oooggStatuelGTEm")
-//        }
-//        set{
-//            UserDefaults.standard.set(newValue, forKey: "oooggStatuelGTEm")
-//            if newValue == false {
-//                GTEMCombingUser.lovderGTEm.personMeGTEm.removeAll()
-//                GTEMCombingUser.lovderGTEm.personMehEagerGTEm = nil
-//                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.removeAll()
-//                GTEMCombingUser.lovderGTEm.fnnceAllGTEm.removeAll()
-//                
-//                GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.removeAll()
-//
-//            }
-//           
-//        }
-//    }
-    
-//    func IcanCreateingnerGTEm() {
-//        GTEMCombingUser.lovderGTEm.personMeGTEm["teachername"] = "Quill"
-//        GTEMCombingUser.lovderGTEm.personMeGTEm["teacherphoto"] = "teacherw9"
-//          
-//        
-//        GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "500"
-//        GTEMCombingUser.lovderGTEm. personMeGTEm["gtemContact"] = "ginne88@gmail.com"
-//      
-//        GTEMCombingUser.lovderGTEm.personMeGTEm["gtemID"] = "4534567"
-//     
-//        GTEMCombingUser.lovderGTEm.personMehEagerGTEm = UIImage(named:"teacherw9")
-//        
-//        GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = Array(videoTotaluserGTEm.shuffled().prefix(1))
-//        GTEMCombingUser.lovderGTEm.fnnceAllGTEm = Array(videoTotaluserGTEm.shuffled().prefix(1))
-//    }
+
     
     override init() {
         super.init()
@@ -101,8 +65,7 @@ class GTEMCombingUser: NSObject {
             videoTotaluserGTEm = newdatrGTEm
         }
         
-//        videoTotaluserGTEm = begsinderHandGetDataAnchole()
-    
+
         
         let begRoomIGTEm = [("Mixology Musings","begroomGTEM0","001"),
                            ("Cocktail Chatterbox","begroomGTEM1","002"),
@@ -146,27 +109,6 @@ class GTEMCombingUser: NSObject {
         
     }
    
-    
-//    func begsinderHandGetDataAnchole()->Array<Dictionary<String,String>> {
-//        guard let pathGTEM = Bundle.main.path(forResource: "GTEHVieedeol", ofType: "plist"),
-//        let dataGTEM = FileManager.default.contents(atPath: pathGTEM) else {
-//            return Array<Dictionary<String,String>>()
-//        }
-//        if let dictArrayGTEM = try? PropertyListSerialization.propertyList(from: dataGTEM, options: [], format: nil) as? [[String: String]]  {
-//            var newdatrGTEm = [[String: String]]()
-//            for (i,itmt) in dictArrayGTEM.enumerated() {
-//                newdatrGTEm.append(itmt)
-//                newdatrGTEm[i]["follosercount"] = "\(Int.random(in: 0...3))"
-//                newdatrGTEm[i]["facsercount"] = "\(Int.random(in: 0...3))"
-//            }
-//            return newdatrGTEm
-//        }
-//        
-//        return Array<Dictionary<String,String>>()
-//    }
-    
-
-    
     
 
    

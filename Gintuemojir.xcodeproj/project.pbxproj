@@ -19,7 +19,7 @@
 		041E0B9B2D54AF7400BE6C0E /* GTEMblancelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B992D54AF7400BE6C0E /* GTEMblancelCell.swift */; };
 		041E0B9C2D54AF7400BE6C0E /* GTEMblancelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B9A2D54AF7400BE6C0E /* GTEMblancelCell.xib */; };
 		041E0BA42D55D92700BE6C0E /* GTEMHTLEditMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0BA32D55D92700BE6C0E /* GTEMHTLEditMojito.xib */; };
-		041E0BA52D55D92700BE6C0E /* GTEMHTLEditMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0BA22D55D92700BE6C0E /* GTEMHTLEditMojito.swift */; };
+		041E0BA52D55D92700BE6C0E /* GTEMHEditMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0BA22D55D92700BE6C0E /* GTEMHEditMojito.swift */; };
 		0439A6662D533035004C86C2 /* GTEMPlayerMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6652D533035004C86C2 /* GTEMPlayerMojito.swift */; };
 		0439A6682D5354FC004C86C2 /* GTEMCombingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */; };
 		0439A66A2D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6692D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift */; };
@@ -86,7 +86,7 @@
 		041E0B962D54A8B500BE6C0E /* GTEMblancelMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMblancelMojito.xib; sourceTree = "<group>"; };
 		041E0B992D54AF7400BE6C0E /* GTEMblancelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMblancelCell.swift; sourceTree = "<group>"; };
 		041E0B9A2D54AF7400BE6C0E /* GTEMblancelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMblancelCell.xib; sourceTree = "<group>"; };
-		041E0BA22D55D92700BE6C0E /* GTEMHTLEditMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMHTLEditMojito.swift; sourceTree = "<group>"; };
+		041E0BA22D55D92700BE6C0E /* GTEMHEditMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMHEditMojito.swift; sourceTree = "<group>"; };
 		041E0BA32D55D92700BE6C0E /* GTEMHTLEditMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMHTLEditMojito.xib; sourceTree = "<group>"; };
 		0439A6652D533035004C86C2 /* GTEMPlayerMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMPlayerMojito.swift; sourceTree = "<group>"; };
 		0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMCombingUser.swift; sourceTree = "<group>"; };
@@ -256,7 +256,7 @@
 				041E0B8A2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib */,
 				041E0B8D2D54903500BE6C0E /* GTEMusVifedertMojito.swift */,
 				041E0B8E2D54903500BE6C0E /* GTEMusVifedertMojito.xib */,
-				041E0BA22D55D92700BE6C0E /* GTEMHTLEditMojito.swift */,
+				041E0BA22D55D92700BE6C0E /* GTEMHEditMojito.swift */,
 				041E0BA32D55D92700BE6C0E /* GTEMHTLEditMojito.xib */,
 			);
 			path = MineGTEA;
@@ -494,7 +494,7 @@
 				04E128012D3F717B0004430E /* GTEMSearchinMeaageJito.swift in Sources */,
 				04E128232D40F18F0004430E /* GTETiaAchleCenterMojito.swift in Sources */,
 				041E0B8B2D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift in Sources */,
-				041E0BA52D55D92700BE6C0E /* GTEMHTLEditMojito.swift in Sources */,
+				041E0BA52D55D92700BE6C0E /* GTEMHEditMojito.swift in Sources */,
 				04AB58152D3A293900DDC681 /* GTEMoMaintabarJito.swift in Sources */,
 				0439A6662D533035004C86C2 /* GTEMPlayerMojito.swift in Sources */,
 				04E127F82D3F50990004430E /* GTEMPopularliasCell.swift in Sources */,

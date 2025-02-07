@@ -30,7 +30,7 @@ class GTEMWoderMoJito: UIViewController {
         }
         
         if sender.tag == 500 {
-            self.navigationController?.pushViewController(GTEMHTLEditMojito.init(), animated: true)
+            self.navigationController?.pushViewController(GTEMHEditMojito.init(), animated: true)
         }
         
     }
