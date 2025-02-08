@@ -43,7 +43,7 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
         super.viewDidLoad()
         dataVireGTEm.delegate = self
         dataVireGTEm.dataSource = self
-        dataVireGTEm.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 12, right:0)
+        dataVireGTEm.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 200, right:0)
         
         dataVireGTEm.register(UINib.init(nibName: "GTEMblancelCell", bundle: nil), forCellWithReuseIdentifier: "GTEMblancelCellID")
         dataVireGTEm.selectItem(at: IndexPath.init(row: 0, section: 0), animated: false, scrollPosition: .top)

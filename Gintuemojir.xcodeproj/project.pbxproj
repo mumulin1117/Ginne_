@@ -18,7 +18,7 @@
 		041E0B982D54A8B500BE6C0E /* GTEMblancelMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B962D54A8B500BE6C0E /* GTEMblancelMojito.xib */; };
 		041E0B9B2D54AF7400BE6C0E /* GTEMblancelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B992D54AF7400BE6C0E /* GTEMblancelCell.swift */; };
 		041E0B9C2D54AF7400BE6C0E /* GTEMblancelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B9A2D54AF7400BE6C0E /* GTEMblancelCell.xib */; };
-		041E0BA42D55D92700BE6C0E /* GTEMHTLEditMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0BA32D55D92700BE6C0E /* GTEMHTLEditMojito.xib */; };
+		041E0BA42D55D92700BE6C0E /* GTEMHEditMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0BA32D55D92700BE6C0E /* GTEMHEditMojito.xib */; };
 		041E0BA52D55D92700BE6C0E /* GTEMHEditMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0BA22D55D92700BE6C0E /* GTEMHEditMojito.swift */; };
 		0439A6662D533035004C86C2 /* GTEMPlayerMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6652D533035004C86C2 /* GTEMPlayerMojito.swift */; };
 		0439A6682D5354FC004C86C2 /* GTEMCombingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */; };
@@ -87,7 +87,7 @@
 		041E0B992D54AF7400BE6C0E /* GTEMblancelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMblancelCell.swift; sourceTree = "<group>"; };
 		041E0B9A2D54AF7400BE6C0E /* GTEMblancelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMblancelCell.xib; sourceTree = "<group>"; };
 		041E0BA22D55D92700BE6C0E /* GTEMHEditMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMHEditMojito.swift; sourceTree = "<group>"; };
-		041E0BA32D55D92700BE6C0E /* GTEMHTLEditMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMHTLEditMojito.xib; sourceTree = "<group>"; };
+		041E0BA32D55D92700BE6C0E /* GTEMHEditMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMHEditMojito.xib; sourceTree = "<group>"; };
 		0439A6652D533035004C86C2 /* GTEMPlayerMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMPlayerMojito.swift; sourceTree = "<group>"; };
 		0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMCombingUser.swift; sourceTree = "<group>"; };
 		0439A6692D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMMojitallRoomtalkCell.swift; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 				041E0B8D2D54903500BE6C0E /* GTEMusVifedertMojito.swift */,
 				041E0B8E2D54903500BE6C0E /* GTEMusVifedertMojito.xib */,
 				041E0BA22D55D92700BE6C0E /* GTEMHEditMojito.swift */,
-				041E0BA32D55D92700BE6C0E /* GTEMHTLEditMojito.xib */,
+				041E0BA32D55D92700BE6C0E /* GTEMHEditMojito.xib */,
 			);
 			path = MineGTEA;
 			sourceTree = "<group>";
@@ -386,7 +386,7 @@
 				04AB58062D39EBA400DDC681 /* LaunchScreen.storyboard in Resources */,
 				04AB582E2D3A3AE500DDC681 /* GTEHChatroomeCell.xib in Resources */,
 				04AB580F2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib in Resources */,
-				041E0BA42D55D92700BE6C0E /* GTEMHTLEditMojito.xib in Resources */,
+				041E0BA42D55D92700BE6C0E /* GTEMHEditMojito.xib in Resources */,
 				04E127F92D3F50990004430E /* GTEMPopularliasCell.xib in Resources */,
 				04E128242D40F18F0004430E /* GTETiaAchleCenterMojito.xib in Resources */,
 				04E128062D3F71D50004430E /* GTEMAICholeMoJito.xib in Resources */,
@@ -536,16 +536,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MZJ9G935YV;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				EXCLUDED_ARCHS = "";
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Gintuemojir/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Ginne;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to your camera to take profile photos, upload room covers, record videos, and enable video calls.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable microphone access for audio during video calls and when recording videos with sound.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow saving processed photos/videos to your library after editing or downloading content.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access your photo library to select existing photos/videos for profile pictures, room covers, and uploading content creation.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -577,16 +578,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MZJ9G935YV;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				EXCLUDED_ARCHS = "";
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Gintuemojir/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Ginne;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to your camera to take profile photos, upload room covers, record videos, and enable video calls.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable microphone access for audio during video calls and when recording videos with sound.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow saving processed photos/videos to your library after editing or downloading content.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access your photo library to select existing photos/videos for profile pictures, room covers, and uploading content creation.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
