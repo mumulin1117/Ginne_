@@ -138,7 +138,7 @@ class GTEMLogsininerMoJito: UIViewController {
                 GTEMCombingUser.lovderGTEm.personMeGTEm["teacherphoto"] = "teacherw9"
                   
                 
-                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "500"
+                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "55"
                 
                 zGTEm += 10.5
                 zGTEm -= 0.2

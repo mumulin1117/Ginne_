@@ -15,6 +15,7 @@ class GTEMStepDetaillMoJito: UIViewController {
     @IBOutlet weak var mojitoNameGTEA: UILabel!
     
     
+    @IBOutlet weak var repoiuingGTEm: UIButton!
     
     @IBOutlet weak var tagGTUAView: UIView!
     
@@ -58,10 +59,14 @@ class GTEMStepDetaillMoJito: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    
+   @objc func navibaTorepohGTEM(_ sender: UIButton) {
+       self.navigationController?.pushViewController(GTEMrepoaweDetaillMoJito.init(), animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        repoiuingGTEm.addTarget(self, action: #selector(navibaTorepohGTEM), for: .touchUpInside)
         let tagview = TagListView.init()
         tagview.textFont = UIFont.systemFont(ofSize: 15, weight: .bold)
         tagview.tagBackgroundColor =  UIColor(red: 0.5, green: 0.15, blue: 0.12, alpha: 1)

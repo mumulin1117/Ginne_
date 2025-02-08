@@ -237,7 +237,23 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         super.viewDidLoad()
         let topcell = UINib(nibName: "GTEVideocerCell", bundle: nil)
         dataviedeoView.register(topcell, forCellWithReuseIdentifier: "GTEVideocerCellID")
-        
+        dataviedeoView.isHidden = true
+        SVProgressHUD.show()
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+       
+
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
+           
+            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+            let indefHTEM = Int.random(in: 200...30000)
+
+            modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+            if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+                self.dataviedeoView.isHidden = false
+            }
+            SVProgressHUD.dismiss()
+        }
         dataviedeoView.delegate = self
         dataviedeoView.dataSource = self
         dataviedeoView.showsVerticalScrollIndicator = false

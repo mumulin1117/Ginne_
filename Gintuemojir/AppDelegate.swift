@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             GTEMCombingUser.lovderGTEm.personMeGTEm["teacherphoto"] = "teacherw9"
               
             _BingToolGTEM +=  1.87
-            GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "500"
+            GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "55"
             _BingToolGTEM +=  1.87
             GTEMCombingUser.lovderGTEm.personMeGTEm["gtemContact"] = "ginne88@gmail.com"
             _BingToolGTEM +=  1.87

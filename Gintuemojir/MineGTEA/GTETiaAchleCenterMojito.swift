@@ -329,7 +329,7 @@ class GTEMUserAboutAchole: UIViewController {
                 self._fermentationTimerGTEM = Timer.init()
             }
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){ [self] in
-                SVProgressHUD.showSuccess(withStatus: "The user has been successfully blocked!  ")
+                SVProgressHUD.showSuccess(withStatus: "successfully blocked!  ")
                
                 if self._agitatorValuesGTEM.isEmpty {
                     return

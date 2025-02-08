@@ -51,7 +51,15 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         self.navigationController?.pushViewController(GTEMrepoaweDetaillMoJito.init(), animated: true)
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        _agitatorValuesGTEM.append(_muddleToolGTEM)
+        
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
+    }
+
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         sayTexGTUA.leftViewMode = .always
@@ -258,7 +266,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         xGTEm += 30
         var yGTEm: Double = 25.0
         var zGTEm: Double = xGTEm + yGTEm + 33
-       
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         for(i, item) in GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.enumerated() {
             zGTEm += 10.5
             zGTEm -= 0.2
@@ -307,8 +315,8 @@ extension GTEMAcholeDeatilMoJito:UITableViewDelegate,UITableViewDataSource,UITex
             }
            
             gtemCEll.gtemNickLbael.text = "Me"
-           
-            
+            gtemCEll.gtemSayieVuew.text =  diologData.2
+            print(diologData.2)
             return gtemCEll
         }else{
             zGTEm -= 0.2
@@ -330,11 +338,11 @@ extension GTEMAcholeDeatilMoJito:UITableViewDelegate,UITableViewDataSource,UITex
                 gtemCEll.gtemNickLbael.text = diologLater["teachername"]
             }
             
-            
+            gtemCEll.gtemSayieVuew.text =  diologData.2
             
         }
         
-        gtemCEll.gtemSayieVuew.text =  diologData.2
+       
        
         return gtemCEll
     }

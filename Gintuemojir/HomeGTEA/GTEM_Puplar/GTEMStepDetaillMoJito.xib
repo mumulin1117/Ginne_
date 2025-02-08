@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="mojiTojioBack" destination="Avm-2W-Joa" id="Ffa-Bp-dRF"/>
                 <outlet property="mojitoNameGTEA" destination="LiN-db-IsU" id="duy-Qd-Gja"/>
+                <outlet property="repoiuingGTEm" destination="KRu-Gz-bkf" id="kw6-BP-xYo"/>
                 <outlet property="stepBag0" destination="cak-Rg-Dar" id="O00-Se-BFy"/>
                 <outlet property="stepBag1" destination="Pwj-eO-QQb" id="08q-4g-mBh"/>
                 <outlet property="stepBag2" destination="e4l-v0-U5a" id="3Jf-ls-bju"/>
