@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -48,8 +49,8 @@
                         <action selector="navibakerinhGTEM:" destination="-1" eventType="touchUpInside" id="tPU-Ec-zXa"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELUA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-DP-wg4">
-                    <rect key="frame" x="158.66666666666666" y="112" width="57.666666666666657" height="27"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bF-DP-wg4">
+                    <rect key="frame" x="187.66666666666666" y="112" width="0.0" height="27"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="27" id="DOt-5c-SGs"/>
                     </constraints>
@@ -57,7 +58,7 @@
                     <color key="textColor" red="0.33333333333333331" green="0.043137254901960784" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu" translatesAutoresizingMaskIntoConstraints="NO" id="wcU-nI-yCZ">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcU-nI-yCZ">
                     <rect key="frame" x="36" y="156" width="303" height="449"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="textColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -97,6 +98,22 @@
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" image="GUECagreeen"/>
                 </button>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHt-kA-LM7">
+                    <rect key="frame" x="67.666666666666686" y="11" width="240" height="48"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="GUU-dS-IoB"/>
+                        <constraint firstAttribute="height" constant="48" id="rUN-MN-ach"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mX-CO-m6e">
+                    <rect key="frame" x="67.666666666666686" y="764" width="240" height="48"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="BiX-JN-nv6"/>
+                        <constraint firstAttribute="width" constant="240" id="rvN-UD-Iea"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -112,15 +129,19 @@
                 <constraint firstItem="wcU-nI-yCZ" firstAttribute="top" secondItem="9bF-DP-wg4" secondAttribute="bottom" constant="17" id="M5U-Mn-M2B"/>
                 <constraint firstItem="9bF-DP-wg4" firstAttribute="centerX" secondItem="wcU-nI-yCZ" secondAttribute="centerX" id="OD7-Vw-MZQ"/>
                 <constraint firstItem="iRw-C1-1EV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-35" id="Uu8-Hh-HUv"/>
+                <constraint firstAttribute="bottom" secondItem="2mX-CO-m6e" secondAttribute="bottom" id="ark-YW-0cn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wcU-nI-yCZ" secondAttribute="trailing" constant="36" id="dOh-6Y-FLy"/>
                 <constraint firstItem="4px-l1-XYx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dom-U5-QID"/>
                 <constraint firstItem="LRT-d8-bc0" firstAttribute="top" secondItem="4px-l1-XYx" secondAttribute="bottom" constant="18" id="fPH-9d-qac"/>
                 <constraint firstItem="3bn-8W-OQb" firstAttribute="top" secondItem="wcU-nI-yCZ" secondAttribute="bottom" constant="19" id="hSh-97-3lF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3bn-8W-OQb" secondAttribute="trailing" constant="36" id="inB-7u-gQn"/>
                 <constraint firstItem="wcU-nI-yCZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="kor-D0-Ivy"/>
+                <constraint firstItem="RHt-kA-LM7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="11" id="pCW-NK-6jW"/>
                 <constraint firstItem="l8m-xO-pli" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="qSV-gd-fl6"/>
                 <constraint firstItem="l8m-xO-pli" firstAttribute="top" secondItem="4px-l1-XYx" secondAttribute="bottom" constant="-74" id="rfm-eC-Fv0"/>
+                <constraint firstItem="RHt-kA-LM7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rq7-Qg-Nxd"/>
                 <constraint firstItem="3bn-8W-OQb" firstAttribute="centerY" secondItem="l8m-xO-pli" secondAttribute="centerY" id="sSv-lS-4Yq"/>
+                <constraint firstItem="2mX-CO-m6e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uFB-uZ-MZb"/>
             </constraints>
             <point key="canvasLocation" x="135.19999999999999" y="19.95073891625616"/>
         </view>
@@ -130,5 +151,8 @@
         <image name="GUECagreeen" width="140" height="44"/>
         <image name="GUECancel" width="140" height="44"/>
         <image name="Geu_dias" width="28" height="28"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

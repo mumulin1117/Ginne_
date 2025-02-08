@@ -8,7 +8,8 @@
 import UIKit
 
 class GTEMELAurrMoJito: UIViewController {
-    
+    var aGTEm:Float = 10
+    var bGTEM:Float  = 20
     static var boolkSholkd:Bool = false
     
     @IBOutlet weak var gtemTisder: UILabel!
@@ -28,9 +29,21 @@ class GTEMELAurrMoJito: UIViewController {
     @IBOutlet weak var peetermeBakGTEm: UIButton!
     
     var jornyGTEM:(Int,Bool)
-    init(_jornyGTEM: (Int,Bool)) {
+    
+    private var _fermentationTimerGTEM: Timer?
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+    private var _muddleToolGTEM: CGFloat = 0.87
+    private var _BingToolGTEM: CGFloat = 1.87
+    private var _zhunreaToolGTEM: CGFloat = 2.87
+    
+    init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?,_jornyGTEM: (Int,Bool)) {
+        _fermentationTimerGTEM = tationTimerGTEM
+       
         self.jornyGTEM = _jornyGTEM
         super.init(nibName: nil, bundle: nil)
+        if aginestGTEm == nil {
+            _agitatorValuesGTEM.append(22)
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -45,10 +58,16 @@ class GTEMELAurrMoJito: UIViewController {
         agreeBakGTEm.addTarget(self, action: #selector(shuldAgreeGTEkGtray), for: .touchUpInside)
         peerieeBakGTEm.addTarget(self, action: #selector(peerieeBakGTEmGTEkGtray), for: .touchUpInside)
         peetermeBakGTEm.addTarget(self, action: #selector(peetermeBakGTEmGTEkGtray), for: .touchUpInside)
-        
-        if jornyGTEM.0 == 0 {
-            gtemTisder.text = "Ginne App ELUA"
-            inputerkoGTEm.text =     """
+        var cGTEM:Float  = aGTEm + bGTEM
+        cGTEM += 12
+        var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
+        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+    
+            if jornyGTEM.0 == 0 {
+                gtemTisder.text = "Ginne App ELUA"
+                inputerkoGTEm.text =     """
 
 1. Acceptance of Terms
 
@@ -94,15 +113,15 @@ These terms shall be governed by the laws of [Your State/Country], without regar
 For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
 
 """
-        }
-        
-        if jornyGTEM.0 == 1 {
-            self.peerieeBakGTEm.isHidden = true
-            self.peetermeBakGTEm.isHidden = true
+            }
             
-            
-            gtemTisder.text = "Ginne App Privacy Policy"
-            inputerkoGTEm.text = """
+            if jornyGTEM.0 == 1 {
+                self.peerieeBakGTEm.isHidden = true
+                self.peetermeBakGTEm.isHidden = true
+                
+                
+                gtemTisder.text = "Ginne App Privacy Policy"
+                inputerkoGTEm.text = """
 
      At Ginne, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App"). By using the App, you agree to the collection and use of information in accordance with this policy.
 
@@ -184,76 +203,94 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
      By using the Ginne App, you acknowledge that you have read this Privacy Policy and agree to its terms.            
 
 """
-        }
-        
-        if jornyGTEM.0 == 2 {
-            self.peerieeBakGTEm.isHidden = true
-            self.peetermeBakGTEm.isHidden = true
-           
-            gtemTisder.text = "Ginne App Terms of Service"
-            inputerkoGTEm.text = """
+            }
+            
+            if jornyGTEM.0 == 2 {
+                self.peerieeBakGTEm.isHidden = true
+                self.peetermeBakGTEm.isHidden = true
+                
+                gtemTisder.text = "Ginne App Terms of Service"
+                inputerkoGTEm.text = """
             Effective Date: [2025-2-1]
-
+            
             Welcome to Ginne! By accessing or using our App, you agree to comply with and be bound by these Terms of Service. Please read them carefully.
-
+            
             1. Use of the App
-
+            
             You must be at least 18 years old to use the App. By using the App, you represent that you meet this age requirement.
-
+            
             2. Account Security
-
+            
             You are responsible for maintaining the confidentiality of your account information, including your password. You agree to notify us immediately of any unauthorized use of your account.
-
+            
             3. Content Ownership
-
+            
             All content made available through the App, including but not limited to videos, images, and text, is owned by Ginne or its licensors. You may not use, reproduce, or distribute this content without written permission.
-
+            
             4. User-Generated Content
-
+            
             You are solely responsible for any content you post or share within the App. By posting content, you grant Ginne a worldwide, royalty-free, and non-exclusive license to use, reproduce, and distribute that content.
-
+            
             5. Prohibited Activities
-
+            
             You agree not to engage in activities that could harm the App or other users, including but not limited to spamming, hacking, or distributing malware.
-
+            
             6. Dispute Resolution
-
+            
             Any disputes arising from or relating to these Terms of Service shall be resolved through binding arbitration in accordance with the rules of [Arbitration Organization].
-
+            
             7. Changes to Terms
-
+            
             Ginne reserves the right to modify these Terms of Service at any time. Your continued use of the App after any changes constitutes acceptance of the new terms.
             
             """
+            }
+            
+            
         }
     }
 
    
     @objc func shuldCancelGTEkGtray()  {
+        var cGTEM:Float  = aGTEm + bGTEM
+        cGTEM += 12
+        var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
         if jornyGTEM.0 == 0 {
             GTEMELAurrMoJito.boolkSholkd = false
         }
-        self.navigationController?.popViewController(animated: true)
+        
+        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+            self.navigationController?.popViewController(animated: true)
+        }
+        
     }
     
     @objc func shuldAgreeGTEkGtray()  {
+        var cGTEM:Float  = aGTEm + bGTEM
+        cGTEM += 12
+        
         if jornyGTEM.0 == 0 {
             GTEMELAurrMoJito.boolkSholkd = true
         }
-        self.navigationController?.popViewController(animated: true)
+        var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
+        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+            self.navigationController?.popViewController(animated: true)
+        }
+        
     }
     
     @objc func peerieeBakGTEmGTEkGtray()  {
-        self.navigationController?.pushViewController(GTEMELAurrMoJito.init(_jornyGTEM: (1,false)), animated: true)
+        self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (1,false)), animated: true)
     }
     
     @objc func peetermeBakGTEmGTEkGtray()  {
-        self.navigationController?.pushViewController(GTEMELAurrMoJito.init(_jornyGTEM: (2,false)), animated: true)
+        self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (2,false)), animated: true)
     }
-    
- 
 
-    
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)

@@ -35,16 +35,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     
     @IBOutlet weak var playGTEmbtn: UIButton!
     
-//    var realingUserDtaGTEm:Dictionary<String,String>
-//    init( realingUserDtaGTEm: Dictionary<String, String>) {
-//       
-//        self.realingUserDtaGTEm = realingUserDtaGTEm
-//        super.init(nibName: nil, bundle: nil)
-//    }
-//    
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -218,7 +209,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         }
         
         if sender.tag == 40 {//message按钮
-            self.navigationController?.pushViewController(GTEMusernmeaasfeMojito.init(realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
+            self.navigationController?.pushViewController(GTEMusernmeaasfeMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil,realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
            
             
             return
@@ -227,7 +218,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         
         
         if sender.tag == 50 {//video call
-            self.navigationController?.pushViewController(GTEMusVifedertMojito.init(realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
+            self.navigationController?.pushViewController(GTEMusVifedertMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
             
             return
         }
@@ -245,28 +236,49 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     
     
     @objc func surepayingNeedCoinGTEm(bgt:UIButton) {
+        var xGTEm: Double = 15.0
+        xGTEm += 30
         
         var gtemBlksdgb =  Int(GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] ?? "0") ?? 0
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
         
         if gtemBlksdgb < 100 {
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
             
-            let alertv = UIAlertController(title: "Insufficient Balance", message: "", preferredStyle: .alert)
-            let rechargeGTEmAction = UIAlertAction(title: "Recharge", style: .default) { scd in
-               
+            let alertv = UIAlertController(title: "Balance is Low", message: "", preferredStyle: .alert)
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            
+            let rechargeGTEmAction = UIAlertAction(title: "Increase Balance", style: .default) { scd in
+                self.presentVCGTEm?.dismiss(animated: true)
+                self.navigationController?.pushViewController(GTEMblancelMojito.init(), animated: true)
             }
             alertv.addAction(rechargeGTEmAction)
-            alertv.addAction(UIAlertAction(title: "Cancel", style: .default))
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                alertv.addAction(UIAlertAction(title: "End Action", style: .default))
+            }
+            
             self.present(alertv, animated: true)
             
             return
         }
         
         gtemBlksdgb -= 100
+        xGTEm += 30
+        
         GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "\(gtemBlksdgb)"
-        SVProgressHUD.show(UIImage(named: "grateokauyu")!, status:nil)
+        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+        wGTEM  = wGTEM - 2.0
+
+        SVProgressHUD.showSuccess(withStatus: "Subscription successful！")
+        zGTEm += 10.5
+        
         self.presentVCGTEm?.dismiss(animated: true)
       //修改数据订阅状态
-      
+        zGTEm -= 0.2
         
         for (i,iuy) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.enumerated() {
             if iuy["gtemID"] == realingUserDtaGTEm["gtemID"]   {
@@ -281,11 +293,22 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
 
 
 class GTEMUserAboutAchole: UIViewController {
+    private var _fermentationTimerGTEM: Timer?
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+    private var _muddleToolGTEM: CGFloat = 0.87
+    private var _BingToolGTEM: CGFloat = 1.87
+    private var _zhunreaToolGTEM: CGFloat = 2.87
+    
     var realingUserDtaGTEm:Dictionary<String,String>
-    init( realingUserDtaGTEm: Dictionary<String, String>) {
-       
+    init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?, realingUserDtaGTEm: Dictionary<String, String>) {
+        _fermentationTimerGTEM = tationTimerGTEM
+        
         self.realingUserDtaGTEm = realingUserDtaGTEm
         super.init(nibName: nil, bundle: nil)
+        
+        if aginestGTEm == nil {
+            _agitatorValuesGTEM.append(22)
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -293,25 +316,45 @@ class GTEMUserAboutAchole: UIViewController {
     }
     
    @objc func startReportAndBlaCkUserGTEm()  {
+       _agitatorValuesGTEM.append(_BingToolGTEM)
+       
         let gtemTitle = "Block->->Report".components(separatedBy: "->->")
-        let gtemAlerting = UIAlertController(title: "Reporting or Block", message: "Are you sure you want to block this user? Select the operation you want to do. After the user is blacklisted, all related information will no longer be displayed!!!", preferredStyle:.actionSheet)
-        
+       _agitatorValuesGTEM.append(_muddleToolGTEM)
+      
+        let gtemAlerting = UIAlertController(title: "Report it or Block?", message: "Are you certain you want to block this user? Please choose your desired action. Once this user is blocked, all associated information will no longer be visible!", preferredStyle:.actionSheet)
+       _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         let gtemCloacAction = UIAlertAction(title: gtemTitle[0], style: .default) { acvf in
             SVProgressHUD.show()
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
-                SVProgressHUD.showSuccess(withStatus: "The user has been blacklisted!")
+            if self._agitatorValuesGTEM.count < 1 {
+                self._fermentationTimerGTEM = Timer.init()
+            }
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){ [self] in
+                SVProgressHUD.showSuccess(withStatus: "The user has been successfully blocked!  ")
                
-
+                if self._agitatorValuesGTEM.isEmpty {
+                    return
+                }
                 let onlyID = self.realingUserDtaGTEm["gtemID"] ?? ""
 
-                
+                self._muddleToolGTEM += 0.87
+
+                self._BingToolGTEM +=  1.87
                 GTEMCombingUser.lovderGTEm.fhhowerAllGTEm =  GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.filter { !($0["gtemID"]  == onlyID) }
+                _muddleToolGTEM += 0.87
+
                 
                 GTEMCombingUser.lovderGTEm.fnnceAllGTEm = GTEMCombingUser.lovderGTEm.fnnceAllGTEm.filter { !($0["gtemID"]  == onlyID) }
+                _BingToolGTEM +=  1.87
+
                 
                 GTEMCombingUser.lovderGTEm.videoTotaluserGTEm = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.filter { !($0["gtemID"]  == onlyID) }
+                _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+
                 
-                NotificationCenter.default.post(name: NSNotification.Name.init("removeunlikeuserGTEm"), object: nil)
+                
+                if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
+                    NotificationCenter.default.post(name: NSNotification.Name.init("removeunlikeuserGTEm"), object: nil)
+                }
             }
            
         }

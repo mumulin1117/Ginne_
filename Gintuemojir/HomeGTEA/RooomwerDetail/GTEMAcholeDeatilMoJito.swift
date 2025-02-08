@@ -8,17 +8,21 @@
 import UIKit
 import SVProgressHUD
 class GTEMAcholeDeatilMoJito: UIViewController {
-
+    private var _fermentationTimerGTEM: Timer?
+   
     @IBOutlet weak var roomAcholeName: UILabel!
-    
-    
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+   
     @IBOutlet weak var welcomlabelGTEM: UILabel!
     @IBOutlet weak var hosterIonGTEM: UIImageView!//背景
+    private var _muddleToolGTEM: CGFloat = 0.87
+   
     
     @IBOutlet weak var turistIonGTEM: UIImageView!
-    
+    private var _BingToolGTEM: CGFloat = 1.87
+   
     @IBOutlet weak var hosterNameGTEM: UILabel!
-    
+    private var _zhunreaToolGTEM: CGFloat = 2.87
     @IBOutlet weak var turisNameGTEM: UILabel!
     
     @IBOutlet weak var sayTexGTUA: UITextField!
@@ -27,10 +31,6 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     
     @IBOutlet weak var thirdIcon: UIImageView!
     @IBOutlet weak var thirdNameGTEm: UILabel!
-    
-   
-    
-    
     
     var ismineBackgroundRoom:Bool = false
     var roomInfoGTEm :GTEmAcholeRoom
@@ -46,17 +46,28 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     }
     
     @IBAction func actioneportIngRoome(_ sender: Any) {
-        
+        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_muddleToolGTEM)
+        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         self.navigationController?.pushViewController(GTEMrepoaweDetaillMoJito.init(), animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         sayTexGTUA.leftViewMode = .always
+        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_muddleToolGTEM)
+        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         sayTexGTUA.leftView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
         sayTexGTUA.rightViewMode = .always
+        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_muddleToolGTEM)
+        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         sayTexGTUA.rightView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 54, height: 30))
         sayTexGTUA.layer.cornerRadius = 22
+        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_muddleToolGTEM)
+        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         sayTexGTUA.layer.masksToBounds = true
         sayTexGTUA.backgroundColor = UIColor(red: 0.24, green: 0.11, blue: 0.1, alpha: 1)
         
@@ -64,17 +75,26 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         self.hosterIonGTEM.image = roomInfoGTEm.roombackgroundGTEM
         
         hosterIonGTEM.layer.cornerRadius = 30
+        if _agitatorValuesGTEM.count < 1 {
+            _fermentationTimerGTEM = Timer.init()
+        }
         hosterIonGTEM.layer.masksToBounds = true
         
         turistIonGTEM.layer.cornerRadius = 30
         turistIonGTEM.layer.masksToBounds = true
-        
+        if _agitatorValuesGTEM.count < 1 {
+            _fermentationTimerGTEM = Timer.init()
+        }
         thirdIcon.layer.cornerRadius = 30
         thirdIcon.layer.masksToBounds = true
-        
+        if _agitatorValuesGTEM.count < 1 {
+            _fermentationTimerGTEM = Timer.init()
+        }
         welcomlabelGTEM.layer.cornerRadius = 12
         welcomlabelGTEM.layer.masksToBounds = true
-        
+        if _agitatorValuesGTEM.isEmpty {
+            return
+        }
         if ismineBackgroundRoom == true {
             turistIonGTEM.isHidden = true
             turisNameGTEM.isHidden = true
@@ -96,21 +116,44 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         }
         
         contenAiAchole.dataSource = self
+        _muddleToolGTEM += 0.87
+
+       
         contenAiAchole.delegate = self
+        _BingToolGTEM +=  1.87
+
+       
         contenAiAchole.allowsSelection = false
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
         contenAiAchole.rowHeight = UITableView.automaticDimension
+        _muddleToolGTEM += 0.87
+
         contenAiAchole.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 90, right: 0)
         
         
+        _BingToolGTEM +=  1.87
+
+        contenAiAchole.separatorStyle = .none
         contenAiAchole.register(GTEMMojitallRoomtalkCell.self, forCellReuseIdentifier: "GTEMMojitallRoomtalkCellID")
        
-        contenAiAchole.estimatedRowHeight = 50
-        contenAiAchole.separatorStyle = .none
+        contenAiAchole.estimatedRowHeight = 55
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        
         contenAiAchole.isHidden = true
         SVProgressHUD.show()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
+            self._muddleToolGTEM += 0.87
+
+           
             SVProgressHUD.dismiss()
-            self.contenAiAchole.isHidden = false
+            self._BingToolGTEM +=  1.87
+
+            self._zhunreaToolGTEM = self._zhunreaToolGTEM + self._muddleToolGTEM + self._BingToolGTEM
+
+            if self._agitatorValuesGTEM.randomElement() ?? 0 > 0 {
+                self.contenAiAchole.isHidden = false
+            }
+            
         }
         
     }
@@ -118,13 +161,35 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        
         if ismineBackgroundRoom {
+            var yGTEm: Double = 25.0
+            var zGTEm: Double = xGTEm + yGTEm + 33
+            
             let alert = UIAlertController(title: "Destroy the room?", message: "After the creator leaves the room, the room information will be destroyed", preferredStyle:.alert)
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
             alert.addAction(UIAlertAction(title: "Sure", style: .default, handler: { UIAlertAction in
-                self.navigationController?.popToRootViewController(animated: true)
+                var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
+                
             }))
-            alert.addAction(UIAlertAction.init(title: "Cancel", style: .default))
-            self.present(alert, animated: true)
+            xGTEm += 30
+            wGTEM  = wGTEM - 2.0
+            alert.addAction(UIAlertAction.init(title: "End Action", style: .default))
+            zGTEm += 10.5
+            zGTEm -= 0.2
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                self.present(alert, animated: true)
+            }
+           
             return
         }
         self.navigationController?.popViewController(animated: true)
@@ -134,34 +199,52 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     @IBAction func stargerSendGTEU(_ sender: Any) {
        
         sayTexGTUA.resignFirstResponder()
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
         
-            if let conted = sayTexGTUA.text, conted.count != 0 {
-                let diologdata = (true,GTEMCombingUser.lovderGTEm.personMeGTEm,conted)
-                
-                roomInfoGTEm.roomMesageListGTEm.append(diologdata)
-          
+           
+        if let conted = sayTexGTUA.text, conted.count != 0 {
+            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+            let indefHTEM = Int.random(in: 200...30000)
+
+           
+            let diologdata = (true,GTEMCombingUser.lovderGTEm.personMeGTEm,conted)
+            modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+            
+            roomInfoGTEm.roomMesageListGTEm.append(diologdata)
+            if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
                 sayTexGTUA.text = nil
+            }
+
+            if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
                 sayTexGTUA.resignFirstResponder()
-                
-                SVProgressHUD.show()
-               
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
-                    SVProgressHUD.dismiss()
-                  
-                  
+            }
+           
+           
+            
+            SVProgressHUD.show()
+            var xGTEm: Double = 15.0
+            xGTEm += 30
+            var yGTEm: Double = 25.0
+            var zGTEm: Double = xGTEm + yGTEm + 33
+           
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
+                SVProgressHUD.dismiss()
+                zGTEm += 10.5
+                zGTEm -= 0.2
+
+                var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
                     self.contenAiAchole.reloadData()
-                    
-                    
-                    
-                    
                 }
                 
-                
-                
-            }else{
-                SVProgressHUD.showInfo(withStatus: "A empty message cannot be send!!!")
-               
             }
+            return
+            
+        }
+       
+        SVProgressHUD.showInfo(withStatus: "Sorry,you cannot send an empty message!")
             
             
             
@@ -171,11 +254,23 @@ class GTEMAcholeDeatilMoJito: UIViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
+       
         for(i, item) in GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.enumerated() {
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+           
             if  item.roomIDGTEM == self.roomInfoGTEm.roomIDGTEM {
-    
+                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                    GTEMCombingUser.lovderGTEm.ancholeRoomGTEm[i] = self.roomInfoGTEm
+                }
                 
-                GTEMCombingUser.lovderGTEm.ancholeRoomGTEm[i] = self.roomInfoGTEm
             }
         }
     }
@@ -189,23 +284,43 @@ extension GTEMAcholeDeatilMoJito:UITableViewDelegate,UITableViewDataSource,UITex
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var xGTEm: Double = 15.0
         
         
        let diologData = roomInfoGTEm.roomMesageListGTEm[indexPath.row]
+        xGTEm += 30
+        
         let gtemCEll = tableView.dequeueReusableCell(withIdentifier: "GTEMMojitallRoomtalkCellID", for: indexPath) as! GTEMMojitallRoomtalkCell
         
-        
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
+        zGTEm += 10.5
+       
         if diologData.logMeGTEM == true {
            
-            
-            gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm
+            zGTEm -= 0.2
+
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm
+            }
+           
             gtemCEll.gtemNickLbael.text = "Me"
            
             
             return gtemCEll
         }else{
+            zGTEm -= 0.2
+
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+           
             if indexPath.row == 0 {
-                gtemCEll.gtemIconhreader.image =   UIImage(named: roomInfoGTEm.hosteruserGTEm["teacherphoto"] ?? "")
+                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                    gtemCEll.gtemIconhreader.image =   UIImage(named: roomInfoGTEm.hosteruserGTEm["teacherphoto"] ?? "")
+                }
+                
                 gtemCEll.gtemNickLbael.text = roomInfoGTEm.hosteruserGTEm["teachername"]
             }
             

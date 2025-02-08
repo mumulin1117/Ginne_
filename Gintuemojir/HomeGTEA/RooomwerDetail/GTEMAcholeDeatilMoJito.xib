@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -50,10 +51,20 @@
                             <color key="textColor" white="0.91318837409999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gou-sb-V1v">
+                            <rect key="frame" x="76.666666666666686" y="0.0" width="240" height="48"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="O1a-IC-Eak"/>
+                                <constraint firstAttribute="width" constant="240" id="mnB-eq-YRI"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" red="0.16862745098039217" green="0.023529411764705882" blue="0.0078431372549019607" alpha="0.86290922619047616" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="kAK-2R-5XP" firstAttribute="centerX" secondItem="a3U-Jc-W7E" secondAttribute="centerX" id="UhM-UY-sIk"/>
+                        <constraint firstItem="gou-sb-V1v" firstAttribute="top" secondItem="HJx-64-OAU" secondAttribute="top" id="aWz-Wn-1w6"/>
+                        <constraint firstItem="gou-sb-V1v" firstAttribute="centerX" secondItem="HJx-64-OAU" secondAttribute="centerX" id="dAs-gv-ZSF"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7b-4k-RgY">
@@ -225,5 +236,8 @@
         <image name="hoster_logo" width="36" height="22"/>
         <image name="seadGTUA" width="28" height="28"/>
         <image name="tobnaGTERD" width="40" height="26"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

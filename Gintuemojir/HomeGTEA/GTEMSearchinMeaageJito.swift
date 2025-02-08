@@ -44,9 +44,18 @@ class GTEMSearchinMeaageJito: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2){
             SVProgressHUD.dismiss()
-            
-            self.emptyGTMlbl.isHidden = false
-            self.emptyGTEmicon.isHidden = false
+            var aGTEm:Float = 10
+            var bGTEM:Float  = 20
+            var cGTEM:Float  = aGTEm + bGTEM
+            cGTEM += 12
+            var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
+            if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+                self.emptyGTMlbl.isHidden = false
+                self.emptyGTEmicon.isHidden = false
+            }
+           
         }
         
     }

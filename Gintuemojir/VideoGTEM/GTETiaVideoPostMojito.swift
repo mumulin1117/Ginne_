@@ -28,20 +28,36 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
     }
 
     @IBAction func startPostButtonmgn(_ sender: UIButton) {
+        var xGTEm: Double = 15.0
         if let newercontent = videotitleGTEM.text, newercontent.count > 0, newercontent != "Enter publish content" {
-            
+            xGTEm += 30
+            var yGTEm: Double = 25.0
             if ifvpdateVideo {
-                
+                var zGTEm: Double = xGTEm + yGTEm + 33
+                zGTEm += 10.5
+                zGTEm -= 0.2
+
                 SVProgressHUD.show()
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4){
                     SVProgressHUD.showSuccess(withStatus: "The published content will be displayed after approval!")
                     
+                    var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+                    if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                       
+                    }
                     self.navigationController?.popViewController(animated: true)
                 }
                
                 
             }else{
-                SVProgressHUD.showInfo(withStatus: "Sorry,the uploaded video is empty!")
+                
+                var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+                var zGTEm: Double = xGTEm + yGTEm + 33
+                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                    SVProgressHUD.showInfo(withStatus: "Sorry,the uploaded video is empty!")
+                }
+                
             }
             
            
@@ -55,14 +71,29 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
     
     
     @IBAction func beginUploadLogingGTEm(_ sender: Any) {
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            var yGTEm: Double = 25.0
+            var zGTEm: Double = xGTEm + yGTEm + 33
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+            
             var configuration = PHPickerConfiguration()
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+           
             configuration.filter = .videos // 只显示视频
             configuration.selectionLimit = 1 // 选择数量
             
             let picker = PHPickerViewController(configuration: configuration)
-            picker.delegate = self
-            present(picker, animated: true)
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                picker.delegate = self
+                present(picker, animated: true)
+            }
+           
             return
         }
         
@@ -78,18 +109,36 @@ extension  GTETiaVideoPostMojito :PHPickerViewControllerDelegate{
     //MARK: -   获取本地视频缩略图
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
             dismiss(animated: true)
-            
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        var yGTEm: Double = 25.0
+        
             guard let result = results.first else { return }
             let itemProvider = result.itemProvider
         
         SVProgressHUD.show(withStatus: "uploading......")
 
-       
+        var zGTEm: Double = xGTEm + yGTEm + 33
+        zGTEm += 10.5
+        zGTEm -= 0.2
+
+        
             if itemProvider.hasItemConformingToTypeIdentifier(UTType.movie.identifier) {
                 itemProvider.loadFileRepresentation(forTypeIdentifier: UTType.movie.identifier) { [weak self] url, error in
                     guard let self = self, let url = url else {
                         DispatchQueue.main.async {
-                                               
+                            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+                            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                               
+                            }
+
+                           
+                            xGTEm += 30
+                            wGTEM  = wGTEM - 2.0
+
+                            zGTEm += 10.5
+                            zGTEm -= 0.2
                             SVProgressHUD.showError(withStatus: "Video format error!")
                                           
                         }
@@ -127,16 +176,29 @@ extension  GTETiaVideoPostMojito :PHPickerViewControllerDelegate{
     }
     
     private func fetchGTEMVideoFirstImageFrame(from asset: AVAsset) {
-            let imageGenerator = AVAssetImageGenerator(asset: asset)
-            imageGenerator.appliesPreferredTrackTransform = true
-            
+            let imageGeneratorGTEm = AVAssetImageGenerator(asset: asset)
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        
+            imageGeneratorGTEm.appliesPreferredTrackTransform = true
+        var yGTEm: Double = 25.0
+        
             let time = CMTime(seconds: 0, preferredTimescale: 600) // 获取第一帧
-            imageGenerator.generateCGImagesAsynchronously(forTimes: [NSValue(time: time)]) { _, image, _, result, error in
+        var zGTEm: Double = xGTEm + yGTEm + 33
+        zGTEm += 10.5
+       
+            imageGeneratorGTEm.generateCGImagesAsynchronously(forTimes: [NSValue(time: time)]) { _, image, _, result, error in
                 if let error = error {
                     print("Error generating image: \(error.localizedDescription)")
                     return
                 }
-                
+                zGTEm -= 0.2
+
+                var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                   
+                }
                 guard let cgImage = image else { return }
                 let uiImage = UIImage(cgImage: cgImage)
                 

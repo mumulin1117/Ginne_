@@ -39,16 +39,16 @@ class GTEMPlayerMojito: UIViewController {
         self.view.addSubview(playerViewGTEM)
 
                
-        let playerManager = ZFAVPlayerManager() // 使用 ZFAVPlayerManager 作为播放器管理器
+        let playerManagerGTEm = ZFAVPlayerManager() // 使用 ZFAVPlayerManager 作为播放器管理器
         guard let url = URL.init(string: linkUrlGTEM) else{
             SVProgressHUD.showInfo(withStatus: "Sorry, the video address does not exist")
             backendGTEm()
             return
         }
         
-        playerManager.assetURL = url
+        playerManagerGTEm.assetURL = url
              
-        playerGTEM = ZFPlayerController(playerManager: playerManager, containerView: playerViewGTEM)
+        playerGTEM = ZFPlayerController(playerManager: playerManagerGTEm, containerView: playerViewGTEM)
         let controlView = ZFPlayerControlView.init()
         controlView.fastViewAnimated = true
         controlView.autoHiddenTimeInterval = 5

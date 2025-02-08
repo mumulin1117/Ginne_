@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -40,14 +41,24 @@
                         <color key="textColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="0.60023384349999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNx-Oc-4eD">
+                        <rect key="frame" x="36.666666666666664" y="0.0" width="45.999999999999993" height="48"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="Qgn-GS-EaS"/>
+                            <constraint firstAttribute="width" constant="46" id="Uaq-es-GNl"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="btB-xf-nkb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="1c4-Ax-YhD"/>
+                <constraint firstItem="bNx-Oc-4eD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="20g-Gg-N1I"/>
                 <constraint firstAttribute="trailing" secondItem="3B7-Tb-Ouz" secondAttribute="trailing" constant="6" id="2oa-Wa-HZe"/>
                 <constraint firstAttribute="trailing" secondItem="GfA-Yn-w20" secondAttribute="trailing" id="9GL-jc-xX4"/>
                 <constraint firstItem="btB-xf-nkb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="FMH-5W-Hyt"/>
+                <constraint firstItem="bNx-Oc-4eD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="L99-be-wtC"/>
                 <constraint firstItem="jln-DE-ZOh" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VWe-zW-nmh"/>
                 <constraint firstItem="3B7-Tb-Ouz" firstAttribute="leading" secondItem="btB-xf-nkb" secondAttribute="trailing" constant="6" id="dIw-Rh-Mra"/>
                 <constraint firstItem="GfA-Yn-w20" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gRh-Ae-PeO"/>
@@ -68,5 +79,8 @@
     <resources>
         <image name="dodododo" width="24" height="24"/>
         <image name="nohighy_back" width="106" height="94"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

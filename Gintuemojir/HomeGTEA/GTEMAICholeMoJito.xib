@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -102,11 +103,21 @@
                         <constraint firstAttribute="trailing" secondItem="b7P-x6-BxP" secondAttribute="trailing" constant="14" id="sTb-dv-qlx"/>
                     </constraints>
                 </view>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TH2-S3-qjB">
+                    <rect key="frame" x="76.666666666666686" y="272" width="240" height="48"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="TRx-6l-LBR"/>
+                        <constraint firstAttribute="width" constant="240" id="oJd-OS-LcN"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="r0U-Dn-PCX"/>
             <color key="backgroundColor" red="0.6588235294" green="0.21960784310000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="TH2-S3-qjB" firstAttribute="centerX" secondItem="idc-oB-zkC" secondAttribute="centerX" id="0N4-2n-kT7"/>
                 <constraint firstItem="r0U-Dn-PCX" firstAttribute="trailing" secondItem="aDh-qO-47W" secondAttribute="trailing" constant="24" id="6tp-H1-c4C"/>
+                <constraint firstItem="TH2-S3-qjB" firstAttribute="top" secondItem="aDh-qO-47W" secondAttribute="bottom" constant="7.6699999999999999" id="7vh-xr-JLq"/>
                 <constraint firstItem="MNf-y4-2PU" firstAttribute="leading" secondItem="r0U-Dn-PCX" secondAttribute="leading" id="9UA-2r-DF4"/>
                 <constraint firstAttribute="bottom" secondItem="YoY-OW-Wl6" secondAttribute="bottom" id="CcJ-qC-ZbL"/>
                 <constraint firstItem="MNf-y4-2PU" firstAttribute="trailing" secondItem="r0U-Dn-PCX" secondAttribute="trailing" id="Ftn-me-giv"/>
@@ -135,5 +146,8 @@
         <image name="aioj_GTUA" width="71" height="219"/>
         <image name="seadGTUA" width="28" height="28"/>
         <image name="tobnaGTERD" width="40" height="26"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

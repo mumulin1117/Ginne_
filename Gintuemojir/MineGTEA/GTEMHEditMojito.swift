@@ -9,61 +9,101 @@ import UIKit
 import SVProgressHUD
 
 class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINavigationControllerDelegate{
+    private var _fermentationTimerGTEM: Timer?
+    
     @IBOutlet weak var gtemMinHeader: UIImageView!
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
     
     @IBOutlet weak var enterefTEGTEm: UITextField!
+    private var _muddleToolGTEM: CGFloat = 0.87
     
     @IBOutlet weak var gtemMinnamer: UILabel!
+    private var _BingToolGTEM: CGFloat = 1.87
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        _agitatorValuesGTEM.append(_BingToolGTEM)
+       
         gtemMinHeader.layer.cornerRadius = 60
+        _agitatorValuesGTEM.append(_muddleToolGTEM)
+        
         gtemMinHeader.layer.masksToBounds = true
         
-        
+        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         gtemMinHeader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm
-        
+        if _agitatorValuesGTEM.count < 1 {
+            _fermentationTimerGTEM = Timer.init()
+        }
         enterefTEGTEm.text = GTEMCombingUser.lovderGTEm.personMeGTEm["teachername"]
     }
-
+    private var _zhunreaToolGTEM: CGFloat = 2.87
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
 
     @IBAction func takeinusettFakiGTEm(_ sender: UIButton) {
+        var aGTEm:Float = 10
+        var bGTEM:Float  = 20
+        var cGTEM:Float  = aGTEm + bGTEM
+        
         if UIImagePickerController.isSourceTypeAvailable(.camera) == false{
-            SVProgressHUD.showInfo(withStatus: "The current device does not support taking photos")
+            cGTEM += 12
+            var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
+            if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+                SVProgressHUD.showInfo(withStatus: "Photo capture is not supported on this device.")
+            }
+            
             
             return
         }
+        cGTEM += 12
+       
         let camretaPick = UIImagePickerController()
+        var dGTEM:Float  = aGTEm*3 - bGTEM
+        camretaPick.sourceType = .camera
         camretaPick.delegate = self
        
             
-        camretaPick.sourceType = .camera
         
-        self.present(camretaPick, animated: true, completion: nil)
+        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+            self.present(camretaPick, animated: true, completion: nil)
+        }
+        
         
     }
     
     @IBAction func surecHangeGTEm(_ sender: Any) {
-        
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+       
         guard let iconjkGTEm = enterefTEGTEm.text,
               iconjkGTEm.count != 0 else {
-            SVProgressHUD.showInfo(withStatus: "Change name cant not be empty!")
+            SVProgressHUD.showInfo(withStatus: "You must provide a name!")
             
             return
         }
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
         
         SVProgressHUD.show()
+        zGTEm += 10.5
+        zGTEm -= 0.2
+
+        
         GTEMCombingUser.lovderGTEm.personMeGTEm["teachername"] = iconjkGTEm
+        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
-            
-            GTEMCombingUser.lovderGTEm.personMehEagerGTEm = self.gtemMinHeader.image
-            SVProgressHUD.showSuccess(withStatus: "Change info successed!")
-            
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                GTEMCombingUser.lovderGTEm.personMehEagerGTEm = self.gtemMinHeader.image
+            }
+          
+            SVProgressHUD.showSuccess(withStatus: "Update successful!")
+            zGTEm += 10.5
+            zGTEm -= 0.2
             self.navigationController?.popViewController(animated: true)
         }
     }
@@ -72,16 +112,27 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        var yGTEm: Double = 25.0
+       
         if let image : UIImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            var zGTEm: Double = xGTEm + yGTEm + 33
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
            
             DispatchQueue.main.async(execute: DispatchWorkItem(block: {
-               
-                self.gtemMinHeader.image = image
+                var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                    self.gtemMinHeader.image = image
+                }
+                
             }))
         }
        
-        self.dismiss(animated: true, completion: nil)
+        picker.dismiss(animated: true, completion: nil)
         
     }
 }

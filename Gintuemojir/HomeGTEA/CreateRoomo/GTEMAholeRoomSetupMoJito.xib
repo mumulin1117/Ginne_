@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -93,6 +94,14 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLa-OF-GEc">
+                    <rect key="frame" x="87" y="48" width="240" height="48"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="QbA-rb-gPA"/>
+                        <constraint firstAttribute="height" constant="48" id="v88-rT-SLL"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="RAY-MI-6V0"/>
             <color key="backgroundColor" red="0.6588235294" green="0.21960784310000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,9 +111,11 @@
                 <constraint firstItem="Twl-1B-rfM" firstAttribute="centerX" secondItem="mtr-ca-yYh" secondAttribute="centerX" id="Crw-3u-u32"/>
                 <constraint firstAttribute="bottom" secondItem="5aw-WD-snM" secondAttribute="bottom" id="E9Q-c9-t6c"/>
                 <constraint firstItem="rc0-DZ-0wF" firstAttribute="top" secondItem="Cn6-TQ-I6F" secondAttribute="bottom" constant="58" id="L3l-hJ-w5P"/>
+                <constraint firstItem="pLa-OF-GEc" firstAttribute="top" secondItem="RAY-MI-6V0" secondAttribute="top" id="NkY-Af-nLf"/>
                 <constraint firstItem="b1Z-bd-yW9" firstAttribute="top" secondItem="mtr-ca-yYh" secondAttribute="top" id="SbV-Hv-RUy"/>
                 <constraint firstItem="qnf-ej-ezz" firstAttribute="top" secondItem="Twl-1B-rfM" secondAttribute="bottom" constant="105" id="UCb-xi-gBU"/>
                 <constraint firstItem="5aw-WD-snM" firstAttribute="leading" secondItem="RAY-MI-6V0" secondAttribute="leading" id="V6P-x1-rTa"/>
+                <constraint firstItem="pLa-OF-GEc" firstAttribute="centerX" secondItem="mtr-ca-yYh" secondAttribute="centerX" id="ZEo-Tm-xNU"/>
                 <constraint firstItem="b1Z-bd-yW9" firstAttribute="trailing" secondItem="RAY-MI-6V0" secondAttribute="trailing" id="doJ-ef-PVu"/>
                 <constraint firstItem="Cn6-TQ-I6F" firstAttribute="leading" secondItem="RAY-MI-6V0" secondAttribute="leading" constant="8" id="kgI-19-oEH"/>
                 <constraint firstItem="b1Z-bd-yW9" firstAttribute="leading" secondItem="RAY-MI-6V0" secondAttribute="leading" id="qkR-dc-am3"/>
@@ -121,5 +132,8 @@
         <image name="roomCreatebg" width="375" height="812"/>
         <image name="tobnaGTERD" width="40" height="26"/>
         <image name="uppictureGTUE" width="306" height="174"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

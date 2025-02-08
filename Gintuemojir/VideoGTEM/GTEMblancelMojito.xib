@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -92,6 +93,14 @@
                     <color key="textColor" red="1" green="0.87843137250000003" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcP-EP-KiG">
+                    <rect key="frame" x="76.666666666666686" y="9" width="240" height="48"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="nb6-0U-DSm"/>
+                        <constraint firstAttribute="height" constant="48" id="sHQ-SY-TxO"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="egG-s9-DL4"/>
             <color key="backgroundColor" red="0.6588235294" green="0.21960784310000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -104,10 +113,12 @@
                 <constraint firstItem="egG-s9-DL4" firstAttribute="trailing" secondItem="ZPI-dn-8fk" secondAttribute="trailing" id="Rii-qR-dqC"/>
                 <constraint firstItem="R72-vr-Ked" firstAttribute="trailing" secondItem="egG-s9-DL4" secondAttribute="trailing" id="SSS-cI-5eD"/>
                 <constraint firstItem="egG-s9-DL4" firstAttribute="bottom" secondItem="bbK-vT-yyc" secondAttribute="bottom" constant="60" id="X50-gc-9DY"/>
+                <constraint firstItem="pcP-EP-KiG" firstAttribute="top" secondItem="8ya-or-w8q" secondAttribute="top" constant="9" id="Ypb-iK-bVl"/>
                 <constraint firstItem="n19-mg-w4f" firstAttribute="top" secondItem="4fq-E3-Gbw" secondAttribute="bottom" constant="96" id="Z5p-kK-cLt"/>
                 <constraint firstItem="egG-s9-DL4" firstAttribute="trailing" secondItem="bbK-vT-yyc" secondAttribute="trailing" id="atg-eV-VS3"/>
                 <constraint firstItem="w5R-ef-jGb" firstAttribute="leading" secondItem="egG-s9-DL4" secondAttribute="leading" constant="8" id="dpY-GU-jXC"/>
                 <constraint firstItem="nEz-xY-4dD" firstAttribute="leading" secondItem="egG-s9-DL4" secondAttribute="leading" constant="20" id="emv-SF-ve4"/>
+                <constraint firstItem="pcP-EP-KiG" firstAttribute="centerX" secondItem="8ya-or-w8q" secondAttribute="centerX" id="gWT-7k-ILF"/>
                 <constraint firstAttribute="bottom" secondItem="R72-vr-Ked" secondAttribute="bottom" id="hML-FB-i4O"/>
                 <constraint firstItem="n19-mg-w4f" firstAttribute="leading" secondItem="egG-s9-DL4" secondAttribute="leading" constant="23" id="jw6-z0-gOH"/>
                 <constraint firstItem="w5R-ef-jGb" firstAttribute="top" secondItem="egG-s9-DL4" secondAttribute="top" constant="8" id="oqY-bN-6uX"/>
@@ -125,5 +136,8 @@
         <image name="rechagerge_iuyh" width="328" height="44"/>
         <image name="tobnaGTERD" width="40" height="26"/>
         <image name="tuepiINgComk" width="375" height="554"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

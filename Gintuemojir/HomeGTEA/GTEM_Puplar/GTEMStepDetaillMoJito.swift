@@ -33,10 +33,21 @@ class GTEMStepDetaillMoJito: UIViewController {
     @IBOutlet weak var stepdetail3: UILabel!
     
     var detgiolGTEA :Dictionary<String,String>
-    init( detgiolGTEA: Dictionary<String, String>) {
-     
+    
+    private var _fermentationTimerGTEM: Timer?
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+    private var _muddleToolGTEM: CGFloat = 0.87
+    private var _BingToolGTEM: CGFloat = 1.87
+    private var _zhunreaToolGTEM: CGFloat = 2.87
+    
+   
+    init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?, detgiolGTEA: Dictionary<String, String>) {
+        _fermentationTimerGTEM = tationTimerGTEM
         self.detgiolGTEA = detgiolGTEA
         super.init(nibName: nil, bundle: nil)
+        if aginestGTEm == nil {
+            _agitatorValuesGTEM.append(22)
+        }
     }
     
     required init?(coder: NSCoder) {

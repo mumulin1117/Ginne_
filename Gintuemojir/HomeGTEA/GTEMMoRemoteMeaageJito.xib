@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -45,6 +46,14 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiL-BB-hfu">
+                    <rect key="frame" x="75" y="398" width="240" height="48"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="fhH-h0-zQr"/>
+                        <constraint firstAttribute="width" constant="240" id="mvW-l5-tqY"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="kiF-0Z-H0U"/>
             <color key="backgroundColor" red="0.6588235294" green="0.21960784310000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,7 +62,9 @@
                 <constraint firstItem="h0n-sr-Sev" firstAttribute="top" secondItem="XKj-rX-KBB" secondAttribute="bottom" constant="56" id="CTk-Ig-26o"/>
                 <constraint firstItem="XKj-rX-KBB" firstAttribute="centerY" secondItem="kvL-Hu-8t5" secondAttribute="centerY" constant="-70" id="EwU-5q-JKC"/>
                 <constraint firstItem="oE4-ql-pSK" firstAttribute="leading" secondItem="kiF-0Z-H0U" secondAttribute="leading" constant="8" id="FC5-SU-z7Z"/>
+                <constraint firstItem="PiL-BB-hfu" firstAttribute="centerX" secondItem="kvL-Hu-8t5" secondAttribute="centerX" id="Lzo-c1-f6h"/>
                 <constraint firstItem="XKj-rX-KBB" firstAttribute="centerX" secondItem="kvL-Hu-8t5" secondAttribute="centerX" constant="20" id="OmC-hN-rcI"/>
+                <constraint firstItem="PiL-BB-hfu" firstAttribute="centerY" secondItem="kvL-Hu-8t5" secondAttribute="centerY" id="SLB-nS-1fx"/>
                 <constraint firstItem="h0n-sr-Sev" firstAttribute="leading" secondItem="XKj-rX-KBB" secondAttribute="leading" id="TBg-nh-7qA"/>
                 <constraint firstItem="7Np-Zh-PPv" firstAttribute="centerY" secondItem="oE4-ql-pSK" secondAttribute="centerY" id="TBz-0C-OGa"/>
                 <constraint firstItem="oE4-ql-pSK" firstAttribute="top" secondItem="kiF-0Z-H0U" secondAttribute="top" constant="8" id="f3J-WS-0mA"/>
@@ -64,5 +75,8 @@
     <resources>
         <image name="noremotemeaage" width="139.66667175292969" height="143.66667175292969"/>
         <image name="tobnaGTERD" width="40" height="26"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

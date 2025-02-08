@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -144,6 +145,14 @@
                     <color key="textColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zv5-T8-rjq">
+                    <rect key="frame" x="67.5" y="0.0" width="240" height="48"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="L7j-BK-Uev"/>
+                        <constraint firstAttribute="width" constant="240" id="TnJ-az-I7H"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Kb9-mC-8e5"/>
             <color key="backgroundColor" red="0.6588235294" green="0.21960784310000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -157,6 +166,7 @@
                 <constraint firstItem="rtp-oD-lfJ" firstAttribute="centerY" secondItem="QYj-ij-12L" secondAttribute="centerY" id="HST-OR-BDk"/>
                 <constraint firstItem="9aB-c0-NCT" firstAttribute="leading" secondItem="Kb9-mC-8e5" secondAttribute="leading" id="HXw-ex-kDN"/>
                 <constraint firstItem="9aB-c0-NCT" firstAttribute="top" secondItem="aKd-uq-gMD" secondAttribute="bottom" constant="26" id="KAh-oq-6P8"/>
+                <constraint firstItem="zv5-T8-rjq" firstAttribute="centerX" secondItem="Sby-7K-PHo" secondAttribute="centerX" id="NWP-KH-y88"/>
                 <constraint firstItem="tfB-tv-MmE" firstAttribute="centerY" secondItem="aKd-uq-gMD" secondAttribute="centerY" id="OtP-Wk-dg1"/>
                 <constraint firstItem="0D9-n3-qKr" firstAttribute="top" secondItem="sZN-ts-ZFT" secondAttribute="bottom" constant="16" id="PfB-cS-kEw"/>
                 <constraint firstItem="qDk-C0-Esr" firstAttribute="centerX" secondItem="cdi-ao-e1l" secondAttribute="centerX" id="SQB-z5-PIO"/>
@@ -176,6 +186,7 @@
                 <constraint firstItem="Jmv-75-VpE" firstAttribute="top" secondItem="qDk-C0-Esr" secondAttribute="bottom" constant="33" id="oK9-ql-gw5"/>
                 <constraint firstItem="aKd-uq-gMD" firstAttribute="trailing" secondItem="Kb9-mC-8e5" secondAttribute="trailing" id="qhk-Bc-DHe"/>
                 <constraint firstItem="Kb9-mC-8e5" firstAttribute="trailing" secondItem="alg-M3-9yY" secondAttribute="trailing" constant="34" id="s9F-Pv-5xV"/>
+                <constraint firstItem="zv5-T8-rjq" firstAttribute="top" secondItem="Sby-7K-PHo" secondAttribute="top" id="sMd-ki-Bnl"/>
                 <constraint firstItem="tfB-tv-MmE" firstAttribute="leading" secondItem="MLD-MN-psy" secondAttribute="leading" id="syS-H9-xG8"/>
                 <constraint firstItem="QYj-ij-12L" firstAttribute="leading" secondItem="tfB-tv-MmE" secondAttribute="leading" id="t4X-Ev-Ybx"/>
                 <constraint firstItem="aKd-uq-gMD" firstAttribute="leading" secondItem="Kb9-mC-8e5" secondAttribute="leading" id="wpW-Nb-Mi3"/>
@@ -190,5 +201,8 @@
         <image name="deleteAcSeting" width="164" height="48"/>
         <image name="loageroutAcSeting" width="164" height="48"/>
         <image name="tobnaGTERD" width="40" height="26"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

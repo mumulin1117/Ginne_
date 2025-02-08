@@ -175,27 +175,50 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     
     @objc func surepayingNeedCoinGTEm(bgt:UIButton) {
         
-       
+        var aGTEm:Float = 10
+        var bGTEM:Float  = 20
+        var cGTEM:Float  = aGTEm + bGTEM
         var gtemBlksdgb =  Int(GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] ?? "0") ?? 0
-        
-        if gtemBlksdgb < 100 {
+        cGTEM += 12
+        var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
+       
+        if gtemBlksdgb < 100  && dGTEM > 0{
             
-            let aleracGTEmControllerv = UIAlertController(title: "Insufficient Balance", message: "", preferredStyle: .alert)
-            let rechargeGTEmAction = UIAlertAction(title: "Recharge", style: .default) { scd in
+            let aleracGTEmControllerv = UIAlertController(title: "Balance is Low", message: "", preferredStyle: .alert)
+            var xGTEm: Double = 15.0
+            xGTEm += 30
+            
+            let rechargeGTEmAction = UIAlertAction(title: "Increase Balance", style: .default) { scd in
                 self.presentVCGTEm?.dismiss(animated: true)
                 self.navigationController?.pushViewController(GTEMblancelMojito.init(), animated: true)
             }
+            var yGTEm: Double = 25.0
+            var zGTEm: Double = xGTEm + yGTEm + 33
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+            
             aleracGTEmControllerv.addAction(rechargeGTEmAction)
-            aleracGTEmControllerv.addAction(UIAlertAction(title: "Cancel", style: .default))
-            self.present(aleracGTEmControllerv, animated: true)
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                aleracGTEmControllerv.addAction(UIAlertAction(title: "End Action", style: .default))
+            }
+            
+            if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+                self.present(aleracGTEmControllerv, animated: true)
+                
+            }
             
             return
         }
         
         gtemBlksdgb -= 100
         GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "\(gtemBlksdgb)"
-        SVProgressHUD.show(UIImage(named: "grateokauyu")!, status:"Subscription successful！")
         
+        SVProgressHUD.showSuccess(withStatus: "Subscription successful！")
         self.presentVCGTEm?.dismiss(animated: true)
       //修改数据订阅状态
         let noingID = self.mojitoAcholeData[bgt.tag]
@@ -272,7 +295,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         
         let userdate = self.mojitoAcholeData[gtem.tag]
         
-        self.navigationController?.pushViewController(GTETiaAchleCenterMojito.init(realingUserDtaGTEm: userdate), animated: true)
+        self.navigationController?.pushViewController(GTETiaAchleCenterMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: userdate), animated: true)
         
     }
     
@@ -280,7 +303,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     @objc func enterprofileGTEm(gtem:UIButton)  {
         let userdate = self.mojitoAcholeData[gtem.tag]
         
-        self.navigationController?.pushViewController(GTETiaAchleCenterMojito.init(realingUserDtaGTEm: userdate), animated: true)
+        self.navigationController?.pushViewController(GTETiaAchleCenterMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil,realingUserDtaGTEm: userdate), animated: true)
         
     }
     ///喜欢
@@ -316,7 +339,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     ///评论
     @objc func giveCommenteGTEm(gtem:UIButton)  {
         let video = mojitoAcholeData[gtem.tag]
-        let commentvfgGTEm = GTEMCommenttMojito.init(realingUserDtaGTEm: video)
+        let commentvfgGTEm = GTEMCommenttMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: video)
 //        commentvfgGTEm.modalPresentationStyle = .overCurrentContext
         self.present(commentvfgGTEm, animated: true)
     }

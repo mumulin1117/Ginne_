@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -102,11 +103,20 @@
                     </state>
                     <state key="selected" backgroundImage="bedrooselr_GTEA"/>
                 </button>
+                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQA-qY-XlI">
+                    <rect key="frame" x="76.666666666666686" y="9" width="240" height="48"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="aeC-Cc-Su8"/>
+                        <constraint firstAttribute="height" constant="48" id="rbx-VA-cY6"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="njg-7L-Huu"/>
             <color key="backgroundColor" red="0.6588235294" green="0.21960784310000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="njg-7L-Huu" firstAttribute="trailing" secondItem="uj4-Au-vpr" secondAttribute="trailing" id="1BF-Pv-pYA"/>
+                <constraint firstItem="dQA-qY-XlI" firstAttribute="centerX" secondItem="igm-xn-ZcJ" secondAttribute="centerX" id="4kQ-9N-0vi"/>
                 <constraint firstItem="Hx2-Zm-T0o" firstAttribute="height" secondItem="u2r-ui-vLF" secondAttribute="height" id="5rf-uu-xxU"/>
                 <constraint firstItem="Hx2-Zm-T0o" firstAttribute="centerX" secondItem="u2r-ui-vLF" secondAttribute="centerX" id="63C-yh-ojS"/>
                 <constraint firstItem="u2r-ui-vLF" firstAttribute="centerX" secondItem="igm-xn-ZcJ" secondAttribute="centerX" id="9uq-kk-sz9"/>
@@ -119,6 +129,7 @@
                 <constraint firstItem="kbP-OJ-ILd" firstAttribute="top" secondItem="uj4-Au-vpr" secondAttribute="bottom" constant="-203" id="NrE-QG-7Un"/>
                 <constraint firstItem="4IG-OT-rnA" firstAttribute="leading" secondItem="bKb-VJ-gbe" secondAttribute="trailing" constant="12" id="Pnu-5w-YIX"/>
                 <constraint firstItem="kbP-OJ-ILd" firstAttribute="leading" secondItem="u2r-ui-vLF" secondAttribute="leading" id="Rjc-Vw-VQw"/>
+                <constraint firstItem="dQA-qY-XlI" firstAttribute="top" secondItem="igm-xn-ZcJ" secondAttribute="top" constant="9" id="Zfb-Aj-NCV"/>
                 <constraint firstItem="4IG-OT-rnA" firstAttribute="centerY" secondItem="bKb-VJ-gbe" secondAttribute="centerY" id="bnf-Dd-ujh"/>
                 <constraint firstItem="pcA-TS-tff" firstAttribute="top" secondItem="Hx2-Zm-T0o" secondAttribute="bottom" constant="20" id="eA2-Bh-Ia5"/>
                 <constraint firstAttribute="bottom" secondItem="wl9-ra-QpY" secondAttribute="bottom" id="eig-ar-Equ"/>
@@ -140,5 +151,8 @@
         <image name="repowerter_GTUA" width="375" height="617"/>
         <image name="submiterIcond" width="328" height="44"/>
         <image name="tobnaGTERD" width="40" height="26"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
