@@ -75,7 +75,8 @@ class GTEMCommenttMojito: UIViewController {
         }
        
         mephotoonGTEM.layer.masksToBounds = true
-        mephotoonGTEM.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm
+        
+        mephotoonGTEM.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
         _muddleToolGTEM += 0.87
 
         _BingToolGTEM +=  1.87
@@ -119,16 +120,16 @@ class GTEMCommenttMojito: UIViewController {
     
     @IBAction func stargerSendGTEU(_ sender: Any) {
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
         
         if realingUserDtaGTEm["commentsaying"] == nil {
-            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+            modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
             let indefHTEM = Int.random(in: 200...30000)
 
             
             
             if let conted = sayTexGTUA.text, conted.count != 0 {
-                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+                modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
                 if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
                     sayTexGTUA.resignFirstResponder()
                     sayTexGTUA.text = nil
@@ -143,15 +144,16 @@ class GTEMCommenttMojito: UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
                     self.yeticonGTEM.isHidden = true
                     self.yettextGTEM.isHidden = true
-                    
+                    modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
                     self.mephotoonGTEM.isHidden = false
                     self.namecontetnlkblGTEm.isHidden = false
                     self.commentcontetnlkblGTEm.isHidden = false
                     self.commentcontetnlkblGTEm.text = conted
                 }
-                for( oip,iew) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.enumerated() {
+                for( oip,iew) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.enumerated() {
+                    modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
                     if realingUserDtaGTEm["gtemID"] == iew["gtemID"]{
-                        GTEMCombingUser.lovderGTEm.videoTotaluserGTEm[oip]["commentsaying"] = conted
+                        GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["commentsaying"] = conted
                         SVProgressHUD.dismiss()
                         countGTEm.text = "1 comments"
                         realingUserDtaGTEm["commentsaying"] = conted

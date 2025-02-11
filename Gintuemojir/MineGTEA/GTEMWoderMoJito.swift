@@ -13,7 +13,7 @@ class GTEMWoderMoJito: UIViewController {
     @IBOutlet weak var gtemMinHeader: UIImageView!
     private var _fermentationTimerGTEM: Timer?
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
-    
+    var HoperGTEM:UIView?
     
     @IBOutlet weak var gtemMinnamer: UILabel!
     private var _muddleToolGTEM: CGFloat = 0.87
@@ -23,6 +23,7 @@ class GTEMWoderMoJito: UIViewController {
    
     @IBOutlet weak var profileFancGTEm: UILabel!
     private var _zhunreaToolGTEM: CGFloat = 2.87
+    var treesHaGTEM:UIButton?
     
     @IBAction func qiaoqiaoWallentGTEm(_ sender: UIButton) {
         if _agitatorValuesGTEM.count < 1 {
@@ -72,19 +73,44 @@ class GTEMWoderMoJito: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         _agitatorValuesGTEM.append(_BingToolGTEM)
-        
+        HoperGTEM = UIView()
+        HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
+       
 
-        gtemMinHeader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm
+
+        let firstOhoto = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
+        HoperGTEM?.alpha = 0.4
+        HoperGTEM?.layer.borderWidth = 4
+
+        gtemMinHeader.image = firstOhoto
         _agitatorValuesGTEM.append(_muddleToolGTEM)
+        var minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
         
-        gtemMinnamer.text = GTEMCombingUser.lovderGTEm.personMeGTEm["teachername"]
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(HoperGTEM!)
+            HoperGTEM?.alpha = 0
+        }
+
+
+       
+        gtemMinnamer.text = minUserGTEM["teachername"]
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
 
-        
+        treesHaGTEM?.setTitleColor(.blue, for: .normal)
+        treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+
+        treesHaGTEM?.alpha = 0.4
+        treesHaGTEM?.layer.borderWidth = 4
+
+       
         
         profileFollowGTEm.text = "\(GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.count)"
         if _agitatorValuesGTEM.count < 1 {
             _fermentationTimerGTEM = Timer.init()
+        }
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(treesHaGTEM!)
+            treesHaGTEM?.alpha = 0
         }
         profileFancGTEm.text = "\(GTEMCombingUser.lovderGTEm.fnnceAllGTEm.count)"
     }

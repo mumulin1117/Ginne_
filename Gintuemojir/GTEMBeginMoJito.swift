@@ -9,7 +9,6 @@ import UIKit
 
 class GTEMBeginMoJito: UIViewController {
 
-  
     @IBAction func getstartedGTEm(_ sender: UIButton) {
         self.navigationController?.pushViewController(GTEMLogsininerMoJito.init(), animated: true)
         
@@ -20,20 +19,22 @@ class GTEMBeginMoJito: UIViewController {
 
 class GTEmAcholeRoom {
     private var _fermentationTimerGTEM: Timer?
-    private var _agitatorValuesGTEM: [Float] = [12.5, 9.8, 15.3]
-    private let _muddleToolGTEM: CGFloat = 0.87
-    
-    
+ 
     var roomNameGTEM:String
     
     var roomIDGTEM:String
+    private var _agitatorValuesGTEM: [Float] = [12.5, 9.8, 15.3]
+    
+   
     var roombackgroundGTEM:UIImage?
     
     var hosteruserGTEm:[String: String]
-    var roomMesageListGTEm:Array<(logMeGTEM:Bool,enterProuserGTEM:Dictionary<String,String>,gtemSendingContent:String)>
+    private let _muddleToolGTEM: CGFloat = 0.87
+    
+    var roomMesageListGTEm:Array<(logMeGTEM:String,enterProuserGTEM:Dictionary<String,String>,gtemSendingContent:String)>
     
 
-    init(roomIDGTEM:String,roomNameGTEM:String,roombackgroundGTEM:UIImage?,roomHosterGTEm: [String : String], roomMesageListGTEm: Array<(logMeGTEM:Bool,enterProuserGTEM:Dictionary<String,String>,gtemSendingContent:String)>) {
+    init(roomIDGTEM:String,roomNameGTEM:String,roombackgroundGTEM:UIImage?,roomHosterGTEm: [String : String], roomMesageListGTEm: Array<(logMeGTEM:String,enterProuserGTEM:Dictionary<String,String>,gtemSendingContent:String)>) {
         var xGTEm: Double = 15.0
         xGTEm += 30
         self.hosteruserGTEm = roomHosterGTEm
@@ -51,6 +52,8 @@ class GTEmAcholeRoom {
         }
        
         self.roombackgroundGTEM =  roombackgroundGTEM
+        wGTEM += 20
+        yGTEm += 20
         self.roomIDGTEM = roomIDGTEM
     }
 }

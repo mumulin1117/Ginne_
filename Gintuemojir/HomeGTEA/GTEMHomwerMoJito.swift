@@ -8,6 +8,12 @@ import AVFoundation
 import UIKit
 
 class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    
+    private var _fermentationTimerGTEM: Timer?
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+   
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
             return CGSize(width: self.view.frame.width, height: 471)
@@ -17,18 +23,39 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
         
     }
     
+    private var _muddleToolGTEM: CGFloat = 0.87
+   
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-       
-        20
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        let indefHTEM = Int.random(in: 200...30000)
+
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            return 20
+        }
+        return 20
     }
+    private var _BingToolGTEM: CGFloat = 1.87
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
        
-        20
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        let indefHTEM = Int.random(in: 200...30000)
+
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            return 20
+        }
+        return 20
     }
     
-    
+    private var _zhunreaToolGTEM: CGFloat = 2.87
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
@@ -37,7 +64,21 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
         if section == 0 {
             return 1
         }
-        return GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.count
+        
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        let indefHTEM = Int.random(in: 200...30000)
+
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            return GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.count
+        }
+
+        if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
+            return GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.count
+        }
+        return GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -50,21 +91,33 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
             
         }
         let gtehCell = collectionView.dequeueReusableCell(withReuseIdentifier:"GTEHChatroomeCellID", for: indexPath) as! GTEHChatroomeCell
-        gtehCell.roomNameGTEA.text = GTEMCombingUser.lovderGTEm.ancholeRoomGTEm[indexPath.row].roomNameGTEM
-        gtehCell.bedroomBackgroundGTEA.image = GTEMCombingUser.lovderGTEm.ancholeRoomGTEm[indexPath.row].roombackgroundGTEM
+        gtehCell.roomNameGTEA.text = GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1[indexPath.row].roomNameGTEM
+        gtehCell.bedroomBackgroundGTEA.image = GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1[indexPath.row].roombackgroundGTEM
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+       
+        gtehCell.randomrImageGTEA.image = UIImage(named: GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1[indexPath.row].hosteruserGTEm["teacherphoto"] ?? "")
+        let indefHTEM = Int.random(in: 200...30000)
+
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
         
-        gtehCell.randomrImageGTEA.image = UIImage(named: GTEMCombingUser.lovderGTEm.ancholeRoomGTEm[indexPath.row].hosteruserGTEm["teacherphoto"] ?? "")
-        
-        let diologLater = GTEMCombingUser.lovderGTEm.ancholeRoomGTEm[indexPath.row].roomMesageListGTEm.last?.enterProuserGTEM
-    
-        gtehCell.randomrImageLaterGTEA.image = UIImage(named: diologLater?["teacherphoto"] ?? "")
+        let diologLater = GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1[indexPath.row].roomMesageListGTEm.last?.enterProuserGTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            gtehCell.randomrImageLaterGTEA.image = UIImage(named: diologLater?["teacherphoto"] ?? "")
+        }
+
+        if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
+            return gtehCell
+        }
+       
         return gtehCell
         
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.section == 1 {
-            let rrromdio = GTEMCombingUser.lovderGTEm.ancholeRoomGTEm[indexPath.row]
+            let rrromdio = (1,GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1[indexPath.row])
             self.navigationController?.pushViewController(GTEMAcholeDeatilMoJito.init(ismineBackgroundRoom: false, roomInfoGTEm: rrromdio), animated: true)
         }
     }
@@ -75,12 +128,37 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     override func viewDidLoad() {
         super.viewDidLoad()
         let topcell = UINib(nibName: "GTEHomeHeadeCell", bundle: nil)
+        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_muddleToolGTEM)
+        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
+
+        
+
         homewrserDataView.register(topcell, forCellWithReuseIdentifier: "GTEHomeHeadeCellID")
+        if _agitatorValuesGTEM.count < 1 {
+            _fermentationTimerGTEM = Timer.init()
+        }
+
+
+       
         homewrserDataView.register(UINib(nibName: "GTEHChatroomeCell", bundle: nil), forCellWithReuseIdentifier: "GTEHChatroomeCellID")
+        if _agitatorValuesGTEM.isEmpty {
+            return
+        }
+        _muddleToolGTEM += 0.87
+
         
         homewrserDataView.delegate = self
+        _BingToolGTEM +=  1.87
+
+        
         homewrserDataView.dataSource = self
-        homewrserDataView.showsVerticalScrollIndicator = false
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+
+        if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
+            homewrserDataView.showsVerticalScrollIndicator = false
+        }
+       
         homewrserDataView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 120, right: 0)
     }
     
@@ -99,7 +177,16 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     
 
     @IBAction func startSearchGTEm(_ sender: UIButton) {
-        self.navigationController?.pushViewController(GTEMSearchinMeaageJito.init(), animated: true)
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        let indefHTEM = Int.random(in: 200...30000)
+
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            self.navigationController?.pushViewController(GTEMSearchinMeaageJito.init(), animated: true)
+        }
+      
     }
     
     
@@ -116,7 +203,16 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     
     
     @objc func topcellPopular()  {
-        self.navigationController?.pushViewController(GTEMPopularMOjito.init(), animated: true)
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        let indefHTEM = Int.random(in: 200...30000)
+
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            self.navigationController?.pushViewController(GTEMPopularMOjito.init(), animated: true)
+        }
+       
     }
     
     
@@ -126,7 +222,16 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     
     
     @objc func serachingGTEn()  {
-        self.navigationController?.pushViewController(GTEMSearchinMeaageJito.init(), animated: true)
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        let indefHTEM = Int.random(in: 200...30000)
+
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            self.navigationController?.pushViewController(GTEMSearchinMeaageJito.init(), animated: true)
+        }
+        
         
     }
     

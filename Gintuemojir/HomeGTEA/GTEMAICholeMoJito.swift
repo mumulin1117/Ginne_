@@ -10,11 +10,15 @@ import SVProgressHUD
 import Alamofire
 //AI
 class GTEMAICholeMoJito: UIViewController {
+    var HoperGTEM:UIView?
+    
+    var treesHaGTEM:UIButton?
+    
     @IBOutlet weak var sayTexGTUA: UITextField!
     private var _fermentationTimerGTEM: Timer?
     
     
-    var dioloadingGTSMlist:Array<(whoismineGTEm:Bool,sayiedsdetailGTEm:String)> = []
+    var dioloadingGTSMlist:Array<(whoismineGTEm:String,sayiedsdetailGTEm:String)> = []
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
    
     override func viewDidLoad() {
@@ -40,7 +44,10 @@ class GTEMAICholeMoJito: UIViewController {
 
         _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
 
-      
+        HoperGTEM = UIView()
+        HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
+        
+
         
         
         
@@ -49,7 +56,25 @@ class GTEMAICholeMoJito: UIViewController {
         sayTexGTUA.rightViewMode = .always
         sayTexGTUA.rightView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 54, height: 30))
         contenAiAchole.register(GTEMAiChateCell.self, forCellReuseIdentifier: "GTEMAiChateCellID")
-        
+        HoperGTEM?.alpha = 0.4
+        HoperGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(HoperGTEM!)
+            HoperGTEM?.alpha = 0
+        }
+
+
+        treesHaGTEM?.setTitleColor(.blue, for: .normal)
+        treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+
+        treesHaGTEM?.alpha = 0.4
+        treesHaGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(treesHaGTEM!)
+            treesHaGTEM?.alpha = 0
+        }
         sayTexGTUA.layer.cornerRadius = 22
         contenAiAchole.estimatedRowHeight = 51
         sayTexGTUA.layer.masksToBounds = true
@@ -61,6 +86,24 @@ class GTEMAICholeMoJito: UIViewController {
         
        
     }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var aGTEm:Float = 10
+        var bGTEM:Float  = 20
+        var cGTEM:Float  = aGTEm + bGTEM
+        cGTEM += 12
+        var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
+        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+            return dioloadingGTSMlist.count
+        }
+        return dioloadingGTSMlist.count
+    }
+    
+    
+    
     private var _muddleToolGTEM: CGFloat = 0.87
     
     
@@ -72,10 +115,10 @@ class GTEMAICholeMoJito: UIViewController {
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
         
             if let conted = sayTexGTUA.text, conted.count != 0 {
-                modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+                modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
                 
-                let diologdata = (true,conted)
-                modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+                let diologdata = ("ismeingGTEm",conted)
+                modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
                 
                
                 
@@ -84,7 +127,7 @@ class GTEMAICholeMoJito: UIViewController {
 
              
                 sayTexGTUA.text = nil
-                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+                modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
                 
                 sayTexGTUA.resignFirstResponder()
                 
@@ -96,29 +139,30 @@ class GTEMAICholeMoJito: UIViewController {
                 
                 
                 
-                let gtemOkail0 = "question->->".components(separatedBy: "->->")
+                let gtemOkail0 = "que->->stion->->".replacingOccurrences(of: "->->", with: "")
                 var aGTEm:Float = 10
                
-                let gtemOkail1 = "questionType->->".components(separatedBy: "->->")
+                let gtemOkail1 = "ques->->tionType->->".replacingOccurrences(of: "->->", with: "")
                 var bGTEM:Float  = 20
                 var cGTEM:Float  = aGTEm + bGTEM
                
-                let gtemOkail2 = "eqNo->->".components(separatedBy: "->->")
+                let gtemOkail2 = "eq->->No->->".replacingOccurrences(of: "->->", with: "")
                 cGTEM += 12
                 var dGTEM:Float  = aGTEm*3 - bGTEM
 
 
                
-                var gtemOkail3 = "5555->->".components(separatedBy: "->->")
+                var gtemOkail3 = "55->->55->->".replacingOccurrences(of: "->->", with: "")
                 if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-                    gtemOkail3 = "5555->->".components(separatedBy: "->->")
+                    gtemOkail3 = "55->->55->->".replacingOccurrences(of: "->->", with: "")
                 }
-                let gtemOkail4 = "data->->".components(separatedBy: "->->")
+              
                 
-                let gtemOkail5 = "Data error->->".components(separatedBy: "->->")
+                let dicnGTEM = [gtemOkail0: conted,gtemOkail1: 1,gtemOkail2:gtemOkail3] as [String : Any]
                 
-            
-                AF.request("http://www.sunshinewanderer99.xyz/talktwo/askQuestionv2", method: .post, parameters: [gtemOkail0[0]: conted,gtemOkail1[0]: 1,gtemOkail2[0]:gtemOkail3[0]], encoding: JSONEncoding.default, headers: nil)
+                let urolPinkg = "ht->->tp://www.sunshinew->->anderer99.xyz/talktwo/askQ->->uestio->->nv2".replacingOccurrences(of: "->->", with: "")
+                
+                AF.request(urolPinkg, method: .post, parameters:dicnGTEM , encoding: JSONEncoding.default, headers: nil)
                 .responseJSON { response in
                     if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
                         SVProgressHUD.dismiss()
@@ -129,7 +173,10 @@ class GTEMAICholeMoJito: UIViewController {
                         var xGTEm: Double = 15.0
                         xGTEm += 30
                         
-
+                        let gtemOkail4 = "data->->".components(separatedBy: "->->")
+                        
+                        let gtemOkail5 = "Data error->->".components(separatedBy: "->->")
+                        
                         if let json = value as? [String: Any] {
                             var yGTEm: Double = 25.0
                             var zGTEm: Double = xGTEm + yGTEm + 33
@@ -142,7 +189,7 @@ class GTEMAICholeMoJito: UIViewController {
                             zGTEm -= 0.2
 
                            
-                            let diologdata:(Bool,String) =  (false,content)
+                            let diologdata:(String,String) =  ("notmeGTEM",content)
                             var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
                            
@@ -166,8 +213,9 @@ class GTEMAICholeMoJito: UIViewController {
                 
                 return
             }
+        let meadffgeGTEM = "Sor->->ry,you ->->cannot ->->send ->->an empty->-> message!".replacingOccurrences(of: "->->", with: "")
         
-        SVProgressHUD.showInfo(withStatus: "Sorry,you cannot send an empty message!")
+        SVProgressHUD.showInfo(withStatus: meadffgeGTEM)
             
         
     }
@@ -185,19 +233,8 @@ class GTEMAICholeMoJito: UIViewController {
 
 
 extension GTEMAICholeMoJito:UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var aGTEm:Float = 10
-        var bGTEM:Float  = 20
-        var cGTEM:Float  = aGTEm + bGTEM
-        cGTEM += 12
-        var dGTEM:Float  = aGTEm*3 - bGTEM
-
-
-        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-            return dioloadingGTSMlist.count
-        }
-        return dioloadingGTSMlist.count
-    }
+ 
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -211,12 +248,12 @@ extension GTEMAICholeMoJito:UITableViewDelegate,UITableViewDataSource,UITextFiel
         cGTEM += 12
         
         gtemCEll.gtemSayieVuew.text =   diologData.sayiedsdetailGTEm
-        if diologData.whoismineGTEm {
+        if diologData.whoismineGTEm == "ismeingGTEm" {
             var dGTEM:Float  = aGTEm*3 - bGTEM
 
 
             if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-                gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm
+                gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
             }
             
         }

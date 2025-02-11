@@ -116,6 +116,16 @@
                         <constraint firstAttribute="height" constant="48" id="qlJ-fe-8ak"/>
                     </constraints>
                 </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odG-Tr-RTV">
+                    <rect key="frame" x="217" y="62.666666666666657" width="75" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVS-Ee-EAF">
+                    <rect key="frame" x="134" y="62.666666666666657" width="75" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="AcX-1h-Z1E"/>
             <color key="backgroundColor" red="0.6588235294" green="0.21960784310000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -134,6 +144,7 @@
                 <constraint firstItem="XjZ-Tb-iEq" firstAttribute="leading" secondItem="AcX-1h-Z1E" secondAttribute="leading" id="QfW-YR-XJr"/>
                 <constraint firstItem="oTT-nv-Fpd" firstAttribute="leading" secondItem="AcX-1h-Z1E" secondAttribute="leading" constant="8" id="RUs-pt-sHa"/>
                 <constraint firstItem="GUY-f7-3nH" firstAttribute="centerY" secondItem="oTT-nv-Fpd" secondAttribute="centerY" id="Uju-N8-Rki"/>
+                <constraint firstItem="odG-Tr-RTV" firstAttribute="centerY" secondItem="UVS-Ee-EAF" secondAttribute="centerY" id="Vsh-sE-Pe5"/>
                 <constraint firstItem="L2s-IX-CR7" firstAttribute="trailing" secondItem="AcX-1h-Z1E" secondAttribute="trailing" id="XUX-tS-OX3"/>
                 <constraint firstItem="4nw-r4-TAi" firstAttribute="leading" secondItem="AcX-1h-Z1E" secondAttribute="leading" id="aVE-Wu-nvD"/>
                 <constraint firstAttribute="bottom" secondItem="4nw-r4-TAi" secondAttribute="bottom" id="bzK-Vi-Sge"/>
@@ -141,8 +152,11 @@
                 <constraint firstAttribute="bottom" secondItem="XjZ-Tb-iEq" secondAttribute="bottom" id="h9z-oy-YiL"/>
                 <constraint firstItem="FWD-BO-t5w" firstAttribute="trailing" secondItem="AcX-1h-Z1E" secondAttribute="trailing" id="jJN-ai-f5b"/>
                 <constraint firstItem="kqR-E6-RlE" firstAttribute="top" secondItem="GUY-f7-3nH" secondAttribute="bottom" id="jqO-yc-Lm4"/>
+                <constraint firstItem="odG-Tr-RTV" firstAttribute="leading" secondItem="UVS-Ee-EAF" secondAttribute="trailing" constant="8" symbolic="YES" id="kSw-al-U0B"/>
                 <constraint firstItem="kqR-E6-RlE" firstAttribute="trailing" secondItem="AcX-1h-Z1E" secondAttribute="trailing" id="m3d-YP-qNg"/>
+                <constraint firstItem="UVS-Ee-EAF" firstAttribute="centerY" secondItem="WBP-QY-Olt" secondAttribute="centerY" id="tCr-2J-SKX"/>
                 <constraint firstItem="XjZ-Tb-iEq" firstAttribute="trailing" secondItem="AcX-1h-Z1E" secondAttribute="trailing" id="vhb-SC-bcZ"/>
+                <constraint firstItem="UVS-Ee-EAF" firstAttribute="leading" secondItem="WBP-QY-Olt" secondAttribute="trailing" constant="23.670000000000002" id="xgb-eb-WgH"/>
             </constraints>
             <point key="canvasLocation" x="135.1145038167939" y="19.718309859154932"/>
         </view>

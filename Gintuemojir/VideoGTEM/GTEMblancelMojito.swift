@@ -63,7 +63,9 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
 
         dataVireGTEm.register(UINib.init(nibName: "GTEMblancelCell", bundle: nil), forCellWithReuseIdentifier: "GTEMblancelCellID")
         dataVireGTEm.selectItem(at: IndexPath.init(row: 0, section: 0), animated: false, scrollPosition: .top)
-        self.wallentblanceGTEm.text = GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] ?? "0"
+        let diopuserGTEM =  GTEMCombingUser.lovderGTEm.personMeGTEm[0]
+        
+        self.wallentblanceGTEm.text = diopuserGTEM["gtemBlancecoin"] ?? "0"
     }
 
 
@@ -119,8 +121,8 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
                 _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
 
                
-                
-                var oweneddddGTEm =  Int(GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] ?? "0") ?? 0
+                let diopuserGTEM =  GTEMCombingUser.lovderGTEm.personMeGTEm[0]
+                var oweneddddGTEm =  Int(diopuserGTEM["gtemBlancecoin"] ?? "0") ?? 0
                 if _agitatorValuesGTEM.randomElement() ?? 0 < 0 {
                     return
                 }
@@ -128,7 +130,7 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
                 _muddleToolGTEM += 0.87
 
                
-                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"]  = "\(oweneddddGTEm)"
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"]  = "\(oweneddddGTEm)"
                 _BingToolGTEM +=  1.87
 
                 _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
@@ -145,8 +147,8 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
           
             }else if case .error(let error) = psResult {
                 var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-                modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
-                modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+                modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+                modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
                 
                 if error.code == .paymentCancelled {
                   
@@ -154,7 +156,7 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
                 }
                 let indefHTEM = Int.random(in: 200...30000)
 
-                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+                modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
                 if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
                     SVProgressHUD.showError(withStatus: error.localizedDescription)
                 }
@@ -192,11 +194,11 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
         
         let gtemcell = collectionView.dequeueReusableCell(withReuseIdentifier: "GTEMblancelCellID", for: indexPath) as! GTEMblancelCell
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
-        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+        modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
         let indefHTEM = Int.random(in: 200...30000)
 
-        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
         if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
             gtemcell.allDollersGTEm.text = dataGTEM[indexPath.row].0
         }

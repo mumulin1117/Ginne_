@@ -87,26 +87,43 @@
                         <action selector="videoUpload:" destination="-1" eventType="touchUpInside" id="fNP-lL-dR4"/>
                     </connections>
                 </button>
+                <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="dbi-Mu-yPw">
+                    <rect key="frame" x="183" y="188.66666666666666" width="20" height="20"/>
+                </activityIndicatorView>
+                <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="SKf-8p-mCr">
+                    <rect key="frame" x="16" y="20" width="20" height="20"/>
+                </activityIndicatorView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bm-UQ-4Il">
+                    <rect key="frame" x="161" y="408.66666666666669" width="71" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="GTEM"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="dbi-Mu-yPw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="183" id="5nG-Cm-Z66"/>
                 <constraint firstItem="KaG-MI-IsP" firstAttribute="leading" secondItem="U2Z-KW-6Wm" secondAttribute="trailing" constant="16" id="6f7-CG-f9K"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cfi-gN-xTO" secondAttribute="trailing" id="8dd-RN-W81"/>
                 <constraint firstItem="rY7-QA-MZO" firstAttribute="height" secondItem="sgC-FK-123" secondAttribute="height" id="9hU-Yo-qA1"/>
                 <constraint firstItem="TGJ-sN-7Rf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Efz-bm-9Rv"/>
                 <constraint firstItem="rfQ-7E-0bR" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FSG-Dd-1II"/>
+                <constraint firstItem="1Bm-UQ-4Il" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GvS-FO-2YI"/>
                 <constraint firstAttribute="bottom" secondItem="TGJ-sN-7Rf" secondAttribute="bottom" id="JsE-Gx-3C3"/>
                 <constraint firstItem="KaG-MI-IsP" firstAttribute="centerY" secondItem="U2Z-KW-6Wm" secondAttribute="centerY" id="Mnn-mj-sFC"/>
                 <constraint firstItem="rY7-QA-MZO" firstAttribute="width" secondItem="sgC-FK-123" secondAttribute="width" multiplier="0.933333" id="NVK-yx-3yC"/>
                 <constraint firstItem="U2Z-KW-6Wm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="Npx-mu-cuC"/>
                 <constraint firstItem="Cfi-gN-xTO" firstAttribute="top" secondItem="rY7-QA-MZO" secondAttribute="bottom" constant="16" id="P2Z-93-toQ"/>
                 <constraint firstItem="TGJ-sN-7Rf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="QIw-fE-0iY"/>
+                <constraint firstItem="1Bm-UQ-4Il" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Xv1-O9-USS"/>
+                <constraint firstItem="SKf-8p-mCr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="hX3-cU-SwH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sgC-FK-123" secondAttribute="trailing" constant="12" id="hrQ-JY-0Cy"/>
                 <constraint firstItem="sgC-FK-123" firstAttribute="leading" secondItem="rY7-QA-MZO" secondAttribute="trailing" constant="18" id="iQU-tK-GyN"/>
                 <constraint firstAttribute="bottom" secondItem="Cfi-gN-xTO" secondAttribute="bottom" id="lny-ke-R5t"/>
                 <constraint firstItem="Cfi-gN-xTO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mrw-Kr-Hfo"/>
+                <constraint firstItem="SKf-8p-mCr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" symbolic="YES" id="naC-eX-O2F"/>
                 <constraint firstItem="U2Z-KW-6Wm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="oNm-6G-6hU"/>
+                <constraint firstItem="dbi-Mu-yPw" firstAttribute="top" secondItem="KaG-MI-IsP" secondAttribute="bottom" constant="91.329999999999998" id="pFf-xe-6a2"/>
                 <constraint firstItem="rY7-QA-MZO" firstAttribute="centerY" secondItem="U2Z-KW-6Wm" secondAttribute="centerY" id="pNO-lx-uXF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rfQ-7E-0bR" secondAttribute="bottom" constant="125" id="ppo-yk-k8a"/>
                 <constraint firstItem="sgC-FK-123" firstAttribute="centerY" secondItem="U2Z-KW-6Wm" secondAttribute="centerY" id="sRb-Yu-M56"/>

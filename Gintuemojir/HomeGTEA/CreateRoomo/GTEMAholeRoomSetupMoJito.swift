@@ -13,26 +13,47 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
    
     @IBOutlet weak var uploadPicButtom: UIButton!
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
-   
+    var HoperGTEM:UIView?
+    
     @IBOutlet weak var roomingNameGTE: UITextField!
     @IBOutlet weak var roomingIdenGTE: UITextField!
     private var _muddleToolGTEM: CGFloat = 0.87
-  
+    var treesHaGTEM:UIButton?
     
     @IBAction func startGTEMPickImage(_ sender: UIButton) {
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
-        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+        modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
        
-
+        HoperGTEM = UIView()
+        HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
+        
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let indefHTEM = Int.random(in: 200...30000)
 
-            
+            HoperGTEM?.alpha = 0.4
+            HoperGTEM?.layer.borderWidth = 4
+
+            if _muddleToolGTEM < 0 {
+                self.view.addSubview(HoperGTEM!)
+                HoperGTEM?.alpha = 0
+            }
+
+
+            treesHaGTEM?.setTitleColor(.blue, for: .normal)
+            treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+
+            treesHaGTEM?.alpha = 0.4
+            treesHaGTEM?.layer.borderWidth = 4
+
+            if _muddleToolGTEM < 0 {
+                self.view.addSubview(treesHaGTEM!)
+                treesHaGTEM?.alpha = 0
+            }
             let photoPicker = UIImagePickerController()
            
             photoPicker.delegate = self
-            modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
            
             
             if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
@@ -49,7 +70,10 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
             self.present(photoPicker, animated: true, completion: nil)
             return
         }
-        SVProgressHUD.showInfo(withStatus: "Sorry,No album permission!")
+        
+        let kdijijhg = "Sorry->->,No ->->album ->->permission!".replacingOccurrences(of: "->->", with: "")
+        
+        SVProgressHUD.showInfo(withStatus: kdijijhg)
        
     }
     
@@ -88,12 +112,12 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
         
         
         let alertINfog = """
-The chat room theme you created is pending our review.
+The chat room theme you->-> created is ->->pending our review.
 
-You will receive a notification regarding approval or the reason for rejection within the system. Please ensure that you adhere to all relevant laws, regulations, and our privacy policy.
+You will receive->-> a notification ->->regarding approval or->-> the reason for rejection->-> within the system. Please ensure that you adhere to all relevant laws, regulations, and our privacy policy.
 
-If any violations are detected, we reserve the right to close your live streaming room. Thank you for your support and understanding.
-"""
+If any violations are ->->detected, we reserve->-> the right->-> to close ->->your live streaming room. Thank you for your support->-> and understanding.
+""".replacingOccurrences(of: "->->", with: "")
         
         var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
@@ -109,8 +133,17 @@ If any violations are detected, we reserve the right to close your live streamin
             }
            
             
-            
-            SVProgressHUD.show(withStatus: "Currently under review...")
+            var aGTEm:Float = 10
+            var bGTEM:Float  = 20
+            var cGTEM:Float  = aGTEm + bGTEM
+            cGTEM += 12
+            var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
+            if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+                SVProgressHUD.show(withStatus: "Currently under review...")
+            }
+           
            
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4){
                 zGTEm += 10.5
@@ -118,7 +151,9 @@ If any violations are detected, we reserve the right to close your live streamin
                
                 zGTEm -= 0.2
 
-                let minroom = GTEMAcholeDeatilMoJito.init(ismineBackgroundRoom: true, roomInfoGTEm: GTEmAcholeRoom.init(roomIDGTEM: comeiIDtitle, roomNameGTEM: comeingtitle, roombackgroundGTEM: self.pickingGTEAimag!, roomHosterGTEm: GTEMCombingUser.lovderGTEm.personMeGTEm, roomMesageListGTEm: []))
+                let minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
+                
+                let minroom = GTEMAcholeDeatilMoJito.init(ismineBackgroundRoom: true, roomInfoGTEm: (1,GTEmAcholeRoom.init(roomIDGTEM: comeiIDtitle, roomNameGTEM: comeingtitle, roombackgroundGTEM: self.pickingGTEAimag!, roomHosterGTEm: minUserGTEM, roomMesageListGTEm: [])))
                 xGTEm += 30
                 wGTEM  = wGTEM - 2.0
 

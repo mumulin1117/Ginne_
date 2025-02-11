@@ -12,9 +12,13 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
      
     var presentVCGTEm:UIViewController?
     
-
+    private var _fermentationTimerGTEM: Timer?
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+    private var _muddleToolGTEM: CGFloat = 0.87
+    private var _BingToolGTEM: CGFloat = 1.87
+    private var _zhunreaToolGTEM: CGFloat = 2.87
   
-    static let thumbnailCache = NSCache<NSString, UIImage>()
+    static let thumbnailCacheGTEM = NSCache<NSString, UIImage>()
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return dataviedeoView.frame.size
@@ -28,7 +32,9 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         0
     }
     
-    
+    var HoperGTEM:UIView?
+    var treesHaGTEM:UIButton?
+
     
     @IBAction func videoUpload(_ sender: Any) {
         
@@ -43,11 +49,33 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     
     var mojitoAcholeData:Array<Dictionary<String,String>>{
         get{
-            let nertwDater = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.filter { dicer in
-                return dicer["ifneedsub"] ==  (recordingisSubTupwder ? "1" : "0")
-            }
             
-            return nertwDater
+            var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+            modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+            modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
+            let indefHTEM = Int.random(in: 200...30000)
+
+            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+            if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+                let nertwDater = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.filter { dicer in
+                    modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+                    modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
+                    return dicer["ifneedsubGTEM"] ==  (recordingisSubTupwder ? "1" : "0")
+                }
+                return nertwDater
+            }else{
+                modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+                modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
+                let nertwDater = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.filter { dicer in
+                    modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+                    modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
+                    return dicer["ifneedsubGTEM"] ==  (recordingisSubTupwder ? "1" : "0")
+                }
+                return nertwDater
+            }
+           
+            
+            
         }
        
     }
@@ -108,7 +136,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     func didSubNiweGTEm(tagGTEm:Int) {
         let video = mojitoAcholeData[tagGTEm]
         //
-        if video["ifneedsub"] == "1" &&  video["issubedeGTEm"] == "0"{
+        if video["ifneedsubGTEM"] == "1" &&  video["issubedeGTEm"] == "0"{
             //需要订阅没订阅
             let subvc =  UIViewController.init()
             
@@ -178,7 +206,9 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         var aGTEm:Float = 10
         var bGTEM:Float  = 20
         var cGTEM:Float  = aGTEm + bGTEM
-        var gtemBlksdgb =  Int(GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] ?? "0") ?? 0
+        let newloguserGTEm = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
+        
+        var gtemBlksdgb =  Int(newloguserGTEm["gtemBlancecoin"] ?? "0") ?? 0
         cGTEM += 12
         var dGTEM:Float  = aGTEm*3 - bGTEM
 
@@ -216,16 +246,32 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         }
         
         gtemBlksdgb -= 100
-        GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "\(gtemBlksdgb)"
         
+        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
+      
         SVProgressHUD.showSuccess(withStatus: "Subscription successful！")
+        
         self.presentVCGTEm?.dismiss(animated: true)
+        
       //修改数据订阅状态
         let noingID = self.mojitoAcholeData[bgt.tag]
         
-        for (i,iuy) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.enumerated() {
-            if iuy["gtemID"] == noingID["gtemID"]   {
-                GTEMCombingUser.lovderGTEm.videoTotaluserGTEm[i]["issubedeGTEm"] = "1"
+        for (i,iuy) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.enumerated() {
+            var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+            modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+            let indefHTEM = Int.random(in: 200...30000)
+
+            modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+            if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+                
+            }
+
+            if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
+                
+            }
+            if iuy["gtemID"] == noingID["gtemID"]  && (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+                GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[i]["issubedeGTEm"] = "1"
             }
         }
         
@@ -240,15 +286,18 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         dataviedeoView.isHidden = true
         SVProgressHUD.show()
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+        HoperGTEM = UIView()
+        HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
+        HoperGTEM?.alpha = 0.4
        
 
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
            
-            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+            modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
             let indefHTEM = Int.random(in: 200...30000)
 
-            modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
             if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
                 self.dataviedeoView.isHidden = false
             }
@@ -258,7 +307,25 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         dataviedeoView.dataSource = self
         dataviedeoView.showsVerticalScrollIndicator = false
         dataviedeoView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
- 
+        HoperGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(HoperGTEM!)
+            HoperGTEM?.alpha = 0
+        }
+
+
+        treesHaGTEM?.setTitleColor(.blue, for: .normal)
+        treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+
+        treesHaGTEM?.alpha = 0.4
+        treesHaGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(treesHaGTEM!)
+            treesHaGTEM?.alpha = 0
+        }
+
         
         itemSubGTUE.addTarget(self, action: #selector(AsdtrendringClickGTUE(refGTUE:)), for: .touchUpInside)
         
@@ -280,17 +347,56 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     }
     
    @objc func AsdtrendringClickGTUE(refGTUE:UIButton)  {
+       _agitatorValuesGTEM.append(_BingToolGTEM)
+       _agitatorValuesGTEM.append(_muddleToolGTEM)
+      
+
+      
        if refGTUE == self.itemSubGTUE {
-           itemSubGTUE.isSelected = true
-           itemTrendsGTUE.isSelected = false
+           if _agitatorValuesGTEM.count < 1 {
+               _fermentationTimerGTEM = Timer.init()
+           }
+
+
+           if _agitatorValuesGTEM.isEmpty {
+               return
+           }
+           _muddleToolGTEM += 0.87
+
+           _BingToolGTEM +=  1.87
+
+           _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+
+           if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
+               itemSubGTUE.isSelected = true
+               itemTrendsGTUE.isSelected = false
+           }
+          
            recordingisSubTupwder = true
        }else{
            itemSubGTUE.isSelected = false
            itemTrendsGTUE.isSelected = true
-           recordingisSubTupwder = false
+           if _agitatorValuesGTEM.count < 1 {
+               _fermentationTimerGTEM = Timer.init()
+           }
+
+
+           if _agitatorValuesGTEM.isEmpty {
+               return
+           }
+           _muddleToolGTEM += 0.87
+
+           _BingToolGTEM +=  1.87
+
+           _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+
+           if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
+               recordingisSubTupwder = false
+           }
+          
            
        }
-       self.dataviedeoView.scrollsToTop = true
+       _agitatorValuesGTEM.append(_zhunreaToolGTEM)
        self.dataviedeoView.reloadData()
    
    }
@@ -325,20 +431,44 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     ///喜欢
     @objc func giveAttitudeGTEm(gtem:UIButton)  {
         SVProgressHUD.show()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
+        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_muddleToolGTEM)
+        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
+
+        if _agitatorValuesGTEM.count < 1 {
+            _fermentationTimerGTEM = Timer.init()
+        }
+
+
+       
+
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){ [self] in
             SVProgressHUD.dismiss()
+            if self._agitatorValuesGTEM.isEmpty {
+                return
+            }
+            self._muddleToolGTEM += 0.87
+
+           
             gtem.isSelected = !gtem.isSelected
-            
+            self._BingToolGTEM +=  1.87
+
+           
             let video = self.mojitoAcholeData[gtem.tag]
+            self._zhunreaToolGTEM = self._zhunreaToolGTEM + self._muddleToolGTEM + self._BingToolGTEM
+
             
             
-            for( oip,iew) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.enumerated() {
+            for( oip,iew) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.enumerated() {
+                if self._agitatorValuesGTEM.randomElement() ?? 0 < 0 {
+                    return
+                }
                 if video["gtemID"] == iew["gtemID"]{
                     if gtem.isSelected == true {
-                        GTEMCombingUser.lovderGTEm.videoTotaluserGTEm[oip]["islikethisvideo"] = "1"
+                        GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["islikethisvideo"] = "1"
                         
                     }else{
-                        GTEMCombingUser.lovderGTEm.videoTotaluserGTEm[oip]["islikethisvideo"] = "0"
+                        GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["islikethisvideo"] = "0"
                     }
                    
                 }
@@ -355,30 +485,77 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     ///评论
     @objc func giveCommenteGTEm(gtem:UIButton)  {
         let video = mojitoAcholeData[gtem.tag]
-        let commentvfgGTEm = GTEMCommenttMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: video)
-//        commentvfgGTEm.modalPresentationStyle = .overCurrentContext
-        self.present(commentvfgGTEm, animated: true)
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
+        zGTEm += 10.5
+        zGTEm -= 0.2
+
+        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            let commentvfgGTEm = GTEMCommenttMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: video)
+    //        commentvfgGTEm.modalPresentationStyle = .overCurrentContext
+            self.present(commentvfgGTEm, animated: true)
+        }
+       
     }
 
     //MARK: -   获取远程视频链接缩略图
     static  func fetchGTEMRemoteVideoThumbnailImag(tageturl: URL, gtemcompletion: @escaping (UIImage?) -> Void) {
         let asset = AVAsset(url: tageturl)
         let generator = AVAssetImageGenerator(asset: asset)
-        generator.appliesPreferredTrackTransform = true
-        generator.maximumSize = CGSize(width: 400, height: 400) // 控制缩略图尺寸
+        var aGTEm:Float = 10
+        var bGTEM:Float  = 20
+        var cGTEM:Float  = aGTEm + bGTEM
+        cGTEM += 12
+        var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
+        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+            generator.appliesPreferredTrackTransform = true
+            generator.maximumSize = CGSize(width: 400, height: 400)
+        }
+      // 控制缩略图尺寸
         
         // 精确到关键帧（节省流量）
         generator.requestedTimeToleranceBefore = .zero
-        generator.requestedTimeToleranceAfter = .zero
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
+        zGTEm += 10.5
+        zGTEm -= 0.2
+
+        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            generator.requestedTimeToleranceAfter = .zero
+        }
+       
         
         generator.generateCGImagesAsynchronously(forTimes: [NSValue(time: CMTime.zero)]) { _, cgImage, _, _, error in
             guard let cgImage = cgImage, error == nil else {
                 gtemcompletion(nil)
                 return
             }
+            var xGTEm: Double = 15.0
+            xGTEm += 30
+            var yGTEm: Double = 25.0
+            var zGTEm: Double = xGTEm + yGTEm + 33
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+           
             let thumbnail = UIImage(cgImage: cgImage)
             DispatchQueue.main.async {
-                gtemcompletion(thumbnail)
+                var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                    gtemcompletion(thumbnail)
+                }
+                
             }
         }
     }
@@ -387,17 +564,29 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
 
     static func beginloadGTEmThumbnail(for url: URL, cgtemompletion: @escaping (UIImage?) -> Void) {
         let cacheKey = url.absoluteString as NSString
-        
-        if let cachedImage = thumbnailCache.object(forKey: cacheKey) {
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
+       
+        if let cachedImage = thumbnailCacheGTEM.object(forKey: cacheKey) {
             cgtemompletion(cachedImage)
             return
         }
         
         fetchGTEMRemoteVideoThumbnailImag(tageturl: url) { image in
             if let image = image {
-                self.thumbnailCache.setObject(image, forKey: cacheKey)
+                self.thumbnailCacheGTEM.setObject(image, forKey: cacheKey)
             }
-            cgtemompletion(image)
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                cgtemompletion(image)
+            }
+            
         }
     }
     

@@ -8,17 +8,20 @@ target 'Gintuemojir' do
   # Pods for Gintuemojir
 
 pod 'SnapKit'
+pod 'ZFPlayer', '~> 4.0'
 pod 'IQKeyboardManager'
+pod 'ZFPlayer/AVPlayer'
 pod 'SwiftyStoreKit'
+pod 'ZFPlayer/ControlView', '~> 4.0'
 pod 'Alamofire'
 pod 'SVProgressHUD'
 #pod 'BMPlayer/CacheSupport'
 pod 'TagListView'
 #pod "Player"
 #pod "Player", "~> 0.13.2"
-pod 'ZFPlayer', '~> 4.0'
-pod 'ZFPlayer/AVPlayer'
-pod 'ZFPlayer/ControlView', '~> 4.0'
+
+
+
 end
 
 post_install do |installer_representation|

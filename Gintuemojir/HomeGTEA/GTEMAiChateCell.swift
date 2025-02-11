@@ -19,12 +19,12 @@ class GTEMAiChateCell: UITableViewCell {
     private var _zhunreaToolGTEM: CGFloat = 2.87
     private let dioloagbackGTEm = UIView.init()
     
-    var getrmWhoismine:Bool = true {
+    var getrmWhoismine:String = "ismeingGTEm" {
         didSet{
             _agitatorValuesGTEM.append(_BingToolGTEM)
             _agitatorValuesGTEM.append(_muddleToolGTEM)
             _agitatorValuesGTEM.append(_zhunreaToolGTEM)
-            if getrmWhoismine == true {
+            if getrmWhoismine == "ismeingGTEm" {
                 if _agitatorValuesGTEM.count < 1 {
                     _fermentationTimerGTEM = Timer.init()
                 }

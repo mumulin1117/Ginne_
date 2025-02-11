@@ -30,11 +30,12 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
         gtemMinHeader.layer.masksToBounds = true
         
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
-        gtemMinHeader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm
+        gtemMinHeader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
         if _agitatorValuesGTEM.count < 1 {
             _fermentationTimerGTEM = Timer.init()
         }
-        enterefTEGTEm.text = GTEMCombingUser.lovderGTEm.personMeGTEm["teachername"]
+        let minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
+        enterefTEGTEm.text = minUserGTEM["teachername"]
     }
     private var _zhunreaToolGTEM: CGFloat = 2.87
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
@@ -91,17 +92,28 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
         zGTEm += 10.5
         zGTEm -= 0.2
 
-        
-        GTEMCombingUser.lovderGTEm.personMeGTEm["teachername"] = iconjkGTEm
+        var minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
+        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teachername"] = iconjkGTEm
         var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
             if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                GTEMCombingUser.lovderGTEm.personMehEagerGTEm = self.gtemMinHeader.image
+                if let realif = self.gtemMinHeader.image{
+                    
+                    
+                    if GTEMCombingUser.lovderGTEm.personMehEagerGTEm.count == 1 {
+                        GTEMCombingUser.lovderGTEm.personMehEagerGTEm[0] = realif
+                    }else if GTEMCombingUser.lovderGTEm.personMehEagerGTEm.count == 0{
+                        GTEMCombingUser.lovderGTEm.personMehEagerGTEm.append(realif)
+                    }
+                }
+               
             }
-          
-            SVProgressHUD.showSuccess(withStatus: "Update successful!")
+            if zGTEm > 0{
+                SVProgressHUD.showSuccess(withStatus: "Update successful!")
+            }
+            
             zGTEm += 10.5
             zGTEm -= 0.2
             self.navigationController?.popViewController(animated: true)

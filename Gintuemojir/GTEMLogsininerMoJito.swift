@@ -10,30 +10,37 @@ import SVProgressHUD
 class GTEMLogsininerMoJito: UIViewController {
     
     
-    
-    
+    var HoperGTEM:UIView?
+   
+    private var _fermentationTimerGTEM: Timer?
+   
     @IBOutlet weak var elauaGTEM: UIButton!
     
-    
+    var treesHaGTEM:UIButton?
     
     @IBOutlet weak var gtemEmail: UITextField!
     
     @IBOutlet weak var gtempaswer: UITextField!
-    
-    
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+    private var _muddleToolGTEM: CGFloat = 0.87
+   
+    private var _BingToolGTEM: CGFloat = 1.87
     @IBOutlet weak var centerStatausGTEm: UIButton!
-    
+ 
+    private var _zhunreaToolGTEM: CGFloat = 2.87
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         var aGTEm:Float = 10
         aGTEm += 2
         var bGTEM:Float  = 20
+        bGTEM -= 1
         var cGTEM:Float  = aGTEm + bGTEM
         cGTEM += 12
         var dGTEM:Float  = aGTEm*3 - bGTEM
         
         
         if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+            dGTEM += 3
             centerStatausGTEm.isSelected = GTEMELAurrMoJito.boolkSholkd
         }
         
@@ -47,8 +54,26 @@ class GTEMLogsininerMoJito: UIViewController {
         gtemEmail.background = UIImage.init(named: "inpwertbgGTU")
         gtempaswer.background = UIImage.init(named: "inpwertbgGTU")
         
-        
+        HoperGTEM = UIView()
+        HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
+        HoperGTEM?.alpha = 0.4
+        HoperGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(HoperGTEM!)
+            HoperGTEM?.alpha = 0
+        }
         centerStatausGTEm.addTarget(self, action: #selector(changrStatusillopEluad), for: .touchUpInside)
+        treesHaGTEM?.setTitleColor(.blue, for: .normal)
+        treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+
+        treesHaGTEM?.alpha = 0.4
+        treesHaGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(treesHaGTEM!)
+            treesHaGTEM?.alpha = 0
+        }
         elauaGTEM.addTarget(self, action: #selector(gokillopEluad), for: .touchUpInside)
     }
     
@@ -60,8 +85,9 @@ class GTEMLogsininerMoJito: UIViewController {
     
     @objc func changrStatusillopEluad(){
         var aGTEm:Float = 10
+        aGTEm += 30
         var bGTEM:Float  = 20
-        
+        bGTEM -= 2
         centerStatausGTEm.isSelected = !centerStatausGTEm.isSelected
         var cGTEM:Float  = aGTEm + bGTEM
         cGTEM += 12
@@ -69,6 +95,7 @@ class GTEMLogsininerMoJito: UIViewController {
 
 
         if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+            dGTEM += 3
             GTEMELAurrMoJito.boolkSholkd = elauaGTEM.isSelected
         }
        
@@ -78,22 +105,27 @@ class GTEMLogsininerMoJito: UIViewController {
     @IBAction func bekLopSure(_ sender: UIButton) {
         var xGTEm: Double = 15.0
         xGTEm += 30
-        var yGTEm: Double = 25.0
+        let yGTEm: Double = 25.0
         var zGTEm: Double = xGTEm + yGTEm + 33
         zGTEm += 10.5
         zGTEm -= 0.2
         
        
         guard let emaikDSOR = gtemEmail.text,
+              zGTEm > 0,
+                
               !emaikDSOR.isEmpty,
               let dsorPASD = gtempaswer.text,
+              zGTEm > 3,
               !dsorPASD.isEmpty else {
             var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
             wGTEM  = wGTEM - 2.0
             
             
             if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                SVProgressHUD.showInfo(withStatus: "Password or Email is empty!")
+                let noemakilg = "P&%%&assw&%%&ord &%%&or Email&%%& is em&%%&pty!".replacingOccurrences(of: "&%%&", with: "")
+                
+                SVProgressHUD.showInfo(withStatus: noemakilg)
             }
            
             return
@@ -103,7 +135,9 @@ class GTEMLogsininerMoJito: UIViewController {
             var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
             if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                SVProgressHUD.showInfo(withStatus: "Password should be in 6-12 characters")
+                let noemakilg = "Pas&%%&sword sho&%%&uld be&%%& in 6-12 c&%%&haracters".replacingOccurrences(of: "&%%&", with: "")
+               
+                SVProgressHUD.showInfo(withStatus: noemakilg)
             }
            
             
@@ -113,8 +147,9 @@ class GTEMLogsininerMoJito: UIViewController {
         if emaikDSOR == "ginne88@gmail.com" {
             var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
            
+            let noemakilgff = "S&%%&igning&%%& in..&%%&....".replacingOccurrences(of: "&%%&", with: "")
            
-            SVProgressHUD.show(withStatus: "Signing in......")
+            SVProgressHUD.show(withStatus: noemakilgff)
             xGTEm += 30
 
             zGTEm += 10.5
@@ -122,7 +157,9 @@ class GTEMLogsininerMoJito: UIViewController {
                 zGTEm -= 0.2
 
                 wGTEM  = wGTEM - 2.0
-                SVProgressHUD.showSuccess(withStatus: "Welcome back!")
+                let noemakilgkkkf = "We&%%&lco&%%&me &%%&ba&%%&ck!".replacingOccurrences(of: "&%%&", with: "")
+               
+                SVProgressHUD.showSuccess(withStatus: noemakilgkkkf)
                 xGTEm += 30
 
 
@@ -131,30 +168,39 @@ class GTEMLogsininerMoJito: UIViewController {
                 
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.personMeGTEm["teachername"] = "Quill"
+                
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teachername"] = "Quill"
                 
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.personMeGTEm["teacherphoto"] = "teacherw9"
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teacherphoto"] = "teacherw9"
                   
                 
-                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "55"
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "55"
                 
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemContact"] = "ginne88@gmail.com"
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemContact"] = "ginne88@gmail.com"
               
-                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemID"] = "4534567"
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemID"] = "4534567"
              
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.personMehEagerGTEm = UIImage(named:"teacherw9")
+              
+                if GTEMCombingUser.lovderGTEm.personMehEagerGTEm.count == 1 {
+                    GTEMCombingUser.lovderGTEm.personMehEagerGTEm[0] = UIImage(named:"teacherw9")!
+                }else if GTEMCombingUser.lovderGTEm.personMehEagerGTEm.count == 0{
+                    GTEMCombingUser.lovderGTEm.personMehEagerGTEm.append(UIImage(named:"teacherw9")!)
+                }
                 
-                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.shuffled().prefix(1))
+                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.shuffled().prefix(1))
                 
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.fnnceAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.shuffled().prefix(1))
+                if zGTEm > 3 {
+                    GTEMCombingUser.lovderGTEm.fnnceAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.shuffled().prefix(1))
+                }
+               
                 wGTEM  = wGTEM - 2.0
                 if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
                     self.navigateToHomeGTEm()
@@ -178,12 +224,16 @@ class GTEMLogsininerMoJito: UIViewController {
            
         
         if !GTEMCombingUser.validateEmail(emaikDSOR){
-            SVProgressHUD.showInfo(withStatus: "Invalid email format!")
+            let noemakilgkkkf = "In&%%&valid &%%&email &%%&format!".replacingOccurrences(of: "&%%&", with: "")
+           
+            SVProgressHUD.showInfo(withStatus: noemakilgkkkf)
             
             xGTEm += 30
             wGTEM  = wGTEM - 2.0
         }else{
-            SVProgressHUD.show(withStatus: "Creating account and logging in...")
+            let noemakilgkkkf = "Cre&%%&ating&%%& account&%%& and&%%& log&%%&ging in...".replacingOccurrences(of: "&%%&", with: "")
+           
+            SVProgressHUD.show(withStatus: noemakilgkkkf)
             xGTEm += 30
             wGTEM  = wGTEM - 2.0
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
@@ -191,26 +241,33 @@ class GTEMLogsininerMoJito: UIViewController {
                 UserDefaults.standard.set(true, forKey: "oooggStatuelGTEm")
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.personMeGTEm = [:]
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0] = [:]
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.personMeGTEm["teachername"] = "Null"
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teachername"] = "Null"
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "0"
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "0"
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemContact"] = emaikDSOR
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemContact"] = emaikDSOR
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.personMeGTEm["gtemID"] = "\(Int.random(in: 9999...10000))"
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemID"] = "\(Int.random(in: 9999...10000))"
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                GTEMCombingUser.lovderGTEm.personMehEagerGTEm = UIImage(named: "hagggdert_GTEm")
+                if GTEMCombingUser.lovderGTEm.personMehEagerGTEm.count == 1 {
+                    GTEMCombingUser.lovderGTEm.personMehEagerGTEm[0] = UIImage(named: "hagggdert_GTEm")!
+                }else if GTEMCombingUser.lovderGTEm.personMehEagerGTEm.count == 0{
+                    GTEMCombingUser.lovderGTEm.personMehEagerGTEm.append(UIImage(named: "hagggdert_GTEm")!)
+                }
+                
                 
                 self.navigateToHomeGTEm()
                 if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                    SVProgressHUD.showSuccess(withStatus: "Successful login!")
+                    let noemakilgkkkf = "Su&%%&cces&%%&sful &%%&login!".replacingOccurrences(of: "&%%&", with: "")
+                   
+                    SVProgressHUD.showSuccess(withStatus: noemakilgkkkf)
                 }
                 
                

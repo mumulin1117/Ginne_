@@ -25,6 +25,12 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roomCreatebg" translatesAutoresizingMaskIntoConstraints="NO" id="b1Z-bd-yW9">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
+                <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7Uy-Ff-5fl">
+                    <rect key="frame" x="10" y="10" width="20" height="20"/>
+                </activityIndicatorView>
+                <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="NqD-jR-C8D">
+                    <rect key="frame" x="164" y="110" width="20" height="20"/>
+                </activityIndicatorView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rc0-DZ-0wF">
                     <rect key="frame" x="54" y="140" width="306" height="174"/>
                     <constraints>
@@ -110,21 +116,25 @@
                 <constraint firstItem="5aw-WD-snM" firstAttribute="trailing" secondItem="RAY-MI-6V0" secondAttribute="trailing" id="7El-QV-bsh"/>
                 <constraint firstItem="Twl-1B-rfM" firstAttribute="centerX" secondItem="mtr-ca-yYh" secondAttribute="centerX" id="Crw-3u-u32"/>
                 <constraint firstAttribute="bottom" secondItem="5aw-WD-snM" secondAttribute="bottom" id="E9Q-c9-t6c"/>
+                <constraint firstItem="7Uy-Ff-5fl" firstAttribute="leading" secondItem="mtr-ca-yYh" secondAttribute="leading" constant="10" id="FgD-Ou-Yby"/>
                 <constraint firstItem="rc0-DZ-0wF" firstAttribute="top" secondItem="Cn6-TQ-I6F" secondAttribute="bottom" constant="58" id="L3l-hJ-w5P"/>
                 <constraint firstItem="pLa-OF-GEc" firstAttribute="top" secondItem="RAY-MI-6V0" secondAttribute="top" id="NkY-Af-nLf"/>
                 <constraint firstItem="b1Z-bd-yW9" firstAttribute="top" secondItem="mtr-ca-yYh" secondAttribute="top" id="SbV-Hv-RUy"/>
                 <constraint firstItem="qnf-ej-ezz" firstAttribute="top" secondItem="Twl-1B-rfM" secondAttribute="bottom" constant="105" id="UCb-xi-gBU"/>
                 <constraint firstItem="5aw-WD-snM" firstAttribute="leading" secondItem="RAY-MI-6V0" secondAttribute="leading" id="V6P-x1-rTa"/>
                 <constraint firstItem="pLa-OF-GEc" firstAttribute="centerX" secondItem="mtr-ca-yYh" secondAttribute="centerX" id="ZEo-Tm-xNU"/>
+                <constraint firstItem="7Uy-Ff-5fl" firstAttribute="top" secondItem="mtr-ca-yYh" secondAttribute="top" constant="10" id="bTL-fh-gPs"/>
                 <constraint firstItem="b1Z-bd-yW9" firstAttribute="trailing" secondItem="RAY-MI-6V0" secondAttribute="trailing" id="doJ-ef-PVu"/>
                 <constraint firstItem="Cn6-TQ-I6F" firstAttribute="leading" secondItem="RAY-MI-6V0" secondAttribute="leading" constant="8" id="kgI-19-oEH"/>
                 <constraint firstItem="b1Z-bd-yW9" firstAttribute="leading" secondItem="RAY-MI-6V0" secondAttribute="leading" id="qkR-dc-am3"/>
                 <constraint firstItem="Twl-1B-rfM" firstAttribute="centerY" secondItem="mtr-ca-yYh" secondAttribute="centerY" constant="10" id="rXy-l0-CSx"/>
                 <constraint firstItem="Cn6-TQ-I6F" firstAttribute="top" secondItem="RAY-MI-6V0" secondAttribute="top" constant="8" id="rYN-FY-Fjp"/>
                 <constraint firstItem="rc0-DZ-0wF" firstAttribute="centerX" secondItem="mtr-ca-yYh" secondAttribute="centerX" id="sj8-tb-FTX"/>
+                <constraint firstItem="RAY-MI-6V0" firstAttribute="trailing" secondItem="NqD-jR-C8D" secondAttribute="trailing" constant="230" id="uF0-U3-8Wn"/>
+                <constraint firstItem="NqD-jR-C8D" firstAttribute="top" secondItem="pLa-OF-GEc" secondAttribute="bottom" constant="14" id="xz8-Ns-juy"/>
                 <constraint firstItem="qnf-ej-ezz" firstAttribute="centerX" secondItem="mtr-ca-yYh" secondAttribute="centerX" id="zR0-ul-nZZ"/>
             </constraints>
-            <point key="canvasLocation" x="135.1145038167939" y="19.718309859154932"/>
+            <point key="canvasLocation" x="-83" y="-23"/>
         </view>
     </objects>
     <resources>

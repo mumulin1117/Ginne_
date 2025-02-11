@@ -21,6 +21,7 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
         }
         guard let GTEMDatNll = Bundle.main.path(forResource: "MOjiToGTEH", ofType: "plist"),
         let lGTENj = FileManager.default.contents(atPath: GTEMDatNll),
+              _agitatorValuesGTEM.count > 1,
         let nertuset = try? PropertyListSerialization.propertyList(from: lGTENj, options: [], format: nil) as? [[String: String]]  else {
            
 
@@ -65,14 +66,39 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
     private var _zhunreaToolGTEM: CGFloat = 2.87
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
-       
-        29
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        let indefHTEM = Int.random(in: 200...30000)
+
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            return 29
+        }
+
+        if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
+            return 29
+        }
+        return 29
     }
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vcGtua = GTEMStepDetaillMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, detgiolGTEA: mojitoAcholeData[indexPath.row])
-        self.navigationController?.pushViewController(vcGtua, animated: true)
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        let indefHTEM = Int.random(in: 200...30000)
+
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            self.navigationController?.pushViewController(vcGtua, animated: true)
+        }
+
+        if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
+            
+        }
+       
         
     }
    
@@ -80,13 +106,26 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
      
         let gtehCell = collectionView.dequeueReusableCell(withReuseIdentifier:"GTEMPopularliasCellID", for: indexPath) as! GTEMPopularliasCell
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        
         gtehCell.acholeNameGTEH.text = mojitoAcholeData[indexPath.row]["AochleName"]
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        let indefHTEM = Int.random(in: 200...30000)
+
+        
         gtehCell.acholeMaterGTEH.text = mojitoAcholeData[indexPath.row]["Aochlematerial"]
-        gtehCell.acholeGTEHimg.image =  UIImage(named: mojitoAcholeData[indexPath.row]["AochlePicture"] ?? "")
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            gtehCell.acholeGTEHimg.image =  UIImage(named: mojitoAcholeData[indexPath.row]["AochlePicture"] ?? "")
+        }
+       
         return gtehCell
         
     }
-
+    var HoperGTEM:UIView?
+    
+    var treesHaGTEM:UIButton?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -123,6 +162,27 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
         
         homewrserDataView.isHidden = true
         SVProgressHUD.show()
+        HoperGTEM = UIView()
+        HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
+        HoperGTEM?.alpha = 0.4
+        HoperGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(HoperGTEM!)
+            HoperGTEM?.alpha = 0
+        }
+
+
+        treesHaGTEM?.setTitleColor(.blue, for: .normal)
+        treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+
+        treesHaGTEM?.alpha = 0.4
+        treesHaGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(treesHaGTEM!)
+            treesHaGTEM?.alpha = 0
+        }
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: DispatchWorkItem(block: {
             var aGTEm:Float = 10
             var bGTEM:Float  = 20
@@ -143,7 +203,22 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
 
 
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        if _agitatorValuesGTEM.isEmpty {
+            return
+        }
+        _muddleToolGTEM += 0.87
+
+        _BingToolGTEM +=  1.87
+
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+
+        if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
+            self.navigationController?.popViewController(animated: true)
+        }else{
+            self.navigationController?.popViewController(animated: true)
+        }
+
+        
     }
 
 }

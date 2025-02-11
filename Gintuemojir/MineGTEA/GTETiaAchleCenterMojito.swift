@@ -15,7 +15,9 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     @IBOutlet weak var profileIconGTEm: UIImageView!
     
     @IBOutlet weak var profilenicknGTEm: UILabel!
-    
+    private var _fermentationTimerGTEM: Timer?
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+   
     
     @IBOutlet weak var profileFollowGTEm: UILabel!
     
@@ -23,12 +25,15 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     
     
     @IBOutlet weak var idcardLogoGTEM: UIButton!
-    
+    private var _muddleToolGTEM: CGFloat = 0.87
+   
     
     @IBOutlet weak var showingVideoViewGTEm: UIImageView!
-    
+    private var _BingToolGTEM: CGFloat = 1.87
+   
     @IBOutlet weak var videobiankuaniconGTEm: UIImageView!
-    
+    private var _zhunreaToolGTEM: CGFloat = 2.87
+
     @IBOutlet weak var noiconholderGTEm: UIImageView!
     
     @IBOutlet weak var noitextholderGTEm: UILabel!
@@ -76,7 +81,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             noitextholderGTEm.isHidden = true
         }
        
-        if realingUserDtaGTEm["ifneedsub"] ==  "1"{
+        if realingUserDtaGTEm["ifneedsubGTEM"] ==  "1"{
             
             idcardLogoGTEM.setImage(UIImage.init(named: "dimondGTUE"), for: .normal)
             
@@ -115,7 +120,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     @IBAction func benginToplaingVirwwr(_ sender: UIButton) {
         
         //需要订阅没订阅
-        if realingUserDtaGTEm["ifneedsub"] == "1" &&  realingUserDtaGTEm["issubedeGTEm"] == "0"{
+        if realingUserDtaGTEm["ifneedsubGTEM"] == "1" &&  realingUserDtaGTEm["issubedeGTEm"] == "0" && (sender.tag == 30 || sender.tag == 60){
             //需要订阅没订阅
             let subvc =  UIViewController.init()
             
@@ -166,23 +171,58 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             return
         }
         
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
        
        
         
-        if realingUserDtaGTEm["ifneedsub"] == "1" &&  realingUserDtaGTEm["issubedeGTEm"] == "1" ,sender.tag == 30 {//订阅按钮
-            SVProgressHUD.showSuccess(withStatus: "You have already subscribed to this user")
+        if realingUserDtaGTEm["ifneedsubGTEM"] == "1" &&  realingUserDtaGTEm["issubedeGTEm"] == "1" ,sender.tag == 30 {//订阅按钮
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                SVProgressHUD.showSuccess(withStatus: "You have already subscribed to this user")
+            }
+            
             return
         }
-        
-        if realingUserDtaGTEm["ifneedsub"] == "0" ,sender.tag == 30 {//关注按钮
-            
-            SVProgressHUD.show()
+        zGTEm += 10.5
+        zGTEm -= 0.2
+        if realingUserDtaGTEm["ifneedsubGTEM"] == "0" ,sender.tag == 30 {//关注按钮
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                SVProgressHUD.show()
+            }
+            zGTEm += 10.5
+            zGTEm -= 0.2
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
                 SVProgressHUD.dismiss()
-                
+                zGTEm += 10.5
+                zGTEm -= 0.2
                 sender.isSelected = !sender.isSelected
                 
                 let ifcontain = GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.filter({ infol in
+                    var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+                    modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+                    modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+                    let indefHTEM = Int.random(in: 200...30000)
+
+                    modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+                    if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+                        return infol["gtemID"] == self.realingUserDtaGTEm["gtemID"]
+                    }
+
+                    if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
+                        
+                    }
                     return infol["gtemID"] == self.realingUserDtaGTEm["gtemID"]
                 }).count > 0
                 
@@ -192,14 +232,25 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
                     GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.append(self.realingUserDtaGTEm)
                     return
                 }
+                var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+                modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+                modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+                let indefHTEM = Int.random(in: 200...30000)
+
+                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
                 
                 if ifcontain && sender.isSelected == false{
-                    for (kdj,item) in GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.enumerated() {
-                        if item["gtemID"] == self.realingUserDtaGTEm["gtemID"]{
-                            GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.remove(at: kdj)
+                    if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+                        for (kdj,item) in GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.enumerated() {
+                            if item["gtemID"] == self.realingUserDtaGTEm["gtemID"] {
+                                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.remove(at: kdj)
+                            }
+                            
                         }
-                        
                     }
+
+                    
+                   
                    
                     return
                 }
@@ -207,24 +258,51 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             }
             return
         }
-        
+        zGTEm += 10.5
+        zGTEm -= 0.2
         if sender.tag == 40 {//message按钮
-            self.navigationController?.pushViewController(GTEMusernmeaasfeMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil,realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                self.navigationController?.pushViewController(GTEMusernmeaasfeMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil,realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
+            }
+           
            
             
             return
         }
         
         
-        
+        zGTEm += 10.5
+        zGTEm -= 0.2
         if sender.tag == 50 {//video call
-            self.navigationController?.pushViewController(GTEMusVifedertMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                self.navigationController?.pushViewController(GTEMusVifedertMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
+            }
+           
             
             return
         }
-        
+        zGTEm += 10.5
+        zGTEm -= 0.2
         if let link = realingUserDtaGTEm["viedeourll0"],sender.tag == 60{
-            self.navigationController?.pushViewController(GTEMPlayerMojito.init(linkUrl: link), animated: false)
+            zGTEm += 10.5
+            zGTEm -= 0.2
+
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                self.navigationController?.pushViewController(GTEMPlayerMojito.init(linkUrl: link), animated: false)
+            }
+           
             return
         }
     }
@@ -239,7 +317,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         var xGTEm: Double = 15.0
         xGTEm += 30
         
-        var gtemBlksdgb =  Int(GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] ?? "0") ?? 0
+        var gtemBlksdgb =  Int( GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] ?? "0") ?? 0
         var yGTEm: Double = 25.0
         var zGTEm: Double = xGTEm + yGTEm + 33
         
@@ -269,7 +347,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         gtemBlksdgb -= 100
         xGTEm += 30
         
-        GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "\(gtemBlksdgb)"
+        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
         var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
         wGTEM  = wGTEM - 2.0
 
@@ -279,11 +357,25 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         self.presentVCGTEm?.dismiss(animated: true)
       //修改数据订阅状态
         zGTEm -= 0.2
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+       
+        for (i,iuy) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.enumerated() {
+            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+            let indefHTEM = Int.random(in: 200...30000)
+
         
-        for (i,iuy) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.enumerated() {
             if iuy["gtemID"] == realingUserDtaGTEm["gtemID"]   {
-                GTEMCombingUser.lovderGTEm.videoTotaluserGTEm[i]["issubedeGTEm"] = "1"
-                realingUserDtaGTEm["issubedeGTEm"] = "1"
+                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+                if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+                    GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[i]["issubedeGTEm"] = "1"
+                }
+
+                if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
+                    realingUserDtaGTEm["issubedeGTEm"] = "1"
+                }
+               
+                
             }
         }
         
@@ -302,8 +394,18 @@ class GTEMUserAboutAchole: UIViewController {
     var realingUserDtaGTEm:Dictionary<String,String>
     init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?, realingUserDtaGTEm: Dictionary<String, String>) {
         _fermentationTimerGTEM = tationTimerGTEM
+        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+        let indefHTEM = Int.random(in: 200...30000)
+
+        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+            self.realingUserDtaGTEm = realingUserDtaGTEm
+        }else{
+            self.realingUserDtaGTEm = realingUserDtaGTEm
+        }
         
-        self.realingUserDtaGTEm = realingUserDtaGTEm
         super.init(nibName: nil, bundle: nil)
         
         if aginestGTEm == nil {
@@ -347,7 +449,7 @@ class GTEMUserAboutAchole: UIViewController {
                 _BingToolGTEM +=  1.87
 
                 
-                GTEMCombingUser.lovderGTEm.videoTotaluserGTEm = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.filter { !($0["gtemID"]  == onlyID) }
+                GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1 = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.filter { !($0["gtemID"]  == onlyID) }
                 _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
 
                 

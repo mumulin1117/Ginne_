@@ -96,14 +96,28 @@
                         <action selector="beginUploadLogingGTEm:" destination="-1" eventType="touchUpInside" id="KLZ-G6-Wnn"/>
                     </connections>
                 </button>
+                <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Eon-bZ-lq8">
+                    <rect key="frame" x="278" y="84" width="20" height="20"/>
+                </activityIndicatorView>
+                <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="CCF-Mq-3W9">
+                    <rect key="frame" x="186.66666666666666" y="59" width="20" height="20"/>
+                </activityIndicatorView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8m-iF-RWg">
+                    <rect key="frame" x="320" y="278" width="71" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="GTEM"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="LG3-CS-fYu"/>
             <color key="backgroundColor" red="0.6588235294" green="0.21960784310000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="zTR-KA-hj8" firstAttribute="trailing" secondItem="LG3-CS-fYu" secondAttribute="trailing" id="CAv-sZ-FRt"/>
                 <constraint firstItem="4MF-Nq-JkG" firstAttribute="leading" secondItem="LG3-CS-fYu" secondAttribute="leading" constant="60" id="ECg-ta-iR0"/>
+                <constraint firstItem="Eon-bZ-lq8" firstAttribute="top" secondItem="LG3-CS-fYu" secondAttribute="top" constant="25" id="GMK-jc-gpq"/>
                 <constraint firstItem="4MF-Nq-JkG" firstAttribute="top" secondItem="KQ2-Sb-M5q" secondAttribute="bottom" constant="163" id="JbA-xh-vyl"/>
+                <constraint firstItem="LG3-CS-fYu" firstAttribute="trailing" secondItem="J8m-iF-RWg" secondAttribute="trailing" constant="2" id="LJP-lp-ahJ"/>
                 <constraint firstItem="KQ2-Sb-M5q" firstAttribute="centerY" secondItem="Xbk-PG-38e" secondAttribute="centerY" id="S4s-fB-rD3"/>
+                <constraint firstItem="CCF-Mq-3W9" firstAttribute="centerX" secondItem="UPp-l7-y6g" secondAttribute="centerX" id="TGu-sL-1b4"/>
                 <constraint firstItem="Xbk-PG-38e" firstAttribute="leading" secondItem="LG3-CS-fYu" secondAttribute="leading" constant="8" id="WB4-FO-W3U"/>
                 <constraint firstItem="Y9c-jo-cIE" firstAttribute="top" secondItem="LG3-CS-fYu" secondAttribute="top" id="a6Q-Si-zRn"/>
                 <constraint firstItem="uFZ-ZP-Bfr" firstAttribute="top" secondItem="KQ2-Sb-M5q" secondAttribute="bottom" constant="144" id="bSb-xT-lcL"/>
@@ -112,11 +126,14 @@
                 <constraint firstItem="zTR-KA-hj8" firstAttribute="leading" secondItem="LG3-CS-fYu" secondAttribute="leading" id="hzz-TU-Zcr"/>
                 <constraint firstItem="Gdv-xK-uuE" firstAttribute="top" secondItem="4MF-Nq-JkG" secondAttribute="bottom" constant="13" id="iWd-FK-uZa"/>
                 <constraint firstItem="Y9c-jo-cIE" firstAttribute="leading" secondItem="LG3-CS-fYu" secondAttribute="leading" id="jf2-ba-Snp"/>
+                <constraint firstItem="J8m-iF-RWg" firstAttribute="top" secondItem="LG3-CS-fYu" secondAttribute="top" constant="219" id="kRE-Ou-0va"/>
                 <constraint firstItem="KQ2-Sb-M5q" firstAttribute="leading" secondItem="Xbk-PG-38e" secondAttribute="trailing" constant="12" id="lnR-cJ-lhv"/>
+                <constraint firstItem="LG3-CS-fYu" firstAttribute="trailing" secondItem="Eon-bZ-lq8" secondAttribute="trailing" constant="95" id="q1U-ro-MMU"/>
                 <constraint firstAttribute="bottom" secondItem="zTR-KA-hj8" secondAttribute="bottom" id="t03-4d-rsV"/>
                 <constraint firstItem="Xbk-PG-38e" firstAttribute="top" secondItem="LG3-CS-fYu" secondAttribute="top" constant="8" id="w5S-Fo-VqF"/>
                 <constraint firstItem="uFZ-ZP-Bfr" firstAttribute="centerX" secondItem="UPp-l7-y6g" secondAttribute="centerX" id="ysz-fi-zjs"/>
                 <constraint firstItem="Gdv-xK-uuE" firstAttribute="leading" secondItem="4MF-Nq-JkG" secondAttribute="leading" id="yxq-zU-FS1"/>
+                <constraint firstItem="CCF-Mq-3W9" firstAttribute="top" secondItem="LG3-CS-fYu" secondAttribute="top" id="zOZ-Cc-p6H"/>
             </constraints>
             <point key="canvasLocation" x="135.1145038167939" y="19.718309859154932"/>
         </view>

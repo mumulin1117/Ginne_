@@ -96,8 +96,9 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
            
             return
         }
+        let kdijijhg = "Sorry->->,No ->->album ->->permission!".replacingOccurrences(of: "->->", with: "")
         
-        SVProgressHUD.showInfo(withStatus: "Sorry,No album permission!")
+        SVProgressHUD.showInfo(withStatus: kdijijhg)
        
         
     }

@@ -23,6 +23,9 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qn2-E6-ecJ">
                         <rect key="frame" x="12" y="24" width="361" height="183"/>
                     </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="1rZ-z8-yqP">
+                        <rect key="frame" x="22" y="34" width="20" height="20"/>
+                    </activityIndicatorView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BfO-Uw-UmZ">
                         <rect key="frame" x="24" y="127" width="36" height="36"/>
                         <constraints>
@@ -51,6 +54,9 @@
                         <color key="textColor" red="0.99607843139999996" green="0.73725490199999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="vei-V1-Twa">
+                        <rect key="frame" x="143" y="73" width="20" height="20"/>
+                    </activityIndicatorView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -58,9 +64,13 @@
                 <constraint firstItem="BfO-Uw-UmZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="7Q5-x4-2Tl"/>
                 <constraint firstAttribute="trailing" secondItem="ii5-bk-hho" secondAttribute="trailing" id="9wZ-dd-L1Z"/>
                 <constraint firstItem="qn2-E6-ecJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="24" id="Bi8-eg-MsJ"/>
+                <constraint firstItem="1rZ-z8-yqP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="22" id="GHO-oN-4gS"/>
+                <constraint firstItem="vei-V1-Twa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="73" id="One-T2-9BK"/>
                 <constraint firstItem="2rp-Hf-Uhf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="Pob-tq-prB"/>
+                <constraint firstItem="1rZ-z8-yqP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="34" id="Rg0-fr-ziJ"/>
                 <constraint firstItem="qn2-E6-ecJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="UTP-th-zAh"/>
                 <constraint firstAttribute="bottom" secondItem="2rp-Hf-Uhf" secondAttribute="bottom" constant="38" id="Uw9-qL-13X"/>
+                <constraint firstItem="vei-V1-Twa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="143" id="Y3v-rb-qe1"/>
                 <constraint firstAttribute="bottom" secondItem="ii5-bk-hho" secondAttribute="bottom" id="aaG-f5-niZ"/>
                 <constraint firstItem="ii5-bk-hho" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="c5l-tC-2lI"/>
                 <constraint firstAttribute="bottom" secondItem="qn2-E6-ecJ" secondAttribute="bottom" constant="24" id="d4v-bf-QcD"/>

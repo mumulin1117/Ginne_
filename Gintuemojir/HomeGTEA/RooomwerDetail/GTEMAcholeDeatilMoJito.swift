@@ -35,9 +35,12 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     var ismineBackgroundRoom:Bool = false
     var roomInfoGTEm :GTEmAcholeRoom
     
-    init( ismineBackgroundRoom: Bool,roomInfoGTEm:GTEmAcholeRoom) {
+    var ijiuGTERER:Int
+    
+    init( ismineBackgroundRoom: Bool,roomInfoGTEm:(Int,GTEmAcholeRoom)) {
         self.ismineBackgroundRoom = ismineBackgroundRoom
-        self.roomInfoGTEm = roomInfoGTEm
+        self.roomInfoGTEm = roomInfoGTEm.1
+        ijiuGTERER = roomInfoGTEm.0
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -108,14 +111,14 @@ class GTEMAcholeDeatilMoJito: UIViewController {
             turisNameGTEM.isHidden = true
             thirdIcon.isHidden = true
             thirdNameGTEm.isHidden = true
-            hosterIonGTEM.image =  GTEMCombingUser.lovderGTEm.personMehEagerGTEm
+            hosterIonGTEM.image =  GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
             hosterNameGTEM.text = "Me"
         }else{
             
             hosterIonGTEM.image =  UIImage(named: roomInfoGTEm.hosteruserGTEm["teacherphoto"] ?? "")
             hosterNameGTEM.text = roomInfoGTEm.hosteruserGTEm["teachername"]
             
-            thirdIcon.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm
+            thirdIcon.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
             thirdNameGTEm.text = "Me"
             let diologLater = roomInfoGTEm.roomMesageListGTEm.last?.enterProuserGTEM
             
@@ -208,16 +211,16 @@ class GTEMAcholeDeatilMoJito: UIViewController {
        
         sayTexGTUA.resignFirstResponder()
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
         
            
         if let conted = sayTexGTUA.text, conted.count != 0 {
-            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+            modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
             let indefHTEM = Int.random(in: 200...30000)
 
            
-            let diologdata = (true,GTEMCombingUser.lovderGTEm.personMeGTEm,conted)
-            modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+            let diologdata = ("isme", GTEMCombingUser.lovderGTEm.personMeGTEm[0],conted)
+            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
             
             roomInfoGTEm.roomMesageListGTEm.append(diologdata)
             if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
@@ -267,7 +270,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         var yGTEm: Double = 25.0
         var zGTEm: Double = xGTEm + yGTEm + 33
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
-        for(i, item) in GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.enumerated() {
+        for(i, item) in GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.enumerated() {
             zGTEm += 10.5
             zGTEm -= 0.2
 
@@ -276,7 +279,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
            
             if  item.roomIDGTEM == self.roomInfoGTEm.roomIDGTEM {
                 if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                    GTEMCombingUser.lovderGTEm.ancholeRoomGTEm[i] = self.roomInfoGTEm
+                    GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1[i] = self.roomInfoGTEm
                 }
                 
             }
@@ -304,14 +307,14 @@ extension GTEMAcholeDeatilMoJito:UITableViewDelegate,UITableViewDataSource,UITex
         var zGTEm: Double = xGTEm + yGTEm + 33
         zGTEm += 10.5
        
-        if diologData.logMeGTEM == true {
+        if diologData.logMeGTEM == "isme" {
            
             zGTEm -= 0.2
 
             var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
             if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm
+                gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
             }
            
             gtemCEll.gtemNickLbael.text = "Me"

@@ -148,6 +148,12 @@
                         <constraint firstItem="fZM-nv-UlR" firstAttribute="leading" secondItem="X3B-uU-aMh" secondAttribute="leading" constant="8" id="vdM-dZ-ZZI"/>
                     </constraints>
                 </view>
+                <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Eoo-Br-vPx">
+                    <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                </activityIndicatorView>
+                <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="IpD-m3-n1x">
+                    <rect key="frame" x="10" y="362" width="20" height="20"/>
+                </activityIndicatorView>
                 <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CmM-Be-Ejz">
                     <rect key="frame" x="76.666666666666686" y="224" width="240" height="48"/>
                     <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
@@ -164,7 +170,11 @@
                 <constraint firstItem="CmM-Be-Ejz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="165" id="Fal-GA-aSe"/>
                 <constraint firstAttribute="bottom" secondItem="X3B-uU-aMh" secondAttribute="bottom" id="Li7-Dp-11x"/>
                 <constraint firstItem="X3B-uU-aMh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Sgp-Iy-Ash"/>
+                <constraint firstItem="IpD-m3-n1x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="U2M-MG-ohg"/>
+                <constraint firstItem="Eoo-Br-vPx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="YhD-xh-KXE"/>
+                <constraint firstItem="Eoo-Br-vPx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Z4y-MO-Jep"/>
                 <constraint firstItem="X3B-uU-aMh" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vZt-jf-fCZ"/>
+                <constraint firstItem="IpD-m3-n1x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="303" id="yrn-Yz-DpD"/>
             </constraints>
             <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
         </view>

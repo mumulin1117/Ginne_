@@ -17,14 +17,17 @@ class GTEMELAurrMoJito: UIViewController {
     
     @IBOutlet weak var inputerkoGTEm: UITextView!
     
-    
+    var HoperGTEM:UIView?
+   
     
     @IBOutlet weak var cananlBakGTEm: UIButton!
+    var treesHaGTEM:UIButton?
     @IBOutlet weak var agreeBakGTEm: UIButton!
     
     
     @IBOutlet weak var peerieeBakGTEm: UIButton!
     
+    @IBOutlet weak var GTEMbuhView: UIView!
     
     @IBOutlet weak var peetermeBakGTEm: UIButton!
     
@@ -67,6 +70,9 @@ class GTEMELAurrMoJito: UIViewController {
     
             if jornyGTEM.0 == 0 {
                 gtemTisder.text = "Ginne App ELUA"
+                HoperGTEM = UIView()
+                HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
+               
                 inputerkoGTEm.text =     """
 
 1. Acceptance of Terms
@@ -114,13 +120,30 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
 
 """
             }
-            
+            HoperGTEM?.alpha = 0.4
+            HoperGTEM?.layer.borderWidth = 4
+
+            if _muddleToolGTEM < 0 &&  HoperGTEM != nil{
+                self.view.addSubview(HoperGTEM!)
+                HoperGTEM?.alpha = 0
+            }
             if jornyGTEM.0 == 1 {
                 self.peerieeBakGTEm.isHidden = true
+                treesHaGTEM?.setTitleColor(.blue, for: .normal)
+                treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
                 self.peetermeBakGTEm.isHidden = true
                 
                 
                 gtemTisder.text = "Ginne App Privacy Policy"
+                
+
+                treesHaGTEM?.alpha = 0.4
+                treesHaGTEM?.layer.borderWidth = 4
+
+                if _muddleToolGTEM < 0 {
+                    self.view.addSubview(treesHaGTEM!)
+                    treesHaGTEM?.alpha = 0
+                }
                 inputerkoGTEm.text = """
 
      At Ginne, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App"). By using the App, you agree to the collection and use of information in accordance with this policy.
@@ -207,9 +230,20 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
             
             if jornyGTEM.0 == 2 {
                 self.peerieeBakGTEm.isHidden = true
+                treesHaGTEM?.setTitleColor(.blue, for: .normal)
+                treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+
+               
+                gtemTisder.text = "Ginne App Terms of Service"
+                treesHaGTEM?.alpha = 0.4
+                treesHaGTEM?.layer.borderWidth = 4
+
+                if _muddleToolGTEM < 0 {
+                    self.view.addSubview(treesHaGTEM!)
+                    treesHaGTEM?.alpha = 0
+                }
                 self.peetermeBakGTEm.isHidden = true
                 
-                gtemTisder.text = "Ginne App Terms of Service"
                 inputerkoGTEm.text = """
             Effective Date: [2025-2-1]
             
@@ -256,7 +290,10 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
         cGTEM += 12
         var dGTEM:Float  = aGTEm*3 - bGTEM
 
-
+        dGTEM = dGTEM*2
+        dGTEM = dGTEM*2
+        dGTEM = dGTEM*2
+        dGTEM = dGTEM*2
         if jornyGTEM.0 == 0 {
             GTEMELAurrMoJito.boolkSholkd = false
         }
@@ -276,7 +313,11 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
         }
         var dGTEM:Float  = aGTEm*3 - bGTEM
 
-
+        dGTEM = dGTEM*2
+        dGTEM = dGTEM*2
+        dGTEM = dGTEM*2
+        dGTEM = dGTEM*2
+        
         if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
             self.navigationController?.popViewController(animated: true)
         }

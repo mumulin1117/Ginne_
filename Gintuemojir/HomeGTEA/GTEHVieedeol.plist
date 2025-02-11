@@ -7,7 +7,7 @@
 		<string>Hollis</string>
 		<key>teacherphoto</key>
 		<string>teacherw0</string>
-		<key>ifneedsub</key>
+		<key>ifneedsubGTEM</key>
 		<string>1</string>
 		<key>videowenan0</key>
 		<string>Mastered a retro cocktail. Sharing steps. 🍸</string>
@@ -25,7 +25,7 @@
 		<string>Ivor</string>
 		<key>teacherphoto</key>
 		<string>teacherw1</string>
-		<key>ifneedsub</key>
+		<key>ifneedsubGTEM</key>
 		<string>1</string>
 		<key>videowenan0</key>
 		<string>Inspired by pro, made “Dreamy Night” cocktail. Video up. 💬</string>
@@ -43,7 +43,7 @@
 		<string>Juniper</string>
 		<key>teacherphoto</key>
 		<string>teacherw2</string>
-		<key>ifneedsub</key>
+		<key>ifneedsubGTEM</key>
 		<string>0</string>
 		<key>videowenan0</key>
 		<string>Midnight cocktail chat. 🤖</string>
@@ -59,7 +59,7 @@
 		<string>Kieran</string>
 		<key>teacherphoto</key>
 		<string>teacherw3</string>
-		<key>ifneedsub</key>
+		<key>ifneedsubGTEM</key>
 		<string>0</string>
 		<key>videowenan0</key>
 		<string>Bored? Explore new mix methods. 🎉</string>
@@ -75,7 +75,7 @@
 		<string>Lyric</string>
 		<key>teacherphoto</key>
 		<string>teacherw4</string>
-		<key>ifneedsub</key>
+		<key>ifneedsubGTEM</key>
 		<string>0</string>
 		<key>videowenan0</key>
 		<string>Mixed 3 liquors, unique flavor. Video here. 👀</string>
@@ -91,7 +91,7 @@
 		<string>Montague</string>
 		<key>teacherphoto</key>
 		<string>teacherw5</string>
-		<key>ifneedsub</key>
+		<key>ifneedsubGTEM</key>
 		<string>0</string>
 		<key>videowenan0</key>
 		<string>Try new mix ideas. 🎉</string>

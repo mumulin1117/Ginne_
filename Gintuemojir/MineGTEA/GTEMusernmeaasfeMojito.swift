@@ -14,8 +14,51 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
     @IBOutlet weak var sayTexGTUA: UITextField!
     private var _BingToolGTEM: CGFloat = 1.87
     @IBOutlet weak var usernaingmnickGTEm: UILabel!
-    var dioloadingGTSMlist:Array<(whoismineGTEm:Bool,sayiedsdetailGTEm:String)> = []
+    var HoperGTEM:UIView?
+    var treesHaGTEM:UIButton?
+    
+    var GRIDUIHUAingGTSMlist:Array<(whoismineGTEm:String,sayiedsdetailGTEm:String)> = []
     private var _zhunreaToolGTEM: CGFloat = 2.87
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        
+       let diologData = GRIDUIHUAingGTSMlist[indexPath.row]
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
+        
+        
+        let gtemCEll = tableView.dequeueReusableCell(withIdentifier: "GTEMAiChateCellID", for: indexPath) as! GTEMAiChateCell
+        zGTEm += 10.5
+      
+        gtemCEll.gtemSayieVuew.text = diologData.sayiedsdetailGTEm
+        zGTEm -= 0.2
+
+       
+        if diologData.whoismineGTEm == "ismeingGTEm" {
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
+            }
+            
+        }else{
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                gtemCEll.gtemIconhreader.image = UIImage(named: realingUserDtaGTEm["teacherphoto"] ?? "" )
+            }
+            
+        }
+        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            gtemCEll.getrmWhoismine = diologData.whoismineGTEm
+        }
+        
+       
+        return gtemCEll
+    }
     
     private var _muddleToolGTEM: CGFloat = 0.87
     override func viewDidLoad() {
@@ -30,8 +73,9 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         sayTexGTUA.leftViewMode = .always
+        HoperGTEM = UIView()
+        HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
        
-        
         sayTexGTUA.leftView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
         sayTexGTUA.rightViewMode = .always
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
@@ -44,6 +88,25 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         }
         sayTexGTUA.layer.masksToBounds = true
         sayTexGTUA.backgroundColor = UIColor(red: 0.24, green: 0.11, blue: 0.1, alpha: 1)
+        HoperGTEM?.alpha = 0.4
+        HoperGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(HoperGTEM!)
+            HoperGTEM?.alpha = 0
+        }
+
+
+        treesHaGTEM?.setTitleColor(.blue, for: .normal)
+        treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+
+        treesHaGTEM?.alpha = 0.4
+        treesHaGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.view.addSubview(treesHaGTEM!)
+            treesHaGTEM?.alpha = 0
+        }
         
         contenAiAchole.dataSource = self
         contenAiAchole.delegate = self
@@ -52,9 +115,21 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         }
         _muddleToolGTEM += 0.87
 
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
+        zGTEm += 10.5
+        zGTEm -= 0.2
+
+        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
+          
+        }
+
         
-        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
-       
         contenAiAchole.allowsSelection = false
         _BingToolGTEM +=  1.87
 
@@ -81,17 +156,17 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
         
         if let conted = sayTexGTUA.text, !conted.isEmpty {
-            modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+            modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
            
-            let diologdata = (true,conted)
-            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+            let diologdata = ("ismeingGTEm",conted)
+            modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
             let indefHTEM = Int.random(in: 200...30000)
 
            
             
-            self.dioloadingGTSMlist.append(diologdata)
+            self.GRIDUIHUAingGTSMlist.append(diologdata)
             
-            modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
            
             sayTexGTUA.text = nil
             if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
@@ -109,8 +184,22 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
           
             
         }
-        
-        SVProgressHUD.showInfo(withStatus: "Sorry,you cannot send an empty message!")
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
+        zGTEm += 10.5
+        zGTEm -= 0.2
+
+        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            let sooprt = "So->->rry,->->you cannot ->->send an ->->empty message!".replacingOccurrences(of: "->->", with: "")
+            
+            SVProgressHUD.showInfo(withStatus: sooprt)
+        }
+
+      
         
     
 }
@@ -127,48 +216,10 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
 extension GTEMusernmeaasfeMojito:UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
-        return dioloadingGTSMlist.count
+        return GRIDUIHUAingGTSMlist.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var xGTEm: Double = 15.0
-        xGTEm += 30
-        
-       let diologData = dioloadingGTSMlist[indexPath.row]
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
-        
-        
-        let gtemCEll = tableView.dequeueReusableCell(withIdentifier: "GTEMAiChateCellID", for: indexPath) as! GTEMAiChateCell
-        zGTEm += 10.5
-      
-        gtemCEll.gtemSayieVuew.text = diologData.sayiedsdetailGTEm
-        zGTEm -= 0.2
-
-       
-        if diologData.whoismineGTEm {
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
-
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm
-            }
-            
-        }else{
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
-
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                gtemCEll.gtemIconhreader.image = UIImage(named: realingUserDtaGTEm["teacherphoto"] ?? "" )
-            }
-            
-        }
-        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
-
-        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-            gtemCEll.getrmWhoismine = diologData.whoismineGTEm
-        }
-        
-       
-        return gtemCEll
-    }
     
+    
+  
 }

@@ -8,26 +8,29 @@
 import UIKit
 
 
+class PEAUFBascivChallengnng: UIViewController {
+}
 
 class GTEMCombingUser: NSObject {
     private var _fermentationTimerGTEM: Timer?
     
     
     static let lovderGTEm = GTEMCombingUser.init()
-    private let _muddleToolGTEM: CGFloat = 0.87
-   
     
+    private let _muddleToolGTEM: CGFloat = 0.87
      
-    var videoTotaluserGTEm:Array<Dictionary<String,String>> = Array<Dictionary<String,String>>()
+    var videoTotaluserGTEm:(Bool,Array<Dictionary<String,String>>,Bool) = (false,Array<Dictionary<String,String>>(),true)
+    
     private var _agitatorValuesGTEM: [Float] = [12.5, 9.8, 15.3]
 
-    var personMeGTEm:Dictionary<String,String> = Dictionary<String,String>()
+    var personMeGTEm:Array<Dictionary<String,String>> = Array<Dictionary<String,String>>()
+    
     private let _BingToolGTEM: CGFloat = 1.87
     
-    var personMehEagerGTEm:UIImage?
+    var personMehEagerGTEm:Array<UIImage> = Array<UIImage>()
     
     
-    var ancholeRoomGTEm:[GTEmAcholeRoom] = [GTEmAcholeRoom]()
+    var ancholeRoomGTEm:(String,[GTEmAcholeRoom]) = ("GTEMCombingUser",[GTEmAcholeRoom]())
     
     private var _zhunreaToolGTEM: CGFloat = 2.87
     
@@ -39,28 +42,43 @@ class GTEMCombingUser: NSObject {
     override init() {
         super.init()
         _zhunreaToolGTEM  = 33
+        personMeGTEm.append([:])
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        var yGTEm: Double = 25.0
+        var zGTEm: Double = xGTEm + yGTEm + 33
+        zGTEm += 10.5
+        zGTEm -= 0.2
+
+        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+
+       
         guard let pathGTEM = Bundle.main.path(forResource: "GTEHVieedeol", ofType: "plist"),
-        let dataGTEM = FileManager.default.contents(atPath: pathGTEM) else {
-            modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
-            videoTotaluserGTEm = Array<Dictionary<String,String>>()
+              (zGTEm > 30.0),
+        let dataGTEM = FileManager.default.contents(atPath: pathGTEM) ,
+        ((wGTEM - 10000) < 10.0) else {
+            modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+            videoTotaluserGTEm = (false,Array<Dictionary<String,String>>(),true)
             return
         }
-        
-        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+           
+        }
+        modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
         
         
         
     
         if let dictArrayGTEM = try? PropertyListSerialization.propertyList(from: dataGTEM, options: [], format: nil) as? [[String: String]]  {
             var newdatrGTEm = [[String: String]]()
-            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+            modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
             let indefHTEM = Int.random(in: 200...30000)
             
            
             for (i,itmt) in dictArrayGTEM.enumerated() {
                 newdatrGTEm.append(itmt)
-                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+                modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
                 if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
                     newdatrGTEm[i]["follosercount"] = "\(Int.random(in: 0...3))"
                 }
@@ -71,7 +89,7 @@ class GTEMCombingUser: NSObject {
                
                
             }
-            videoTotaluserGTEm = newdatrGTEm
+            videoTotaluserGTEm = (false,newdatrGTEm,true)
         }
         
 
@@ -89,11 +107,28 @@ class GTEMCombingUser: NSObject {
         for (k,item) in begRoomIGTEm.enumerated() {
             var xGTEm: Double = 15.0
           
-           
+            var aGTEm:Float = 10
+            aGTEm += 33
+            var bGTEM:Float  = 20
+            bGTEM -= 30
+            var cGTEM:Float  = aGTEm + bGTEM
+            cGTEM += 12
+            var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
+            if  dGTEM < 0{
+                return
+            }
             
-            guard  let sleUseringoGTEm = videoTotaluserGTEm.filter({ dijui in
-                return dijui["gtemID"] != self.videoTotaluserGTEm[k]["gtemID"]
-            }).shuffled().suffix(1).first else{return}
+            guard  let sleUseringoGTEm = videoTotaluserGTEm.1.filter({ dijui in
+                return dijui["gtemID"] != self.videoTotaluserGTEm.1[k]["gtemID"]
+            }).shuffled().suffix(1).first,
+            
+                    (cGTEM >=  aGTEm + bGTEM) else{
+                
+                return
+                
+            }
             xGTEm += 30
             
             let welcomeRoomlog = "Talk about:\(item.0 )"
@@ -110,21 +145,21 @@ class GTEMCombingUser: NSObject {
                             
             ][k]
             zGTEm += 10.5
-            
-            let duhua0GTEm = (false,self.videoTotaluserGTEm[k],welcomeRoomlog)
+            yGTEm += 10.5
+            let duhua0GTEm = ("notme",self.videoTotaluserGTEm.1[k],welcomeRoomlog)
             zGTEm -= 0.2
 
             
-            let duhu10GTEm = (false,sleUseringoGTEm,gtemSendingContents)
+            let duhu10GTEm = ("notme",sleUseringoGTEm,gtemSendingContents)
             var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
-            var arrarDiolog = [duhua0GTEm,duhu10GTEm] as [(logMeGTEM:Bool,enterProuserGTEM:Dictionary<String,String>,gtemSendingContent:String)]
+            var arrarDiolog = [duhua0GTEm,duhu10GTEm] as [(logMeGTEM:String,enterProuserGTEM:Dictionary<String,String>,gtemSendingContent:String)]
             
             if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                let reamROomAncholeGTEm =   GTEmAcholeRoom.init(roomIDGTEM: item.2, roomNameGTEM: item.0,roombackgroundGTEM: UIImage(named:item.1),roomHosterGTEm: self.videoTotaluserGTEm[k], roomMesageListGTEm: arrarDiolog)
+                let reamROomAncholeGTEm =   (GTEmAcholeRoom.init(roomIDGTEM: item.2, roomNameGTEM: item.0,roombackgroundGTEM: UIImage(named:item.1),roomHosterGTEm: self.videoTotaluserGTEm.1[k], roomMesageListGTEm: arrarDiolog))
                
                 
-                ancholeRoomGTEm.append(reamROomAncholeGTEm)
+                ancholeRoomGTEm.1.append(reamROomAncholeGTEm)
             }
            
         }
@@ -174,3 +209,48 @@ class GTEMCombingUser: NSObject {
     
    
 }
+
+class PEAUFNeuGuideChallengnng: UINavigationController {
+    
+    var HoperGTEM:UIView?
+    var treesHaGTEM:UIButton?
+    
+    private var _fermentationTimerGTEM: Timer?
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+    private var _muddleToolGTEM: CGFloat = 0.87
+    private var _BingToolGTEM: CGFloat = 1.87
+    private var _zhunreaToolGTEM: CGFloat = 2.87
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_muddleToolGTEM)
+        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
+        self.navigationBar.isHidden = true
+    }
+    
+
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        var xGTEm: Double = 15.0
+        xGTEm += 30
+        
+
+        if children.count > 0  && !viewController.isMember(of:PEAUFBascivChallengnng.self) {
+            var yGTEm: Double = 25.0
+            yGTEm += 30
+            var zGTEm: Double = xGTEm + yGTEm + 33
+            zGTEm += 10.5
+            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            wGTEM += 44
+            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                viewController.hidesBottomBarWhenPushed = true
+            }
+           
+            
+        }
+        xGTEm += 30
+       
+        super.pushViewController(viewController, animated: false)
+    }
+}
+
+

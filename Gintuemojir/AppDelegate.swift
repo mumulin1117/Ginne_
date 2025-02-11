@@ -23,7 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _agitatorValuesGTEM.append(_BingToolGTEM)
         window = UIWindow(frame: UIScreen.main.bounds)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
-        IQKeyboardManager.shared().isEnabled = true
+        
+        if _agitatorValuesGTEM.count > 1 {
+            IQKeyboardManager.shared().isEnabled = true
+        }
+        
+        
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         
         if _agitatorValuesGTEM.count < 1 {
@@ -31,33 +36,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
 
-        if _agitatorValuesGTEM.isEmpty {
-            
-        }
+       
         _muddleToolGTEM += 0.87
-        if UserDefaults.standard.bool(forKey: "oooggStatuelGTEm") == false {
+        if UserDefaults.standard.bool(forKey: "oooggStatuelGTEm") == false &&   _agitatorValuesGTEM.isEmpty == false {
             window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMBeginMoJito())
         }else{
-            GTEMCombingUser.lovderGTEm.personMeGTEm["teachername"] = "Quill"
+            var minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
+            minUserGTEM["teachername"] = "Quill"
             _BingToolGTEM +=  1.87
 
             _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
 
             
-            GTEMCombingUser.lovderGTEm.personMeGTEm["teacherphoto"] = "teacherw9"
+            minUserGTEM["teacherphoto"] = "teacherw9"
               
             _BingToolGTEM +=  1.87
-            GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "55"
+            minUserGTEM["gtemBlancecoin"] = "55"
             _BingToolGTEM +=  1.87
-            GTEMCombingUser.lovderGTEm.personMeGTEm["gtemContact"] = "ginne88@gmail.com"
+            minUserGTEM["gtemContact"] = "ginne88@gmail.com"
             _BingToolGTEM +=  1.87
-            GTEMCombingUser.lovderGTEm.personMeGTEm["gtemID"] = "4534567"
+            minUserGTEM["gtemID"] = "4534567"
             _BingToolGTEM +=  1.87
-            GTEMCombingUser.lovderGTEm.personMehEagerGTEm = UIImage(named:"teacherw9")
+            
+            
+            GTEMCombingUser.lovderGTEm.personMehEagerGTEm.append(UIImage(named:"teacherw9")!)
             _BingToolGTEM +=  1.87
-            GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.shuffled().prefix(1))
+            
+            if _BingToolGTEM > 3 {
+                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.shuffled().prefix(1))
+            }
+            
             _BingToolGTEM +=  1.87
-            GTEMCombingUser.lovderGTEm.fnnceAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.shuffled().prefix(1))
+            if _BingToolGTEM > 2 {
+                GTEMCombingUser.lovderGTEm.fnnceAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.shuffled().prefix(1))
+            }
+            
             _BingToolGTEM +=  1.87
             if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
                 window?.rootViewController = GTEMoMaintabarJito.init()
@@ -70,26 +83,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
        
         _BingToolGTEM +=  1.87
-        
-       
-        
+
         SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
             var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-            modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
-            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+            modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+            modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
+            modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+            modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
            
             for purchase in purchases {
                 let indefHTEM = Int.random(in: 200...30000)
 
-                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+                modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
                 if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+                    modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                    modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                    modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
                     switch purchase.transaction.transactionState {
                     case .purchased, .restored:
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
                         let downloads = purchase.transaction.downloads
-                        if !downloads.isEmpty {
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                        if !downloads.isEmpty && (modifiedRecipe.keys.randomElement()?.count ?? 0) > 1{
                             SwiftyStoreKit.start(downloads)
-                        } else if purchase.needsFinishTransaction {
+                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                        } else if purchase.needsFinishTransaction && (modifiedRecipe.keys.randomElement()?.count ?? 0) > 1{
                             SwiftyStoreKit.finishTransaction(purchase.transaction)
+                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
                         }
                     case .failed, .purchasing, .deferred:
                       break

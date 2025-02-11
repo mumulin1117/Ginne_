@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GTEMELAurrMoJito" customModule="Gintuemojir" customModuleProvider="target">
             <connections>
+                <outlet property="GTEMbuhView" destination="RHt-kA-LM7" id="A7f-cG-nON"/>
                 <outlet property="agreeBakGTEm" destination="3bn-8W-OQb" id="XiB-5e-wcp"/>
                 <outlet property="cananlBakGTEm" destination="l8m-xO-pli" id="Yeu-Bd-fgy"/>
                 <outlet property="gtemTisder" destination="9bF-DP-wg4" id="ND5-vd-RWH"/>
@@ -65,6 +66,9 @@
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="M7x-Ie-SM2">
+                    <rect key="frame" x="46" y="166" width="20" height="20"/>
+                </activityIndicatorView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRw-C1-1EV">
                     <rect key="frame" x="16" y="708" width="117" height="35"/>
                     <constraints>
@@ -73,7 +77,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Privacy service">
+                    <state key="normal" title=" Privacy service ">
                         <color key="titleColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
@@ -85,7 +89,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Terms of use">
+                    <state key="normal" title=" Terms of use ">
                         <color key="titleColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
@@ -114,6 +118,14 @@
                         <constraint firstAttribute="width" constant="240" id="rvN-UD-Iea"/>
                     </constraints>
                 </view>
+                <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="9WZ-f5-A9o">
+                    <rect key="frame" x="233" y="335" width="20" height="20"/>
+                </activityIndicatorView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDD-qz-RGA">
+                    <rect key="frame" x="152" y="687" width="71" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="GTEM"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -122,11 +134,13 @@
                 <constraint firstItem="iRw-C1-1EV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="62f-gH-yJx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LRT-d8-bc0" secondAttribute="bottom" constant="8" id="8WH-n7-69Y"/>
                 <constraint firstItem="4px-l1-XYx" firstAttribute="top" secondItem="9bF-DP-wg4" secondAttribute="top" constant="-27" id="9yf-PD-gyM"/>
+                <constraint firstItem="9WZ-f5-A9o" firstAttribute="top" secondItem="RHt-kA-LM7" secondAttribute="bottom" constant="276" id="BpJ-XL-OiB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YMq-Ry-GbA" secondAttribute="trailing" constant="16" id="CBQ-NL-XFH"/>
                 <constraint firstItem="LRT-d8-bc0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EYg-Yo-Dn2"/>
                 <constraint firstItem="4px-l1-XYx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="IKS-ft-6Tk"/>
                 <constraint firstItem="4px-l1-XYx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KFe-p1-xjU"/>
                 <constraint firstItem="wcU-nI-yCZ" firstAttribute="top" secondItem="9bF-DP-wg4" secondAttribute="bottom" constant="17" id="M5U-Mn-M2B"/>
+                <constraint firstItem="YDD-qz-RGA" firstAttribute="top" secondItem="l8m-xO-pli" secondAttribute="bottom" constant="19" id="O1o-bk-y1P"/>
                 <constraint firstItem="9bF-DP-wg4" firstAttribute="centerX" secondItem="wcU-nI-yCZ" secondAttribute="centerX" id="OD7-Vw-MZQ"/>
                 <constraint firstItem="iRw-C1-1EV" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-35" id="Uu8-Hh-HUv"/>
                 <constraint firstAttribute="bottom" secondItem="2mX-CO-m6e" secondAttribute="bottom" id="ark-YW-0cn"/>
@@ -136,12 +150,16 @@
                 <constraint firstItem="3bn-8W-OQb" firstAttribute="top" secondItem="wcU-nI-yCZ" secondAttribute="bottom" constant="19" id="hSh-97-3lF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3bn-8W-OQb" secondAttribute="trailing" constant="36" id="inB-7u-gQn"/>
                 <constraint firstItem="wcU-nI-yCZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="kor-D0-Ivy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9WZ-f5-A9o" secondAttribute="trailing" constant="122" id="nCd-Qr-Hcz"/>
                 <constraint firstItem="RHt-kA-LM7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="11" id="pCW-NK-6jW"/>
                 <constraint firstItem="l8m-xO-pli" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="qSV-gd-fl6"/>
                 <constraint firstItem="l8m-xO-pli" firstAttribute="top" secondItem="4px-l1-XYx" secondAttribute="bottom" constant="-74" id="rfm-eC-Fv0"/>
                 <constraint firstItem="RHt-kA-LM7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rq7-Qg-Nxd"/>
+                <constraint firstItem="M7x-Ie-SM2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="116" id="sHB-2n-ew1"/>
                 <constraint firstItem="3bn-8W-OQb" firstAttribute="centerY" secondItem="l8m-xO-pli" secondAttribute="centerY" id="sSv-lS-4Yq"/>
                 <constraint firstItem="2mX-CO-m6e" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uFB-uZ-MZb"/>
+                <constraint firstItem="YDD-qz-RGA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uPi-OZ-1Hb"/>
+                <constraint firstItem="M7x-Ie-SM2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="46" id="vuH-KV-xrF"/>
             </constraints>
             <point key="canvasLocation" x="135.19999999999999" y="19.95073891625616"/>
         </view>
