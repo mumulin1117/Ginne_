@@ -49,7 +49,7 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
         }
         return 20
     }
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         
@@ -139,7 +139,7 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     override func viewDidLoad() {
         super.viewDidLoad()
         let topcell = UINib(nibName: "GTEHomeHeadeCell", bundle: nil)
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
 
@@ -160,11 +160,11 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
 
         
         homewrserDataView.delegate = self
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
         
         homewrserDataView.dataSource = self
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
         if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
             homewrserDataView.showsVerticalScrollIndicator = false

@@ -17,14 +17,14 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
     private var _muddleToolGTEM: CGFloat = 0.87
     
     @IBOutlet weak var reasonTwoReportGTEm: UIButton!
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
    
     @IBOutlet weak var reasonThreeReportGTEm: UIButton!
     private var _zhunreaToolGTEM: CGFloat = 2.87
     var treesHaGTEM:UIButton?
     override func viewDidLoad() {
         super.viewDidLoad()
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         HoperGTEM = UIView()
         HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
         HoperGTEM?.alpha = 0.4
@@ -87,9 +87,9 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
 
        
         reasonTwoReportGTEm.isSelected = false
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
        
         reasonThreeReportGTEm.isSelected = false
@@ -109,7 +109,7 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
     @IBAction func givwntReasonNoingtGTEm(_ sender: Any) {
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
         modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
 
@@ -132,9 +132,9 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
            
             self._muddleToolGTEM += 0.87
 
-            self._BingToolGTEM +=  1.87
+            self._BingToolGTEM.0 +=  1.87
 
-            self._zhunreaToolGTEM = self._zhunreaToolGTEM + self._muddleToolGTEM + self._BingToolGTEM
+            self._zhunreaToolGTEM = self._zhunreaToolGTEM + self._muddleToolGTEM + self._BingToolGTEM.0
 
             if self._agitatorValuesGTEM.randomElement() ?? 0 > 0 {
                 let fdgosihunuh = "Submit->->ted successfu->->lly, we ->->will review ->->and process ->->your report as ->->soon as possible!".replacingOccurrences(of: "->->", with: "")

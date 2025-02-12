@@ -17,10 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
     private var _muddleToolGTEM: CGFloat = 0.87
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
@@ -44,35 +44,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else{
             var minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
             minUserGTEM["teachername"] = "Quill"
-            _BingToolGTEM +=  1.87
+            _BingToolGTEM.0 +=  1.87
 
-            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
             
             minUserGTEM["teacherphoto"] = "teacherw9"
               
-            _BingToolGTEM +=  1.87
+            _BingToolGTEM.0 +=  1.87
             minUserGTEM["gtemBlancecoin"] = "55"
-            _BingToolGTEM +=  1.87
+            _BingToolGTEM.0 +=  1.87
             minUserGTEM["gtemContact"] = "ginne88@gmail.com"
-            _BingToolGTEM +=  1.87
+            _BingToolGTEM.0 +=  1.87
             minUserGTEM["gtemID"] = "4534567"
-            _BingToolGTEM +=  1.87
+            _BingToolGTEM.0 +=  1.87
             
             
             GTEMCombingUser.lovderGTEm.personMehEagerGTEm.append(UIImage(named:"teacherw9")!)
-            _BingToolGTEM +=  1.87
+            _BingToolGTEM.0 +=  1.87
             
-            if _BingToolGTEM > 3 {
+            if _BingToolGTEM.0 > 3 {
                 GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = (false,false,Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.prefix(1)))
             }
             
-            _BingToolGTEM +=  1.87
-            if _BingToolGTEM > 2 {
+            _BingToolGTEM.0 +=  1.87
+            if _BingToolGTEM.0 > 2 {
                 GTEMCombingUser.lovderGTEm.fnnceAllGTEm = (false,false, Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.suffix(1)))
             }
             
-            _BingToolGTEM +=  1.87
+            _BingToolGTEM.0 +=  1.87
             if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
                 window?.rootViewController = GTEMoMaintabarJito.init()
             }
@@ -83,7 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _muddleToolGTEM += 0.87
         
        
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
         let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
         let pinghio = UIColor.red
         var colfulLisftGTEM = Array<UIColor>.init()
@@ -156,7 +156,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             
         }
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
         window?.makeKeyAndVisible()
         _muddleToolGTEM += 0.87
         return true

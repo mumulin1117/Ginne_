@@ -12,7 +12,7 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
     private var _fermentationTimerGTEM: Timer?
    
     var mojitoAcholeData:Array<Dictionary<String,String>>{
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
 
@@ -28,9 +28,9 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
 
             _muddleToolGTEM += 0.87
 
-            _BingToolGTEM +=  1.87
+            _BingToolGTEM.0 +=  1.87
 
-            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
             let newrDagte = Array<Dictionary<String,String>>()
             if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
                 return newrDagte
@@ -57,7 +57,7 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
         return CGSize(width: self.view.frame.width - 16, height: 210 )
         
     }
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
        
@@ -131,7 +131,7 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
 
         let topcell = UINib(nibName: "GTEMPopularliasCell", bundle: nil)
         homewrserDataView.register(topcell, forCellWithReuseIdentifier: "GTEMPopularliasCellID")
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
 
@@ -151,9 +151,9 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
 
       
         homewrserDataView.showsVerticalScrollIndicator = false
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
         if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
             homewrserDataView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 120, right: 0)
@@ -208,9 +208,9 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
         }
         _muddleToolGTEM += 0.87
 
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
         if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
             self.navigationController?.popViewController(animated: true)

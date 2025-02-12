@@ -18,11 +18,11 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
     private var _muddleToolGTEM: CGFloat = 0.87
     
     @IBOutlet weak var gtemMinnamer: UILabel!
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
        
         gtemMinHeader.layer.cornerRadius = 60
         _agitatorValuesGTEM.append(_muddleToolGTEM)
@@ -76,8 +76,8 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
     }
     
     @IBAction func surecHangeGTEm(_ sender: Any) {
-        var xGTEm: Double = 15.0
-        xGTEm += 30
+        var xGTEm:(Double,String?) = (15.0,nil)
+        xGTEm.0 += 30
         let labelgGTEm = UILabel.init()
         labelgGTEm.textAlignment = .right
         
@@ -88,16 +88,16 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
             labelgGTEm.addSubview(UIView.init(frame: .zero))
             return
         }
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
+        var yGTEm: (Double,String?) = (25.0,nil)
+        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
         
         SVProgressHUD.show()
-        zGTEm += 10.5
-        zGTEm -= 0.2
+        zGTEm.0 += 10.5
+        zGTEm.0 -= 0.2
 
         var minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
         GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teachername"] = iconjkGTEm
-        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+        var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
        
         if self.view.frame.height == 1 {
             labelgGTEm.isEnabled = true
@@ -112,7 +112,7 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
 
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 if let realif = self.gtemMinHeader.image{
                     
                     
@@ -124,12 +124,12 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
                 }
                
             }
-            if zGTEm > 0{
+            if zGTEm.0 > 0{
                 SVProgressHUD.showSuccess(withStatus: "Update successful!")
             }
             
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
             self.navigationController?.popViewController(animated: true)
         }
     }
@@ -138,21 +138,21 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        var xGTEm: Double = 15.0
-        xGTEm += 30
-        var yGTEm: Double = 25.0
+        var xGTEm:(Double,String?) = (15.0,nil)
+        xGTEm.0 += 30
+        var yGTEm: (Double,String?) = (25.0,nil)
        
         if let image : UIImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
-            var zGTEm: Double = xGTEm + yGTEm + 33
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
             let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
             let pinghio = UIColor.red
             
 
            
             DispatchQueue.main.async(execute: DispatchWorkItem(block: {
-                var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+                var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
                 var colfulLisftGTEM = Array<UIColor>.init()
 
                 colfulLisftGTEM.append(alpgocoloe)
@@ -161,7 +161,7 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
                 if colfulLisftGTEM.last == .blue{
                     return //恒为假
                 }
-                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                     self.gtemMinHeader.image = image
                 }
                 

@@ -19,7 +19,7 @@ class GTEMWoderMoJito: UIViewController {
     private var _muddleToolGTEM: CGFloat = 0.87
    
     @IBOutlet weak var profileFollowGTEm: UILabel!
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
    
     @IBOutlet weak var profileFancGTEm: UILabel!
     private var _zhunreaToolGTEM: CGFloat = 2.87
@@ -70,9 +70,9 @@ class GTEMWoderMoJito: UIViewController {
         }
         _muddleToolGTEM += 0.87
 
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
         if sender.tag == 500 {
             labelgGTEm.addSubview(UIView.init(frame: .zero))
             if self.view.frame.height == 1 {
@@ -99,9 +99,9 @@ class GTEMWoderMoJito: UIViewController {
         gtemMinHeader.layer.cornerRadius = 40
        
 
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
         gtemMinHeader.layer.masksToBounds = true
         
 
@@ -109,7 +109,7 @@ class GTEMWoderMoJito: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         HoperGTEM = UIView()
         HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
        

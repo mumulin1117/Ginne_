@@ -19,7 +19,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
    
     
     @IBOutlet weak var turistIonGTEM: UIImageView!
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
    
     @IBOutlet weak var hosterNameGTEM: UILabel!
     private var _zhunreaToolGTEM: CGFloat = 2.87
@@ -49,7 +49,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     }
     
     @IBAction func actioneportIngRoome(_ sender: Any) {
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         self.navigationController?.pushViewController(GTEMrepoaweDetaillMoJito.init(), animated: true)
@@ -66,17 +66,17 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sayTexGTUA.leftViewMode = .always
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         sayTexGTUA.leftView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
         sayTexGTUA.rightViewMode = .always
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         sayTexGTUA.rightView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 54, height: 30))
         sayTexGTUA.layer.cornerRadius = 22
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         sayTexGTUA.layer.masksToBounds = true
@@ -131,24 +131,24 @@ class GTEMAcholeDeatilMoJito: UIViewController {
 
        
         contenAiAchole.delegate = self
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
        
         contenAiAchole.allowsSelection = false
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
         contenAiAchole.rowHeight = UITableView.automaticDimension
         _muddleToolGTEM += 0.87
 
         contenAiAchole.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 90, right: 0)
         
         
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
         contenAiAchole.separatorStyle = .none
         contenAiAchole.register(GTEMMojitallRoomtalkCell.self, forCellReuseIdentifier: "GTEMMojitallRoomtalkCellID")
        
         contenAiAchole.estimatedRowHeight = 55
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
         
         contenAiAchole.isHidden = true
         SVProgressHUD.show()
@@ -157,9 +157,9 @@ class GTEMAcholeDeatilMoJito: UIViewController {
 
            
             SVProgressHUD.dismiss()
-            self._BingToolGTEM +=  1.87
+            self._BingToolGTEM.0 +=  1.87
 
-            self._zhunreaToolGTEM = self._zhunreaToolGTEM + self._muddleToolGTEM + self._BingToolGTEM
+            self._zhunreaToolGTEM = self._zhunreaToolGTEM + self._muddleToolGTEM + self._BingToolGTEM.0
 
             if self._agitatorValuesGTEM.randomElement() ?? 0 > 0 {
                 self.contenAiAchole.isHidden = false
@@ -172,34 +172,34 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
-        var xGTEm: Double = 15.0
-        xGTEm += 30
+        var xGTEm:(Double,String?) = (15.0,nil)
+        xGTEm.0 += 30
         
         if ismineBackgroundRoom {
-            var yGTEm: Double = 25.0
-            var zGTEm: Double = xGTEm + yGTEm + 33
+            var yGTEm: (Double,String?) = (25.0,nil)
+            var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
             _agitatorValuesGTEM.append(_muddleToolGTEM)
             _agitatorValuesGTEM.append(_zhunreaToolGTEM)
 
             let alert = UIAlertController(title: "Destroy the room?".replacingOccurrences(of: "->->", with: ""), message: "After the creator leaves the room, the room information will be destroyed", preferredStyle:.alert)
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
 
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
             alert.addAction(UIAlertAction(title: "Sure", style: .default, handler: { UIAlertAction in
-                var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+                var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                     self.navigationController?.popToRootViewController(animated: true)
                 }
                 
             }))
-            xGTEm += 30
-            wGTEM  = wGTEM - 2.0
+            xGTEm.0 += 30
+            wGTEM.0  = wGTEM.0 - 2.0
             alert.addAction(UIAlertAction.init(title: "End Action", style: .default))
-            zGTEm += 10.5
-            zGTEm -= 0.2
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 self.present(alert, animated: true)
             }
            
@@ -236,19 +236,19 @@ class GTEMAcholeDeatilMoJito: UIViewController {
            
             
             SVProgressHUD.show()
-            var xGTEm: Double = 15.0
-            xGTEm += 30
-            var yGTEm: Double = 25.0
-            var zGTEm: Double = xGTEm + yGTEm + 33
+            var xGTEm:(Double,String?) = (15.0,nil)
+            xGTEm.0 += 30
+            var yGTEm: (Double,String?) = (25.0,nil)
+            var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
            
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
                 SVProgressHUD.dismiss()
-                zGTEm += 10.5
-                zGTEm -= 0.2
+                zGTEm.0 += 10.5
+                zGTEm.0 -= 0.2
 
-                var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+                var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                     self.contenAiAchole.reloadData()
                 }
                 
@@ -267,20 +267,20 @@ class GTEMAcholeDeatilMoJito: UIViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        var xGTEm: Double = 15.0
-        xGTEm += 30
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
+        var xGTEm:(Double,String?) = (15.0,nil)
+        xGTEm.0 += 30
+        var yGTEm: (Double,String?) = (25.0,nil)
+        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         for(i, item) in GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.enumerated() {
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
 
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
            
             if  item.roomIDGTEM == self.roomInfoGTEm.roomIDGTEM {
-                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                     GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1[i] = self.roomInfoGTEm
                 }
                 
@@ -297,25 +297,25 @@ extension GTEMAcholeDeatilMoJito:UITableViewDelegate,UITableViewDataSource,UITex
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var xGTEm: Double = 15.0
+        var xGTEm:(Double,String?) = (15.0,nil)
         
         
        let diologData = roomInfoGTEm.roomMesageListGTEm[indexPath.row]
-        xGTEm += 30
+        xGTEm.0 += 30
         
         let gtemCEll = tableView.dequeueReusableCell(withIdentifier: "GTEMMojitallRoomtalkCellID", for: indexPath) as! GTEMMojitallRoomtalkCell
         
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
-        zGTEm += 10.5
+        var yGTEm: (Double,String?) = (25.0,nil)
+        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
+        zGTEm.0 += 10.5
        
         if diologData.logMeGTEM == "isme" {
            
-            zGTEm -= 0.2
+            zGTEm.0 -= 0.2
 
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
             }
            
@@ -324,13 +324,13 @@ extension GTEMAcholeDeatilMoJito:UITableViewDelegate,UITableViewDataSource,UITex
             print(diologData.2)
             return gtemCEll
         }else{
-            zGTEm -= 0.2
+            zGTEm.0 -= 0.2
 
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
            
             if indexPath.row == 0 {
-                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                     gtemCEll.gtemIconhreader.image =   UIImage(named: roomInfoGTEm.hosteruserGTEm["teacherphoto"] ?? "")
                 }
                 

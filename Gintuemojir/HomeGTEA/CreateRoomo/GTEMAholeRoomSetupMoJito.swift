@@ -91,7 +91,7 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
        
     }
     
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     
 
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
@@ -110,23 +110,23 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
     }
     private var _zhunreaToolGTEM: CGFloat = 2.87
     @IBAction func okayScreateGTEA(_ sender: UIButton) {
-        var xGTEm: Double = 15.0
-        xGTEm += 30
+        var xGTEm:(Double,String?) = (15.0,nil)
+        xGTEm.0 += 30
         
 
         if pickingGTEAimag == nil {
             SVProgressHUD.showInfo(withStatus: "The cover of the Room cannot be empty!")
             return
         }
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
+        var yGTEm: (Double,String?) = (25.0,nil)
+        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
        
         guard let comeingtitle = roomingNameGTE.text,comeingtitle.count != 0 else {
             SVProgressHUD.showInfo(withStatus: "The title of the Room cannot be empty!")
             return
         }
-        zGTEm += 10.5
-        zGTEm -= 0.2
+        zGTEm.0 += 10.5
+        zGTEm.0 -= 0.2
 
        
         guard let comeiIDtitle = roomingIdenGTE.text,comeiIDtitle.count != 0 else {
@@ -144,20 +144,20 @@ You will receive->-> a notification ->->regarding approval or->-> the reason for
 If any violations are ->->detected, we reserve->-> the right->-> to close ->->your live streaming room. Thank you for your support->-> and understanding.
 """.replacingOccurrences(of: "->->", with: "")
         
-        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+        var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-        xGTEm += 30
-        wGTEM  = wGTEM - 2.0
+        xGTEm.0 += 30
+        wGTEM.0  = wGTEM.0 - 2.0
 
        
         
         let aleracGTEmControllerv = UIAlertController(title: "Cteate Notice", message:alertINfog , preferredStyle: .alert)
-        xGTEm += 30
-        wGTEM  = wGTEM - 2.0
+        xGTEm.0 += 30
+        wGTEM.0  = wGTEM.0 - 2.0
 
         
         let rechargeGTEmAction = UIAlertAction(title: "Sure", style: .default) { scd in
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 SVProgressHUD.show(withStatus: "Uploading in progress...")
             }
            
@@ -185,27 +185,27 @@ If any violations are ->->detected, we reserve->-> the right->-> to close ->->yo
            
             cGTEM += 12
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4){
-                zGTEm += 10.5
+                zGTEm.0 += 10.5
                 SVProgressHUD.dismiss()
                
-                zGTEm -= 0.2
+                zGTEm.0 -= 0.2
 
                 let minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
                 
                 let minroom = GTEMAcholeDeatilMoJito.init(ismineBackgroundRoom: true, roomInfoGTEm: (1,GTEmAcholeRoom.init(roomIDGTEM: comeiIDtitle, roomNameGTEM: comeingtitle, roombackgroundGTEM: self.pickingGTEAimag!, roomHosterGTEm: minUserGTEM, roomMesageListGTEm: [])))
-                xGTEm += 30
-                wGTEM  = wGTEM - 2.0
+                xGTEm.0 += 30
+                wGTEM.0  = wGTEM.0 - 2.0
 
                 
 
                 self.navigationController?.pushViewController(minroom, animated: true)
-                zGTEm += 10.5
-                zGTEm -= 0.2
+                zGTEm.0 += 10.5
+                zGTEm.0 -= 0.2
             }
             
         }
         aleracGTEmControllerv.addAction(rechargeGTEmAction)
-        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+        if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
             aleracGTEmControllerv.addAction(UIAlertAction(title: "End Action", style: .default))
         }
        
@@ -216,21 +216,21 @@ If any violations are ->->detected, we reserve->-> the right->-> to close ->->yo
 
 extension  GTEMAholeRoomSetupMoJito :UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        var xGTEm: Double = 15.0
-        xGTEm += 30
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
+        var xGTEm:(Double,String?) = (15.0,nil)
+        xGTEm.0 += 30
+        var yGTEm: (Double,String?) = (25.0,nil)
+        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
         
          if let image : UIImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
-             zGTEm += 10.5
-             zGTEm -= 0.2
+             zGTEm.0 += 10.5
+             zGTEm.0 -= 0.2
 
             
              self.pickingGTEAimag = image
              DispatchQueue.main.async {
-                 var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+                 var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-                 if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                 if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                      self.uploadPicButtom.setBackgroundImage(image, for: .normal)
                  }
                  

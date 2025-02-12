@@ -24,7 +24,7 @@ class GTEMCommenttMojito: UIViewController {
     private var _fermentationTimerGTEM: Timer?
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
     private var _muddleToolGTEM: CGFloat = 0.87
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
     var realingUserDtaGTEm:Dictionary<String,String>
     init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?, realingUserDtaGTEm: Dictionary<String, String>) {
@@ -71,7 +71,7 @@ class GTEMCommenttMojito: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         sayTexGTUA.leftViewMode = .always
         
         sayTexGTUA.leftView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
@@ -102,12 +102,12 @@ class GTEMCommenttMojito: UIViewController {
         mephotoonGTEM.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
         _muddleToolGTEM += 0.87
 
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
        
         if realingUserDtaGTEm["commentsaying"] == nil {
             mephotoonGTEM.isHidden = true
-            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
             if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
                 namecontetnlkblGTEm.isHidden = true
@@ -119,7 +119,7 @@ class GTEMCommenttMojito: UIViewController {
         }else{
             yeticonGTEM.isHidden = true
             yettextGTEM.isHidden = true
-            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
             if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
                 countGTEm.text = "1 c&%%&ommen&%%&ts".replacingOccurrences(of: "&%%&", with: "")
@@ -129,7 +129,7 @@ class GTEMCommenttMojito: UIViewController {
         }
        
         mephotoonGTEM.layer.cornerRadius = 20
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
         if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
             mephotoonGTEM.layer.masksToBounds = true

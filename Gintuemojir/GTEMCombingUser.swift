@@ -44,25 +44,25 @@ class GTEMCombingUser: NSObject {
         _zhunreaToolGTEM  = 33
         personMeGTEm.append([:])
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-        var xGTEm: Double = 15.0
-        xGTEm += 30
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
-        zGTEm += 10.5
-        zGTEm -= 0.2
+        var xGTEm:(Double,String?) = (15.0,nil)
+        xGTEm.0 += 30
+        var yGTEm: (Double,String?) = (25.0,nil)
+        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
+        zGTEm.0 += 10.5
+        zGTEm.0 -= 0.2
 
-        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+        var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
        
         guard let pathGTEM = Bundle.main.path(forResource: "GTEHVieedeol", ofType: "plist"),
-              (zGTEm > 30.0),
+              (zGTEm.0 > 30.0),
         let dataGTEM = FileManager.default.contents(atPath: pathGTEM) ,
-        ((wGTEM - 10000) < 10.0) else {
+              ((wGTEM.0 - 10000) < 10.0) else {
             modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
             videoTotaluserGTEm = (false,Array<Dictionary<String,String>>(),true)
             return
         }
-        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+        if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
            
         }
         modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
@@ -105,7 +105,7 @@ class GTEMCombingUser: NSObject {
         ]
         
         for (k,item) in begRoomIGTEm.enumerated() {
-            var xGTEm: Double = 15.0
+            var xGTEm:(Double,String?) = (15.0,nil)
           
             var aGTEm:Float = 10
             aGTEm += 33
@@ -129,11 +129,11 @@ class GTEMCombingUser: NSObject {
                 return
                 
             }
-            xGTEm += 30
+            xGTEm.0 += 30
             
             let welcomeRoomlog = "Talk about:\(item.0 )"
-            var yGTEm: Double = 25.0
-            var zGTEm: Double = xGTEm + yGTEm + 33
+            var yGTEm: (Double,String?) = (25.0,nil)
+            var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
            
             let gtemSendingContents = [
                             "Hello! What’s everyone drinking today?",
@@ -144,18 +144,18 @@ class GTEMCombingUser: NSObject {
                             "Looking forward to sharing and discovering new favorites!"
                             
             ][k]
-            zGTEm += 10.5
-            yGTEm += 10.5
+            zGTEm.0 += 10.5
+            yGTEm.0 += 10.5
             let duhua0GTEm = ("notme",self.videoTotaluserGTEm.1[k],welcomeRoomlog)
-            zGTEm -= 0.2
+            zGTEm.0 -= 0.2
 
             
             let duhu10GTEm = ("notme",sleUseringoGTEm,gtemSendingContents)
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
             var arrarDiolog = [duhua0GTEm,duhu10GTEm] as [(logMeGTEM:String,enterProuserGTEM:Dictionary<String,String>,gtemSendingContent:String)]
             
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 let reamROomAncholeGTEm =   (GTEmAcholeRoom.init(roomIDGTEM: item.2, roomNameGTEM: item.0,roombackgroundGTEM: UIImage(named:item.1),roomHosterGTEm: self.videoTotaluserGTEm.1[k], roomMesageListGTEm: arrarDiolog))
                
                 
@@ -171,38 +171,38 @@ class GTEMCombingUser: NSObject {
     
 
     class func validateGTEMEmail(_ eGTEMmail: String) -> Bool {
-        var xGTEm: Double = 15.0
-        xGTEm += 30
-        var yGTEm: Double = 25.0
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        let pbluehio = UIColor.blue
         let regexGTEM = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
-        var zGTEm: Double = xGTEm + yGTEm + 33
-        zGTEm += 10.5
-        zGTEm -= 0.2
-
-        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
-
-        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-            return NSPredicate(format: "SELF MATCHES %@", regexGTEM).evaluate(with: eGTEMmail)
        
+       
+        var colfulLisftGTEM = Array<UIColor>.init()
+        if colfulLisftGTEM.contains(UIColor.purple) {
+            colfulLisftGTEM.append(pbluehio)
+            return true
         }
-           
-           return NSPredicate(format: "SELF MATCHES %@", regexGTEM).evaluate(with: eGTEMmail)
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+        let getmkkk = NSPredicate(format: "SELF MATCHES %@", regexGTEM)
+        
+        if colfulLisftGTEM.last == .green{
+            return true
+        }
+         
+        return getmkkk.evaluate(with: eGTEMmail)
       
     }
 
       
     class func validateEmiallogGTEmPassword(_ passwordGTEm: String) -> Bool {
-        var xGTEm: Double = 15.0
-        xGTEm += 30
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
-        zGTEm += 10.5
-        zGTEm -= 0.2
-
-        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
-
-        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-            return passwordGTEm.count >= 6 && passwordGTEm.count <= 12
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        let pbluehio = UIColor.blue
+        var colfulLisftGTEM = Array<UIColor>.init()
+        if colfulLisftGTEM.contains(UIColor.purple) {
+            colfulLisftGTEM.append(pbluehio)
+            return passwordGTEm.count >= 6
         }
         return passwordGTEm.count >= 6 && passwordGTEm.count <= 12
     }
@@ -218,36 +218,39 @@ class PEAUFNeuGuideChallengnng: UINavigationController {
     private var _fermentationTimerGTEM: Timer?
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
     private var _muddleToolGTEM: CGFloat = 0.87
-    private var _BingToolGTEM: CGFloat = 1.87
-    private var _zhunreaToolGTEM: CGFloat = 2.87
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        
         _agitatorValuesGTEM.append(_muddleToolGTEM)
-        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
+        
         self.navigationBar.isHidden = true
     }
     
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        var xGTEm: Double = 15.0
-        xGTEm += 30
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        let pbluehio = UIColor.blue
         
-
+        
+        
         if children.count > 0  && !viewController.isMember(of:PEAUFBascivChallengnng.self) {
-            var yGTEm: Double = 25.0
-            yGTEm += 30
-            var zGTEm: Double = xGTEm + yGTEm + 33
-            zGTEm += 10.5
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
-            wGTEM += 44
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                viewController.hidesBottomBarWhenPushed = true
-            }
+            viewController.hidesBottomBarWhenPushed = true
            
-            
+            var colfulLisftGTEM = Array<UIColor>.init()
+            if colfulLisftGTEM.contains(UIColor.purple) {
+                colfulLisftGTEM.append(pbluehio)
+                return
+            }
+            colfulLisftGTEM.append(alpgocoloe)
+            colfulLisftGTEM.append(pinghio)
+
+            if colfulLisftGTEM.last == .green{
+                return
+            }
         }
-        xGTEm += 30
+        
        
         super.pushViewController(viewController, animated: false)
     }

@@ -12,7 +12,7 @@ class GTEVideocerCell: UICollectionViewCell {
     private var _fermentationTimerGTEM: Timer?
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
     private var _muddleToolGTEM: CGFloat = 0.87
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
 
     @IBOutlet weak var playButtonGTEA: UIButton!

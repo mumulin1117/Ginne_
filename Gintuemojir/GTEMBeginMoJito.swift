@@ -35,17 +35,17 @@ class GTEmAcholeRoom {
     
 
     init(roomIDGTEM:String,roomNameGTEM:String,roombackgroundGTEM:UIImage?,roomHosterGTEm: [String : String], roomMesageListGTEm: Array<(logMeGTEM:String,enterProuserGTEM:Dictionary<String,String>,gtemSendingContent:String)>) {
-        var xGTEm: Double = 15.0
-        xGTEm += 30
+        var xGTEm:(Double,String?) = (15.0,nil)
+        xGTEm.0 += 30
         self.hosteruserGTEm = roomHosterGTEm
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
+        var yGTEm: (Double,String?) = (25.0,nil)
+        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
         self.roomMesageListGTEm = roomMesageListGTEm
-        zGTEm += 10.5
-        zGTEm -= 0.2
-        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+        zGTEm.0 += 10.5
+        zGTEm.0 -= 0.2
+        var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-        if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+        if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
             self.roomNameGTEM = roomNameGTEM
         }else{
             self.roomNameGTEM = roomNameGTEM
@@ -59,14 +59,14 @@ class GTEmAcholeRoom {
 
         if colfulLisftGTEM.last == .blue{
             self.roombackgroundGTEM =  roombackgroundGTEM
-            wGTEM += 20
-            yGTEm += 20
+            wGTEM.0 += 20
+            wGTEM.0 += 20
             self.roomIDGTEM = roomIDGTEM
             return //恒为假
         }
         self.roombackgroundGTEM =  roombackgroundGTEM
-        wGTEM += 20
-        yGTEm += 20
+        wGTEM.0 += 20
+        wGTEM.0 += 20
         self.roomIDGTEM = roomIDGTEM
     }
 }

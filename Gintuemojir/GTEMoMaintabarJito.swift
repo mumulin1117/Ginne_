@@ -12,7 +12,7 @@ class GTEMoMaintabarJito: UITabBarController {
     private var _fermentationTimerGTEM: Timer?
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
     private var _muddleToolGTEM: CGFloat = 0.87
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
     
     var HoperGTEM:UIView?
@@ -23,7 +23,7 @@ class GTEMoMaintabarJito: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         
         HoperGTEM = UIView()
         HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
@@ -65,7 +65,7 @@ class GTEMoMaintabarJito: UITabBarController {
         surfaceGTEm.stackedLayoutAppearance.selected.titleTextAttributes = [
             .foregroundColor:UIColor(red: 0.96, green: 0.75, blue: 0.01, alpha: 1)
         ]
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
         
         
         
@@ -76,7 +76,7 @@ class GTEMoMaintabarJito: UITabBarController {
         
         
         self.selectedIndex = 1
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
         
         tabBar.standardAppearance = surfaceGTEm
         HoperGTEM?.alpha = 0.4
@@ -108,19 +108,16 @@ class GTEMoMaintabarJito: UITabBarController {
     }
 
     func setingGTEmCommn(barIconGTEm:String,GTEmrooter:UIViewController,TitaaleGTEm:String) -> PEAUFNeuGuideChallengnng {
-        var aGTEm:Float = 10
-        aGTEm += 2
+        
         let navi = PEAUFNeuGuideChallengnng.init(rootViewController: GTEmrooter)
-        var bGTEM:Float  = 20
-        bGTEM += 2
+        
         let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
         let pinghio = UIColor.red
         var colfulLisftGTEM = Array<UIColor>.init()
 
         
         GTEmrooter.tabBarItem.image = UIImage.init(named: barIconGTEm )?.withRenderingMode(.alwaysOriginal)
-        var cGTEM:Float  = aGTEm + bGTEM
-        cGTEM += 12
+       
         colfulLisftGTEM.append(alpgocoloe)
         colfulLisftGTEM.append(pinghio)
 
@@ -129,17 +126,8 @@ class GTEMoMaintabarJito: UITabBarController {
         }
         GTEmrooter.tabBarItem.selectedImage = UIImage.init(named:barIconGTEm + "sel")?.withRenderingMode(.alwaysOriginal)
        
-        var dGTEM:Float  = aGTEm*3 - bGTEM
-        dGTEM += 12
+        GTEmrooter.tabBarItem.title = TitaaleGTEm
 
-        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-            GTEmrooter.tabBarItem.title = TitaaleGTEm
-        }
-       
-     
-       
-       
-       
        
         return navi
     }

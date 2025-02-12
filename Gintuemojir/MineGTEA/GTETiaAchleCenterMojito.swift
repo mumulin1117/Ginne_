@@ -29,7 +29,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
    
     
     @IBOutlet weak var showingVideoViewGTEm: UIImageView!
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
    
     @IBOutlet weak var videobiankuaniconGTEm: UIImageView!
     private var _zhunreaToolGTEM: CGFloat = 2.87
@@ -118,8 +118,13 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
                 idcardLogoGTEM.isSelected = true
             }
         }
+   
+        let urlioklinkGTEM = (realingUserDtaGTEm["viedeourll0"] ?? "").replacingOccurrences(of: "^^>", with: "")
         
-        if let urlname = URL(string: realingUserDtaGTEm["viedeourll0"] ?? ""){
+        if let urlname = URL(string:urlioklinkGTEM){
+            
+           
+            
             GTEMVigerMoJito.beginloadGTEmThumbnail(for: urlname, cgtemompletion: { geitimage in
                 DispatchQueue.main.async {
                     self.showingVideoViewGTEm.image = geitimage
@@ -136,100 +141,108 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
-  
 
-    
     
     @IBAction func benginToplaingVirwwr(_ sender: UIButton) {
         
         //需要订阅没订阅
         if realingUserDtaGTEm["ifneedsubGTEM"] == "1" &&  realingUserDtaGTEm["issubedeGTEm"] == "0" && (sender.tag == 30 || sender.tag == 60){
             //需要订阅没订阅
-            let subvc =  UIViewController.init()
+            let alertNeesub = UIAlertController(title: "Whether to subscribe or not", message: "This subscription will cost 100 balance, and after subscribing, you will be able to view the user's exciting teaching", preferredStyle:.alert)
+            alertNeesub.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { adfgg in
+                self.surepayingNeedCoinGTEm()
+            }))
+            alertNeesub.addAction(UIAlertAction(title: "cancel", style: .default))
             
-            subvc.view.backgroundColor = UIColor(red: 0.17, green: 0.02, blue: 0.01, alpha: 1)
-        
-            presentVCGTEm = subvc
-            let needImage = UIImageView.init(image: UIImage.init(named: "100nnedbgcontent"))
-            needImage.contentMode = .scaleAspectFill
-            subvc.view.addSubview(needImage)
-            needImage.isUserInteractionEnabled = true
+            self.present(alertNeesub, animated: true)
             
-            needImage.snp.makeConstraints { make in
-                make.width.equalTo(336.45)
-                make.height.equalTo(471.54)
-                make.center.equalToSuperview()
-            }
-            
-            let confiresmger = UIButton.init()
-            confiresmger.setBackgroundImage(UIImage.init(named: "xuanghzongbgGTEM"), for: .normal)
-            confiresmger.setTitle("Confirm", for: .normal)
-            confiresmger.setTitleColor(UIColor(red: 0.33, green: 0.04, blue: 0.01, alpha: 1), for: .normal)
-            confiresmger.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-            
-            needImage.addSubview(confiresmger)
-            confiresmger.snp.makeConstraints { make in
-                make.width.equalTo(248)
-                make.height.equalTo(48)
-                make.centerX.equalToSuperview()
-                make.bottom.equalTo(needImage).offset(-52)
-            }
-           
-            confiresmger.addTarget(self, action: #selector(surepayingNeedCoinGTEm(bgt:)), for: .touchUpInside)
-            
-            let backesmger = UIButton.init()
-            backesmger.setBackgroundImage(UIImage.init(named: "Geu_dias"), for: .normal)
-            backesmger.addTarget(self, action: #selector(dismissNeedCoinGTEm), for: .touchUpInside)
-            subvc.view.addSubview(backesmger)
-            backesmger.snp.makeConstraints { make in
-                make.width.height.equalTo(28)
-                make.centerX.equalToSuperview()
-                make.top.equalTo(confiresmger.snp.bottom).offset(50)
-            }
-            
-            
-            subvc.modalPresentationStyle = .overCurrentContext
-            self.present(subvc, animated: true)
+//            let subvc =  UIViewController.init()
+//            
+//            subvc.view.backgroundColor = UIColor(red: 0.17, green: 0.02, blue: 0.01, alpha: 1)
+//        
+//            presentVCGTEm = subvc
+//            
+//            
+//            let needImage = UIImageView.init(image: UIImage.init(named: "100nnedbgcontent"))
+//            needImage.contentMode = .scaleAspectFill
+//            subvc.view.addSubview(needImage)
+//            needImage.isUserInteractionEnabled = true
+//            
+//            needImage.snp.makeConstraints { make in
+//                make.width.equalTo(336.45)
+//                make.height.equalTo(471.54)
+//                make.center.equalToSuperview()
+//            }
+//            
+//            let confiresmger = UIButton.init()
+//            confiresmger.setBackgroundImage(UIImage.init(named: "xuanghzongbgGTEM"), for: .normal)
+//            confiresmger.setTitle("Confirm", for: .normal)
+//            confiresmger.setTitleColor(UIColor(red: 0.33, green: 0.04, blue: 0.01, alpha: 1), for: .normal)
+//            confiresmger.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+//            
+//            needImage.addSubview(confiresmger)
+//            confiresmger.snp.makeConstraints { make in
+//                make.width.equalTo(248)
+//                make.height.equalTo(48)
+//                make.centerX.equalToSuperview()
+//                make.bottom.equalTo(needImage).offset(-52)
+//            }
+//           
+//            confiresmger.addTarget(self, action: #selector(surepayingNeedCoinGTEm(bgt:)), for: .touchUpInside)
+//            
+//            let backesmger = UIButton.init()
+//            backesmger.setBackgroundImage(UIImage.init(named: "Geu_dias"), for: .normal)
+//            backesmger.addTarget(self, action: #selector(dismissNeedCoinGTEm), for: .touchUpInside)
+//            subvc.view.addSubview(backesmger)
+//            backesmger.snp.makeConstraints { make in
+//                make.width.height.equalTo(28)
+//                make.centerX.equalToSuperview()
+//                make.top.equalTo(confiresmger.snp.bottom).offset(50)
+//            }
+//            
+//            
+//            subvc.modalPresentationStyle = .overCurrentContext
+//            self.present(subvc, animated: true)
      
             return
         }
         
-        var xGTEm: Double = 15.0
-        xGTEm += 30
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
+        var xGTEm:(Double,String?) = (15.0,nil)
+        xGTEm.0 += 30
+        var yGTEm: (Double,String?) = (25.0,nil)
+        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
        
        
         
         if realingUserDtaGTEm["ifneedsubGTEM"] == "1" &&  realingUserDtaGTEm["issubedeGTEm"] == "1" ,sender.tag == 30 {//订阅按钮
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
 
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 SVProgressHUD.showSuccess(withStatus: "You have already subscribed to this user")
             }
             
             return
         }
-        zGTEm += 10.5
-        zGTEm -= 0.2
+        zGTEm.0 += 10.5
+        zGTEm.0 -= 0.2
         if realingUserDtaGTEm["ifneedsubGTEM"] == "0" ,sender.tag == 30 {//关注按钮
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
 
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 SVProgressHUD.show()
             }
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
                 SVProgressHUD.dismiss()
-                zGTEm += 10.5
-                zGTEm -= 0.2
+                zGTEm.0 += 10.5
+                zGTEm.0 -= 0.2
                 sender.isSelected = !sender.isSelected
                 
                 let ifcontain = GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter({ infol in
@@ -281,15 +294,15 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             }
             return
         }
-        zGTEm += 10.5
-        zGTEm -= 0.2
+        zGTEm.0 += 10.5
+        zGTEm.0 -= 0.2
         if sender.tag == 40 {//message按钮
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
 
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 self.navigationController?.pushViewController(GTEMusernmeaasfeMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil,realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
             }
            
@@ -299,30 +312,33 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         }
         
         
-        zGTEm += 10.5
-        zGTEm -= 0.2
+        zGTEm.0 += 10.5
+        zGTEm.0 -= 0.2
         if sender.tag == 50 {//video call
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
 
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 self.navigationController?.pushViewController(GTEMusVifedertMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
             }
            
             
             return
         }
-        zGTEm += 10.5
-        zGTEm -= 0.2
-        if let link = realingUserDtaGTEm["viedeourll0"],sender.tag == 60{
-            zGTEm += 10.5
-            zGTEm -= 0.2
+        zGTEm.0 += 10.5
+        zGTEm.0 -= 0.2
+        
+        let urlioklinkGTEM = (realingUserDtaGTEm["viedeourll0"])?.replacingOccurrences(of: "^^>", with: "")
+        
+        if let link = urlioklinkGTEM,sender.tag == 60{
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
 
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 self.navigationController?.pushViewController(GTEMPlayerMojito.init(linkGTEM_Url: link), animated: false)
             }
            
@@ -336,21 +352,21 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     }
     
     
-    @objc func surepayingNeedCoinGTEm(bgt:UIButton) {
-        var xGTEm: Double = 15.0
-        xGTEm += 30
+    @objc func surepayingNeedCoinGTEm() {
+        var xGTEm:(Double,String?) = (15.0,nil)
+        xGTEm.0 += 30
         
         var gtemBlksdgb =  Int( GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] ?? "0") ?? 0
-        var yGTEm: Double = 25.0
-        var zGTEm: Double = xGTEm + yGTEm + 33
+        var yGTEm: (Double,String?) = (25.0,nil)
+        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
         
         if gtemBlksdgb < 100 {
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
 
             
             let alertv = UIAlertController(title: "Balance is Low", message: "", preferredStyle: .alert)
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
             
             let rechargeGTEmAction = UIAlertAction(title: "Increase Balance", style: .default) { scd in
@@ -358,7 +374,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
                 self.navigationController?.pushViewController(GTEMblancelMojito.init(), animated: true)
             }
             alertv.addAction(rechargeGTEmAction)
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 alertv.addAction(UIAlertAction(title: "End Action", style: .default))
             }
             
@@ -368,18 +384,18 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         }
         
         gtemBlksdgb -= 100
-        xGTEm += 30
+        xGTEm.0 += 30
         
         GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
-        var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
-        wGTEM  = wGTEM - 2.0
+        var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
+        wGTEM.0  = wGTEM.0 - 2.0
 
         SVProgressHUD.showSuccess(withStatus: "Subscription successful！")
-        zGTEm += 10.5
+        zGTEm.0 += 10.5
         
         self.presentVCGTEm?.dismiss(animated: true)
       //修改数据订阅状态
-        zGTEm -= 0.2
+        zGTEm.0 -= 0.2
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
         modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
        
@@ -411,7 +427,7 @@ class GTEMUserAboutAchole: UIViewController {
     private var _fermentationTimerGTEM: Timer?
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
     private var _muddleToolGTEM: CGFloat = 0.87
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
     
     var realingUserDtaGTEm:Dictionary<String,String>
@@ -441,7 +457,7 @@ class GTEMUserAboutAchole: UIViewController {
     }
     
    @objc func startReportAndBlaCkUserGTEm()  {
-       _agitatorValuesGTEM.append(_BingToolGTEM)
+       _agitatorValuesGTEM.append(_BingToolGTEM.0)
        
         let gtemTitle = "Block->->Report".components(separatedBy: "->->")
        _agitatorValuesGTEM.append(_muddleToolGTEM)
@@ -463,7 +479,7 @@ class GTEMUserAboutAchole: UIViewController {
 
                 self._muddleToolGTEM += 0.87
 
-                self._BingToolGTEM +=  1.87
+                self._BingToolGTEM.0 +=  1.87
                 GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2 =  GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter {
                     let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
                     let pinghio = UIColor.red
@@ -496,7 +512,7 @@ class GTEMUserAboutAchole: UIViewController {
                     return  !($0["gtemID"]  == onlyID)
                     
                 }
-                _BingToolGTEM +=  1.87
+                _BingToolGTEM.0 +=  1.87
 
                 
                 GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1 = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.filter {
@@ -513,7 +529,7 @@ class GTEMUserAboutAchole: UIViewController {
                     return !($0["gtemID"]  == onlyID)
                     
                 }
-                _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+                _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
                 
                 

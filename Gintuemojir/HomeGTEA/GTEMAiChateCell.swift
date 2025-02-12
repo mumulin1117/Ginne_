@@ -15,13 +15,13 @@ class GTEMAiChateCell: UITableViewCell {
     private var _muddleToolGTEM: CGFloat = 0.87
    
     let gtemIconhreader = UIImageView()
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
     private let dioloagbackGTEm = UIView.init()
     
     var getrmWhoismine:(String,Bool,Bool) = ( "ismeingGTEm",false,false) {
         didSet{
-            _agitatorValuesGTEM.append(_BingToolGTEM)
+            _agitatorValuesGTEM.append(_BingToolGTEM.0)
             _agitatorValuesGTEM.append(_muddleToolGTEM)
             _agitatorValuesGTEM.append(_zhunreaToolGTEM)
             if getrmWhoismine.0 == "ismeingGTEm" && getrmWhoismine.1 == false{
@@ -51,9 +51,9 @@ class GTEMAiChateCell: UITableViewCell {
                 }
                 _muddleToolGTEM += 0.87
 
-                _BingToolGTEM +=  1.87
+                _BingToolGTEM.0 +=  1.87
 
-                _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+                _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
                 dioloagbackGTEm.snp.remakeConstraints { make in
                     
@@ -111,9 +111,9 @@ class GTEMAiChateCell: UITableViewCell {
                   
                 }
                 
-            _BingToolGTEM +=  1.87
+            _BingToolGTEM.0 +=  1.87
 
-            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
            
                 
@@ -170,7 +170,7 @@ class GTEMAiChateCell: UITableViewCell {
         }
         contentView.addSubview(gtemIconhreader)
         gtemSayieVuew.numberOfLines = 0
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         let labelgGTEm = UILabel.init()
         labelgGTEm.textAlignment = .right
         labelgGTEm.adjustsFontSizeToFitWidth = true
@@ -201,9 +201,9 @@ class GTEMAiChateCell: UITableViewCell {
         }
         _muddleToolGTEM += 0.87
 
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
         dioloagbackGTEm.snp.makeConstraints { make in
             

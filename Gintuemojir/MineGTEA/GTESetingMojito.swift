@@ -21,7 +21,7 @@ class GTESetingMojito: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
        
         
         gtemMinHeader.layer.cornerRadius = 40
@@ -52,7 +52,7 @@ class GTESetingMojito: UIViewController {
         
         
     }
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
@@ -84,7 +84,7 @@ class GTESetingMojito: UIViewController {
             modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
             let indefHTEM = Int.random(in: 200...30000)
 
-            let showingAslertGTEm = UIAlertController.init(title: "Account Deletion?", message: "Upon deletion, all information pertaining to your account will be wiped!", preferredStyle: .alert)
+            let showingAslertGTEm = UIAlertController.init(title: " Account  Deletion?", message: " Upon deletion,  all information pertaining to your account will be wiped!", preferredStyle: .alert)
            
             modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
            
@@ -100,32 +100,32 @@ class GTESetingMojito: UIViewController {
                     if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
                         SVProgressHUD.dismiss()
                     }
-                    var xGTEm: Double = 15.0
-                    xGTEm += 30
+                    var xGTEm:(Double,String?) = (15.0,nil)
+                    xGTEm.0 += 30
                     
                     UserDefaults.standard.set(false, forKey: "oooggStatuelGTEm")
-                    var yGTEm: Double = 25.0
-                    var zGTEm: Double = xGTEm + yGTEm + 33
+                    var yGTEm: (Double,String?) = (25.0,nil)
+                    var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
                    
                     GTEMCombingUser.lovderGTEm.personMeGTEm.removeAll()
-                    zGTEm += 10.5
+                    zGTEm.0 += 10.5
                    
 
                     
                     GTEMCombingUser.lovderGTEm.personMehEagerGTEm.removeAll()
-                    zGTEm += 10.5
+                    zGTEm.0 += 10.5
                     GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.removeAll()
-                    var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+                    var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-                    zGTEm -= 0.2
+                    zGTEm.0 -= 0.2
                     GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.removeAll()
-                    zGTEm -= 0.2
+                    zGTEm.0 -= 0.2
                     GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.removeAll()
-                    if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                    if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                         ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMLogsininerMoJito.init())
                       
                     }
-                    zGTEm += 10.5
+                    zGTEm.0 += 10.5
                     SVProgressHUD.showSuccess(withStatus: "The account has been erased!")
                   
 
@@ -139,31 +139,31 @@ class GTESetingMojito: UIViewController {
         }
         
         if sender.tag == 50 {
-            var xGTEm: Double = 15.0
-            xGTEm += 30
+            var xGTEm:(Double,String?) = (15.0,nil)
+            xGTEm.0 += 30
            
             UserDefaults.standard.set(false, forKey: "oooggStatuelGTEm")
-            var yGTEm: Double = 25.0
-            var zGTEm: Double = xGTEm + yGTEm + 33
+            var yGTEm: (Double,String?) = (25.0,nil)
+            var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
            
             GTEMCombingUser.lovderGTEm.personMeGTEm.removeAll()
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
 
             GTEMCombingUser.lovderGTEm.personMehEagerGTEm.removeAll()
             
-            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
            
             GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.removeAll()
-            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.removeAll()
                 
             }
            
             GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.removeAll()
-            zGTEm -= 0.2
-            zGTEm += 10.5
+            zGTEm.0 -= 0.2
+            zGTEm.0 += 10.5
             ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMLogsininerMoJito.init())
            
         }
@@ -188,22 +188,22 @@ class GTESetingMojito: UIViewController {
         }
         
         if sender.tag == 54 {
-            var xGTEm: Double = 15.0
-            xGTEm += 30
-            var yGTEm: Double = 25.0
-            var zGTEm: Double = xGTEm + yGTEm + 33
+            var xGTEm:(Double,String?) = (15.0,nil)
+            xGTEm.0 += 30
+            var yGTEm: (Double,String?) = (25.0,nil)
+            var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
            
             SVProgressHUD.show(withStatus: "Clearing...")
-            zGTEm += 10.5
-            zGTEm -= 0.2
+            zGTEm.0 += 10.5
+            zGTEm.0 -= 0.2
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
-                zGTEm += 10.5
-                zGTEm -= 0.2
+                zGTEm.0 += 10.5
+                zGTEm.0 -= 0.2
 
-                var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+                var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-                if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                    SVProgressHUD.showSuccess(withStatus: "All Chache are Cleared!")
+                if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
+                    SVProgressHUD.showSuccess(withStatus: " All Chache are Cleared!")
                 }
                
             }

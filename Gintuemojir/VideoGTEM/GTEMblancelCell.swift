@@ -18,14 +18,14 @@ class GTEMblancelCell: UICollectionViewCell {
     private var _muddleToolGTEM: CGFloat = 0.87
    
     @IBOutlet weak var allDollersGTEm: UILabel!
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
   
 
     override var isSelected: Bool{
         didSet{
             if isSelected {
-                _agitatorValuesGTEM.append(_BingToolGTEM)
+                _agitatorValuesGTEM.append(_BingToolGTEM.0)
                 _agitatorValuesGTEM.append(_muddleToolGTEM)
                 _agitatorValuesGTEM.append(_zhunreaToolGTEM)
                 statiusButnGTEm.image = UIImage(named: "highy_back")

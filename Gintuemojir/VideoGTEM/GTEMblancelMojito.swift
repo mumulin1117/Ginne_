@@ -52,7 +52,7 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
 
         ("$&%%&99.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"ikgcarevewbdettd",49000,false,false)]
     
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
    
     @IBOutlet weak var wallentblanceGTEm: UILabel!
     
@@ -64,7 +64,7 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         
         dataVireGTEm.delegate = self
         _agitatorValuesGTEM.append(_muddleToolGTEM)
@@ -99,7 +99,7 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
 
 
     @IBAction func sureRechargenoingGTEm(_ sender: Any) {
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         self.view.isUserInteractionEnabled = false
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
@@ -122,9 +122,9 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
             SVProgressHUD.dismiss()
             _muddleToolGTEM += 0.87
 
-            _BingToolGTEM +=  1.87
+            _BingToolGTEM.0 +=  1.87
 
-            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+            _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
             if _agitatorValuesGTEM.randomElement() ?? 0 < 0 {
                 return
@@ -140,14 +140,14 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
                 }
                
 
-                _BingToolGTEM +=  1.87
+                _BingToolGTEM.0 +=  1.87
 
               
                 if psPurch.needsFinishTransaction {
                     SwiftyStoreKit.finishTransaction(psPurch.transaction)
                 }
             
-                _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+                _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
                
                 let diopuserGTEM =  GTEMCombingUser.lovderGTEm.personMeGTEm[0]
@@ -160,9 +160,9 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
 
                
                 GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"]  = "\(oweneddddGTEm)"
-                _BingToolGTEM +=  1.87
+                _BingToolGTEM.0 +=  1.87
 
-                _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+                _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
                 self.wallentblanceGTEm.text = "\(oweneddddGTEm)"
                

@@ -23,7 +23,7 @@ class GTEMAICholeMoJito: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        _agitatorValuesGTEM.append(_BingToolGTEM)
+        _agitatorValuesGTEM.append(_BingToolGTEM.0)
         sayTexGTUA.leftViewMode = .always
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         contenAiAchole.dataSource = self
@@ -40,9 +40,9 @@ class GTEMAICholeMoJito: UIViewController {
         }
         _muddleToolGTEM += 0.87
         contenAiAchole.rowHeight = UITableView.automaticDimension
-        _BingToolGTEM +=  1.87
+        _BingToolGTEM.0 +=  1.87
 
-        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
 
         HoperGTEM = UIView()
         HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
@@ -109,7 +109,7 @@ class GTEMAICholeMoJito: UIViewController {
     
     @IBOutlet weak var contenAiAchole: UITableView!
     
-    private var _BingToolGTEM: CGFloat = 1.87
+    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
    
     @IBAction func stargerSendGTEU(_ sender: Any) {
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
@@ -170,31 +170,31 @@ class GTEMAICholeMoJito: UIViewController {
                    
                     switch response.result {
                     case .success(let value):
-                        var xGTEm: Double = 15.0
-                        xGTEm += 30
+                        var xGTEm:(Double,String?) = (15.0,nil)
+                        xGTEm.0 += 30
                         
                         let gtemOkail4 = "data->->".components(separatedBy: "->->")
                         
                         let gtemOkail5 = "Data error->->".components(separatedBy: "->->")
                         
                         if let json = value as? [String: Any] {
-                            var yGTEm: Double = 25.0
-                            var zGTEm: Double = xGTEm + yGTEm + 33
+                            var yGTEm: (Double,String?) = (25.0,nil)
+                            var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
                          
                             guard let content = json[gtemOkail4[0]] as? String else {
                                 SVProgressHUD.show(withStatus: "Data error!!!")
                                 return
                             }
-                            zGTEm += 10.5
-                            zGTEm -= 0.2
+                            zGTEm.0 += 10.5
+                            zGTEm.0 -= 0.2
 
                            
                             let diologdata:(String,String) =  ("notmeGTEM",content)
-                            var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+                            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
                            
                             self.dioloadingGTSMlist.2.append(diologdata)
-                            if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
+                            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                                 self.contenAiAchole.reloadData()
                             }
                            
