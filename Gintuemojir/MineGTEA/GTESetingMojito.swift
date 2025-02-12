@@ -26,7 +26,20 @@ class GTESetingMojito: UIViewController {
         
         gtemMinHeader.layer.cornerRadius = 40
         _agitatorValuesGTEM.append(_muddleToolGTEM)
-       
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            return
+        }
+
         gtemMinHeader.layer.masksToBounds = true
         
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
@@ -43,6 +56,20 @@ class GTESetingMojito: UIViewController {
     
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            return
+        }
+
         self.navigationController?.popViewController(animated: true)
     }
 
@@ -87,11 +114,11 @@ class GTESetingMojito: UIViewController {
                     
                     GTEMCombingUser.lovderGTEm.personMehEagerGTEm.removeAll()
                     zGTEm += 10.5
-                    GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.removeAll()
+                    GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.removeAll()
                     var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
                     zGTEm -= 0.2
-                    GTEMCombingUser.lovderGTEm.fnnceAllGTEm.removeAll()
+                    GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.removeAll()
                     zGTEm -= 0.2
                     GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.removeAll()
                     if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
@@ -128,9 +155,9 @@ class GTESetingMojito: UIViewController {
             var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
            
-            GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.removeAll()
+            GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.removeAll()
             if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                GTEMCombingUser.lovderGTEm.fnnceAllGTEm.removeAll()
+                GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.removeAll()
                 
             }
            
@@ -140,7 +167,17 @@ class GTESetingMojito: UIViewController {
             ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMLogsininerMoJito.init())
            
         }
-        
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
+
         if sender.tag == 52 {
             self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (1,false)), animated: true)
         }

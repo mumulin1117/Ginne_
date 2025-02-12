@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private var _zhunreaToolGTEM: CGFloat = 2.87
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         _agitatorValuesGTEM.append(_BingToolGTEM)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         
@@ -63,12 +64,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             _BingToolGTEM +=  1.87
             
             if _BingToolGTEM > 3 {
-                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.shuffled().prefix(1))
+                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = (false,false,Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.prefix(1)))
             }
             
             _BingToolGTEM +=  1.87
             if _BingToolGTEM > 2 {
-                GTEMCombingUser.lovderGTEm.fnnceAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.shuffled().prefix(1))
+                GTEMCombingUser.lovderGTEm.fnnceAllGTEm = (false,false, Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.suffix(1)))
             }
             
             _BingToolGTEM +=  1.87
@@ -83,7 +84,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
        
         _BingToolGTEM +=  1.87
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
 
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return true
+        }
         SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
             var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
             modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
@@ -92,35 +102,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
            
             for purchase in purchases {
-                let indefHTEM = Int.random(in: 200...30000)
+                let indefGTEM = Int.random(in: 200...30000)
 
-                modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
                 if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
-                    modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
-                    modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
-                    modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                    modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
+                    modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
+                    modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
                     switch purchase.transaction.transactionState {
                     case .purchased, .restored:
-                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
-                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
-                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
                         let downloads = purchase.transaction.downloads
-                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
-                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
-                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
+                        modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
                         if !downloads.isEmpty && (modifiedRecipe.keys.randomElement()?.count ?? 0) > 1{
                             SwiftyStoreKit.start(downloads)
-                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
-                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
+                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
                         } else if purchase.needsFinishTransaction && (modifiedRecipe.keys.randomElement()?.count ?? 0) > 1{
                             SwiftyStoreKit.finishTransaction(purchase.transaction)
-                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
-                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
+                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
+                            modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefGTEM
                         }
                     case .failed, .purchasing, .deferred:
-                      break
+                        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                        let pinghio = UIColor.red
+                        var colfulLisftGTEM = Array<UIColor>.init()
+
+                        colfulLisftGTEM.append(alpgocoloe)
+                        colfulLisftGTEM.append(pinghio)
+
+                        if colfulLisftGTEM.last == .blue{
+                            return //恒为假
+                        }
                     @unknown default:
-                        break
+                        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                        let pinghio = UIColor.red
+                        var colfulLisftGTEM = Array<UIColor>.init()
+
+                        colfulLisftGTEM.append(alpgocoloe)
+                        colfulLisftGTEM.append(pinghio)
+
+                        if colfulLisftGTEM.last == .blue{
+                            return //恒为假
+                        }
                     }
                 }
                

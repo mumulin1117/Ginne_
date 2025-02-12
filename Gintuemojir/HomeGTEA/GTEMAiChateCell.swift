@@ -19,12 +19,12 @@ class GTEMAiChateCell: UITableViewCell {
     private var _zhunreaToolGTEM: CGFloat = 2.87
     private let dioloagbackGTEm = UIView.init()
     
-    var getrmWhoismine:String = "ismeingGTEm" {
+    var getrmWhoismine:(String,Bool,Bool) = ( "ismeingGTEm",false,false) {
         didSet{
             _agitatorValuesGTEM.append(_BingToolGTEM)
             _agitatorValuesGTEM.append(_muddleToolGTEM)
             _agitatorValuesGTEM.append(_zhunreaToolGTEM)
-            if getrmWhoismine == "ismeingGTEm" {
+            if getrmWhoismine.0 == "ismeingGTEm" && getrmWhoismine.1 == false{
                 if _agitatorValuesGTEM.count < 1 {
                     _fermentationTimerGTEM = Timer.init()
                 }
@@ -158,28 +158,71 @@ class GTEMAiChateCell: UITableViewCell {
         contentView.addSubview(dioloagbackGTEm)
        
         contentView.addSubview(gtemSayieVuew)
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         contentView.addSubview(gtemIconhreader)
         gtemSayieVuew.numberOfLines = 0
-        
-        gtemSayieVuew.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().inset(12 + 26)
-            make.top.equalToSuperview().inset(12 + 16)
-           
-            make.right.equalToSuperview().inset(12 + 36 + 12)
-            make.width.greaterThanOrEqualTo(80)
-            make.width.lessThanOrEqualTo(273)
+        _agitatorValuesGTEM.append(_BingToolGTEM)
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.contentView.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.contentView.addSubview(labelgGTEm)
         }
-       
+
+        if labelgGTEm.superview == self.contentView {
+            //恒为假
+            return
+        }
+        _agitatorValuesGTEM.append(_muddleToolGTEM)
+        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
+        gtemSayieVuew.snp.makeConstraints { make in
+           
+            make.top.equalToSuperview().inset(29)
+            make.width.lessThanOrEqualTo(269)
+            make.right.equalToSuperview().inset(61)
+            if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
+                make.bottom.equalToSuperview().inset(29)
+                make.width.greaterThanOrEqualTo(81)
+            }
+           
+           
+        }
+        _muddleToolGTEM += 0.87
+
+        _BingToolGTEM +=  1.87
+
+        _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
+
         dioloagbackGTEm.snp.makeConstraints { make in
-            make.right.equalToSuperview().inset(12 + 36 + 12)
-            make.left.equalTo(gtemSayieVuew.snp.left).offset(-18)
-            make.top.bottom.equalToSuperview().inset(16)
+            
+            make.left.equalTo(gtemSayieVuew.snp.left).offset(-19)
+            make.right.equalToSuperview().inset(61)
+            if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
+                make.top.bottom.equalToSuperview().inset(15)
+            }
+            
           
         }
         gtemIconhreader.snp.makeConstraints { make in
-            make.right.equalToSuperview().inset(12)
+           
             make.top.equalTo(dioloagbackGTEm)
-            make.width.height.equalTo(36)
+            make.right.equalToSuperview().inset(11)
+            if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
+                make.width.height.equalTo(37)
+            }
+            
         }
     }
 

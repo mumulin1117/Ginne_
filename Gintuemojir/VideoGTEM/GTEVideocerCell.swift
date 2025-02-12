@@ -23,13 +23,13 @@ class GTEVideocerCell: UICollectionViewCell {
     
     @IBOutlet weak var userGTEUAvator: UIImageView!
     var HoperGTEM:UIView?
-    var treesHaGTEM:UIButton?
+    
     @IBOutlet weak var userGTEUFolloweCount: UILabel!
 
     @IBOutlet weak var userGTEUName: UILabel!
     
     @IBOutlet weak var thunmbImageGTEA: UIImageView!
-    
+    var treesHaGTEM:UIButton?
     @IBOutlet weak var videoTitleGTEM: UILabel!
     
     @IBOutlet weak var enterUserGTEM: UIButton!

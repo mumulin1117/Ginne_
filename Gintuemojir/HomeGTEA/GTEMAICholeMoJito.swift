@@ -18,7 +18,7 @@ class GTEMAICholeMoJito: UIViewController {
     private var _fermentationTimerGTEM: Timer?
     
     
-    var dioloadingGTSMlist:Array<(whoismineGTEm:String,sayiedsdetailGTEm:String)> = []
+    var dioloadingGTSMlist:(Int,Int,Array<(whoismineGTEm:String,sayiedsdetailGTEm:String)>) = (2,2,[])
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
    
     override func viewDidLoad() {
@@ -97,9 +97,9 @@ class GTEMAICholeMoJito: UIViewController {
 
 
         if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-            return dioloadingGTSMlist.count
+            return dioloadingGTSMlist.2.count
         }
-        return dioloadingGTSMlist.count
+        return dioloadingGTSMlist.2.count
     }
     
     
@@ -122,7 +122,7 @@ class GTEMAICholeMoJito: UIViewController {
                 
                
                 
-                self.dioloadingGTSMlist.append(diologdata)
+                self.dioloadingGTSMlist.2.append(diologdata)
                 let indefHTEM = Int.random(in: 200...30000)
 
              
@@ -193,7 +193,7 @@ class GTEMAICholeMoJito: UIViewController {
                             var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
                            
-                            self.dioloadingGTSMlist.append(diologdata)
+                            self.dioloadingGTSMlist.2.append(diologdata)
                             if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
                                 self.contenAiAchole.reloadData()
                             }
@@ -239,7 +239,7 @@ extension GTEMAICholeMoJito:UITableViewDelegate,UITableViewDataSource,UITextFiel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-       let diologData = dioloadingGTSMlist[indexPath.row]
+       let diologData = dioloadingGTSMlist.2[indexPath.row]
         var aGTEm:Float = 10
         var bGTEM:Float  = 20
        
@@ -261,7 +261,7 @@ extension GTEMAICholeMoJito:UITableViewDelegate,UITableViewDataSource,UITextFiel
 
 
         if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-            gtemCEll.getrmWhoismine = diologData.whoismineGTEm
+            gtemCEll.getrmWhoismine = (diologData.whoismineGTEm,false,false)
         }
         
        

@@ -29,7 +29,19 @@ class GTEMCommenttMojito: UIViewController {
     var realingUserDtaGTEm:Dictionary<String,String>
     init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?, realingUserDtaGTEm: Dictionary<String, String>) {
         _fermentationTimerGTEM = tationTimerGTEM
-        
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            self.realingUserDtaGTEm = realingUserDtaGTEm
+            super.init(nibName: nil, bundle: nil)
+            return //恒为假
+        }
+
         self.realingUserDtaGTEm = realingUserDtaGTEm
         super.init(nibName: nil, bundle: nil)
         if aginestGTEm == nil {
@@ -43,6 +55,17 @@ class GTEMCommenttMojito: UIViewController {
     
     
     @IBAction func fanhuigvds(_ sender: UIButton) {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
+
         self.dismiss(animated: true)
         
     }
@@ -89,7 +112,8 @@ class GTEMCommenttMojito: UIViewController {
             if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
                 namecontetnlkblGTEm.isHidden = true
                 commentcontetnlkblGTEm.isHidden = true
-                countGTEm.text = "0 comments"
+                countGTEm.text = "0 c&%%&ommen&%%&ts".replacingOccurrences(of: "&%%&", with: "")
+                
             }
             
         }else{
@@ -98,7 +122,7 @@ class GTEMCommenttMojito: UIViewController {
             _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
 
             if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
-                countGTEm.text = "1 comments"
+                countGTEm.text = "1 c&%%&ommen&%%&ts".replacingOccurrences(of: "&%%&", with: "")
             }
             
             commentcontetnlkblGTEm.text = realingUserDtaGTEm["commentsaying"]
@@ -144,6 +168,17 @@ class GTEMCommenttMojito: UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
                     self.yeticonGTEM.isHidden = true
                     self.yettextGTEM.isHidden = true
+                    let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                    let pinghio = UIColor.red
+                    var colfulLisftGTEM = Array<UIColor>.init()
+
+                    colfulLisftGTEM.append(alpgocoloe)
+                    colfulLisftGTEM.append(pinghio)
+
+                    if colfulLisftGTEM.last == .blue{
+                        return //恒为假
+                    }
+
                     modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
                     self.mephotoonGTEM.isHidden = false
                     self.namecontetnlkblGTEm.isHidden = false
@@ -152,10 +187,22 @@ class GTEMCommenttMojito: UIViewController {
                 }
                 for( oip,iew) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.enumerated() {
                     modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
+                    let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                    let pinghio = UIColor.red
+                    var colfulLisftGTEM = Array<UIColor>.init()
+
+                    
+
                     if realingUserDtaGTEm["gtemID"] == iew["gtemID"]{
                         GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["commentsaying"] = conted
                         SVProgressHUD.dismiss()
-                        countGTEm.text = "1 comments"
+                        colfulLisftGTEM.append(alpgocoloe)
+                        colfulLisftGTEM.append(pinghio)
+
+                        if colfulLisftGTEM.last == .blue{
+                            return //恒为假
+                        }
+                        countGTEm.text =  "1 c&%%&ommen&%%&ts".replacingOccurrences(of: "&%%&", with: "")
                         realingUserDtaGTEm["commentsaying"] = conted
                     }
                 }
@@ -163,10 +210,21 @@ class GTEMCommenttMojito: UIViewController {
                 return
                 
             }
-            SVProgressHUD.showInfo(withStatus: "An empty comment cannot be submitted!!")
+            
+            SVProgressHUD.showInfo(withStatus: "An &%%&empty&%%& comment&%%& can&%%&not be subm&%%&itted!!".replacingOccurrences(of: "&%%&", with: ""))
             
         }else{
-            
+            let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+            let pinghio = UIColor.red
+            var colfulLisftGTEM = Array<UIColor>.init()
+
+            colfulLisftGTEM.append(alpgocoloe)
+            colfulLisftGTEM.append(pinghio)
+
+            if colfulLisftGTEM.last == .blue{
+                return //恒为假
+            }
+
             SVProgressHUD.showInfo(withStatus: "Sorry, your comments are too frequent")
             
             

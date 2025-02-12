@@ -10,6 +10,7 @@ import UIKit
 class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     private var _fermentationTimerGTEM: Timer?
+    
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
    
     
@@ -17,6 +18,16 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
             return CGSize(width: self.view.frame.width, height: 471)
+        }
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return CGSize(width: self.view.frame.width, height: 264 )
         }
 
         return CGSize(width: self.view.frame.width, height: 264 )
@@ -192,11 +203,39 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     
     
     @IBAction func starnotihGTEm(_ sender: UIButton) {
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            return
+            
+        }
         self.navigationController?.pushViewController(GTEMMoRemoteMeaageJito.init(), animated: true)
     }
     
     
     @IBAction func starnAddRoomGTEm(_ sender: UIButton) {
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            return
+            
+        }
         self.navigationController?.pushViewController(GTEMAholeRoomSetupMoJito.init(), animated: true)
         
     }
@@ -217,6 +256,20 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     
     
     @objc func aiiajielTochat()  {
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            return
+            
+        }
         self.navigationController?.pushViewController(GTEMAICholeMoJito.init(), animated: true)
     }
     
@@ -236,6 +289,20 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     }
     
     @objc func meaaagengGTEn()  {
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            return
+            
+        }
         self.navigationController?.pushViewController(GTEMMoRemoteMeaageJito.init(), animated: true)
     }
     

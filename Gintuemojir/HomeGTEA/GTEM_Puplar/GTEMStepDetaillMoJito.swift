@@ -67,19 +67,20 @@ class GTEMStepDetaillMoJito: UIViewController {
         super.viewDidLoad()
         
         repoiuingGTEm.addTarget(self, action: #selector(navibaTorepohGTEM), for: .touchUpInside)
-        let tagview = TagListView.init()
-        tagview.textFont = UIFont.systemFont(ofSize: 15, weight: .bold)
-        tagview.tagBackgroundColor =  UIColor(red: 0.5, green: 0.15, blue: 0.12, alpha: 1)
-        tagview.clipsToBounds = true
-        tagview.paddingX =  6
-        tagview.paddingY = 10
+        let tagGTEMview = TagListView.init()
+        tagGTEMview.textFont = UIFont.systemFont(ofSize: 15, weight: .bold)
+        tagGTEMview.tagBackgroundColor =  UIColor(red: 0.5, green: 0.15, blue: 0.12, alpha: 1)
+        tagGTEMview.clipsToBounds = true
+        
+        tagGTEMview.paddingX =  6
+        tagGTEMview.paddingY = 10
         let stepArray = (detgiolGTEA["Aochlematerial"] ?? "").components(separatedBy: ",")
         
-        tagview.addTags(stepArray)
-        tagview.alignment = .center // possible values are [.leading, .trailing, .left, .center, .right]
+        tagGTEMview.addTags(stepArray)
+        tagGTEMview.alignment = .center // possible values are [.leading, .trailing, .left, .center, .right]
         
-        tagGTUAView.addSubview(tagview)
-        tagview.snp.makeConstraints { make in
+        tagGTUAView.addSubview(tagGTEMview)
+        tagGTEMview.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
         

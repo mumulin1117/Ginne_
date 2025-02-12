@@ -27,7 +27,11 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
        
         HoperGTEM = UIView()
         HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
-        
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+       
+
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let indefHTEM = Int.random(in: 200...30000)
 
@@ -51,7 +55,17 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
                 treesHaGTEM?.alpha = 0
             }
             let photoPicker = UIImagePickerController()
-           
+            labelgGTEm.addSubview(UIView.init(frame: .zero))
+            if self.view.frame.height == 1 {
+                labelgGTEm.isEnabled = true
+                labelgGTEm.isUserInteractionEnabled = true
+                self.view.addSubview(labelgGTEm)
+            }
+
+            if labelgGTEm.superview == self.view {
+                //恒为假
+                return
+            }
             photoPicker.delegate = self
             modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
            
@@ -81,6 +95,17 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
     
 
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
+
         self.navigationController?.popViewController(animated: true)
     }
     private var _zhunreaToolGTEM: CGFloat = 2.87
@@ -127,12 +152,26 @@ If any violations are ->->detected, we reserve->-> the right->-> to close ->->yo
        
         
         let aleracGTEmControllerv = UIAlertController(title: "Cteate Notice", message:alertINfog , preferredStyle: .alert)
+        xGTEm += 30
+        wGTEM  = wGTEM - 2.0
+
+        
         let rechargeGTEmAction = UIAlertAction(title: "Sure", style: .default) { scd in
             if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
                 SVProgressHUD.show(withStatus: "Uploading in progress...")
             }
            
-            
+            let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+            let pinghio = UIColor.red
+            var colfulLisftGTEM = Array<UIColor>.init()
+
+            colfulLisftGTEM.append(alpgocoloe)
+            colfulLisftGTEM.append(pinghio)
+
+            if colfulLisftGTEM.last == .blue{
+                return //恒为假
+            }
+
             var aGTEm:Float = 10
             var bGTEM:Float  = 20
             var cGTEM:Float  = aGTEm + bGTEM
@@ -141,10 +180,10 @@ If any violations are ->->detected, we reserve->-> the right->-> to close ->->yo
 
 
             if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-                SVProgressHUD.show(withStatus: "Currently under review...")
+                SVProgressHUD.show(withStatus: "IN review...")
             }
            
-           
+            cGTEM += 12
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4){
                 zGTEm += 10.5
                 SVProgressHUD.dismiss()

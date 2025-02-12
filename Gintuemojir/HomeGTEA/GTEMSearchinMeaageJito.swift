@@ -19,11 +19,23 @@ class GTEMSearchinMeaageJito: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         serchingTexGTUA.leftViewMode = .always
+        var aGTEm:Float = 10
+        var bGTEM:Float  = 20
         serchingTexGTUA.leftView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
         
         
         serchingTexGTUA.rightViewMode = .always
-        serchingTexGTUA.rightView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 54, height: 30))
+      
+        var cGTEM:Float  = aGTEm + bGTEM
+        cGTEM += 12
+        var dGTEM:Float  = aGTEm*3 - bGTEM
+
+
+        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+            serchingTexGTUA.rightView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 54, height: 30))
+        }
+       
+        
         serchingTexGTUA.layer.cornerRadius = 26
         serchingTexGTUA.layer.masksToBounds = true
         

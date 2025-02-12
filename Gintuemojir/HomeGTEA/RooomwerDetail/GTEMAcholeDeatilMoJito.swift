@@ -178,8 +178,10 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         if ismineBackgroundRoom {
             var yGTEm: Double = 25.0
             var zGTEm: Double = xGTEm + yGTEm + 33
-            
-            let alert = UIAlertController(title: "Destroy the room?", message: "After the creator leaves the room, the room information will be destroyed", preferredStyle:.alert)
+            _agitatorValuesGTEM.append(_muddleToolGTEM)
+            _agitatorValuesGTEM.append(_zhunreaToolGTEM)
+
+            let alert = UIAlertController(title: "Destroy the room?".replacingOccurrences(of: "->->", with: ""), message: "After the creator leaves the room, the room information will be destroyed", preferredStyle:.alert)
             zGTEm += 10.5
             zGTEm -= 0.2
 

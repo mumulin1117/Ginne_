@@ -34,9 +34,9 @@ class GTEMCombingUser: NSObject {
     
     private var _zhunreaToolGTEM: CGFloat = 2.87
     
-    var fhhowerAllGTEm = [[String: String]]()
+    var fhhowerAllGTEm = (true,true,[[String: String]]())
     
-    var fnnceAllGTEm = [[String: String]]()
+    var fnnceAllGTEm = (true,true,[[String: String]]())
 
     
     override init() {
@@ -170,7 +170,7 @@ class GTEMCombingUser: NSObject {
    
     
 
-    class func validateEmail(_ email: String) -> Bool {
+    class func validateGTEMEmail(_ eGTEMmail: String) -> Bool {
         var xGTEm: Double = 15.0
         xGTEm += 30
         var yGTEm: Double = 25.0
@@ -182,11 +182,11 @@ class GTEMCombingUser: NSObject {
         var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
         if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-            return NSPredicate(format: "SELF MATCHES %@", regexGTEM).evaluate(with: email)
+            return NSPredicate(format: "SELF MATCHES %@", regexGTEM).evaluate(with: eGTEMmail)
        
         }
            
-           return NSPredicate(format: "SELF MATCHES %@", regexGTEM).evaluate(with: email)
+           return NSPredicate(format: "SELF MATCHES %@", regexGTEM).evaluate(with: eGTEMmail)
       
     }
 

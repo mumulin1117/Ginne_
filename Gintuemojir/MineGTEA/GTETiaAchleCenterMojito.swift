@@ -80,7 +80,17 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             noiconholderGTEm.isHidden = true
             noitextholderGTEm.isHidden = true
         }
-       
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
+
         if realingUserDtaGTEm["ifneedsubGTEM"] ==  "1"{
             
             idcardLogoGTEM.setImage(UIImage.init(named: "dimondGTUE"), for: .normal)
@@ -89,7 +99,20 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             idcardLogoGTEM.setImage(UIImage.init(named: "aready_gou"), for: .selected)
             idcardLogoGTEM.setImage(UIImage.init(named: "tonofolGTEm"), for: .normal)
             
-            if GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.filter({ infol in
+            if GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter({ infol in
+                let labelgGTEm = UILabel.init()
+                labelgGTEm.textAlignment = .right
+                labelgGTEm.adjustsFontSizeToFitWidth = true
+                labelgGTEm.addSubview(UIView.init(frame: .zero))
+                if self.view.frame.height == 1 {
+                    labelgGTEm.isEnabled = true
+                    labelgGTEm.isUserInteractionEnabled = true
+                    self.view.addSubview(labelgGTEm)
+                }
+                
+                if labelgGTEm.superview == self.view {
+                    return infol["gtemID"] == realingUserDtaGTEm["gtemID"]
+                }
                 return infol["gtemID"] == realingUserDtaGTEm["gtemID"]
             }).count > 0 {
                 idcardLogoGTEM.isSelected = true
@@ -209,7 +232,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
                 zGTEm -= 0.2
                 sender.isSelected = !sender.isSelected
                 
-                let ifcontain = GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.filter({ infol in
+                let ifcontain = GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter({ infol in
                     var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
                     modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
                     modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
@@ -229,7 +252,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
                 
                
                 if !ifcontain && sender.isSelected{
-                    GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.append(self.realingUserDtaGTEm)
+                    GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.append(self.realingUserDtaGTEm)
                     return
                 }
                 var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
@@ -241,9 +264,9 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
                 
                 if ifcontain && sender.isSelected == false{
                     if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
-                        for (kdj,item) in GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.enumerated() {
+                        for (kdj,item) in GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.enumerated() {
                             if item["gtemID"] == self.realingUserDtaGTEm["gtemID"] {
-                                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.remove(at: kdj)
+                                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.remove(at: kdj)
                             }
                             
                         }
@@ -300,7 +323,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
             if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-                self.navigationController?.pushViewController(GTEMPlayerMojito.init(linkUrl: link), animated: false)
+                self.navigationController?.pushViewController(GTEMPlayerMojito.init(linkGTEM_Url: link), animated: false)
             }
            
             return
@@ -441,15 +464,55 @@ class GTEMUserAboutAchole: UIViewController {
                 self._muddleToolGTEM += 0.87
 
                 self._BingToolGTEM +=  1.87
-                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm =  GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.filter { !($0["gtemID"]  == onlyID) }
+                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2 =  GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter {
+                    let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                    let pinghio = UIColor.red
+                    var colfulLisftGTEM = Array<UIColor>.init()
+                    
+                    colfulLisftGTEM.append(alpgocoloe)
+                    colfulLisftGTEM.append(pinghio)
+                    
+                    if colfulLisftGTEM.last == .blue{
+                        return !($0["gtedddddmID"]  == onlyID)
+                    }
+                    
+                    return !($0["gtemID"]  == onlyID)
+                    
+                }
                 _muddleToolGTEM += 0.87
 
                 
-                GTEMCombingUser.lovderGTEm.fnnceAllGTEm = GTEMCombingUser.lovderGTEm.fnnceAllGTEm.filter { !($0["gtemID"]  == onlyID) }
+                GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2 = GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.filter {
+                    let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                    let pinghio = UIColor.red
+                    var colfulLisftGTEM = Array<UIColor>.init()
+                    
+                    colfulLisftGTEM.append(alpgocoloe)
+                    colfulLisftGTEM.append(pinghio)
+                    
+                    if colfulLisftGTEM.last == .blue{
+                        return !($0["gtedddddmID"]  == onlyID)
+                    }
+                    return  !($0["gtemID"]  == onlyID)
+                    
+                }
                 _BingToolGTEM +=  1.87
 
                 
-                GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1 = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.filter { !($0["gtemID"]  == onlyID) }
+                GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1 = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.filter {
+                    let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                    let pinghio = UIColor.red
+                    var colfulLisftGTEM = Array<UIColor>.init()
+                    
+                    colfulLisftGTEM.append(alpgocoloe)
+                    colfulLisftGTEM.append(pinghio)
+                    
+                    if colfulLisftGTEM.last == .blue{
+                        return !($0["gtedddddmID"]  == onlyID)
+                    }
+                    return !($0["gtemID"]  == onlyID)
+                    
+                }
                 _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
 
                 

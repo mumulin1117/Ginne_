@@ -59,6 +59,17 @@ class GTEMusVifedertMojito: GTEMUserAboutAchole {
         if _agitatorValuesGTEM.count < 1 {
             _fermentationTimerGTEM = Timer.init()
         }
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
+
         NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
         _muddleToolGTEM += 0.87
 
@@ -120,7 +131,17 @@ class GTEMusVifedertMojito: GTEMUserAboutAchole {
         }
         let indefHTEM = Int.random(in: 200...30000)
         modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
-        
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
+
         SVProgressHUD.showInfo(withStatus: "Use the feature after connected phone!")
     }
     

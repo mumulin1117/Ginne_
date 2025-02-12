@@ -12,12 +12,13 @@ class GTEMMojitallRoomtalkCell: UITableViewCell {
    
     let gtemIconhreader = UIImageView.init()
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
-   
+    var HoperGTEM:UIView?
+  
     let gtemSayieVuew = UILabel.init()
     private var _muddleToolGTEM: CGFloat = 0.87
    
     private let dioloagbackGTEm = UIView.init()
-    
+    var treesHaGTEM:UIButton?
     private var _BingToolGTEM: CGFloat = 1.87
     private var _zhunreaToolGTEM: CGFloat = 2.87
     let gtemNickLbael = UILabel.init()
@@ -36,6 +37,16 @@ class GTEMMojitallRoomtalkCell: UITableViewCell {
 
         if _agitatorValuesGTEM.count < 1 {
             _fermentationTimerGTEM = Timer.init()
+        }
+
+        HoperGTEM = UIView()
+        HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
+        HoperGTEM?.alpha = 0.4
+        HoperGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.contentView.addSubview(HoperGTEM!)
+            HoperGTEM?.alpha = 0
         }
 
 
@@ -79,6 +90,17 @@ class GTEMMojitallRoomtalkCell: UITableViewCell {
         }
         contentView.addSubview(gtemSayieVuew)
      
+        treesHaGTEM?.setTitleColor(.blue, for: .normal)
+        treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+
+        treesHaGTEM?.alpha = 0.4
+        treesHaGTEM?.layer.borderWidth = 4
+
+        if _muddleToolGTEM < 0 {
+            self.contentView.addSubview(treesHaGTEM!)
+            treesHaGTEM?.alpha = 0
+        }
+
         gtemIconhreader.snp.makeConstraints { make in
             make.leading.equalToSuperview().inset(12)
             make.width.height.equalTo(40)

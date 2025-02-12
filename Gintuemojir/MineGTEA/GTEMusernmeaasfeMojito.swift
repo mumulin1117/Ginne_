@@ -53,7 +53,7 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
 
         if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
-            gtemCEll.getrmWhoismine = diologData.whoismineGTEm
+            gtemCEll.getrmWhoismine = (diologData.whoismineGTEm,false,false)
         }
         
        
@@ -208,6 +208,17 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
     
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
+
         self.navigationController?.popViewController(animated: true)
     }
 }

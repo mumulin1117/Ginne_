@@ -29,10 +29,25 @@ class GTEMWoderMoJito: UIViewController {
         if _agitatorValuesGTEM.count < 1 {
             _fermentationTimerGTEM = Timer.init()
         }
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+       
 
 
        
         if sender.tag == 300 {
+            labelgGTEm.addSubview(UIView.init(frame: .zero))
+            if self.view.frame.height == 1 {
+                labelgGTEm.isEnabled = true
+                labelgGTEm.isUserInteractionEnabled = true
+                self.view.addSubview(labelgGTEm)
+            }
+
+            if labelgGTEm.superview == self.view {
+                //恒为假
+                
+            }
             self.navigationController?.pushViewController(GTEMblancelMojito.init(), animated: true)
         }
         if _agitatorValuesGTEM.isEmpty {
@@ -40,6 +55,17 @@ class GTEMWoderMoJito: UIViewController {
         }
        
         if sender.tag == 400 {
+            labelgGTEm.addSubview(UIView.init(frame: .zero))
+            if self.view.frame.height == 1 {
+                labelgGTEm.isEnabled = true
+                labelgGTEm.isUserInteractionEnabled = true
+                self.view.addSubview(labelgGTEm)
+            }
+
+            if labelgGTEm.superview == self.view {
+                //恒为假
+                
+            }
             self.navigationController?.pushViewController(GTESetingMojito.init(), animated: true)
         }
         _muddleToolGTEM += 0.87
@@ -48,6 +74,17 @@ class GTEMWoderMoJito: UIViewController {
 
         _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM
         if sender.tag == 500 {
+            labelgGTEm.addSubview(UIView.init(frame: .zero))
+            if self.view.frame.height == 1 {
+                labelgGTEm.isEnabled = true
+                labelgGTEm.isUserInteractionEnabled = true
+                self.view.addSubview(labelgGTEm)
+            }
+
+            if labelgGTEm.superview == self.view {
+                //恒为假
+                
+            }
             self.navigationController?.pushViewController(GTEMHEditMojito.init(), animated: true)
         }
         
@@ -76,7 +113,10 @@ class GTEMWoderMoJito: UIViewController {
         HoperGTEM = UIView()
         HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
        
-
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        
 
         let firstOhoto = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
         HoperGTEM?.alpha = 0.4
@@ -102,9 +142,19 @@ class GTEMWoderMoJito: UIViewController {
         treesHaGTEM?.alpha = 0.4
         treesHaGTEM?.layer.borderWidth = 4
 
-       
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            return
+        }
+
         
-        profileFollowGTEm.text = "\(GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.count)"
+        profileFollowGTEm.text = "\(GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.count)"
         if _agitatorValuesGTEM.count < 1 {
             _fermentationTimerGTEM = Timer.init()
         }
@@ -112,6 +162,6 @@ class GTEMWoderMoJito: UIViewController {
             self.view.addSubview(treesHaGTEM!)
             treesHaGTEM?.alpha = 0
         }
-        profileFancGTEm.text = "\(GTEMCombingUser.lovderGTEm.fnnceAllGTEm.count)"
+        profileFancGTEm.text = "\(GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.count)"
     }
 }

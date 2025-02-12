@@ -78,11 +78,14 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
     @IBAction func surecHangeGTEm(_ sender: Any) {
         var xGTEm: Double = 15.0
         xGTEm += 30
-       
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        
         guard let iconjkGTEm = enterefTEGTEm.text,
               iconjkGTEm.count != 0 else {
             SVProgressHUD.showInfo(withStatus: "You must provide a name!")
-            
+            labelgGTEm.adjustsFontSizeToFitWidth = true
+            labelgGTEm.addSubview(UIView.init(frame: .zero))
             return
         }
         var yGTEm: Double = 25.0
@@ -95,6 +98,17 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
         var minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
         GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teachername"] = iconjkGTEm
         var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+       
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            //恒为假
+            
+        }
 
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
@@ -132,11 +146,21 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
             var zGTEm: Double = xGTEm + yGTEm + 33
             zGTEm += 10.5
             zGTEm -= 0.2
+            let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+            let pinghio = UIColor.red
+            
 
            
             DispatchQueue.main.async(execute: DispatchWorkItem(block: {
                 var wGTEM: Double = (xGTEm * 2.0) - (yGTEm / 5.0)
+                var colfulLisftGTEM = Array<UIColor>.init()
 
+                colfulLisftGTEM.append(alpgocoloe)
+                colfulLisftGTEM.append(pinghio)
+
+                if colfulLisftGTEM.last == .blue{
+                    return //恒为假
+                }
                 if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
                     self.gtemMinHeader.image = image
                 }

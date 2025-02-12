@@ -50,7 +50,20 @@ class GTEmAcholeRoom {
         }else{
             self.roomNameGTEM = roomNameGTEM
         }
-       
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            self.roombackgroundGTEM =  roombackgroundGTEM
+            wGTEM += 20
+            yGTEm += 20
+            self.roomIDGTEM = roomIDGTEM
+            return //恒为假
+        }
         self.roombackgroundGTEM =  roombackgroundGTEM
         wGTEM += 20
         yGTEm += 20

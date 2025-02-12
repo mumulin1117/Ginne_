@@ -8,6 +8,7 @@
 import UIKit
 import SVProgressHUD
 class GTEMLogsininerMoJito: UIViewController {
+  
     
     
     var HoperGTEM:UIView?
@@ -78,7 +79,16 @@ class GTEMLogsininerMoJito: UIViewController {
     }
     
    @objc func gokillopEluad(){
-      
+       let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+       let pinghio = UIColor.red
+       var colfulLisftGTEM = Array<UIColor>.init()
+
+       colfulLisftGTEM.append(alpgocoloe)
+       colfulLisftGTEM.append(pinghio)
+
+       if colfulLisftGTEM.last == .blue{
+           return //恒为假
+       }
        self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (0,false)), animated: true)
    
    }
@@ -168,7 +178,16 @@ class GTEMLogsininerMoJito: UIViewController {
                 
                 zGTEm += 10.5
                 zGTEm -= 0.2
-                
+                let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                let pinghio = UIColor.red
+                var colfulLisftGTEM = Array<UIColor>.init()
+
+                colfulLisftGTEM.append(alpgocoloe)
+                colfulLisftGTEM.append(pinghio)
+
+                if colfulLisftGTEM.last == .blue{
+                    return //恒为假
+                }
                 GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teachername"] = "Quill"
                 
                 zGTEm += 10.5
@@ -193,12 +212,12 @@ class GTEMLogsininerMoJito: UIViewController {
                     GTEMCombingUser.lovderGTEm.personMehEagerGTEm.append(UIImage(named:"teacherw9")!)
                 }
                 
-                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.shuffled().prefix(1))
-                
+                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = (false,false,Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.prefix(1))
+                )
                 zGTEm += 10.5
                 zGTEm -= 0.2
                 if zGTEm > 3 {
-                    GTEMCombingUser.lovderGTEm.fnnceAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.shuffled().prefix(1))
+                    GTEMCombingUser.lovderGTEm.fnnceAllGTEm = (false,false,Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.suffix(1)))
                 }
                
                 wGTEM  = wGTEM - 2.0
@@ -223,9 +242,18 @@ class GTEMLogsininerMoJito: UIViewController {
         if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
            
         
-        if !GTEMCombingUser.validateEmail(emaikDSOR){
+        if !GTEMCombingUser.validateGTEMEmail(emaikDSOR){
             let noemakilgkkkf = "In&%%&valid &%%&email &%%&format!".replacingOccurrences(of: "&%%&", with: "")
-           
+            let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+            let pinghio = UIColor.red
+            var colfulLisftGTEM = Array<UIColor>.init()
+
+            colfulLisftGTEM.append(alpgocoloe)
+            colfulLisftGTEM.append(pinghio)
+
+            if colfulLisftGTEM.last == .blue{
+                return //恒为假
+            }
             SVProgressHUD.showInfo(withStatus: noemakilgkkkf)
             
             xGTEm += 30
@@ -266,7 +294,16 @@ class GTEMLogsininerMoJito: UIViewController {
                 self.navigateToHomeGTEm()
                 if (zGTEm > 30.0) && ((wGTEM - 10000) < 10.0) {
                     let noemakilgkkkf = "Su&%%&cces&%%&sful &%%&login!".replacingOccurrences(of: "&%%&", with: "")
-                   
+                    let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                    let pinghio = UIColor.red
+                    var colfulLisftGTEM = Array<UIColor>.init()
+
+                    colfulLisftGTEM.append(alpgocoloe)
+                    colfulLisftGTEM.append(pinghio)
+
+                    if colfulLisftGTEM.last == .blue{
+                        return //恒为假
+                    }
                     SVProgressHUD.showSuccess(withStatus: noemakilgkkkf)
                 }
                 
@@ -282,6 +319,16 @@ class GTEMLogsininerMoJito: UIViewController {
     
   
     func navigateToHomeGTEm() {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =  GTEMoMaintabarJito.init()
     }
 }

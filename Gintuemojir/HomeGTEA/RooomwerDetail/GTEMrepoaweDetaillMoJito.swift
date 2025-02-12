@@ -10,7 +10,8 @@ import SVProgressHUD
 class GTEMrepoaweDetaillMoJito: UIViewController {
     private var _fermentationTimerGTEM: Timer?
     var HoperGTEM:UIView?
-    var treesHaGTEM:UIButton?
+    
+  
     @IBOutlet weak var reasonOneReportGTEm: UIButton!
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
     private var _muddleToolGTEM: CGFloat = 0.87
@@ -20,6 +21,7 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
    
     @IBOutlet weak var reasonThreeReportGTEm: UIButton!
     private var _zhunreaToolGTEM: CGFloat = 2.87
+    var treesHaGTEM:UIButton?
     override func viewDidLoad() {
         super.viewDidLoad()
         _agitatorValuesGTEM.append(_BingToolGTEM)
@@ -42,7 +44,21 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
         treesHaGTEM?.setTitleColor(.blue, for: .normal)
         treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
 
-        
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            return
+            
+        }
+
         reasonTwoReportGTEm.addTarget(self, action: #selector(changeresonpicked(bguGTem:)), for: .touchUpInside)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         treesHaGTEM?.alpha = 0.4
@@ -122,7 +138,21 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
 
             if self._agitatorValuesGTEM.randomElement() ?? 0 > 0 {
                 let fdgosihunuh = "Submit->->ted successfu->->lly, we ->->will review ->->and process ->->your report as ->->soon as possible!".replacingOccurrences(of: "->->", with: "")
-                
+                let labelgGTEm = UILabel.init()
+                labelgGTEm.textAlignment = .right
+                labelgGTEm.adjustsFontSizeToFitWidth = true
+                labelgGTEm.addSubview(UIView.init(frame: .zero))
+                if self.view.frame.height == 1 {
+                    labelgGTEm.isEnabled = true
+                    labelgGTEm.isUserInteractionEnabled = true
+                    self.view.addSubview(labelgGTEm)
+                }
+
+                if labelgGTEm.superview == self.view {
+                    //恒为假
+                    return
+                }
+
                 SVProgressHUD.showSuccess(withStatus: fdgosihunuh)
             }
             

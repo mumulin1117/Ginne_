@@ -11,18 +11,24 @@ import SVProgressHUD
 class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
 
     var ifvpdateVideo:Bool = false
-    
+    private var _fermentationTimerGTEM: Timer?
+   
     @IBOutlet weak var postvideobuttonGETEm: UIButton!
     
     @IBOutlet weak var videotitleGTEM: UITextView!
     func textViewDidBeginEditing(_ textView: UITextView) {
         textView.text = nil
     }
-    
+    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+    private var _muddleToolGTEM: CGFloat = 0.87
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         videotitleGTEM.delegate = self
     }
+    
+    private var _BingToolGTEM: CGFloat = 1.87
+    private var _zhunreaToolGTEM: CGFloat = 2.87
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -148,14 +154,31 @@ extension  GTETiaVideoPostMojito :PHPickerViewControllerDelegate{
                     
                     // 创建临时副本（系统可能会清除原始文件）
                     let tempDirectory = FileManager.default.temporaryDirectory
+                    
+                    _agitatorValuesGTEM.append(_BingToolGTEM)
+                    _agitatorValuesGTEM.append(_muddleToolGTEM)
+                    _agitatorValuesGTEM.append(_zhunreaToolGTEM)
+
+                   
                     let targetURL = tempDirectory.appendingPathComponent(url.lastPathComponent)
                     do {
-                                      
+                        if _agitatorValuesGTEM.count < 1 {
+                            _fermentationTimerGTEM = Timer.init()
+                        }
+
+
+                      
                         try FileManager.default.copyItem(at: url, to: targetURL)
+                        if _agitatorValuesGTEM.isEmpty {
+                            return
+                        }
                         let asset = AVAsset(url: targetURL)
+                        
+                        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
                         self.fetchGTEMVideoFirstImageFrame(from: asset)
                     } catch {
                         DispatchQueue.main.async {
+                            self._agitatorValuesGTEM.append(self._zhunreaToolGTEM)
                             SVProgressHUD.showError(withStatus: "Failed to copy video file!")
                         }
                         return

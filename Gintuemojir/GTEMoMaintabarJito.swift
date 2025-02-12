@@ -30,7 +30,16 @@ class GTEMoMaintabarJito: UITabBarController {
         
         
         
-        
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         
         
         self.tabBar.isTranslucent = false
@@ -104,9 +113,20 @@ class GTEMoMaintabarJito: UITabBarController {
         let navi = PEAUFNeuGuideChallengnng.init(rootViewController: GTEmrooter)
         var bGTEM:Float  = 20
         bGTEM += 2
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        
         GTEmrooter.tabBarItem.image = UIImage.init(named: barIconGTEm )?.withRenderingMode(.alwaysOriginal)
         var cGTEM:Float  = aGTEm + bGTEM
         cGTEM += 12
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return navi//恒为假
+        }
         GTEmrooter.tabBarItem.selectedImage = UIImage.init(named:barIconGTEm + "sel")?.withRenderingMode(.alwaysOriginal)
        
         var dGTEM:Float  = aGTEm*3 - bGTEM

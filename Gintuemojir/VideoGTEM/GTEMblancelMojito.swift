@@ -6,36 +6,51 @@
 //
 
 import UIKit
+
 import SwiftyStoreKit
+
 import SVProgressHUD
+
 class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     private var _fermentationTimerGTEM: Timer?
    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        dataGTEM.count
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return 10
+        }
+
+        return dataGTEM.count
     }
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
 
     var recordingSelGTEm:IndexPath = IndexPath.init(row: 0, section: 0)
     private var _muddleToolGTEM: CGFloat = 0.87
     
-    let dataGTEM:Array<(String,String,Int)> = [
-        ("$0.99","cotcsdtspojiyywc",400),
+    let dataGTEM:Array<(String,String,Int,Bool,Bool)> = [
+        ("$&%%&0.&%%&99".replacingOccurrences(of: "&%%&", with: "")
+         ,"cotcsdtspojiyywc",400,false,false),
                      
-        ("$1.99","vfckmvvzjeaaoahs",800),
-        ("$2.99","kiloeerlisnibhungert",1550),
+        ("$&%%&1.&%%&99".replacingOccurrences(of: "&%%&", with: ""),"vfckmvvzjeaaoahs",800,false,false),
+        ("$2&%%&.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"kiloeerlisnibhungert",1550,false,false),
                     
-        ("$4.99","ivudncxlqrfvmpoj",2450),
-           ("$9.99","fdvlkwlpkgbiaaat",4900),
-        ("$19.99","rwrhgqdpxaoldceb",9800),
+        ("$&%%&4.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"ivudncxlqrfvmpoj",2450,false,false),
+           ("$9&%%&.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"fdvlkwlpkgbiaaat",4900,false,false),
+        ("$&%%&19.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"rwrhgqdpxaoldceb",9800,false,false),
 
-        ("$29.99","zhunbeiyuiinghj",16500),
-        ("$49.99","vmmbnuftnbmphmbk",24500),
+        ("$&%%&29.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"zhunbeiyuiinghj",16500,false,false),
+        ("$4&%%&9.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"vmmbnuftnbmphmbk",24500,false,false),
         
-        ("$79.99","dansingeftnbmershi",38450),
+        ("$79.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"dansingeftnbmershi",38450,false,false),
 
-        ("$99.99","ikgcarevewbdettd",49000)]
+        ("$&%%&99.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"ikgcarevewbdettd",49000,false,false)]
     
     private var _BingToolGTEM: CGFloat = 1.87
    
@@ -62,6 +77,20 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
         }
 
         dataVireGTEm.register(UINib.init(nibName: "GTEMblancelCell", bundle: nil), forCellWithReuseIdentifier: "GTEMblancelCellID")
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            //恒为假
+            return
+        }
         dataVireGTEm.selectItem(at: IndexPath.init(row: 0, section: 0), animated: false, scrollPosition: .top)
         let diopuserGTEM =  GTEMCombingUser.lovderGTEm.personMeGTEm[0]
         
@@ -138,7 +167,8 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
                 self.wallentblanceGTEm.text = "\(oweneddddGTEm)"
                
                 if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
-                    SVProgressHUD.showSuccess(withStatus: "Successful payment!")
+                    
+                    SVProgressHUD.showSuccess(withStatus: "Suc&%%&cessful pa&%%&yme&%%&nt!".replacingOccurrences(of: "&%%&", with: ""))
                    
                 }
                
@@ -171,6 +201,16 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
     
     
     @IBAction func fanhuigvds(_ sender: UIButton) {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         self.navigationController?.popViewController(animated: true)
         
     }
@@ -180,12 +220,32 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        14
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return 14
+        }
+        return 14
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        8
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return 8
+        }
+        return 8
     }
    
     
@@ -215,6 +275,16 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         recordingSelGTEm = indexPath
     }
    

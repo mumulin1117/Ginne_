@@ -25,11 +25,31 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return 0//恒为假
+        }
         return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        0
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return 0//恒为假
+        }
+        return 0
     }
     
     var HoperGTEM:UIView?
@@ -37,7 +57,16 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
 
     
     @IBAction func videoUpload(_ sender: Any) {
-        
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         self.navigationController?.pushViewController(GTETiaVideoPostMojito.init(), animated: true)
     }
     
@@ -47,7 +76,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     
     @IBOutlet weak var itemTrendsGTUE: UIButton!
     
-    var mojitoAcholeData:Array<Dictionary<String,String>>{
+    var mojitoAcholeData:(Bool,Bool,Array<Dictionary<String,String>>){
         get{
             
             var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
@@ -62,7 +91,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
                     modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
                     return dicer["ifneedsubGTEM"] ==  (recordingisSubTupwder ? "1" : "0")
                 }
-                return nertwDater
+                return (false,false,nertwDater)
             }else{
                 modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
                 modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
@@ -71,7 +100,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
                     modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
                     return dicer["ifneedsubGTEM"] ==  (recordingisSubTupwder ? "1" : "0")
                 }
-                return nertwDater
+                return (false,false,nertwDater)
             }
            
             
@@ -83,25 +112,42 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return mojitoAcholeData.count
+        let relaiGTEMDAta = mojitoAcholeData.2
+        
+        return relaiGTEMDAta.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let relaiGTEMDAta = mojitoAcholeData.2
         let gteuCell = collectionView.dequeueReusableCell(withReuseIdentifier: "GTEVideocerCellID", for: indexPath) as! GTEVideocerCell
-        gteuCell.userGTEUAvator.image = UIImage(named: mojitoAcholeData[indexPath.row]["teacherphoto"] ?? "")
-        gteuCell.userGTEUName.text = mojitoAcholeData[indexPath.row]["teacherphoto"]
-        gteuCell.videoTitleGTEM.text = mojitoAcholeData[indexPath.row]["videowenan0"]
-        if let urlname = URL(string: mojitoAcholeData[indexPath.row]["viedeourll0"] ?? ""){
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        
+        gteuCell.userGTEUAvator.image = UIImage(named: relaiGTEMDAta[indexPath.row]["teacherphoto"] ?? "")
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+       
+        gteuCell.userGTEUName.text = relaiGTEMDAta[indexPath.row]["teacherphoto"]
+       
+        gteuCell.videoTitleGTEM.text = relaiGTEMDAta[indexPath.row]["videowenan0"]
+        if let urlname = URL(string: relaiGTEMDAta[indexPath.row]["viedeourll0"] ?? ""){
+            colfulLisftGTEM.append(alpgocoloe)
+            colfulLisftGTEM.append(pinghio)
+
+            
             GTEMVigerMoJito.beginloadGTEmThumbnail(for: urlname, cgtemompletion: { geitimage in
-                DispatchQueue.main.async {
-                    gteuCell.thunmbImageGTEA.image = geitimage
+                if colfulLisftGTEM.last == .blue{
+                   
+                }else{
+                    DispatchQueue.main.async {
+                        gteuCell.thunmbImageGTEA.image = geitimage
+                    }
                 }
+               
                 
             })
         }
-//        gteuCell.playButtonGTEA.tag = indexPath.row
-//        gteuCell.playButtonGTEA.addTarget(self, action: #selector(tapvideoplayGTUE(refGTUE:)), for: .touchUpInside)
-//       
+
         if recordingisSubTupwder == true {
             gteuCell.subscribtionGTEU.setBackgroundImage(UIImage.init(named: "Tosubvideo"), for: .normal)
             gteuCell.diomonelog.isHidden = false
@@ -115,11 +161,11 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         gteuCell.enterUserGTEM.tag = indexPath.row
         gteuCell.attitudeButtonGTEM.tag = indexPath.row
         
-        gteuCell.attitudeButtonGTEM.isSelected = (mojitoAcholeData[indexPath.row]["islikethisvideo"] == "1")
+        gteuCell.attitudeButtonGTEM.isSelected = (relaiGTEMDAta[indexPath.row]["islikethisvideo"] == "1")
         gteuCell.commentButGTEm.tag = indexPath.row
        
         gteuCell.enterUserGTEM.addTarget(self, action: #selector(enterprofileGTEm(gtem:)), for: .touchUpInside)
-        gteuCell.userGTEUFolloweCount.text = (mojitoAcholeData[indexPath.row]["follosercount"] ?? "0") + " Followers"
+        gteuCell.userGTEUFolloweCount.text = (relaiGTEMDAta[indexPath.row]["follosercount"] ?? "0") + " Followers"
         gteuCell.attitudeButtonGTEM.addTarget(self, action: #selector(giveAttitudeGTEm(gtem:)), for: .touchUpInside)
         gteuCell.subscribtionGTEU.addTarget(self, action: #selector(ifSubOrFollow(gtem:)), for: .touchUpInside)
         gteuCell.commentButGTEm.addTarget(self, action: #selector(giveCommenteGTEm(gtem:)), for: .touchUpInside)
@@ -128,13 +174,23 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         didSubNiweGTEm(tagGTEm:indexPath.row)
         
     }
     
     
     func didSubNiweGTEm(tagGTEm:Int) {
-        let video = mojitoAcholeData[tagGTEm]
+        let video = mojitoAcholeData.2[tagGTEm]
         //
         if video["ifneedsubGTEM"] == "1" &&  video["issubedeGTEm"] == "0"{
             //需要订阅没订阅
@@ -192,11 +248,21 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         
         
         if let link = video["viedeourll0"]{
-            self.navigationController?.pushViewController(GTEMPlayerMojito.init(linkUrl: link), animated: false)
+            self.navigationController?.pushViewController(GTEMPlayerMojito.init(linkGTEM_Url: link), animated: false)
         }
     }
     
     @objc func dismissNeedCoinGTEm() {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         self.presentVCGTEm?.dismiss(animated: true)
     }
     
@@ -254,7 +320,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         self.presentVCGTEm?.dismiss(animated: true)
         
       //修改数据订阅状态
-        let noingID = self.mojitoAcholeData[bgt.tag]
+        let noingID = self.mojitoAcholeData.2[bgt.tag]
         
         for (i,iuy) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.enumerated() {
             var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
@@ -336,13 +402,32 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
    
     
     @IBAction func beginSerachingVideo(_ sender: Any) {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         self.navigationController?.pushViewController(GTEMSearchinMeaageJito.init(), animated: true)
         
     }
     
     
     @IBAction func beginReportContentVideo(_ sender: Any) {
-        
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         self.navigationController?.pushViewController(GTEMrepoaweDetaillMoJito.init(), animated: true)
     }
     
@@ -403,6 +488,16 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     
     
    @objc func startReloadingAUIGTEm()  {
+       let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+       let pinghio = UIColor.red
+       var colfulLisftGTEM = Array<UIColor>.init()
+
+       colfulLisftGTEM.append(alpgocoloe)
+       colfulLisftGTEM.append(pinghio)
+
+       if colfulLisftGTEM.last == .blue{
+           return //恒为假
+       }
        self.dataviedeoView.reloadData()
     }
     
@@ -413,18 +508,48 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
             didSubNiweGTEm(tagGTEm:gtem.tag)
             return
         }
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+      
+
+
         
-        
-        let userdate = self.mojitoAcholeData[gtem.tag]
-        
+        let userdate = self.mojitoAcholeData.2[gtem.tag]
+        if labelgGTEm.superview == self.view {
+            //恒为假
+            return
+        }
         self.navigationController?.pushViewController(GTETiaAchleCenterMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: userdate), animated: true)
         
     }
     
     ///进入个人主页
     @objc func enterprofileGTEm(gtem:UIButton)  {
-        let userdate = self.mojitoAcholeData[gtem.tag]
-        
+        let userdate = self.mojitoAcholeData.2[gtem.tag]
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
+
+        if labelgGTEm.superview == self.view {
+            //恒为假
+            return
+        }
+
+
         self.navigationController?.pushViewController(GTETiaAchleCenterMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil,realingUserDtaGTEm: userdate), animated: true)
         
     }
@@ -454,7 +579,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
             self._BingToolGTEM +=  1.87
 
            
-            let video = self.mojitoAcholeData[gtem.tag]
+            let video = self.mojitoAcholeData.2[gtem.tag]
             self._zhunreaToolGTEM = self._zhunreaToolGTEM + self._muddleToolGTEM + self._BingToolGTEM
 
             
@@ -465,6 +590,22 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
                 }
                 if video["gtemID"] == iew["gtemID"]{
                     if gtem.isSelected == true {
+                        let labelgGTEm = UILabel.init()
+                        labelgGTEm.textAlignment = .right
+                        labelgGTEm.adjustsFontSizeToFitWidth = true
+                        labelgGTEm.addSubview(UIView.init(frame: .zero))
+                        if self.view.frame.height == 1 {
+                            labelgGTEm.isEnabled = true
+                            labelgGTEm.isUserInteractionEnabled = true
+                            self.view.addSubview(labelgGTEm)
+                        }
+
+                        if labelgGTEm.superview == self.view {
+                            return //恒为假
+                            
+                        }
+
+
                         GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["islikethisvideo"] = "1"
                         
                     }else{
@@ -473,7 +614,16 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
                    
                 }
             }
-           
+            let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+            let pinghio = UIColor.red
+            var colfulLisftGTEM = Array<UIColor>.init()
+
+            colfulLisftGTEM.append(alpgocoloe)
+            colfulLisftGTEM.append(pinghio)
+
+            if colfulLisftGTEM.last == .blue{
+                return //恒为假
+            }
             self.dataviedeoView.reloadData()
             
         }
@@ -484,7 +634,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     }
     ///评论
     @objc func giveCommenteGTEm(gtem:UIButton)  {
-        let video = mojitoAcholeData[gtem.tag]
+        let video = mojitoAcholeData.2[gtem.tag]
         var xGTEm: Double = 15.0
         xGTEm += 30
         var yGTEm: Double = 25.0
