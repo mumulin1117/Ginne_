@@ -42,7 +42,10 @@ class GTEMCombingUser: NSObject {
     override init() {
         super.init()
         _zhunreaToolGTEM  = 33
-        personMeGTEm.append([:])
+        if personMeGTEm.count == 0{
+            personMeGTEm.append([:])
+        }
+        
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
         var xGTEm:(Double,String?) = (15.0,nil)
         xGTEm.0 += 30

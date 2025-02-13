@@ -121,7 +121,7 @@ class GTEMLogsininerMoJito: UIViewController {
             return
         }
            
-        GTEMELAurrMoJito.boolkSholkd.2 = elauaGTEM.isSelected
+        GTEMELAurrMoJito.boolkSholkd.2 = centerStatausGTEm.isSelected
        
        
     }
@@ -142,6 +142,15 @@ class GTEMLogsininerMoJito: UIViewController {
             self.view.addSubview(labelgGTEm)
         }
 
+        
+        if GTEMELAurrMoJito.boolkSholkd.2 == false {
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            hudINfoGTEM.textLabel.text = ("Please->-> read and agree->-> to our->-> Terms of Service->-> and Privacy Policy first".replacingOccurrences(of: "->->", with: ""))
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
+            return
+        }
         if labelgGTEm.superview == self.view {
             //恒为假
             return
@@ -196,6 +205,7 @@ class GTEMLogsininerMoJito: UIViewController {
                     return
                 }
                 let hudINfoGTEM = JGProgressHUD(style: .light)
+                hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
                 hudINfoGTEM.textLabel.text = noemakilg
                 hudINfoGTEM.show(in: self.view)
                 hudINfoGTEM.dismiss(afterDelay: 2.0)
@@ -217,6 +227,10 @@ class GTEMLogsininerMoJito: UIViewController {
            
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
                 hudGTEM.dismiss()
+                
+                if GTEMCombingUser.lovderGTEm.personMeGTEm.count == 0 {
+                    GTEMCombingUser.lovderGTEm.personMeGTEm.append( [:])
+                }
                 let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
                 let noemakilgkkkf = "We&%%&lco&%%&me &%%&ba&%%&ck!".replacingOccurrences(of: "&%%&", with: "")
                 let pinghio = UIColor.red

@@ -86,7 +86,7 @@ class GTEMoMaintabarJito: UITabBarController {
         
         
         
-        self.selectedIndex = 1
+       
         _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
         
         tabBar.standardAppearance = surfaceGTEm
@@ -116,6 +116,11 @@ class GTEMoMaintabarJito: UITabBarController {
             self.tabBar.addSubview(treesHaGTEM!)
             treesHaGTEM?.alpha = 0
         }
+        
+        
+        
+        
+        self.selectedIndex = 1
     }
 
     private func setingGTEmCommn(barIconGTEm:String,GTEmrooter:UIViewController,TitaaleGTEm:String) -> PEAUFNeuGuideChallengnng {

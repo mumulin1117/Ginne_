@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if UserDefaults.standard.bool(forKey: "oooggStatuelGTEm") == false &&   _agitatorValuesGTEM.isEmpty == false {
             window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMBeginMoJito())
         }else{
-            var minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
+            var minUserGTEM = Dictionary<String,String>()//GTEMCombingUser.lovderGTEm.personMeGTEm[0]
             minUserGTEM["teachername"] = "Quill"
             _BingToolGTEM.0 +=  1.87
 
@@ -58,7 +58,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             _BingToolGTEM.0 +=  1.87
             minUserGTEM["gtemID"] = "4534567"
             _BingToolGTEM.0 +=  1.87
-            
+            if GTEMCombingUser.lovderGTEm.personMeGTEm.count == 0 {
+                GTEMCombingUser.lovderGTEm.personMeGTEm.append(minUserGTEM)
+            }else{
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0] = minUserGTEM
+            }
+           
             
             GTEMCombingUser.lovderGTEm.personMehEagerGTEm.append(UIImage(named:"teacherw9")!)
             _BingToolGTEM.0 +=  1.87
