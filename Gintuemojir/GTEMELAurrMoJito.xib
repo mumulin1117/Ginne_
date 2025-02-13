@@ -70,15 +70,15 @@
                     <rect key="frame" x="46" y="166" width="20" height="20"/>
                 </activityIndicatorView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRw-C1-1EV">
-                    <rect key="frame" x="16" y="708" width="117" height="35"/>
+                    <rect key="frame" x="16" y="708" width="130" height="35"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="117" id="PrN-Ry-bxu"/>
+                        <constraint firstAttribute="width" constant="130" id="PrN-Ry-bxu"/>
                         <constraint firstAttribute="height" constant="35" id="uNU-Wk-KK8"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title=" Privacy service ">
-                        <color key="titleColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.62275094689999999" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMq-Ry-GbA">
@@ -87,10 +87,10 @@
                         <constraint firstAttribute="width" constant="117" id="Ivo-H5-Ll0"/>
                         <constraint firstAttribute="height" constant="35" id="OTN-5Q-yg0"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title=" Terms of use ">
-                        <color key="titleColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.62275094693636368" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bn-8W-OQb">

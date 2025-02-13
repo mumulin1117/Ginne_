@@ -28,6 +28,7 @@ class GTEMLogsininerMoJito: UIViewController {
     private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     @IBOutlet weak var centerStatausGTEm: UIButton!
  
+    @IBOutlet weak var linSSIP: UIButton!
     private var _zhunreaToolGTEM: CGFloat = 2.87
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -81,6 +82,7 @@ class GTEMLogsininerMoJito: UIViewController {
             treesHaGTEM?.alpha = 0
         }
         elauaGTEM.addTarget(self, action: #selector(gokillopEluad), for: .touchUpInside)
+        linSSIP.addTarget(self, action: #selector(gokillopEluad), for: .touchUpInside)
     }
     
    @objc func gokillopEluad(){
