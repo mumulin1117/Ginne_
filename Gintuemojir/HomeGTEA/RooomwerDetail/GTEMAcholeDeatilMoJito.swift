@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 class GTEMAcholeDeatilMoJito: UIViewController {
     private var _fermentationTimerGTEM: Timer?
    
@@ -32,10 +32,10 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     @IBOutlet weak var thirdIcon: UIImageView!
     @IBOutlet weak var thirdNameGTEm: UILabel!
     
-    var ismineBackgroundRoom:Bool = false
-    var roomInfoGTEm :GTEmAcholeRoom
+    private  var ismineBackgroundRoom:Bool = false
+    private  var roomInfoGTEm :GTEmAcholeRoom
     
-    var ijiuGTERER:Int
+    private var ijiuGTERER:Int
     
     init( ismineBackgroundRoom: Bool,roomInfoGTEm:(Int,GTEmAcholeRoom)) {
         self.ismineBackgroundRoom = ismineBackgroundRoom
@@ -62,7 +62,30 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
     }
 
-  
+    private func gtemGteDeleterTotal() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         sayTexGTUA.leftViewMode = .always
@@ -151,12 +174,14 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
         
         contenAiAchole.isHidden = true
-        SVProgressHUD.show()
+        let hudLoadingGTEM = JGProgressHUD(style: .light)
+        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.show(in: self.view)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
             self._muddleToolGTEM += 0.87
 
            
-            SVProgressHUD.dismiss()
+            hudLoadingGTEM.dismiss()
             self._BingToolGTEM.0 +=  1.87
 
             self._zhunreaToolGTEM = self._zhunreaToolGTEM + self._muddleToolGTEM + self._BingToolGTEM.0
@@ -235,14 +260,16 @@ class GTEMAcholeDeatilMoJito: UIViewController {
            
            
             
-            SVProgressHUD.show()
+            let hudLoadingGTEM = JGProgressHUD(style: .light)
+            hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+            hudLoadingGTEM.show(in: self.view)
             var xGTEm:(Double,String?) = (15.0,nil)
             xGTEm.0 += 30
             var yGTEm: (Double,String?) = (25.0,nil)
             var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
            
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
-                SVProgressHUD.dismiss()
+                hudLoadingGTEM.dismiss()
                 zGTEm.0 += 10.5
                 zGTEm.0 -= 0.2
 
@@ -257,11 +284,12 @@ class GTEMAcholeDeatilMoJito: UIViewController {
             
         }
        
-        SVProgressHUD.showInfo(withStatus: "Sorry,you cannot send an empty message!")
-            
-            
-            
-            
+        
+        let hudINfoGTEM = JGProgressHUD(style: .light)
+        hudINfoGTEM.textLabel.text = "Sorry,you cannot send an empty message!"
+        hudINfoGTEM.show(in: self.view)
+        hudINfoGTEM.dismiss(afterDelay: 2.0)
+           
       
     }
 

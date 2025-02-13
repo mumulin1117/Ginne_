@@ -161,7 +161,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _muddleToolGTEM += 0.87
         return true
     }
-
+    private func gtemGteDeleter() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 0
+         
+        }
+        
+    }
 
 }
 

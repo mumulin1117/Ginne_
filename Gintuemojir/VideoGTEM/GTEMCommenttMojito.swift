@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 
 class GTEMCommenttMojito: UIViewController {
     @IBOutlet weak var sayTexGTUA: UITextField!
@@ -26,7 +26,7 @@ class GTEMCommenttMojito: UIViewController {
     private var _muddleToolGTEM: CGFloat = 0.87
     private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
-    var realingUserDtaGTEm:Dictionary<String,String>
+    private  var realingUserDtaGTEm:Dictionary<String,String>
     init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?, realingUserDtaGTEm: Dictionary<String, String>) {
         _fermentationTimerGTEM = tationTimerGTEM
         let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
@@ -67,6 +67,19 @@ class GTEMCommenttMojito: UIViewController {
         }
 
         self.dismiss(animated: true)
+        
+    }
+
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
         
     }
     override func viewDidLoad() {
@@ -140,7 +153,18 @@ class GTEMCommenttMojito: UIViewController {
         
         
     }
-
+    private func gtemGteDeleterTotal() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
     
     @IBAction func stargerSendGTEU(_ sender: Any) {
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
@@ -160,9 +184,11 @@ class GTEMCommenttMojito: UIViewController {
                 }
 
                 if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
-                    SVProgressHUD.show()
+//                    SVProgressHUD.show()
                 }
-                
+                let hudLoadingGTEM = JGProgressHUD(style: .light)
+                hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+                hudLoadingGTEM.show(in: self.view)
                
                 
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
@@ -195,7 +221,7 @@ class GTEMCommenttMojito: UIViewController {
 
                     if realingUserDtaGTEm["gtemID"] == iew["gtemID"]{
                         GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["commentsaying"] = conted
-                        SVProgressHUD.dismiss()
+                        hudLoadingGTEM.dismiss()
                         colfulLisftGTEM.append(alpgocoloe)
                         colfulLisftGTEM.append(pinghio)
 
@@ -210,8 +236,12 @@ class GTEMCommenttMojito: UIViewController {
                 return
                 
             }
-            
-            SVProgressHUD.showInfo(withStatus: "An &%%&empty&%%& comment&%%& can&%%&not be subm&%%&itted!!".replacingOccurrences(of: "&%%&", with: ""))
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.textLabel.text = "An &%%&empty&%%& comment&%%& can&%%&not be subm&%%&itted!!".replacingOccurrences(of: "&%%&", with: "")
+            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
+           
             
         }else{
             let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
@@ -224,8 +254,12 @@ class GTEMCommenttMojito: UIViewController {
             if colfulLisftGTEM.last == .blue{
                 return //恒为假
             }
-
-            SVProgressHUD.showInfo(withStatus: "Sorry, your comments are too frequent")
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.textLabel.text = "Sorry, your comments are too frequent"
+            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
+           
             
             
         }

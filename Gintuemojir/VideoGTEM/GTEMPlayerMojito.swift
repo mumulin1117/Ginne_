@@ -7,9 +7,9 @@
 
 import UIKit
 import ZFPlayer
-import SVProgressHUD
+import JGProgressHUD
 class GTEMPlayerMojito: UIViewController {
-    var playerGTEM: ZFPlayerController?
+    private  var playerGTEM: ZFPlayerController?
     private var _muddleToolGTEM: CGFloat = 0.87
     var playerViewGTEM: ZFPlayerView = ZFPlayerView()
     var HoperGTEM:UIView?
@@ -17,7 +17,7 @@ class GTEMPlayerMojito: UIViewController {
 
   
 
-    var linkUrlGTEM:String
+    private  var linkUrlGTEM:String
     
     init(linkGTEM_Url: String) {
         let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
@@ -41,7 +41,30 @@ class GTEMPlayerMojito: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func gtemGteDeleterTotal() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     deinit {
         self.playerGTEM?.currentPlayerManager.stop()
         let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
@@ -70,7 +93,12 @@ class GTEMPlayerMojito: UIViewController {
                
         let playerManagerGTEm = ZFAVPlayerManager()
         guard let url = URL.init(string: linkUrlGTEM) else{
-            SVProgressHUD.showInfo(withStatus: "Sorry, the video address does not exist")
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.textLabel.text = "Sorry, the video address does not exist"
+            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
+           
             backendGTEm()
             return
         }

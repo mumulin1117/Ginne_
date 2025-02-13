@@ -8,16 +8,15 @@
 import UIKit
 
 class GTEMELAurrMoJito: UIViewController {
-    var aGTEm:Float = 10
-    var bGTEM:Float  = 20
-    static var boolkSholkd:Bool = false
+  
+    static var boolkSholkd:(String?,String?,Bool) = (nil,nil,false)
     
     @IBOutlet weak var gtemTisder: UILabel!
     
     
     @IBOutlet weak var inputerkoGTEm: UITextView!
     
-    var HoperGTEM:UIView?
+    private  var HoperGTEM:UIView?
    
     
     @IBOutlet weak var cananlBakGTEm: UIButton!
@@ -66,18 +65,21 @@ class GTEMELAurrMoJito: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var aGTEm:(Float,String?) = (10,nil)
+        aGTEm.0 += 2
+        aGTEm.1 = "\(aGTEm.0)"
 
+       
         cananlBakGTEm.addTarget(self, action: #selector(shuldCancelGTEkGtray), for: .touchUpInside)
         agreeBakGTEm.addTarget(self, action: #selector(shuldAgreeGTEkGtray), for: .touchUpInside)
         peerieeBakGTEm.addTarget(self, action: #selector(peerieeBakGTEmGTEkGtray), for: .touchUpInside)
         peetermeBakGTEm.addTarget(self, action: #selector(peetermeBakGTEmGTEkGtray), for: .touchUpInside)
-        var cGTEM:Float  = aGTEm + bGTEM
-        cGTEM += 12
-        var dGTEM:Float  = aGTEm*3 - bGTEM
-
-
-        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-    
+       
+        var bGTEM:(Float,String?)  = (20,nil)
+        bGTEM.0 -= 1
+        bGTEM.1 = "\(bGTEM.0)"
+        var cGTEM:Float  = aGTEm.0 + bGTEM.0
+       
             if jornyGTEM.0 == 0 {
                 gtemTisder.text = "Ginne App ELUA"
                 HoperGTEM = UIView()
@@ -149,7 +151,15 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
 
                 treesHaGTEM?.alpha = 0.4
                 treesHaGTEM?.layer.borderWidth = 4
+                cGTEM  += 12
 
+                var dGTEM:Float  = aGTEm.0*3 - bGTEM.0
+
+                dGTEM += 12
+                if (cGTEM >=  aGTEm.0 + bGTEM.0) && dGTEM > 0{
+                    dGTEM += 3
+                    
+                }
                 if _muddleToolGTEM < 0 {
                     self.view.addSubview(treesHaGTEM!)
                     treesHaGTEM?.alpha = 0
@@ -291,46 +301,71 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
             }
             
             
-        }
+        
     }
 
    
     @objc func shuldCancelGTEkGtray()  {
-        var cGTEM:Float  = aGTEm + bGTEM
-        cGTEM += 12
-        var dGTEM:Float  = aGTEm*3 - bGTEM
+        var aGTEm:(Float,String?) = (10,nil)
+        aGTEm.0 += 2
+        aGTEm.1 = "\(aGTEm.0)"
 
-        dGTEM = dGTEM*2
-        dGTEM = dGTEM*2
-        dGTEM = dGTEM*2
-        dGTEM = dGTEM*2
-        if jornyGTEM.0 == 0 {
-            GTEMELAurrMoJito.boolkSholkd = false
+        var bGTEM:(Float,String?)  = (20,nil)
+        bGTEM.0 -= 1
+       
+        GTEMELAurrMoJito.boolkSholkd = (nil,nil,false)
+        bGTEM.1 = "\(bGTEM.0)"
+        var cGTEM:Float  = aGTEm.0 + bGTEM.0
+        cGTEM  += 12
+
+        var dGTEM:Float  = aGTEm.0*3 - bGTEM.0
+
+        dGTEM += 12
+        if (cGTEM >=  aGTEm.0 + bGTEM.0) && dGTEM > 0{
+            dGTEM += 3
+            self.navigationController?.popViewController(animated: true)
         }
         
-        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-            self.navigationController?.popViewController(animated: true)
+        
+    }
+    
+    private func gtemGteDeleter() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if self.view.frame.height == 0 {
+            afvie.center = self.view.center
+            self.view.addSubview(afvie)
         }
         
     }
     
     @objc func shuldAgreeGTEkGtray()  {
-        var cGTEM:Float  = aGTEm + bGTEM
-        cGTEM += 12
-        
+      
         if jornyGTEM.0 == 0 {
-            GTEMELAurrMoJito.boolkSholkd = true
+            GTEMELAurrMoJito.boolkSholkd = (nil,nil,true)
         }
-        var dGTEM:Float  = aGTEm*3 - bGTEM
+        var aGTEm:(Float,String?) = (10,nil)
+        aGTEm.0 += 2
+        aGTEm.1 = "\(aGTEm.0)"
 
-        dGTEM = dGTEM*2
-        dGTEM = dGTEM*2
-        dGTEM = dGTEM*2
-        dGTEM = dGTEM*2
-        
-        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+        var bGTEM:(Float,String?)  = (20,nil)
+        bGTEM.0 -= 1
+        bGTEM.1 = "\(bGTEM.0)"
+        var cGTEM:Float  = aGTEm.0 + bGTEM.0
+        cGTEM  += 12
+
+        var dGTEM:Float  = aGTEm.0*3 - bGTEM.0
+
+        dGTEM += 12
+        if (cGTEM >=  aGTEm.0 + bGTEM.0) && dGTEM > 0{
+            dGTEM += 3
             self.navigationController?.popViewController(animated: true)
         }
+            
+       
         
     }
     

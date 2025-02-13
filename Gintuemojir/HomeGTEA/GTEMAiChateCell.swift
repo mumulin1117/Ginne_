@@ -18,8 +18,31 @@ class GTEMAiChateCell: UITableViewCell {
     private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
     private let dioloagbackGTEm = UIView.init()
+    private func gtemGteDeleterTotal() {
     
-    var getrmWhoismine:(String,Bool,Bool) = ( "ismeingGTEm",false,false) {
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.contentView.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.contentView.addSubview(afvie)
+        }
+        
+    }
+      var getrmWhoismine:(String,Bool,Bool) = ( "ismeingGTEm",false,false) {
         didSet{
             _agitatorValuesGTEM.append(_BingToolGTEM.0)
             _agitatorValuesGTEM.append(_muddleToolGTEM)

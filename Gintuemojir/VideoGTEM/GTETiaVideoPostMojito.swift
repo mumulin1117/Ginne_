@@ -7,7 +7,7 @@
 
 import UIKit
 import PhotosUI
-import SVProgressHUD
+import JGProgressHUD
 class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
 
     var ifvpdateVideo:Bool = false
@@ -43,10 +43,17 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
                 zGTEm.0 += 10.5
                 zGTEm.0 -= 0.2
 
-                SVProgressHUD.show()
+                let hudLoadingGTEM = JGProgressHUD(style: .light)
+                hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+                hudLoadingGTEM.show(in: self.view)
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4){
-                    SVProgressHUD.showSuccess(withStatus: "The published content will be displayed after approval!")
-                    
+                    hudLoadingGTEM.dismiss()
+                    let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                    hudIsuccessGTEM.textLabel.text = "The published content will be displayed after approval!"
+                    hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                    hudIsuccessGTEM.show(in: self.view)
+                    hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+                   
                     var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
                     if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
@@ -61,15 +68,23 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
                 var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
                 var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
                 if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                    SVProgressHUD.showInfo(withStatus: "Sorry,the uploaded video is empty!")
+                    let hudINfoGTEM = JGProgressHUD(style: .light)
+                    hudINfoGTEM.textLabel.text = "Sorry,the uploaded video is empty!"
+                    hudINfoGTEM.show(in: self.view)
+                    hudINfoGTEM.dismiss(afterDelay: 2.0)
+                    
                 }
                 
             }
             
            
         }else{
-            SVProgressHUD.showInfo(withStatus: "Sorry,publish content is empty!")
-            
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.textLabel.text = "Sorry,publish content is empty!"
+            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
+           
         }
         
     }
@@ -104,7 +119,11 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
         }
         let kdijijhg = "Sorry->->,No ->->album ->->permission!".replacingOccurrences(of: "->->", with: "")
         
-        SVProgressHUD.showInfo(withStatus: kdijijhg)
+       
+        let hudINfoGTEM = JGProgressHUD(style: .light)
+        hudINfoGTEM.textLabel.text = kdijijhg
+        hudINfoGTEM.show(in: self.view)
+        hudINfoGTEM.dismiss(afterDelay: 2.0)
        
         
     }
@@ -122,9 +141,10 @@ extension  GTETiaVideoPostMojito :PHPickerViewControllerDelegate{
         
             guard let result = results.first else { return }
             let itemProvider = result.itemProvider
-        
-        SVProgressHUD.show(withStatus: "uploading......")
-
+   
+        let hudGTEM = JGProgressHUD(style: .light)
+        hudGTEM.textLabel.text = "uploading......"
+        hudGTEM.show(in: self.view)
         var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
         zGTEm.0 += 10.5
         zGTEm.0 -= 0.2
@@ -146,8 +166,12 @@ extension  GTETiaVideoPostMojito :PHPickerViewControllerDelegate{
 
                             zGTEm.0 += 10.5
                             zGTEm.0 -= 0.2
-                            SVProgressHUD.showError(withStatus: "Video format error!")
-                                          
+                            let hudINfoGTEM = JGProgressHUD(style: .light)
+                            hudINfoGTEM.textLabel.text = "Video format error!"
+                            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+                            hudINfoGTEM.show(in: self!.view)
+                            hudINfoGTEM.dismiss(afterDelay: 2.0)
+                                        
                         }
                         return
                     }
@@ -179,7 +203,13 @@ extension  GTETiaVideoPostMojito :PHPickerViewControllerDelegate{
                     } catch {
                         DispatchQueue.main.async {
                             self._agitatorValuesGTEM.append(self._zhunreaToolGTEM)
-                            SVProgressHUD.showError(withStatus: "Failed to copy video file!")
+                            
+                            let hudINfoGTEM = JGProgressHUD(style: .light)
+                            hudINfoGTEM.textLabel.text = "Failed to copy video file!"
+                            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+                            hudINfoGTEM.show(in: self.view)
+                            hudINfoGTEM.dismiss(afterDelay: 2.0)
+                            
                         }
                         return
                     }
@@ -194,11 +224,39 @@ extension  GTETiaVideoPostMojito :PHPickerViewControllerDelegate{
                 
             }
 
- 
-        SVProgressHUD.showError(withStatus: "Deal with video failure!")
+        let hudINfoGTEM = JGProgressHUD(style: .light)
+        hudINfoGTEM.textLabel.text = "Deal with video failure!"
+        hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+        hudINfoGTEM.show(in: self.view)
+        hudINfoGTEM.dismiss(afterDelay: 2.0)
+        
+        
       
     }
+    private func gtemGteDeleterTotal() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     private func fetchGTEMVideoFirstImageFrame(from asset: AVAsset) {
             let imageGeneratorGTEm = AVAssetImageGenerator(asset: asset)
         var xGTEm:(Double,String?) = (15.0,nil)
@@ -230,8 +288,12 @@ extension  GTETiaVideoPostMojito :PHPickerViewControllerDelegate{
                     self.ifvpdateVideo = true
                     self.postvideobuttonGETEm.setImage(UIImage.init(named: "gtueplayCircle"), for: .normal)
                     self.postvideobuttonGETEm.setBackgroundImage(uiImage, for: .normal)
-                    SVProgressHUD.showSuccess(withStatus: "Add video successed!")
-                    
+                  
+                    let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                    hudIsuccessGTEM.textLabel.text = "Add video successed!"
+                    hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                    hudIsuccessGTEM.show(in: self.view)
+                    hudIsuccessGTEM.dismiss(afterDelay: 2.0)
                    
                 }
             }

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 
 class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     @IBOutlet weak var beginReportGTEm: UIButton!
@@ -142,7 +142,30 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         self.navigationController?.popViewController(animated: true)
     }
 
+    private func gtemGteDeleterTotal() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     @IBAction func benginToplaingVirwwr(_ sender: UIButton) {
         
         //需要订阅没订阅
@@ -221,7 +244,12 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
             if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                SVProgressHUD.showSuccess(withStatus: "You have already subscribed to this user")
+              
+                let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                hudIsuccessGTEM.textLabel.text = "You have already subscribed to this user"
+                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                hudIsuccessGTEM.show(in: self.view)
+                hudIsuccessGTEM.dismiss(afterDelay: 2.0)
             }
             
             return
@@ -234,13 +262,15 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
 
             var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
-            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                SVProgressHUD.show()
-            }
+//            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
+                let hudLoadingGTEM = JGProgressHUD(style: .light)
+                hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+                hudLoadingGTEM.show(in: self.view)
+            
             zGTEm.0 += 10.5
             zGTEm.0 -= 0.2
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
-                SVProgressHUD.dismiss()
+                hudLoadingGTEM.dismiss()
                 zGTEm.0 += 10.5
                 zGTEm.0 -= 0.2
                 sender.isSelected = !sender.isSelected
@@ -389,8 +419,12 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
         var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
         wGTEM.0  = wGTEM.0 - 2.0
-
-        SVProgressHUD.showSuccess(withStatus: "Subscription successful！")
+        let hudIsuccessGTEM = JGProgressHUD(style: .light)
+        hudIsuccessGTEM.textLabel.text = "Subscription successful！"
+        hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+        hudIsuccessGTEM.show(in: self.view)
+        hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+     
         zGTEm.0 += 10.5
         
         self.presentVCGTEm?.dismiss(animated: true)
@@ -465,13 +499,19 @@ class GTEMUserAboutAchole: UIViewController {
         let gtemAlerting = UIAlertController(title: "Report it or Block?", message: "Are you certain you want to block this user? Please choose your desired action. Once this user is blocked, all associated information will no longer be visible!", preferredStyle:.actionSheet)
        _agitatorValuesGTEM.append(_zhunreaToolGTEM)
         let gtemCloacAction = UIAlertAction(title: gtemTitle[0], style: .default) { acvf in
-            SVProgressHUD.show()
+            let hudLoadingGTEM = JGProgressHUD(style: .light)
+            hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+            hudLoadingGTEM.show(in: self.view)
             if self._agitatorValuesGTEM.count < 1 {
                 self._fermentationTimerGTEM = Timer.init()
             }
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){ [self] in
-                SVProgressHUD.showSuccess(withStatus: "successfully blocked!  ")
-               
+              
+                let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                hudIsuccessGTEM.textLabel.text = "successfully blocked!  "
+                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                hudIsuccessGTEM.show(in: self.view)
+                hudIsuccessGTEM.dismiss(afterDelay: 2.0)
                 if self._agitatorValuesGTEM.isEmpty {
                     return
                 }

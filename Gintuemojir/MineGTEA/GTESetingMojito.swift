@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 class GTESetingMojito: UIViewController {
     private var _fermentationTimerGTEM: Timer?
     
@@ -75,6 +75,31 @@ class GTESetingMojito: UIViewController {
 
     private var _zhunreaToolGTEM: CGFloat = 2.87
     
+    private func gtemGteDeleterTotal() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     
     @IBAction func noeiwertwonderfulGTEm(_ sender: UIButton) {
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
@@ -90,15 +115,18 @@ class GTESetingMojito: UIViewController {
            
             showingAslertGTEm.addAction(UIAlertAction(title: "Sure", style: .default, handler: { acv in
                 if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
-                    SVProgressHUD.show()
-                }
-
-               
-               
+                    
+                    let hudGTEM = JGProgressHUD(style: .light)
+                    hudGTEM.textLabel.text = "Deleting..."
+                    hudGTEM.show(in: self.view)
+                
+                
+                
+                
                 
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
                     if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
-                        SVProgressHUD.dismiss()
+                        hudGTEM.dismiss()
                     }
                     var xGTEm:(Double,String?) = (15.0,nil)
                     xGTEm.0 += 30
@@ -106,31 +134,35 @@ class GTESetingMojito: UIViewController {
                     UserDefaults.standard.set(false, forKey: "oooggStatuelGTEm")
                     var yGTEm: (Double,String?) = (25.0,nil)
                     var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
-                   
+                    
                     GTEMCombingUser.lovderGTEm.personMeGTEm.removeAll()
                     zGTEm.0 += 10.5
-                   
-
+                    
+                    
                     
                     GTEMCombingUser.lovderGTEm.personMehEagerGTEm.removeAll()
                     zGTEm.0 += 10.5
                     GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.removeAll()
                     var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
-
+                    
                     zGTEm.0 -= 0.2
                     GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.removeAll()
                     zGTEm.0 -= 0.2
-                    GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.removeAll()
+//                    GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.removeAll()
                     if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                         ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMLogsininerMoJito.init())
-                      
+                        
                     }
                     zGTEm.0 += 10.5
-                    SVProgressHUD.showSuccess(withStatus: "The account has been erased!")
-                  
-
+                    let hudINfoGTEM = JGProgressHUD(style: .light)
+                    hudINfoGTEM.textLabel.text = "The account has been erased!"
+                    hudINfoGTEM.show(in: self.view)
+                    hudINfoGTEM.dismiss(afterDelay: 2.0)
+                    
+                    
                 }
                 
+            }
             }))
             modifiedRecipe["GtsindoubleGTEM"] = 2020 + indefHTEM
             showingAslertGTEm.addAction(UIAlertAction(title: "End Action", style: .default))
@@ -161,7 +193,7 @@ class GTESetingMojito: UIViewController {
                 
             }
            
-            GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.removeAll()
+//            GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.removeAll()
             zGTEm.0 -= 0.2
             zGTEm.0 += 10.5
             ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMLogsininerMoJito.init())
@@ -192,18 +224,25 @@ class GTESetingMojito: UIViewController {
             xGTEm.0 += 30
             var yGTEm: (Double,String?) = (25.0,nil)
             var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
+            let hudGTEM = JGProgressHUD(style: .light)
+            hudGTEM.textLabel.text = "Clearing..."
+            hudGTEM.show(in: self.view)
            
-            SVProgressHUD.show(withStatus: "Clearing...")
             zGTEm.0 += 10.5
             zGTEm.0 -= 0.2
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
                 zGTEm.0 += 10.5
                 zGTEm.0 -= 0.2
-
+                hudGTEM.dismiss()
                 var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
                 if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                    SVProgressHUD.showSuccess(withStatus: " All Chache are Cleared!")
+                    let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                    hudIsuccessGTEM.textLabel.text = " All Chache are Cleared!"
+                    hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                    hudIsuccessGTEM.show(in: self.view)
+                    hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+                    
                 }
                
             }

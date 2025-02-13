@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 import Alamofire
 //AI
 class GTEMAICholeMoJito: UIViewController {
@@ -18,9 +18,32 @@ class GTEMAICholeMoJito: UIViewController {
     private var _fermentationTimerGTEM: Timer?
     
     
-    var dioloadingGTSMlist:(Int,Int,Array<(whoismineGTEm:String,sayiedsdetailGTEm:String)>) = (2,2,[])
+    private var dioloadingGTSMlist:(Int,Int,Array<(whoismineGTEm:String,sayiedsdetailGTEm:String)>) = (2,2,[])
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
-   
+    private func gtemGteDeleterTotal() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         _agitatorValuesGTEM.append(_BingToolGTEM.0)
@@ -89,14 +112,18 @@ class GTEMAICholeMoJito: UIViewController {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var aGTEm:Float = 10
-        var bGTEM:Float  = 20
-        var cGTEM:Float  = aGTEm + bGTEM
-        cGTEM += 12
-        var dGTEM:Float  = aGTEm*3 - bGTEM
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        let pbluehio = UIColor.blue
+        var colfulLisftGTEM = Array<UIColor>.init()
+        if colfulLisftGTEM.contains(UIColor.purple) {
+            colfulLisftGTEM.append(pbluehio)
+            return dioloadingGTSMlist.2.count
+        }
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
 
-
-        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+        if colfulLisftGTEM.last == .green{
             return dioloadingGTSMlist.2.count
         }
         return dioloadingGTSMlist.2.count
@@ -131,41 +158,52 @@ class GTEMAICholeMoJito: UIViewController {
                 
                 sayTexGTUA.resignFirstResponder()
                 
-                SVProgressHUD.show()
+                let hudLoadingGTEM = JGProgressHUD(style: .light)
+                hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+                hudLoadingGTEM.show(in: self.view)
                 if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
                     self.contenAiAchole.reloadData()
                 }
 
                 
+                var aGTEm:(Float,String?) = (10,nil)
+                aGTEm.0 += 2
                 
                 
                 let gtemOkail0 = "que->->stion->->".replacingOccurrences(of: "->->", with: "")
-                var aGTEm:Float = 10
+                aGTEm.1 = "\(aGTEm.0)"
+
+                var bGTEM:(Float,String?)  = (20,nil)
+                
                
                 let gtemOkail1 = "ques->->tionType->->".replacingOccurrences(of: "->->", with: "")
-                var bGTEM:Float  = 20
-                var cGTEM:Float  = aGTEm + bGTEM
+                bGTEM.0 -= 1
+                bGTEM.1 = "\(bGTEM.0)"
                
                 let gtemOkail2 = "eq->->No->->".replacingOccurrences(of: "->->", with: "")
-                cGTEM += 12
-                var dGTEM:Float  = aGTEm*3 - bGTEM
-
-
                
-                var gtemOkail3 = "55->->55->->".replacingOccurrences(of: "->->", with: "")
-                if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-                    gtemOkail3 = "55->->55->->".replacingOccurrences(of: "->->", with: "")
-                }
               
+                var cGTEM:Float  = aGTEm.0 + bGTEM.0
+                cGTEM  += 12
+
+              
+                var gtemOkail3 = "55->->55->->".replacingOccurrences(of: "->->", with: "")
+                var dGTEM:Float  = aGTEm.0*3 - bGTEM.0
+
+                dGTEM += 12
+                
                 
                 let dicnGTEM = [gtemOkail0: conted,gtemOkail1: 1,gtemOkail2:gtemOkail3] as [String : Any]
-                
+                if (cGTEM >=  aGTEm.0 + bGTEM.0) && dGTEM < -10{
+                    return
+                    
+                }
                 let urolPinkg = "ht->->tp://www.sunshinew->->anderer99.xyz/talktwo/askQ->->uestio->->nv2".replacingOccurrences(of: "->->", with: "")
                 
                 AF.request(urolPinkg, method: .post, parameters:dicnGTEM , encoding: JSONEncoding.default, headers: nil)
                 .responseJSON { response in
                     if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
-                        SVProgressHUD.dismiss()
+                        hudLoadingGTEM.dismiss()
                     }
                    
                     switch response.result {
@@ -182,7 +220,12 @@ class GTEMAICholeMoJito: UIViewController {
                             var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
                          
                             guard let content = json[gtemOkail4[0]] as? String else {
-                                SVProgressHUD.show(withStatus: "Data error!!!")
+                                
+                                let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                                hudIsuccessGTEM.textLabel.text = "ERROR!"
+                                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                                hudIsuccessGTEM.show(in: self.view)
+                                hudIsuccessGTEM.dismiss(afterDelay: 2.0)
                                 return
                             }
                             zGTEm.0 += 10.5
@@ -204,9 +247,30 @@ class GTEMAICholeMoJito: UIViewController {
                             return
                             
                         }
-                        SVProgressHUD.show(withStatus: gtemOkail5[0])
+                        let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                        hudIsuccessGTEM.textLabel.text = gtemOkail5[0]
+                        hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                        hudIsuccessGTEM.show(in: self.view)
+                        hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+                        
                     case .failure(let error):
-                        SVProgressHUD.show(withStatus: error.localizedDescription)
+                        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                        let pinghio = UIColor.red
+                        var colfulLisftGTEM = Array<UIColor>.init()
+
+                        colfulLisftGTEM.append(alpgocoloe)
+                        colfulLisftGTEM.append(pinghio)
+
+                        if colfulLisftGTEM.last == .blue{
+                            return //恒为假
+                        }
+                        
+                        let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                        hudIsuccessGTEM.textLabel.text =  error.localizedDescription
+                        hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                        hudIsuccessGTEM.show(in: self.view)
+                        hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+                     
                     }
 
                 }
@@ -215,18 +279,36 @@ class GTEMAICholeMoJito: UIViewController {
             }
         let meadffgeGTEM = "Sor->->ry,you ->->cannot ->->send ->->an empty->-> message!".replacingOccurrences(of: "->->", with: "")
         
-        SVProgressHUD.showInfo(withStatus: meadffgeGTEM)
-            
+  
+        let hudINfoGTEM = JGProgressHUD(style: .light)
+        hudINfoGTEM.textLabel.text = meadffgeGTEM
+        hudINfoGTEM.show(in: self.view)
+        hudINfoGTEM.dismiss(afterDelay: 2.0)
         
     }
     private var _zhunreaToolGTEM: CGFloat = 2.87
     @IBAction func beginReportContentVideo(_ sender: Any) {
-        
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        let pbluehio = UIColor.blue
+        var colfulLisftGTEM = Array<UIColor>.init()
+        if colfulLisftGTEM.contains(UIColor.purple) {
+            colfulLisftGTEM.append(pbluehio)
+            return
+        }
         self.navigationController?.pushViewController(GTEMrepoaweDetaillMoJito.init(), animated: true)
     }
     
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        let pbluehio = UIColor.blue
+        var colfulLisftGTEM = Array<UIColor>.init()
+        if colfulLisftGTEM.contains(UIColor.purple) {
+            colfulLisftGTEM.append(pbluehio)
+            return
+        }
         self.navigationController?.popViewController(animated: true)
     }
 }
@@ -237,33 +319,42 @@ extension GTEMAICholeMoJito:UITableViewDelegate,UITableViewDataSource,UITextFiel
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var aGTEm:(Float,String?) = (10,nil)
+        aGTEm.0 += 2
         
         
        let diologData = dioloadingGTSMlist.2[indexPath.row]
-        var aGTEm:Float = 10
-        var bGTEM:Float  = 20
+        aGTEm.1 = "\(aGTEm.0)"
+
+        var bGTEM:(Float,String?)  = (20,nil)
+        bGTEM.0 -= 1
        
         let gtemCEll = tableView.dequeueReusableCell(withIdentifier: "GTEMAiChateCellID", for: indexPath) as! GTEMAiChateCell
-        var cGTEM:Float  = aGTEm + bGTEM
-        cGTEM += 12
-        
+        bGTEM.1 = "\(bGTEM.0)"
+        var cGTEM:Float  = aGTEm.0 + bGTEM.0
+        cGTEM  += 12
+
+      
         gtemCEll.gtemSayieVuew.text =   diologData.sayiedsdetailGTEm
+        var dGTEM:Float  = aGTEm.0*3 - bGTEM.0
+
+        dGTEM += 12
+        
         if diologData.whoismineGTEm == "ismeingGTEm" {
-            var dGTEM:Float  = aGTEm*3 - bGTEM
-
-
-            if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+            if (cGTEM >=  aGTEm.0 + bGTEM.0) && dGTEM > 0{
+                dGTEM += 3
                 gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
+               
             }
             
+            
         }
-        var dGTEM:Float  = aGTEm*3 - bGTEM
+      
 
-
-        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-            gtemCEll.getrmWhoismine = (diologData.whoismineGTEm,false,false)
-        }
-        
+       
+           
+        gtemCEll.getrmWhoismine = (diologData.whoismineGTEm,false,false)
+      
        
         return gtemCEll
     }

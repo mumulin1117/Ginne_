@@ -19,24 +19,24 @@ class GTEMCombingUser: NSObject {
     
     private let _muddleToolGTEM: CGFloat = 0.87
      
-    var videoTotaluserGTEm:(Bool,Array<Dictionary<String,String>>,Bool) = (false,Array<Dictionary<String,String>>(),true)
+      var videoTotaluserGTEm:(Bool,Array<Dictionary<String,String>>,Bool) = (false,Array<Dictionary<String,String>>(),true)
     
     private var _agitatorValuesGTEM: [Float] = [12.5, 9.8, 15.3]
 
-    var personMeGTEm:Array<Dictionary<String,String>> = Array<Dictionary<String,String>>()
+     var personMeGTEm:Array<Dictionary<String,String>> = Array<Dictionary<String,String>>()
     
     private let _BingToolGTEM: CGFloat = 1.87
     
-    var personMehEagerGTEm:Array<UIImage> = Array<UIImage>()
+     var personMehEagerGTEm:Array<UIImage> = Array<UIImage>()
     
     
-    var ancholeRoomGTEm:(String,[GTEmAcholeRoom]) = ("GTEMCombingUser",[GTEmAcholeRoom]())
+     var ancholeRoomGTEm:(String,[GTEmAcholeRoom]) = ("GTEMCombingUser",[GTEmAcholeRoom]())
     
     private var _zhunreaToolGTEM: CGFloat = 2.87
     
-    var fhhowerAllGTEm = (true,true,[[String: String]]())
+     var fhhowerAllGTEm = (true,true,[[String: String]]())
     
-    var fnnceAllGTEm = (true,true,[[String: String]]())
+     var fnnceAllGTEm = (true,true,[[String: String]]())
 
     
     override init() {
@@ -107,25 +107,16 @@ class GTEMCombingUser: NSObject {
         for (k,item) in begRoomIGTEm.enumerated() {
             var xGTEm:(Double,String?) = (15.0,nil)
           
-            var aGTEm:Float = 10
-            aGTEm += 33
-            var bGTEM:Float  = 20
-            bGTEM -= 30
-            var cGTEM:Float  = aGTEm + bGTEM
-            cGTEM += 12
-            var dGTEM:Float  = aGTEm*3 - bGTEM
-
-
-            if  dGTEM < 0{
-                return
-            }
+          
             
             guard  let sleUseringoGTEm = videoTotaluserGTEm.1.filter({ dijui in
                 return dijui["gtemID"] != self.videoTotaluserGTEm.1[k]["gtemID"]
-            }).shuffled().suffix(1).first,
-            
-                    (cGTEM >=  aGTEm + bGTEM) else{
-                
+            }).shuffled().suffix(1).first else{
+                let labelgGTEm = UILabel.init()
+                labelgGTEm.textAlignment = .right
+                labelgGTEm.adjustsFontSizeToFitWidth = true
+                labelgGTEm.addSubview(UIView.init(frame: .zero))
+               
                 return
                 
             }
@@ -135,15 +126,18 @@ class GTEMCombingUser: NSObject {
             var yGTEm: (Double,String?) = (25.0,nil)
             var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
            
-            let gtemSendingContents = [
-                            "Hello! What’s everyone drinking today?",
-                            "I’m new here—any recommendations for a beginner?",
-                            "Can’t wait to learn more about different wine varieties!",
-                            "What’s the most memorable wine you’ve ever tasted?",
-                            "I love discussing pairings—what do you all like with red wine?",
-                            "Looking forward to sharing and discovering new favorites!"
-                            
-            ][k]
+            
+            let allLioGTEM = (false, [
+                "Hello! What’s everyone drinking today?",
+                "I’m new here—any recommendations for a beginner?",
+                "Can’t wait to learn more about different wine varieties!",
+                "What’s the most memorable wine you’ve ever tasted?",
+                "I love discussing pairings—what do you all like with red wine?",
+                "Looking forward to sharing and discovering new favorites!"
+                
+])
+            
+            let gtemSendingContents = allLioGTEM.1[k]
             zGTEm.0 += 10.5
             yGTEm.0 += 10.5
             let duhua0GTEm = ("notme",self.videoTotaluserGTEm.1[k],welcomeRoomlog)
@@ -212,8 +206,8 @@ class GTEMCombingUser: NSObject {
 
 class PEAUFNeuGuideChallengnng: UINavigationController {
     
-    var HoperGTEM:UIView?
-    var treesHaGTEM:UIButton?
+    private var HoperGTEM:UIView?
+    private var treesHaGTEM:UIButton?
     
     private var _fermentationTimerGTEM: Timer?
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]

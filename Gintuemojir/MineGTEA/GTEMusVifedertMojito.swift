@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 import AVFoundation
 
 class GTEMusVifedertMojito: GTEMUserAboutAchole {
@@ -101,7 +101,11 @@ class GTEMusVifedertMojito: GTEMUserAboutAchole {
             var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
             self._zhunreaToolGTEM = self._zhunreaToolGTEM + self._muddleToolGTEM + self._BingToolGTEM.0
             if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                SVProgressHUD.showInfo(withStatus: "Sorry, your call has been disconnected!")
+                let hudINfoGTEM = JGProgressHUD(style: .light)
+                hudINfoGTEM.textLabel.text = "Sorry, your call has been disconnected!"
+                hudINfoGTEM.show(in: self.view)
+                hudINfoGTEM.dismiss(afterDelay: 2.0)
+               
             }
 
             
@@ -113,7 +117,30 @@ class GTEMusVifedertMojito: GTEMUserAboutAchole {
         beginReportGTEm.addTarget(self, action: #selector(startReportAndBlaCkUserGTEm), for: .touchUpInside)
     }
 
+    private func gtemGteDeleterTotal() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
         
@@ -141,8 +168,11 @@ class GTEMusVifedertMojito: GTEMUserAboutAchole {
         if colfulLisftGTEM.last == .blue{
             return //恒为假
         }
-
-        SVProgressHUD.showInfo(withStatus: "Use the feature after connected phone!")
+        let hudINfoGTEM = JGProgressHUD(style: .light)
+        hudINfoGTEM.textLabel.text = "Use the feature after connected phone!"
+        hudINfoGTEM.show(in: self.view)
+        hudINfoGTEM.dismiss(afterDelay: 2.0)
+       
     }
     
     

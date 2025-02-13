@@ -534,7 +534,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -543,9 +543,8 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Ginne;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to your camera to take profile photos, upload room covers, record videos, and enable video calls.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable microphone access for audio during video calls and when recording videos with sound.";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow saving processed photos/videos to your library after editing or downloading content.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access your photo library to select existing photos/videos for profile pictures, room covers, and uploading content creation.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "During video calls, Ginne needs to enable the microphone to access audio.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Ginne needs to access your photo library to select existing photos/videos for creating profile pictures, room covers, and uploading content.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -578,7 +577,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -587,9 +586,8 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Ginne;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow access to your camera to take profile photos, upload room covers, record videos, and enable video calls.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Enable microphone access for audio during video calls and when recording videos with sound.";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow saving processed photos/videos to your library after editing or downloading content.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access your photo library to select existing photos/videos for profile pictures, room covers, and uploading content creation.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "During video calls, Ginne needs to enable the microphone to access audio.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Ginne needs to access your photo library to select existing photos/videos for creating profile pictures, room covers, and uploading content.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";

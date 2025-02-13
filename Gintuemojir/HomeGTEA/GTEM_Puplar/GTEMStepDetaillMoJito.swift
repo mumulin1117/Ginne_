@@ -33,7 +33,7 @@ class GTEMStepDetaillMoJito: UIViewController {
     @IBOutlet weak var stepdetail2: UILabel!
     @IBOutlet weak var stepdetail3: UILabel!
     
-    var detgiolGTEA :Dictionary<String,String>
+    private var detgiolGTEA :Dictionary<String,String>
     
     private var _fermentationTimerGTEM: Timer?
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
@@ -59,7 +59,30 @@ class GTEMStepDetaillMoJito: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    private func gtemGteDeleterTotal() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
    @objc func navibaTorepohGTEM(_ sender: UIButton) {
        self.navigationController?.pushViewController(GTEMrepoaweDetaillMoJito.init(), animated: true)
     }

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 //热门
 class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     private var _fermentationTimerGTEM: Timer?
@@ -101,7 +101,30 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
        
         
     }
-   
+    private func gtemGteDeleterTotal() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
      
@@ -161,7 +184,9 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
         }
         
         homewrserDataView.isHidden = true
-        SVProgressHUD.show()
+        let hudLoadingGTEM = JGProgressHUD(style: .light)
+        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.show(in: self.view)
         HoperGTEM = UIView()
         HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
         HoperGTEM?.alpha = 0.4
@@ -184,18 +209,28 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
             treesHaGTEM?.alpha = 0
         }
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: DispatchWorkItem(block: {
-            var aGTEm:Float = 10
-            var bGTEM:Float  = 20
-            var cGTEM:Float  = aGTEm + bGTEM
+            var aGTEm:(Float,String?) = (10,nil)
+            aGTEm.0 += 2
+            aGTEm.1 = "\(aGTEm.0)"
+
+            var bGTEM:(Float,String?)  = (20,nil)
+            bGTEM.0 -= 1
+            bGTEM.1 = "\(bGTEM.0)"
+           
           
-            SVProgressHUD.dismiss()
-            cGTEM += 12
-            var dGTEM:Float  = aGTEm*3 - bGTEM
+            hudLoadingGTEM.dismiss()
+            var cGTEM:Float  = aGTEm.0 + bGTEM.0
+            cGTEM  += 12
 
+            var dGTEM:Float  = aGTEm.0*3 - bGTEM.0
 
-            if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+            dGTEM += 22
+            if (cGTEM >=  aGTEm.0 + bGTEM.0) && dGTEM > 0{
+                dGTEM += 3
                 self.homewrserDataView.isHidden = false
             }
+            
+           
             
         }))
        

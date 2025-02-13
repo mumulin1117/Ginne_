@@ -15,10 +15,21 @@ class GTEMoMaintabarJito: UITabBarController {
     private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
     
-    var HoperGTEM:UIView?
-    var treesHaGTEM:UIButton?
+    private var HoperGTEM:UIView?
+    private var treesHaGTEM:UIButton?
     
-   
+    private func gtemGteDeleter() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if self.tabBar.frame.height == 0 {
+            afvie.center = self.tabBar.center
+            self.tabBar.addSubview(afvie)
+        }
+        
+    }
     
     
     override func viewDidLoad() {
@@ -107,7 +118,7 @@ class GTEMoMaintabarJito: UITabBarController {
         }
     }
 
-    func setingGTEmCommn(barIconGTEm:String,GTEmrooter:UIViewController,TitaaleGTEm:String) -> PEAUFNeuGuideChallengnng {
+    private func setingGTEmCommn(barIconGTEm:String,GTEmrooter:UIViewController,TitaaleGTEm:String) -> PEAUFNeuGuideChallengnng {
         
         let navi = PEAUFNeuGuideChallengnng.init(rootViewController: GTEmrooter)
         

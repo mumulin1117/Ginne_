@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
     private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
     @IBOutlet weak var beginReportGTEm: UIButton!
@@ -59,7 +59,30 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
        
         return gtemCEll
     }
+    private func gtemGteDeleterTotal() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     private var _muddleToolGTEM: CGFloat = 0.87
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -195,8 +218,12 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
 
         if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
             let sooprt = "So->->rry,->->you cannot ->->send an ->->empty message!".replacingOccurrences(of: "->->", with: "")
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.textLabel.text = sooprt
+            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
             
-            SVProgressHUD.showInfo(withStatus: sooprt)
         }
 
       

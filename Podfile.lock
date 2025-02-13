@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (5.10.0)
   - IQKeyboardManager (6.5.19)
+  - JGProgressHUD (2.2)
   - SnapKit (5.7.1)
-  - SVProgressHUD (2.2.5)
   - SwiftyStoreKit (0.16.1)
   - TagListView (1.4.1)
   - ZFPlayer (4.1.4):
@@ -16,8 +16,8 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - IQKeyboardManager
+  - JGProgressHUD
   - SnapKit
-  - SVProgressHUD
   - SwiftyStoreKit
   - TagListView
   - ZFPlayer (~> 4.0)
@@ -28,8 +28,8 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - IQKeyboardManager
+    - JGProgressHUD
     - SnapKit
-    - SVProgressHUD
     - SwiftyStoreKit
     - TagListView
     - ZFPlayer
@@ -37,12 +37,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: cd0b98508df05796dd2ff278f3bb055a631b5390
   IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
   ZFPlayer: 5cf39e8d9f0c2394a014b0db4767b5b5a6bffe13
 
-PODFILE CHECKSUM: b3e50f15015dc8b6934d17bfbd01422a014c5a41
+PODFILE CHECKSUM: 62593e3d08d77bd7f604b3baa89ba7d1ff1e3cda
 
 COCOAPODS: 1.16.2

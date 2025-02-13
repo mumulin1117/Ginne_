@@ -7,7 +7,7 @@
 import AVFoundation
 import UIKit
 import SnapKit
-import SVProgressHUD
+import JGProgressHUD
 class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
      
     var presentVCGTEm:UIViewController?
@@ -76,7 +76,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     
     @IBOutlet weak var itemTrendsGTUE: UIButton!
     
-    var mojitoAcholeData:(Bool,Bool,Array<Dictionary<String,String>>){
+    private var mojitoAcholeData:(Bool,Bool,Array<Dictionary<String,String>>){
         get{
             
             var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
@@ -200,6 +200,14 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
             //需要订阅没订阅
             let alertNeesub = UIAlertController(title: "Whether to subscribe or not", message: "This subscription will cost 100 balance, and after subscribing, you will be able to view the user's exciting teaching", preferredStyle:.alert)
             alertNeesub.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { adfgg in
+                let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+                let pinghio = UIColor.red
+                let pbluehio = UIColor.blue
+                var colfulLisftGTEM = Array<UIColor>.init()
+                if colfulLisftGTEM.contains(UIColor.purple) {
+                    colfulLisftGTEM.append(pbluehio)
+                    return
+                }
                 self.surepayingNeedCoinGTEm(bgt: tagGTEm)
             }))
             alertNeesub.addAction(UIAlertAction(title: "cancel", style: .default))
@@ -280,18 +288,28 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     
     @objc func surepayingNeedCoinGTEm(bgt:Int) {
         
-        var aGTEm:Float = 10
-        var bGTEM:Float  = 20
-        var cGTEM:Float  = aGTEm + bGTEM
+        let labelgGTEm = UILabel.init()
+        labelgGTEm.textAlignment = .right
+       
         let newloguserGTEm = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
         
         var gtemBlksdgb =  Int(newloguserGTEm["gtemBlancecoin"] ?? "0") ?? 0
-        cGTEM += 12
-        var dGTEM:Float  = aGTEm*3 - bGTEM
+        labelgGTEm.adjustsFontSizeToFitWidth = true
+        labelgGTEm.addSubview(UIView.init(frame: .zero))
+        if self.view.frame.height == 1 {
+            labelgGTEm.isEnabled = true
+            labelgGTEm.isUserInteractionEnabled = true
+            self.view.addSubview(labelgGTEm)
+        }
 
-
+        if labelgGTEm.superview == self.view {
+            //恒为假
+            return
+        }
        
-        if gtemBlksdgb < 100  && dGTEM > 0{
+        if gtemBlksdgb < 100  {
+            let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+            let pinghio = UIColor.red
             
             let aleracGTEmControllerv = UIAlertController(title: "Balance is Low", message: "", preferredStyle: .alert)
             var xGTEm:(Double,String?) = (15.0,nil)
@@ -314,20 +332,30 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
                 aleracGTEmControllerv.addAction(UIAlertAction(title: "End Action", style: .default))
             }
             
-            if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-                self.present(aleracGTEmControllerv, animated: true)
-                
-            }
+            self.present(aleracGTEmControllerv, animated: true)
             
             return
         }
         
         gtemBlksdgb -= 100
-        
+        var colfulLisftGTEM = Array<UIColor>.init()
+
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
         GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
-      
-        SVProgressHUD.showSuccess(withStatus: "Subscription successful！")
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        let hudIsuccessGTEM = JGProgressHUD(style: .light)
+        hudIsuccessGTEM.textLabel.text = "Subscription successful！"
+        hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+        hudIsuccessGTEM.show(in: self.view)
+        hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+       
         
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         self.presentVCGTEm?.dismiss(animated: true)
         
       //修改数据订阅状态
@@ -361,7 +389,9 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         let topcell = UINib(nibName: "GTEVideocerCell", bundle: nil)
         dataviedeoView.register(topcell, forCellWithReuseIdentifier: "GTEVideocerCellID")
         dataviedeoView.isHidden = true
-        SVProgressHUD.show()
+        let hudLoadingGTEM = JGProgressHUD(style: .light)
+        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.show(in: self.view)
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
         modifiedRecipe["GtemtTriblerGTEM"] = (Int.random(in: 300...700))
         HoperGTEM = UIView()
@@ -378,7 +408,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
             if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
                 self.dataviedeoView.isHidden = false
             }
-            SVProgressHUD.dismiss()
+            hudLoadingGTEM.dismiss()
         }
         dataviedeoView.delegate = self
         dataviedeoView.dataSource = self
@@ -406,8 +436,17 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         
         itemSubGTUE.addTarget(self, action: #selector(AsdtrendringClickGTUE(refGTUE:)), for: .touchUpInside)
         
+       
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+        let pinghio = UIColor.red
+        var colfulLisftGTEM = Array<UIColor>.init()
         itemTrendsGTUE.addTarget(self, action: #selector(AsdtrendringClickGTUE(refGTUE:)), for: .touchUpInside)
-        
+        colfulLisftGTEM.append(alpgocoloe)
+        colfulLisftGTEM.append(pinghio)
+
+        if colfulLisftGTEM.last == .blue{
+            return //恒为假
+        }
         NotificationCenter.default.addObserver(self, selector: #selector(startReloadingAUIGTEm), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
     }
    
@@ -541,7 +580,30 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         self.navigationController?.pushViewController(GTETiaAchleCenterMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: userdate), animated: true)
         
     }
+    private func gtemGteDeleterTotal() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     ///进入个人主页
     @objc func enterprofileGTEm(gtem:UIButton)  {
         let userdate = self.mojitoAcholeData.2[gtem.tag]
@@ -566,7 +628,9 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     }
     ///喜欢
     @objc func giveAttitudeGTEm(gtem:UIButton)  {
-        SVProgressHUD.show()
+        let hudLoadingGTEM = JGProgressHUD(style: .light)
+        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.show(in: self.view)
         _agitatorValuesGTEM.append(_BingToolGTEM.0)
         _agitatorValuesGTEM.append(_muddleToolGTEM)
         _agitatorValuesGTEM.append(_zhunreaToolGTEM)
@@ -579,7 +643,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
        
 
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){ [self] in
-            SVProgressHUD.dismiss()
+            hudLoadingGTEM.dismiss()
             if self._agitatorValuesGTEM.isEmpty {
                 return
             }
@@ -665,23 +729,23 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
 
     //MARK: -   获取远程视频链接缩略图
     static  func fetchGTEMRemoteVideoThumbnailImag(tageturl: URL, gtemcompletion: @escaping (UIImage?) -> Void) {
-        let asset = AVAsset(url: tageturl)
-        let generator = AVAssetImageGenerator(asset: asset)
-        var aGTEm:Float = 10
-        var bGTEM:Float  = 20
-        var cGTEM:Float  = aGTEm + bGTEM
-        cGTEM += 12
-        var dGTEM:Float  = aGTEm*3 - bGTEM
-
-
-        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-            generator.appliesPreferredTrackTransform = true
-            generator.maximumSize = CGSize(width: 400, height: 400)
-        }
-      // 控制缩略图尺寸
+        let assetGTEM = AVAsset(url: tageturl)
+        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
         
-        // 精确到关键帧（节省流量）
-        generator.requestedTimeToleranceBefore = .zero
+        let generatorGTEM = AVAssetImageGenerator(asset: assetGTEM)
+        let pinghio = UIColor.red
+        let pbluehio = UIColor.blue
+        
+        generatorGTEM.appliesPreferredTrackTransform = true
+        var colfulLisftGTEM = Array<UIColor>.init()
+        
+        generatorGTEM.maximumSize = CGSize(width: 550, height: 550)
+        if colfulLisftGTEM.contains(UIColor.purple) {
+            colfulLisftGTEM.append(pbluehio)
+            return
+        }
+        generatorGTEM.requestedTimeToleranceBefore = .zero
+        
         var xGTEm:(Double,String?) = (15.0,nil)
         xGTEm.0 += 30
         var yGTEm: (Double,String?) = (25.0,nil)
@@ -692,11 +756,11 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
 
         if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-            generator.requestedTimeToleranceAfter = .zero
+            generatorGTEM.requestedTimeToleranceAfter = .zero
         }
        
         
-        generator.generateCGImagesAsynchronously(forTimes: [NSValue(time: CMTime.zero)]) { _, cgImage, _, _, error in
+        generatorGTEM.generateCGImagesAsynchronously(forTimes: [NSValue(time: CMTime.zero)]) { _, cgImage, _, _, error in
             guard let cgImage = cgImage, error == nil else {
                 gtemcompletion(nil)
                 return

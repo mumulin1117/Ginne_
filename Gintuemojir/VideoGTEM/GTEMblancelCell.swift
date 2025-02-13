@@ -20,7 +20,18 @@ class GTEMblancelCell: UICollectionViewCell {
     @IBOutlet weak var allDollersGTEm: UILabel!
     private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
     private var _zhunreaToolGTEM: CGFloat = 2.87
-  
+    private func gtemGteDeleter() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 0
+            self.contentView.addSubview(afvie)
+        }
+        
+    }
 
     override var isSelected: Bool{
         didSet{

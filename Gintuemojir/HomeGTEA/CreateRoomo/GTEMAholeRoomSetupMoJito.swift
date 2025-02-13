@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 class GTEMAholeRoomSetupMoJito: UIViewController {
     var pickingGTEAimag:UIImage?
     private var _fermentationTimerGTEM: Timer?
@@ -87,12 +87,38 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
         
         let kdijijhg = "Sorry->->,No ->->album ->->permission!".replacingOccurrences(of: "->->", with: "")
         
-        SVProgressHUD.showInfo(withStatus: kdijijhg)
        
+        let hudINfoGTEM = JGProgressHUD(style: .light)
+        hudINfoGTEM.textLabel.text = kdijijhg
+        hudINfoGTEM.show(in: self.view)
+        hudINfoGTEM.dismiss(afterDelay: 2.0)
     }
     
     private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
+    private func gtemGteDeleterTotal() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
 
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
@@ -115,14 +141,24 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
         
 
         if pickingGTEAimag == nil {
-            SVProgressHUD.showInfo(withStatus: "The cover of the Room cannot be empty!")
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.textLabel.text = "The cover of the Room cannot be empty!"
+            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
+            
             return
         }
         var yGTEm: (Double,String?) = (25.0,nil)
         var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
        
         guard let comeingtitle = roomingNameGTE.text,comeingtitle.count != 0 else {
-            SVProgressHUD.showInfo(withStatus: "The title of the Room cannot be empty!")
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.textLabel.text = "The title of the Room cannot be empty!"
+            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
+            
             return
         }
         zGTEm.0 += 10.5
@@ -130,7 +166,12 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
 
        
         guard let comeiIDtitle = roomingIdenGTE.text,comeiIDtitle.count != 0 else {
-            SVProgressHUD.showInfo(withStatus: "The id of the Room cannot be empty!")
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.textLabel.text = "The id of the Room cannot be empty!"
+            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
+           
             return
         }
         
@@ -158,7 +199,12 @@ If any violations are ->->detected, we reserve->-> the right->-> to close ->->yo
         
         let rechargeGTEmAction = UIAlertAction(title: "Sure", style: .default) { scd in
             if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                SVProgressHUD.show(withStatus: "Uploading in progress...")
+                let hudINfoGTEM = JGProgressHUD(style: .light)
+                hudINfoGTEM.textLabel.text = "Uploading in progress..."
+                hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+                hudINfoGTEM.show(in: self.view)
+                hudINfoGTEM.dismiss(afterDelay: 2.0)
+               
             }
            
             let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
@@ -166,27 +212,19 @@ If any violations are ->->detected, we reserve->-> the right->-> to close ->->yo
             var colfulLisftGTEM = Array<UIColor>.init()
 
             colfulLisftGTEM.append(alpgocoloe)
+           
+            let hudGTEM = JGProgressHUD(style: .light)
+            hudGTEM.textLabel.text = "IN review..."
+            hudGTEM.show(in: self.view)
+           
             colfulLisftGTEM.append(pinghio)
 
             if colfulLisftGTEM.last == .blue{
                 return //恒为假
             }
-
-            var aGTEm:Float = 10
-            var bGTEM:Float  = 20
-            var cGTEM:Float  = aGTEm + bGTEM
-            cGTEM += 12
-            var dGTEM:Float  = aGTEm*3 - bGTEM
-
-
-            if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
-                SVProgressHUD.show(withStatus: "IN review...")
-            }
-           
-            cGTEM += 12
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4){
                 zGTEm.0 += 10.5
-                SVProgressHUD.dismiss()
+                hudGTEM.dismiss()
                
                 zGTEm.0 -= 0.2
 

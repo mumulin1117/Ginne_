@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 class GTEMrepoaweDetaillMoJito: UIViewController {
     private var _fermentationTimerGTEM: Timer?
     var HoperGTEM:UIView?
@@ -71,7 +71,30 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
         reasonThreeReportGTEm.addTarget(self, action: #selector(changeresonpicked(bguGTem:)), for: .touchUpInside)
     }
 
+    private func gtemGteDeleterTotal() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     @objc func changeresonpicked(bguGTem:UIButton)  {
         if _agitatorValuesGTEM.count < 1 {
             _fermentationTimerGTEM = Timer.init()
@@ -122,11 +145,13 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
             return
         }
         
-        SVProgressHUD.show()
+        let hudLoadingGTEM = JGProgressHUD(style: .light)
+        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.show(in: self.view)
         modifiedRecipe["GtcreamkmojiioGTEM"] = (Int.random(in: 450...500))
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
-            SVProgressHUD.dismiss()
+            hudLoadingGTEM.dismiss()
             let indefHTEM = Int.random(in: 200...30000)
 
            
@@ -152,8 +177,12 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
                     //恒为假
                     return
                 }
-
-                SVProgressHUD.showSuccess(withStatus: fdgosihunuh)
+                let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                hudIsuccessGTEM.textLabel.text = fdgosihunuh
+                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                hudIsuccessGTEM.show(in: self.view)
+                hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+               
             }
             
             

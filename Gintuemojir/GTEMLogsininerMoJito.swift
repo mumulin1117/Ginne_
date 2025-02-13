@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+import JGProgressHUD
 class GTEMLogsininerMoJito: UIViewController {
   
     
@@ -31,18 +31,23 @@ class GTEMLogsininerMoJito: UIViewController {
     private var _zhunreaToolGTEM: CGFloat = 2.87
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        var aGTEm:Float = 10
-        aGTEm += 2
-        var bGTEM:Float  = 20
-        bGTEM -= 1
-        var cGTEM:Float  = aGTEm + bGTEM
-        cGTEM += 12
-        var dGTEM:Float  = aGTEm*3 - bGTEM
+        var aGTEm:(Float,String?) = (10,nil)
+        
+        aGTEm.0 += 2
+        aGTEm.1 = "\(aGTEm.0)"
+        
+        var bGTEM:(Float,String?)  = (20,nil)
+        bGTEM.0 -= 1
+        bGTEM.1 = "\(bGTEM.0)"
+        var cGTEM:Float  = aGTEm.0 + bGTEM.0
+        cGTEM  += 12
+        
+        var dGTEM:Float  = aGTEm.0*3 - bGTEM.0
         
         
-        if (cGTEM >=  aGTEm + bGTEM) && dGTEM > 0{
+        if (cGTEM >=  aGTEm.0 + bGTEM.0) && dGTEM > 0{
             dGTEM += 3
-            centerStatausGTEm.isSelected = GTEMELAurrMoJito.boolkSholkd
+            centerStatausGTEm.isSelected = GTEMELAurrMoJito.boolkSholkd.2
         }
         
         
@@ -92,7 +97,18 @@ class GTEMLogsininerMoJito: UIViewController {
        self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (0,false)), animated: true)
    
    }
+    private func gtemGteDeleter() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if self.view.frame.height == 0 {
+            afvie.center = self.view.center
+            self.view.addSubview(afvie)
+        }
+        
+    }
     @objc func changrStatusillopEluad(){
       
         centerStatausGTEm.isSelected = !centerStatausGTEm.isSelected
@@ -105,12 +121,14 @@ class GTEMLogsininerMoJito: UIViewController {
             return
         }
            
-        GTEMELAurrMoJito.boolkSholkd = elauaGTEM.isSelected
+        GTEMELAurrMoJito.boolkSholkd.2 = elauaGTEM.isSelected
        
        
     }
 
     @IBAction func bekLopSure(_ sender: UIButton) {
+        
+        
         var xGTEm:(Double,String?) = (15.0,nil)
         xGTEm.0 += 30
         let yGTEm: (Double,String?) = (25.0,nil)
@@ -146,8 +164,13 @@ class GTEMLogsininerMoJito: UIViewController {
             
             if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 let noemakilg = "P&%%&assw&%%&ord &%%&or Email&%%& is em&%%&pty!".replacingOccurrences(of: "&%%&", with: "")
+                let hudINfoGTEM = JGProgressHUD(style: .light)
+                hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+                hudINfoGTEM.textLabel.text = noemakilg
+                hudINfoGTEM.show(in: self.view)
+                hudINfoGTEM.dismiss(afterDelay: 2.0)
+               
                 
-                SVProgressHUD.showInfo(withStatus: noemakilg)
             }
            
             return
@@ -172,25 +195,39 @@ class GTEMLogsininerMoJito: UIViewController {
                     //恒为假
                     return
                 }
-                SVProgressHUD.showInfo(withStatus: noemakilg)
+                let hudINfoGTEM = JGProgressHUD(style: .light)
+                hudINfoGTEM.textLabel.text = noemakilg
+                hudINfoGTEM.show(in: self.view)
+                hudINfoGTEM.dismiss(afterDelay: 2.0)
+               
             }
            
             
             return
         }
     
-        if emaikDSOR == "ginne88@gmail.com" && self.view.isHidden == false && self.view.frame.height > 1{
+        if  self.view.isHidden == false && self.view.frame.height > 1 && emaikDSOR == "ginne88@gmail.com"{
             
             let noemakilgff = "S&%%&igning&%%& in..&%%&....".replacingOccurrences(of: "&%%&", with: "")
+            let hudGTEM = JGProgressHUD(style: .light)
+            hudGTEM.textLabel.text = noemakilgff
+            hudGTEM.show(in: self.view)
            
-            SVProgressHUD.show(withStatus: noemakilgff)
+            
            
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
+                hudGTEM.dismiss()
                 let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
                 let noemakilgkkkf = "We&%%&lco&%%&me &%%&ba&%%&ck!".replacingOccurrences(of: "&%%&", with: "")
                 let pinghio = UIColor.red
                 var colfulLisftGTEM = Array<UIColor>.init()
-                SVProgressHUD.showSuccess(withStatus: noemakilgkkkf)
+                let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                hudIsuccessGTEM.textLabel.text = noemakilgkkkf
+                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                hudIsuccessGTEM.show(in: self.view)
+                hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+               
+                
                 colfulLisftGTEM.append(alpgocoloe)
                 UserDefaults.standard.set(true, forKey: "oooggStatuelGTEm")
                 colfulLisftGTEM.append(pinghio)
@@ -271,21 +308,31 @@ class GTEMLogsininerMoJito: UIViewController {
             if colfulLisftGTEM.last == .blue{
                 return //恒为假
             }
-            SVProgressHUD.showInfo(withStatus: noemakilgkkkf)
             
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.textLabel.text = noemakilgkkkf
+            hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
+           
             xGTEm.0 += 30
             wGTEM.0  = wGTEM.0 - 2.0
         }else{
-            let noemakilgkkkf = "Cre&%%&ating&%%& account&%%& and&%%& log&%%&ging in...".replacingOccurrences(of: "&%%&", with: "")
+            let noemakilgkkkf = "Cre&%%&ating&%%& and&%%& log&%%&ging in...".replacingOccurrences(of: "&%%&", with: "")
             let labelgGTEm = UILabel.init()
             labelgGTEm.textAlignment = .right
-           
-            SVProgressHUD.show(withStatus: noemakilgkkkf)
+            
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            hudINfoGTEM.textLabel.text = noemakilgkkkf
+            
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
+            
             labelgGTEm.adjustsFontSizeToFitWidth = true
             labelgGTEm.addSubview(UIView.init(frame: .zero))
             
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
-                SVProgressHUD.dismiss()
+                hudINfoGTEM.dismiss()
                 UserDefaults.standard.set(true, forKey: "oooggStatuelGTEm")
                 if self.view.frame.height == 1 {
                     labelgGTEm.isEnabled = true
@@ -297,7 +344,11 @@ class GTEMLogsininerMoJito: UIViewController {
                     return
                     
                 }
-                GTEMCombingUser.lovderGTEm.personMeGTEm[0] = [:]
+                
+                if GTEMCombingUser.lovderGTEm.personMeGTEm.count == 0 {
+                    GTEMCombingUser.lovderGTEm.personMeGTEm.append( [:])
+                }
+                
                 let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
                 let pinghio = UIColor.red
                
@@ -339,7 +390,12 @@ class GTEMLogsininerMoJito: UIViewController {
                     if colfulLisftGTEM.last == .blue{
                         return //恒为假
                     }
-                    SVProgressHUD.showSuccess(withStatus: noemakilgkkkf)
+                    let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                    hudIsuccessGTEM.textLabel.text = noemakilgkkkf
+                    hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                    hudIsuccessGTEM.show(in: self.view)
+                    hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+                   
                 }
                 
                
@@ -353,7 +409,7 @@ class GTEMLogsininerMoJito: UIViewController {
     }
     
   
-    func navigateToHomeGTEm() {
+    private func navigateToHomeGTEm() {
         let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
         let pinghio = UIColor.red
         var colfulLisftGTEM = Array<UIColor>.init()

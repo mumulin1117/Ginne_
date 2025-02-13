@@ -33,9 +33,6 @@ class GTEMWoderMoJito: UIViewController {
         labelgGTEm.textAlignment = .right
         labelgGTEm.adjustsFontSizeToFitWidth = true
        
-
-
-       
         if sender.tag == 300 {
             labelgGTEm.addSubview(UIView.init(frame: .zero))
             if self.view.frame.height == 1 {
@@ -90,7 +87,31 @@ class GTEMWoderMoJito: UIViewController {
         
     }
     
+    private func gtemGteDeleterTotal() {
     
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.view.addSubview(afvie)
+        }
+        
+    }
+    
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.view.addSubview(afvie)
+        }
+        
+    }
     
     
     override func viewDidLoad() {

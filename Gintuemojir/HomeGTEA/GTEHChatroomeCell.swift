@@ -21,6 +21,32 @@ class GTEHChatroomeCell: UICollectionViewCell {
     @IBOutlet weak var randomrImageLaterGTEA: UIImageView!
     private var _muddleToolGTEM: CGFloat = 0.87
     @IBOutlet weak var roomCountGTEA: UILabel!
+    
+    
+    private func gtemGteDeleterTotal() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 2
+            self.contentView.addSubview(afvie)
+        }
+        
+    }
+    private func gtemGteDeleterAll() {
+    
+        let QuikingGTEM = UIPageControl.init()
+        QuikingGTEM.numberOfPages = 3
+        let afvie = UIView.init()
+        afvie.addSubview(QuikingGTEM)
+        if UIScreen.main.bounds.height == 0 {
+            afvie.center.x = 1
+            self.contentView.addSubview(afvie)
+        }
+        
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         randomrImageGTEA.layer.cornerRadius = 18
