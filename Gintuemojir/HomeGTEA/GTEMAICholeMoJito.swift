@@ -198,7 +198,7 @@ class GTEMAICholeMoJito: UIViewController {
                     return
                     
                 }
-                let urolPinkg = "ht->->tp://www.sunshinew->->anderer99.xyz/talktwo/askQ->->uestio->->nv2".replacingOccurrences(of: "->->", with: "")
+                let urolPinkg = "ht->->tp://www.sunshinew->->anderer99.xyz/tal->->ktwo/askQ->->uestio->->nv2".replacingOccurrences(of: "->->", with: "")
                 
                 AF.request(urolPinkg, method: .post, parameters:dicnGTEM , encoding: JSONEncoding.default, headers: nil)
                 .responseJSON { response in

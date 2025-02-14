@@ -91,11 +91,11 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             return //恒为假
         }
 
-        if realingUserDtaGTEm["ifneedsubGTEM"] ==  "1"{
-            
-            idcardLogoGTEM.setImage(UIImage.init(named: "dimondGTUE"), for: .normal)
-            
-        }else{
+//        if realingUserDtaGTEm["ifneedsubGTEM"] ==  "1"{
+//            
+//            idcardLogoGTEM.setImage(UIImage.init(named: "dimondGTUE"), for: .normal)
+//            
+//        }else{
             idcardLogoGTEM.setImage(UIImage.init(named: "aready_gou"), for: .selected)
             idcardLogoGTEM.setImage(UIImage.init(named: "tonofolGTEm"), for: .normal)
             
@@ -117,7 +117,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             }).count > 0 {
                 idcardLogoGTEM.isSelected = true
             }
-        }
+//        }
    
         let urlioklinkGTEM = (realingUserDtaGTEm["viedeourll0"] ?? "").replacingOccurrences(of: "^^>", with: "")
         
@@ -169,15 +169,15 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     @IBAction func benginToplaingVirwwr(_ sender: UIButton) {
         
         //需要订阅没订阅
-        if realingUserDtaGTEm["ifneedsubGTEM"] == "1" &&  realingUserDtaGTEm["issubedeGTEm"] == "0" && (sender.tag == 30 || sender.tag == 60){
-            //需要订阅没订阅
-            let alertNeesub = UIAlertController(title: "Whether to subscribe or not", message: "This subscription will cost 100 balance, and after subscribing, you will be able to view the user's exciting teaching", preferredStyle:.alert)
-            alertNeesub.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { adfgg in
-                self.surepayingNeedCoinGTEm()
-            }))
-            alertNeesub.addAction(UIAlertAction(title: "cancel", style: .default))
-            
-            self.present(alertNeesub, animated: true)
+//        if realingUserDtaGTEm["ifneedsubGTEM"] == "1" &&  realingUserDtaGTEm["issubedeGTEm"] == "0" && (sender.tag == 30 || sender.tag == 60){
+//            //需要订阅没订阅
+//            let alertNeesub = UIAlertController(title: "Whether to subscribe or not", message: "This subscription will cost 100 balance, and after subscribing, you will be able to view the user's exciting teaching", preferredStyle:.alert)
+//            alertNeesub.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { adfgg in
+//                self.surepayingNeedCoinGTEm()
+//            }))
+//            alertNeesub.addAction(UIAlertAction(title: "cancel", style: .default))
+//            
+//            self.present(alertNeesub, animated: true)
             
 //            let subvc =  UIViewController.init()
 //            
@@ -227,8 +227,8 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
 //            subvc.modalPresentationStyle = .overCurrentContext
 //            self.present(subvc, animated: true)
      
-            return
-        }
+//            return
+//        }
         
         var xGTEm:(Double,String?) = (15.0,nil)
         xGTEm.0 += 30
@@ -381,78 +381,78 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         self.presentVCGTEm?.dismiss(animated: true)
     }
     
-    
-    @objc func surepayingNeedCoinGTEm() {
-        var xGTEm:(Double,String?) = (15.0,nil)
-        xGTEm.0 += 30
-        
-        var gtemBlksdgb =  Int( GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] ?? "0") ?? 0
-        var yGTEm: (Double,String?) = (25.0,nil)
-        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
-        
-        if gtemBlksdgb < 100 {
-            zGTEm.0 += 10.5
-            zGTEm.0 -= 0.2
 
-            
-            let alertv = UIAlertController(title: "Balance is Low", message: "", preferredStyle: .alert)
-            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
-
-            
-            let rechargeGTEmAction = UIAlertAction(title: "Increase Balance", style: .default) { scd in
-                self.presentVCGTEm?.dismiss(animated: true)
-                self.navigationController?.pushViewController(GTEMblancelMojito.init(), animated: true)
-            }
-            alertv.addAction(rechargeGTEmAction)
-            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                alertv.addAction(UIAlertAction(title: "End Action", style: .default))
-            }
-            
-            self.present(alertv, animated: true)
-            
-            return
-        }
-        
-        gtemBlksdgb -= 100
-        xGTEm.0 += 30
-        
-        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
-        var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
-        wGTEM.0  = wGTEM.0 - 2.0
-        let hudIsuccessGTEM = JGProgressHUD(style: .light)
-        hudIsuccessGTEM.textLabel.text = "Subscription successful！"
-        hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
-        hudIsuccessGTEM.show(in: self.view)
-        hudIsuccessGTEM.dismiss(afterDelay: 2.0)
-     
-        zGTEm.0 += 10.5
-        
-        self.presentVCGTEm?.dismiss(animated: true)
-      //修改数据订阅状态
-        zGTEm.0 -= 0.2
-        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
-       
-        for (i,iuy) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.enumerated() {
-            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
-            let indefHTEM = Int.random(in: 200...30000)
-
-        
-            if iuy["gtemID"] == realingUserDtaGTEm["gtemID"]   {
-                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
-                if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
-                    GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[i]["issubedeGTEm"] = "1"
-                }
-
-                if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
-                    realingUserDtaGTEm["issubedeGTEm"] = "1"
-                }
-               
-                
-            }
-        }
-        
-    }
+//    @objc func surepayingNeedCoinGTEm() {
+//        var xGTEm:(Double,String?) = (15.0,nil)
+//        xGTEm.0 += 30
+//        
+//        var gtemBlksdgb =  Int( GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] ?? "0") ?? 0
+//        var yGTEm: (Double,String?) = (25.0,nil)
+//        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
+//        
+//        if gtemBlksdgb < 100 {
+//            zGTEm.0 += 10.5
+//            zGTEm.0 -= 0.2
+//
+//            
+//            let alertv = UIAlertController(title: "Balance is Low", message: "", preferredStyle: .alert)
+//            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
+//
+//            
+//            let rechargeGTEmAction = UIAlertAction(title: "Increase Balance", style: .default) { scd in
+//                self.presentVCGTEm?.dismiss(animated: true)
+//                self.navigationController?.pushViewController(GTEMblancelMojito.init(), animated: true)
+//            }
+//            alertv.addAction(rechargeGTEmAction)
+//            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
+//                alertv.addAction(UIAlertAction(title: "End Action", style: .default))
+//            }
+//            
+//            self.present(alertv, animated: true)
+//            
+//            return
+//        }
+//        
+//        gtemBlksdgb -= 100
+//        xGTEm.0 += 30
+//        
+//        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
+//        var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
+//        wGTEM.0  = wGTEM.0 - 2.0
+//        let hudIsuccessGTEM = JGProgressHUD(style: .light)
+//        hudIsuccessGTEM.textLabel.text = "Subscription successful！"
+//        hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+//        hudIsuccessGTEM.show(in: self.view)
+//        hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+//     
+//        zGTEm.0 += 10.5
+//        
+//        self.presentVCGTEm?.dismiss(animated: true)
+//      //修改数据订阅状态
+//        zGTEm.0 -= 0.2
+//        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
+//        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+//       
+//        for (i,iuy) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.enumerated() {
+//            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
+//            let indefHTEM = Int.random(in: 200...30000)
+//
+//        
+//            if iuy["gtemID"] == realingUserDtaGTEm["gtemID"]   {
+//                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+//                if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+//                    GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[i]["issubedeGTEm"] = "1"
+//                }
+//
+//                if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
+//                    realingUserDtaGTEm["issubedeGTEm"] = "1"
+//                }
+//               
+//                
+//            }
+//        }
+//        
+//    }
 
 }
 

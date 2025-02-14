@@ -52,8 +52,8 @@
                         <constraint firstAttribute="height" constant="32" id="D9U-72-4A1"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="substaus_video"/>
-                    <state key="selected" image="substaus_sel_video"/>
+                    <state key="normal" image="substaus_sel_video"/>
+                    <state key="selected" image="substaus_video"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaG-MI-IsP">
                     <rect key="frame" x="163" y="68.666666666666671" width="91" height="29"/>
@@ -137,8 +137,8 @@
         <image name="Rewort_GTEA" width="28" height="28"/>
         <image name="cereate_GETu" width="50" height="50"/>
         <image name="homert_GENT" width="375" height="933"/>
-        <image name="substaus_sel_video" width="139" height="32"/>
-        <image name="substaus_video" width="131" height="29"/>
+        <image name="substaus_sel_video" width="102.66666412353516" height="24"/>
+        <image name="substaus_video" width="112" height="32"/>
         <image name="trends_sel_video" width="99" height="32"/>
         <image name="trends_video" width="89.333335876464844" height="19"/>
         <systemColor name="systemBackgroundColor">

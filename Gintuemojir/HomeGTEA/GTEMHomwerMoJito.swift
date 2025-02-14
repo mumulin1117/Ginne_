@@ -6,6 +6,7 @@
 //
 import AVFoundation
 import UIKit
+import JGProgressHUD
 
 class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
@@ -293,9 +294,80 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
             return
             
         }
+        
+        let alertNeesub = UIAlertController(title: "Start a conversation with an AI Mixologist", message: "Each conversation will cost 120 balance！", preferredStyle:.alert)
+        alertNeesub.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { adfgg in
+            let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+            let pinghio = UIColor.red
+            let pbluehio = UIColor.blue
+            var colfulLisftGTEM = Array<UIColor>.init()
+            if colfulLisftGTEM.contains(UIColor.purple) {
+                colfulLisftGTEM.append(pbluehio)
+                return
+            }
+            
+            
+          
+            
+            
+            self.surepayingNeedCoinGTEm()
+        }))
+        alertNeesub.addAction(UIAlertAction(title: "cancel", style: .default))
+        
+        self.present(alertNeesub, animated: true)
+        
         self.navigationController?.pushViewController(GTEMAICholeMoJito.init(), animated: true)
     }
     
+    @objc func surepayingNeedCoinGTEm() {
+           var xGTEm:(Double,String?) = (15.0,nil)
+           xGTEm.0 += 30
+   
+           var gtemBlksdgb =  Int( GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] ?? "0") ?? 0
+           var yGTEm: (Double,String?) = (25.0,nil)
+           var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
+   
+           if gtemBlksdgb < 120 {
+               zGTEm.0 += 10.5
+               zGTEm.0 -= 0.2
+   
+   
+               let alertv = UIAlertController(title: "Soorry,Balance is Low", message: "", preferredStyle: .alert)
+               var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
+   
+   
+               let rechargeGTEmAction = UIAlertAction(title: "Increase Balance", style: .default) { scd in
+                   
+                   self.navigationController?.pushViewController(GTEMblancelMojito.init(), animated: true)
+               }
+               alertv.addAction(rechargeGTEmAction)
+               if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
+                   alertv.addAction(UIAlertAction(title: "End Action", style: .default))
+               }
+   
+               self.present(alertv, animated: true)
+   
+               return
+           }
+   
+           gtemBlksdgb -= 120
+           xGTEm.0 += 30
+   
+           GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
+           var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
+           wGTEM.0  = wGTEM.0 - 2.0
+           let hudIsuccessGTEM = JGProgressHUD(style: .light)
+           hudIsuccessGTEM.textLabel.text = "Let's start your conversation！"
+           hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+           hudIsuccessGTEM.show(in: self.view)
+           hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+   
+           zGTEm.0 += 10.5
+   
+          
+         
+   
+       }
     
     @objc func serachingGTEn()  {
         var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()

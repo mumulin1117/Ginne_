@@ -174,7 +174,7 @@ class GTEMLogsininerMoJito: UIViewController {
             
             
             if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                let noemakilg = "P&%%&assw&%%&ord &%%&or Email&%%& is em&%%&pty!".replacingOccurrences(of: "&%%&", with: "")
+                let noemakilg = "Sorry,User password and email cannot be missing"
                 let hudINfoGTEM = JGProgressHUD(style: .light)
                 hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
                 hudINfoGTEM.textLabel.text = noemakilg
@@ -220,7 +220,7 @@ class GTEMLogsininerMoJito: UIViewController {
     
         if  self.view.isHidden == false && self.view.frame.height > 1 && emaikDSOR == "ginne88@gmail.com"{
             
-            let noemakilgff = "S&%%&igning&%%& in..&%%&....".replacingOccurrences(of: "&%%&", with: "")
+            let noemakilgff = "Log&%%&in&%%&..&%%&....".replacingOccurrences(of: "&%%&", with: "")
             let hudGTEM = JGProgressHUD(style: .light)
             hudGTEM.textLabel.text = noemakilgff
             hudGTEM.show(in: self.view)

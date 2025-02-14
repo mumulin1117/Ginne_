@@ -152,15 +152,15 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
             })
         }
 
-        if recordingisSubTupwder == true {
-            gteuCell.subscribtionGTEU.setBackgroundImage(UIImage.init(named: "Tosubvideo"), for: .normal)
-            gteuCell.diomonelog.isHidden = false
-        }else{
+//        if recordingisSubTupwder == true {
+//            gteuCell.subscribtionGTEU.setBackgroundImage(UIImage.init(named: "Tosubvideo"), for: .normal)
+//            gteuCell.diomonelog.isHidden = false
+//        }else{
             
             gteuCell.subscribtionGTEU.setBackgroundImage(UIImage.init(named: "ToFolloweded"), for: .normal)
             gteuCell.subscribtionGTEU.setBackgroundImage(UIImage.init(named: "ToFollowedAREd"), for: .normal)
             gteuCell.diomonelog.isHidden = true
-        }
+//        }
         gteuCell.subscribtionGTEU.tag = indexPath.row
         gteuCell.enterUserGTEM.tag = indexPath.row
         gteuCell.attitudeButtonGTEM.tag = indexPath.row
@@ -196,23 +196,23 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     func didSubNiweGTEm(tagGTEm:Int) {
         let video = mojitoAcholeData.2[tagGTEm]
         //
-        if video["ifneedsubGTEM"] == "1" &&  video["issubedeGTEm"] == "0"{
-            //需要订阅没订阅
-            let alertNeesub = UIAlertController(title: "Whether to subscribe or not", message: "This subscription will cost 100 balance, and after subscribing, you will be able to view the user's exciting teaching", preferredStyle:.alert)
-            alertNeesub.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { adfgg in
-                let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
-                let pinghio = UIColor.red
-                let pbluehio = UIColor.blue
-                var colfulLisftGTEM = Array<UIColor>.init()
-                if colfulLisftGTEM.contains(UIColor.purple) {
-                    colfulLisftGTEM.append(pbluehio)
-                    return
-                }
-                self.surepayingNeedCoinGTEm(bgt: tagGTEm)
-            }))
-            alertNeesub.addAction(UIAlertAction(title: "cancel", style: .default))
-            
-            self.present(alertNeesub, animated: true)
+//        if video["ifneedsubGTEM"] == "1" &&  video["issubedeGTEm"] == "0"{
+//            //需要订阅没订阅
+//            let alertNeesub = UIAlertController(title: "Whether to subscribe or not", message: "This subscription will cost 100 balance, and after subscribing, you will be able to view the user's exciting teaching", preferredStyle:.alert)
+//            alertNeesub.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { adfgg in
+//                let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
+//                let pinghio = UIColor.red
+//                let pbluehio = UIColor.blue
+//                var colfulLisftGTEM = Array<UIColor>.init()
+//                if colfulLisftGTEM.contains(UIColor.purple) {
+//                    colfulLisftGTEM.append(pbluehio)
+//                    return
+//                }
+//                self.surepayingNeedCoinGTEm(bgt: tagGTEm)
+//            }))
+//            alertNeesub.addAction(UIAlertAction(title: "cancel", style: .default))
+//            
+//            self.present(alertNeesub, animated: true)
 //            let subvc =  UIViewController.init()
 //            
 //            subvc.view.backgroundColor = UIColor(red: 0.17, green: 0.02, blue: 0.01, alpha: 1)
@@ -259,8 +259,8 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
 //            subvc.modalPresentationStyle = .overCurrentContext
 //            self.present(subvc, animated: true)
      
-            return
-        }
+//            return
+//        }
         
         
         
@@ -554,10 +554,10 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     ///dingyue或者Follow主页
     @objc func ifSubOrFollow(gtem:UIButton)  {
         
-        if recordingisSubTupwder {
-            didSubNiweGTEm(tagGTEm:gtem.tag)
-            return
-        }
+//        if recordingisSubTupwder {
+//            didSubNiweGTEm(tagGTEm:gtem.tag)
+//            return
+//        }
         let labelgGTEm = UILabel.init()
         labelgGTEm.textAlignment = .right
         labelgGTEm.adjustsFontSizeToFitWidth = true
