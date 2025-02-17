@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KXPRHomePage" customModule="Gintuemojir" customModuleProvider="target">
+            <connections>
+                <outlet property="homewrserDataView" destination="UW8-uJ-izP" id="RaN-7E-rWz"/>
+                <outlet property="view" destination="1cQ-zU-3HD" id="5hW-3q-Qzn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1cQ-zU-3HD">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homert_GENT" translatesAutoresizingMaskIntoConstraints="NO" id="4q3-Mx-veV">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hwomeTitleGTEA" translatesAutoresizingMaskIntoConstraints="NO" id="Cmu-s5-9UE">
+                    <rect key="frame" x="8" y="59" width="150" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="ALY-VL-ByS"/>
+                        <constraint firstAttribute="width" constant="150" id="EZd-JD-jgv"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njx-az-eaj">
+                    <rect key="frame" x="295" y="71" width="28" height="32"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="GTEM_seracj"/>
+                    <connections>
+                        <action selector="startSearchGTEm:" destination="-1" eventType="touchUpInside" id="dtf-uC-7gA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTE-p0-DwM">
+                    <rect key="frame" x="351" y="71" width="30" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="9TP-L3-hr5"/>
+                        <constraint firstAttribute="width" constant="30" id="Fkc-Qc-cbl"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="GTEM_notij"/>
+                    <connections>
+                        <action selector="starnotihGTEm:" destination="-1" eventType="touchUpInside" id="cSV-Zb-8gA"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UW8-uJ-izP">
+                    <rect key="frame" x="0.0" y="115" width="393" height="737"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ycf-an-cpG">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZh-dj-I36">
+                    <rect key="frame" x="309" y="471" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Hoi-51-u6P"/>
+                        <constraint firstAttribute="height" constant="50" id="Pn0-HD-bAW"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="cereate_GETu"/>
+                    <connections>
+                        <action selector="starnAddhospcGTEm:" destination="-1" eventType="touchUpInside" id="TBh-sw-V2P"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="BFT-zG-a3X"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4q3-Mx-veV" firstAttribute="top" secondItem="1cQ-zU-3HD" secondAttribute="top" id="3A9-Et-npL"/>
+                <constraint firstItem="cTE-p0-DwM" firstAttribute="centerY" secondItem="Cmu-s5-9UE" secondAttribute="centerY" id="7wA-B4-Wh3"/>
+                <constraint firstItem="Cmu-s5-9UE" firstAttribute="top" secondItem="BFT-zG-a3X" secondAttribute="top" id="9MN-gm-rFm"/>
+                <constraint firstItem="BFT-zG-a3X" firstAttribute="trailing" secondItem="kZh-dj-I36" secondAttribute="trailing" constant="34" id="EMi-sB-3WT"/>
+                <constraint firstItem="Njx-az-eaj" firstAttribute="height" secondItem="cTE-p0-DwM" secondAttribute="height" id="FbC-OV-MKB"/>
+                <constraint firstItem="4q3-Mx-veV" firstAttribute="trailing" secondItem="BFT-zG-a3X" secondAttribute="trailing" id="KeU-2a-vFd"/>
+                <constraint firstAttribute="bottom" secondItem="UW8-uJ-izP" secondAttribute="bottom" id="L0i-ke-md7"/>
+                <constraint firstItem="Njx-az-eaj" firstAttribute="width" secondItem="cTE-p0-DwM" secondAttribute="width" multiplier="0.933333" id="Lrw-1F-nZS"/>
+                <constraint firstItem="UW8-uJ-izP" firstAttribute="trailing" secondItem="BFT-zG-a3X" secondAttribute="trailing" id="MXT-gK-njk"/>
+                <constraint firstItem="cTE-p0-DwM" firstAttribute="leading" secondItem="Njx-az-eaj" secondAttribute="trailing" constant="28" id="OA7-FL-7Lg"/>
+                <constraint firstItem="BFT-zG-a3X" firstAttribute="trailing" secondItem="cTE-p0-DwM" secondAttribute="trailing" constant="12" id="Uj1-iC-idd"/>
+                <constraint firstItem="kZh-dj-I36" firstAttribute="centerY" secondItem="1cQ-zU-3HD" secondAttribute="centerY" constant="70" id="aQN-n7-YGP"/>
+                <constraint firstItem="4q3-Mx-veV" firstAttribute="leading" secondItem="BFT-zG-a3X" secondAttribute="leading" id="fAj-iZ-90p"/>
+                <constraint firstItem="Cmu-s5-9UE" firstAttribute="leading" secondItem="BFT-zG-a3X" secondAttribute="leading" constant="8" id="i8U-Bg-WXE"/>
+                <constraint firstItem="UW8-uJ-izP" firstAttribute="top" secondItem="Cmu-s5-9UE" secondAttribute="bottom" id="nf3-2l-wmx"/>
+                <constraint firstItem="Njx-az-eaj" firstAttribute="centerY" secondItem="Cmu-s5-9UE" secondAttribute="centerY" id="pfe-Dj-zCm"/>
+                <constraint firstItem="UW8-uJ-izP" firstAttribute="leading" secondItem="BFT-zG-a3X" secondAttribute="leading" id="xOb-0R-UgT"/>
+                <constraint firstAttribute="bottom" secondItem="4q3-Mx-veV" secondAttribute="bottom" id="xaT-6f-wVL"/>
+            </constraints>
+            <point key="canvasLocation" x="84.732824427480907" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GTEM_notij" width="23" height="28"/>
+        <image name="GTEM_seracj" width="27" height="28"/>
+        <image name="cereate_GETu" width="50" height="50"/>
+        <image name="homert_GENT" width="375" height="933"/>
+        <image name="hwomeTitleGTEA" width="150" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

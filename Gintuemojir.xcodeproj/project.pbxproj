@@ -7,90 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		041E0B882D54613B00BE6C0E /* GTEMAiChateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B872D54613B00BE6C0E /* GTEMAiChateCell.swift */; };
-		041E0B8B2D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B892D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift */; };
-		041E0B8C2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B8A2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib */; };
-		041E0B8F2D54903500BE6C0E /* GTEMusVifedertMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B8D2D54903500BE6C0E /* GTEMusVifedertMojito.swift */; };
-		041E0B902D54903500BE6C0E /* GTEMusVifedertMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B8E2D54903500BE6C0E /* GTEMusVifedertMojito.xib */; };
-		041E0B932D549D5400BE6C0E /* GTEMCommenttMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B912D549D5400BE6C0E /* GTEMCommenttMojito.swift */; };
-		041E0B942D549D5400BE6C0E /* GTEMCommenttMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B922D549D5400BE6C0E /* GTEMCommenttMojito.xib */; };
-		041E0B972D54A8B500BE6C0E /* GTEMblancelMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B952D54A8B500BE6C0E /* GTEMblancelMojito.swift */; };
-		041E0B982D54A8B500BE6C0E /* GTEMblancelMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B962D54A8B500BE6C0E /* GTEMblancelMojito.xib */; };
-		041E0B9B2D54AF7400BE6C0E /* GTEMblancelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B992D54AF7400BE6C0E /* GTEMblancelCell.swift */; };
-		041E0B9C2D54AF7400BE6C0E /* GTEMblancelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B9A2D54AF7400BE6C0E /* GTEMblancelCell.xib */; };
-		041E0BA42D55D92700BE6C0E /* GTEMHEditMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0BA32D55D92700BE6C0E /* GTEMHEditMojito.xib */; };
-		041E0BA52D55D92700BE6C0E /* GTEMHEditMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0BA22D55D92700BE6C0E /* GTEMHEditMojito.swift */; };
-		0439A6662D533035004C86C2 /* GTEMPlayerMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6652D533035004C86C2 /* GTEMPlayerMojito.swift */; };
-		0439A6682D5354FC004C86C2 /* GTEMCombingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */; };
-		0439A66A2D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6692D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift */; };
+		041E0B882D54613B00BE6C0E /* Y3Z9AetherChatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B872D54613B00BE6C0E /* Y3Z9AetherChatNode.swift */; };
+		041E0B8B2D54900100BE6C0E /* QXZTUserDataCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B892D54900100BE6C0E /* QXZTUserDataCore.swift */; };
+		041E0B8C2D54900100BE6C0E /* QXZTUserDataCore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B8A2D54900100BE6C0E /* QXZTUserDataCore.xib */; };
+		041E0B8F2D54903500BE6C0E /* LQXPRDataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B8D2D54903500BE6C0E /* LQXPRDataModule.swift */; };
+		041E0B902D54903500BE6C0E /* LQXPRDataModule.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B8E2D54903500BE6C0E /* LQXPRDataModule.xib */; };
+		041E0B932D549D5400BE6C0E /* L3V8EchoCommentary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B912D549D5400BE6C0E /* L3V8EchoCommentary.swift */; };
+		041E0B942D549D5400BE6C0E /* L3V8EchoCommentary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B922D549D5400BE6C0E /* L3V8EchoCommentary.xib */; };
+		041E0B972D54A8B500BE6C0E /* Z5W8BalanceCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B952D54A8B500BE6C0E /* Z5W8BalanceCore.swift */; };
+		041E0B982D54A8B500BE6C0E /* Z5W8BalanceCore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B962D54A8B500BE6C0E /* Z5W8BalanceCore.xib */; };
+		041E0B9B2D54AF7400BE6C0E /* M4Z9BalanceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0B992D54AF7400BE6C0E /* M4Z9BalanceNode.swift */; };
+		041E0B9C2D54AF7400BE6C0E /* M4Z9BalanceNode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B9A2D54AF7400BE6C0E /* M4Z9BalanceNode.xib */; };
+		041E0BA42D55D92700BE6C0E /* BVXUEditHandler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0BA32D55D92700BE6C0E /* BVXUEditHandler.xib */; };
+		041E0BA52D55D92700BE6C0E /* BVXUEditHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0BA22D55D92700BE6C0E /* BVXUEditHandler.swift */; };
+		0439A6662D533035004C86C2 /* X9R6QuantumPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6652D533035004C86C2 /* X9R6QuantumPlayer.swift */; };
+		0439A6682D5354FC004C86C2 /* XQZPDataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6672D5354FC004C86C2 /* XQZPDataNode.swift */; };
+		0439A66A2D5364FA004C86C2 /* LZQXRoomChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6692D5364FA004C86C2 /* LZQXRoomChatCell.swift */; };
 		0448DC822D3E4EAF000E638C /* MOjiToGTEH.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0448DC812D3E4EAF000E638C /* MOjiToGTEH.plist */; };
 		0448DC842D3E542E000E638C /* GTEHVieedeol.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0448DC832D3E542E000E638C /* GTEHVieedeol.plist */; };
 		04AB58012D39EBA400DDC681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB57F72D39EBA400DDC681 /* AppDelegate.swift */; };
 		04AB58042D39EBA400DDC681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AB57F82D39EBA400DDC681 /* Assets.xcassets */; };
 		04AB58062D39EBA400DDC681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AB57FB2D39EBA400DDC681 /* LaunchScreen.storyboard */; };
-		04AB580A2D39F73400DDC681 /* GTEMBeginMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58082D39F73400DDC681 /* GTEMBeginMoJito.swift */; };
-		04AB580B2D39F73400DDC681 /* GTEMBeginMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58092D39F73400DDC681 /* GTEMBeginMoJito.xib */; };
-		04AB580E2D3A02CA00DDC681 /* GTEMLogsininerMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB580C2D3A02CA00DDC681 /* GTEMLogsininerMoJito.swift */; };
-		04AB580F2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB580D2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib */; };
-		04AB58122D3A095A00DDC681 /* GTEMELAurrMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58102D3A095A00DDC681 /* GTEMELAurrMoJito.swift */; };
-		04AB58132D3A095A00DDC681 /* GTEMELAurrMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58112D3A095A00DDC681 /* GTEMELAurrMoJito.xib */; };
-		04AB58152D3A293900DDC681 /* GTEMoMaintabarJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58142D3A293900DDC681 /* GTEMoMaintabarJito.swift */; };
-		04AB58192D3A2C6400DDC681 /* GTEMVigerMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58172D3A2C6400DDC681 /* GTEMVigerMoJito.swift */; };
-		04AB581A2D3A2C6400DDC681 /* GTEMVigerMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58182D3A2C6400DDC681 /* GTEMVigerMoJito.xib */; };
-		04AB581F2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB581D2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift */; };
-		04AB58202D3A2C9600DDC681 /* GTEMHomwerMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB581E2D3A2C9600DDC681 /* GTEMHomwerMoJito.xib */; };
-		04AB58232D3A2CA200DDC681 /* GTEMWoderMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58212D3A2CA200DDC681 /* GTEMWoderMoJito.swift */; };
-		04AB58242D3A2CA200DDC681 /* GTEMWoderMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58222D3A2CA200DDC681 /* GTEMWoderMoJito.xib */; };
-		04AB58292D3A372000DDC681 /* GTEHomeHeadeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58272D3A372000DDC681 /* GTEHomeHeadeCell.swift */; };
-		04AB582A2D3A372000DDC681 /* GTEHomeHeadeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58282D3A372000DDC681 /* GTEHomeHeadeCell.xib */; };
-		04AB582D2D3A3AE500DDC681 /* GTEHChatroomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB582B2D3A3AE500DDC681 /* GTEHChatroomeCell.swift */; };
-		04AB582E2D3A3AE500DDC681 /* GTEHChatroomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB582C2D3A3AE500DDC681 /* GTEHChatroomeCell.xib */; };
-		04E127F42D3F4EAC0004430E /* GTEMPopularMOjito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127F22D3F4EAC0004430E /* GTEMPopularMOjito.swift */; };
-		04E127F52D3F4EAC0004430E /* GTEMPopularMOjito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E127F32D3F4EAC0004430E /* GTEMPopularMOjito.xib */; };
-		04E127F82D3F50990004430E /* GTEMPopularliasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127F62D3F50990004430E /* GTEMPopularliasCell.swift */; };
-		04E127F92D3F50990004430E /* GTEMPopularliasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E127F72D3F50990004430E /* GTEMPopularliasCell.xib */; };
-		04E127FD2D3F71510004430E /* GTEMMoRemoteMeaageJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127FB2D3F71510004430E /* GTEMMoRemoteMeaageJito.swift */; };
-		04E127FE2D3F71510004430E /* GTEMMoRemoteMeaageJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E127FC2D3F71510004430E /* GTEMMoRemoteMeaageJito.xib */; };
-		04E128012D3F717B0004430E /* GTEMSearchinMeaageJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127FF2D3F717B0004430E /* GTEMSearchinMeaageJito.swift */; };
-		04E128022D3F717B0004430E /* GTEMSearchinMeaageJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128002D3F717B0004430E /* GTEMSearchinMeaageJito.xib */; };
-		04E128052D3F71D50004430E /* GTEMAICholeMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128032D3F71D50004430E /* GTEMAICholeMoJito.swift */; };
-		04E128062D3F71D50004430E /* GTEMAICholeMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128042D3F71D50004430E /* GTEMAICholeMoJito.xib */; };
-		04E1280A2D3F72390004430E /* GTEMAholeRoomSetupMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128082D3F72390004430E /* GTEMAholeRoomSetupMoJito.swift */; };
-		04E1280B2D3F72390004430E /* GTEMAholeRoomSetupMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128092D3F72390004430E /* GTEMAholeRoomSetupMoJito.xib */; };
-		04E1280F2D3F72840004430E /* GTEMAcholeDeatilMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1280D2D3F72840004430E /* GTEMAcholeDeatilMoJito.swift */; };
-		04E128102D3F72840004430E /* GTEMAcholeDeatilMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E1280E2D3F72840004430E /* GTEMAcholeDeatilMoJito.xib */; };
-		04E128132D3F730D0004430E /* GTEMStepDetaillMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128112D3F730D0004430E /* GTEMStepDetaillMoJito.swift */; };
-		04E128142D3F730D0004430E /* GTEMStepDetaillMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128122D3F730D0004430E /* GTEMStepDetaillMoJito.xib */; };
-		04E128172D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128152D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift */; };
-		04E128182D3F988B0004430E /* GTEMrepoaweDetaillMoJito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128162D3F988B0004430E /* GTEMrepoaweDetaillMoJito.xib */; };
-		04E1281B2D4098C60004430E /* GTEVideocerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128192D4098C60004430E /* GTEVideocerCell.swift */; };
-		04E1281C2D4098C60004430E /* GTEVideocerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E1281A2D4098C60004430E /* GTEVideocerCell.xib */; };
-		04E1281F2D40EBE00004430E /* GTESetingMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1281D2D40EBE00004430E /* GTESetingMojito.swift */; };
-		04E128202D40EBE00004430E /* GTESetingMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E1281E2D40EBE00004430E /* GTESetingMojito.xib */; };
-		04E128232D40F18F0004430E /* GTETiaAchleCenterMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128212D40F18F0004430E /* GTETiaAchleCenterMojito.swift */; };
-		04E128242D40F18F0004430E /* GTETiaAchleCenterMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128222D40F18F0004430E /* GTETiaAchleCenterMojito.xib */; };
-		04E128272D40FA660004430E /* GTETiaVideoPostMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128252D40FA660004430E /* GTETiaVideoPostMojito.swift */; };
-		04E128282D40FA660004430E /* GTETiaVideoPostMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128262D40FA660004430E /* GTETiaVideoPostMojito.xib */; };
+		04AB580A2D39F73400DDC681 /* XPLRInitHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58082D39F73400DDC681 /* XPLRInitHandler.swift */; };
+		04AB580B2D39F73400DDC681 /* XPLRInitHandler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58092D39F73400DDC681 /* XPLRInitHandler.xib */; };
+		04AB580E2D3A02CA00DDC681 /* WDKRSessionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB580C2D3A02CA00DDC681 /* WDKRSessionNode.swift */; };
+		04AB580F2D3A02CA00DDC681 /* WDKRSessionNode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB580D2D3A02CA00DDC681 /* WDKRSessionNode.xib */; };
+		04AB58122D3A095A00DDC681 /* QYVXDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58102D3A095A00DDC681 /* QYVXDataPoint.swift */; };
+		04AB58132D3A095A00DDC681 /* QYVXDataPoint.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58112D3A095A00DDC681 /* QYVXDataPoint.xib */; };
+		04AB58152D3A293900DDC681 /* ZLNXWidgetCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58142D3A293900DDC681 /* ZLNXWidgetCore.swift */; };
+		04AB58192D3A2C6400DDC681 /* Z5Q8VortexBrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58172D3A2C6400DDC681 /* Z5Q8VortexBrew.swift */; };
+		04AB581A2D3A2C6400DDC681 /* Z5Q8VortexBrew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58182D3A2C6400DDC681 /* Z5Q8VortexBrew.xib */; };
+		04AB581F2D3A2C9600DDC681 /* KXPRHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB581D2D3A2C9600DDC681 /* KXPRHomePage.swift */; };
+		04AB58202D3A2C9600DDC681 /* KXPRHomePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB581E2D3A2C9600DDC681 /* KXPRHomePage.xib */; };
+		04AB58232D3A2CA200DDC681 /* VYKEFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58212D3A2CA200DDC681 /* VYKEFlowManager.swift */; };
+		04AB58242D3A2CA200DDC681 /* VYKEFlowManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58222D3A2CA200DDC681 /* VYKEFlowManager.xib */; };
+		04AB58292D3A372000DDC681 /* F7L9NebulaAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB58272D3A372000DDC681 /* F7L9NebulaAnchor.swift */; };
+		04AB582A2D3A372000DDC681 /* F7L9NebulaAnchor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58282D3A372000DDC681 /* F7L9NebulaAnchor.xib */; };
+		04AB582D2D3A3AE500DDC681 /* X7T9NebulaTalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB582B2D3A3AE500DDC681 /* X7T9NebulaTalkCell.swift */; };
+		04AB582E2D3A3AE500DDC681 /* X7T9NebulaTalkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB582C2D3A3AE500DDC681 /* X7T9NebulaTalkCell.xib */; };
+		04E127F42D3F4EAC0004430E /* KZQXPopularDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127F22D3F4EAC0004430E /* KZQXPopularDrink.swift */; };
+		04E127F52D3F4EAC0004430E /* KZQXPopularDrink.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E127F32D3F4EAC0004430E /* KZQXPopularDrink.xib */; };
+		04E127F82D3F50990004430E /* VQZTPopularItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127F62D3F50990004430E /* VQZTPopularItemCell.swift */; };
+		04E127F92D3F50990004430E /* VQZTPopularItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E127F72D3F50990004430E /* VQZTPopularItemCell.xib */; };
+		04E127FD2D3F71510004430E /* Z8K5VortexMessageHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127FB2D3F71510004430E /* Z8K5VortexMessageHub.swift */; };
+		04E127FE2D3F71510004430E /* Z8K5VortexMessageHub.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E127FC2D3F71510004430E /* Z8K5VortexMessageHub.xib */; };
+		04E128012D3F717B0004430E /* QX7RSearchPulseCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127FF2D3F717B0004430E /* QX7RSearchPulseCore.swift */; };
+		04E128022D3F717B0004430E /* QX7RSearchPulseCore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128002D3F717B0004430E /* QX7RSearchPulseCore.xib */; };
+		04E128052D3F71D50004430E /* W4X2AetherMixCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128032D3F71D50004430E /* W4X2AetherMixCore.swift */; };
+		04E128062D3F71D50004430E /* W4X2AetherMixCore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128042D3F71D50004430E /* W4X2AetherMixCore.xib */; };
+		04E1280A2D3F72390004430E /* XYTQRoomConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128082D3F72390004430E /* XYTQRoomConfiguration.swift */; };
+		04E1280B2D3F72390004430E /* XYTQRoomConfiguration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128092D3F72390004430E /* XYTQRoomConfiguration.xib */; };
+		04E1280F2D3F72840004430E /* KPTZAchievementDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1280D2D3F72840004430E /* KPTZAchievementDetail.swift */; };
+		04E128102D3F72840004430E /* KPTZAchievementDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E1280E2D3F72840004430E /* KPTZAchievementDetail.xib */; };
+		04E128132D3F730D0004430E /* ZPXQStepDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128112D3F730D0004430E /* ZPXQStepDetailView.swift */; };
+		04E128142D3F730D0004430E /* ZPXQStepDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128122D3F730D0004430E /* ZPXQStepDetailView.xib */; };
+		04E128172D3F988B0004430E /* PLQXDataDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128152D3F988B0004430E /* PLQXDataDetailView.swift */; };
+		04E128182D3F988B0004430E /* PLQXDataDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128162D3F988B0004430E /* PLQXDataDetailView.xib */; };
+		04E1281B2D4098C60004430E /* M9X2SpectraFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128192D4098C60004430E /* M9X2SpectraFrame.swift */; };
+		04E1281C2D4098C60004430E /* M9X2SpectraFrame.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E1281A2D4098C60004430E /* M9X2SpectraFrame.xib */; };
+		04E1281F2D40EBE00004430E /* QWLOptionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1281D2D40EBE00004430E /* QWLOptionHandler.swift */; };
+		04E128202D40EBE00004430E /* QWLOptionHandler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E1281E2D40EBE00004430E /* QWLOptionHandler.xib */; };
+		04E128232D40F18F0004430E /* HYZTCentralNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128212D40F18F0004430E /* HYZTCentralNode.swift */; };
+		04E128242D40F18F0004430E /* HYZTCentralNode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128222D40F18F0004430E /* HYZTCentralNode.xib */; };
+		04E128272D40FA660004430E /* V6Z3NovaClipStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128252D40FA660004430E /* V6Z3NovaClipStream.swift */; };
+		04E128282D40FA660004430E /* V6Z3NovaClipStream.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128262D40FA660004430E /* V6Z3NovaClipStream.xib */; };
 		8A035C6CBFB5329802227BAE /* Pods_Gintuemojir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65057D74C17694EED63C749F /* Pods_Gintuemojir.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		041E0B872D54613B00BE6C0E /* GTEMAiChateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMAiChateCell.swift; sourceTree = "<group>"; };
-		041E0B892D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMusernmeaasfeMojito.swift; sourceTree = "<group>"; };
-		041E0B8A2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMusernmeaasfeMojito.xib; sourceTree = "<group>"; };
-		041E0B8D2D54903500BE6C0E /* GTEMusVifedertMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMusVifedertMojito.swift; sourceTree = "<group>"; };
-		041E0B8E2D54903500BE6C0E /* GTEMusVifedertMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMusVifedertMojito.xib; sourceTree = "<group>"; };
-		041E0B912D549D5400BE6C0E /* GTEMCommenttMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMCommenttMojito.swift; sourceTree = "<group>"; };
-		041E0B922D549D5400BE6C0E /* GTEMCommenttMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMCommenttMojito.xib; sourceTree = "<group>"; };
-		041E0B952D54A8B500BE6C0E /* GTEMblancelMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMblancelMojito.swift; sourceTree = "<group>"; };
-		041E0B962D54A8B500BE6C0E /* GTEMblancelMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMblancelMojito.xib; sourceTree = "<group>"; };
-		041E0B992D54AF7400BE6C0E /* GTEMblancelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMblancelCell.swift; sourceTree = "<group>"; };
-		041E0B9A2D54AF7400BE6C0E /* GTEMblancelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMblancelCell.xib; sourceTree = "<group>"; };
-		041E0BA22D55D92700BE6C0E /* GTEMHEditMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMHEditMojito.swift; sourceTree = "<group>"; };
-		041E0BA32D55D92700BE6C0E /* GTEMHEditMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMHEditMojito.xib; sourceTree = "<group>"; };
-		0439A6652D533035004C86C2 /* GTEMPlayerMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMPlayerMojito.swift; sourceTree = "<group>"; };
-		0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMCombingUser.swift; sourceTree = "<group>"; };
-		0439A6692D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMMojitallRoomtalkCell.swift; sourceTree = "<group>"; };
+		041E0B872D54613B00BE6C0E /* Y3Z9AetherChatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3Z9AetherChatNode.swift; sourceTree = "<group>"; };
+		041E0B892D54900100BE6C0E /* QXZTUserDataCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QXZTUserDataCore.swift; sourceTree = "<group>"; };
+		041E0B8A2D54900100BE6C0E /* QXZTUserDataCore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QXZTUserDataCore.xib; sourceTree = "<group>"; };
+		041E0B8D2D54903500BE6C0E /* LQXPRDataModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQXPRDataModule.swift; sourceTree = "<group>"; };
+		041E0B8E2D54903500BE6C0E /* LQXPRDataModule.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LQXPRDataModule.xib; sourceTree = "<group>"; };
+		041E0B912D549D5400BE6C0E /* L3V8EchoCommentary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L3V8EchoCommentary.swift; sourceTree = "<group>"; };
+		041E0B922D549D5400BE6C0E /* L3V8EchoCommentary.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = L3V8EchoCommentary.xib; sourceTree = "<group>"; };
+		041E0B952D54A8B500BE6C0E /* Z5W8BalanceCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z5W8BalanceCore.swift; sourceTree = "<group>"; };
+		041E0B962D54A8B500BE6C0E /* Z5W8BalanceCore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Z5W8BalanceCore.xib; sourceTree = "<group>"; };
+		041E0B992D54AF7400BE6C0E /* M4Z9BalanceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M4Z9BalanceNode.swift; sourceTree = "<group>"; };
+		041E0B9A2D54AF7400BE6C0E /* M4Z9BalanceNode.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = M4Z9BalanceNode.xib; sourceTree = "<group>"; };
+		041E0BA22D55D92700BE6C0E /* BVXUEditHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BVXUEditHandler.swift; sourceTree = "<group>"; };
+		041E0BA32D55D92700BE6C0E /* BVXUEditHandler.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BVXUEditHandler.xib; sourceTree = "<group>"; };
+		0439A6652D533035004C86C2 /* X9R6QuantumPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X9R6QuantumPlayer.swift; sourceTree = "<group>"; };
+		0439A6672D5354FC004C86C2 /* XQZPDataNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XQZPDataNode.swift; sourceTree = "<group>"; };
+		0439A6692D5364FA004C86C2 /* LZQXRoomChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZQXRoomChatCell.swift; sourceTree = "<group>"; };
 		0448DC812D3E4EAF000E638C /* MOjiToGTEH.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MOjiToGTEH.plist; sourceTree = "<group>"; };
 		0448DC832D3E542E000E638C /* GTEHVieedeol.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GTEHVieedeol.plist; sourceTree = "<group>"; };
 		04AB57DF2D39EB9B00DDC681 /* Gintuemojir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gintuemojir.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,49 +98,49 @@
 		04AB57F82D39EBA400DDC681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AB57F92D39EBA400DDC681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04AB57FA2D39EBA400DDC681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		04AB58082D39F73400DDC681 /* GTEMBeginMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMBeginMoJito.swift; sourceTree = "<group>"; };
-		04AB58092D39F73400DDC681 /* GTEMBeginMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMBeginMoJito.xib; sourceTree = "<group>"; };
-		04AB580C2D3A02CA00DDC681 /* GTEMLogsininerMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMLogsininerMoJito.swift; sourceTree = "<group>"; };
-		04AB580D2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMLogsininerMoJito.xib; sourceTree = "<group>"; };
-		04AB58102D3A095A00DDC681 /* GTEMELAurrMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMELAurrMoJito.swift; sourceTree = "<group>"; };
-		04AB58112D3A095A00DDC681 /* GTEMELAurrMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMELAurrMoJito.xib; sourceTree = "<group>"; };
-		04AB58142D3A293900DDC681 /* GTEMoMaintabarJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMoMaintabarJito.swift; sourceTree = "<group>"; };
-		04AB58172D3A2C6400DDC681 /* GTEMVigerMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMVigerMoJito.swift; sourceTree = "<group>"; };
-		04AB58182D3A2C6400DDC681 /* GTEMVigerMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMVigerMoJito.xib; sourceTree = "<group>"; };
-		04AB581D2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMHomwerMoJito.swift; sourceTree = "<group>"; };
-		04AB581E2D3A2C9600DDC681 /* GTEMHomwerMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMHomwerMoJito.xib; sourceTree = "<group>"; };
-		04AB58212D3A2CA200DDC681 /* GTEMWoderMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMWoderMoJito.swift; sourceTree = "<group>"; };
-		04AB58222D3A2CA200DDC681 /* GTEMWoderMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMWoderMoJito.xib; sourceTree = "<group>"; };
-		04AB58272D3A372000DDC681 /* GTEHomeHeadeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEHomeHeadeCell.swift; sourceTree = "<group>"; };
-		04AB58282D3A372000DDC681 /* GTEHomeHeadeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEHomeHeadeCell.xib; sourceTree = "<group>"; };
-		04AB582B2D3A3AE500DDC681 /* GTEHChatroomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEHChatroomeCell.swift; sourceTree = "<group>"; };
-		04AB582C2D3A3AE500DDC681 /* GTEHChatroomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEHChatroomeCell.xib; sourceTree = "<group>"; };
-		04E127F22D3F4EAC0004430E /* GTEMPopularMOjito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMPopularMOjito.swift; sourceTree = "<group>"; };
-		04E127F32D3F4EAC0004430E /* GTEMPopularMOjito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMPopularMOjito.xib; sourceTree = "<group>"; };
-		04E127F62D3F50990004430E /* GTEMPopularliasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMPopularliasCell.swift; sourceTree = "<group>"; };
-		04E127F72D3F50990004430E /* GTEMPopularliasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMPopularliasCell.xib; sourceTree = "<group>"; };
-		04E127FB2D3F71510004430E /* GTEMMoRemoteMeaageJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMMoRemoteMeaageJito.swift; sourceTree = "<group>"; };
-		04E127FC2D3F71510004430E /* GTEMMoRemoteMeaageJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMMoRemoteMeaageJito.xib; sourceTree = "<group>"; };
-		04E127FF2D3F717B0004430E /* GTEMSearchinMeaageJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMSearchinMeaageJito.swift; sourceTree = "<group>"; };
-		04E128002D3F717B0004430E /* GTEMSearchinMeaageJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMSearchinMeaageJito.xib; sourceTree = "<group>"; };
-		04E128032D3F71D50004430E /* GTEMAICholeMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMAICholeMoJito.swift; sourceTree = "<group>"; };
-		04E128042D3F71D50004430E /* GTEMAICholeMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMAICholeMoJito.xib; sourceTree = "<group>"; };
-		04E128082D3F72390004430E /* GTEMAholeRoomSetupMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMAholeRoomSetupMoJito.swift; sourceTree = "<group>"; };
-		04E128092D3F72390004430E /* GTEMAholeRoomSetupMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMAholeRoomSetupMoJito.xib; sourceTree = "<group>"; };
-		04E1280D2D3F72840004430E /* GTEMAcholeDeatilMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMAcholeDeatilMoJito.swift; sourceTree = "<group>"; };
-		04E1280E2D3F72840004430E /* GTEMAcholeDeatilMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMAcholeDeatilMoJito.xib; sourceTree = "<group>"; };
-		04E128112D3F730D0004430E /* GTEMStepDetaillMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMStepDetaillMoJito.swift; sourceTree = "<group>"; };
-		04E128122D3F730D0004430E /* GTEMStepDetaillMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMStepDetaillMoJito.xib; sourceTree = "<group>"; };
-		04E128152D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMrepoaweDetaillMoJito.swift; sourceTree = "<group>"; };
-		04E128162D3F988B0004430E /* GTEMrepoaweDetaillMoJito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMrepoaweDetaillMoJito.xib; sourceTree = "<group>"; };
-		04E128192D4098C60004430E /* GTEVideocerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEVideocerCell.swift; sourceTree = "<group>"; };
-		04E1281A2D4098C60004430E /* GTEVideocerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEVideocerCell.xib; sourceTree = "<group>"; };
-		04E1281D2D40EBE00004430E /* GTESetingMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTESetingMojito.swift; sourceTree = "<group>"; };
-		04E1281E2D40EBE00004430E /* GTESetingMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTESetingMojito.xib; sourceTree = "<group>"; };
-		04E128212D40F18F0004430E /* GTETiaAchleCenterMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTETiaAchleCenterMojito.swift; sourceTree = "<group>"; };
-		04E128222D40F18F0004430E /* GTETiaAchleCenterMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTETiaAchleCenterMojito.xib; sourceTree = "<group>"; };
-		04E128252D40FA660004430E /* GTETiaVideoPostMojito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTETiaVideoPostMojito.swift; sourceTree = "<group>"; };
-		04E128262D40FA660004430E /* GTETiaVideoPostMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTETiaVideoPostMojito.xib; sourceTree = "<group>"; };
+		04AB58082D39F73400DDC681 /* XPLRInitHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPLRInitHandler.swift; sourceTree = "<group>"; };
+		04AB58092D39F73400DDC681 /* XPLRInitHandler.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XPLRInitHandler.xib; sourceTree = "<group>"; };
+		04AB580C2D3A02CA00DDC681 /* WDKRSessionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDKRSessionNode.swift; sourceTree = "<group>"; };
+		04AB580D2D3A02CA00DDC681 /* WDKRSessionNode.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDKRSessionNode.xib; sourceTree = "<group>"; };
+		04AB58102D3A095A00DDC681 /* QYVXDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYVXDataPoint.swift; sourceTree = "<group>"; };
+		04AB58112D3A095A00DDC681 /* QYVXDataPoint.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QYVXDataPoint.xib; sourceTree = "<group>"; };
+		04AB58142D3A293900DDC681 /* ZLNXWidgetCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLNXWidgetCore.swift; sourceTree = "<group>"; };
+		04AB58172D3A2C6400DDC681 /* Z5Q8VortexBrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z5Q8VortexBrew.swift; sourceTree = "<group>"; };
+		04AB58182D3A2C6400DDC681 /* Z5Q8VortexBrew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Z5Q8VortexBrew.xib; sourceTree = "<group>"; };
+		04AB581D2D3A2C9600DDC681 /* KXPRHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KXPRHomePage.swift; sourceTree = "<group>"; };
+		04AB581E2D3A2C9600DDC681 /* KXPRHomePage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KXPRHomePage.xib; sourceTree = "<group>"; };
+		04AB58212D3A2CA200DDC681 /* VYKEFlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VYKEFlowManager.swift; sourceTree = "<group>"; };
+		04AB58222D3A2CA200DDC681 /* VYKEFlowManager.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VYKEFlowManager.xib; sourceTree = "<group>"; };
+		04AB58272D3A372000DDC681 /* F7L9NebulaAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F7L9NebulaAnchor.swift; sourceTree = "<group>"; };
+		04AB58282D3A372000DDC681 /* F7L9NebulaAnchor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = F7L9NebulaAnchor.xib; sourceTree = "<group>"; };
+		04AB582B2D3A3AE500DDC681 /* X7T9NebulaTalkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X7T9NebulaTalkCell.swift; sourceTree = "<group>"; };
+		04AB582C2D3A3AE500DDC681 /* X7T9NebulaTalkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = X7T9NebulaTalkCell.xib; sourceTree = "<group>"; };
+		04E127F22D3F4EAC0004430E /* KZQXPopularDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KZQXPopularDrink.swift; sourceTree = "<group>"; };
+		04E127F32D3F4EAC0004430E /* KZQXPopularDrink.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KZQXPopularDrink.xib; sourceTree = "<group>"; };
+		04E127F62D3F50990004430E /* VQZTPopularItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VQZTPopularItemCell.swift; sourceTree = "<group>"; };
+		04E127F72D3F50990004430E /* VQZTPopularItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VQZTPopularItemCell.xib; sourceTree = "<group>"; };
+		04E127FB2D3F71510004430E /* Z8K5VortexMessageHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z8K5VortexMessageHub.swift; sourceTree = "<group>"; };
+		04E127FC2D3F71510004430E /* Z8K5VortexMessageHub.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Z8K5VortexMessageHub.xib; sourceTree = "<group>"; };
+		04E127FF2D3F717B0004430E /* QX7RSearchPulseCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QX7RSearchPulseCore.swift; sourceTree = "<group>"; };
+		04E128002D3F717B0004430E /* QX7RSearchPulseCore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QX7RSearchPulseCore.xib; sourceTree = "<group>"; };
+		04E128032D3F71D50004430E /* W4X2AetherMixCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W4X2AetherMixCore.swift; sourceTree = "<group>"; };
+		04E128042D3F71D50004430E /* W4X2AetherMixCore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = W4X2AetherMixCore.xib; sourceTree = "<group>"; };
+		04E128082D3F72390004430E /* XYTQRoomConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYTQRoomConfiguration.swift; sourceTree = "<group>"; };
+		04E128092D3F72390004430E /* XYTQRoomConfiguration.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XYTQRoomConfiguration.xib; sourceTree = "<group>"; };
+		04E1280D2D3F72840004430E /* KPTZAchievementDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPTZAchievementDetail.swift; sourceTree = "<group>"; };
+		04E1280E2D3F72840004430E /* KPTZAchievementDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KPTZAchievementDetail.xib; sourceTree = "<group>"; };
+		04E128112D3F730D0004430E /* ZPXQStepDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPXQStepDetailView.swift; sourceTree = "<group>"; };
+		04E128122D3F730D0004430E /* ZPXQStepDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZPXQStepDetailView.xib; sourceTree = "<group>"; };
+		04E128152D3F988B0004430E /* PLQXDataDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLQXDataDetailView.swift; sourceTree = "<group>"; };
+		04E128162D3F988B0004430E /* PLQXDataDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PLQXDataDetailView.xib; sourceTree = "<group>"; };
+		04E128192D4098C60004430E /* M9X2SpectraFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M9X2SpectraFrame.swift; sourceTree = "<group>"; };
+		04E1281A2D4098C60004430E /* M9X2SpectraFrame.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = M9X2SpectraFrame.xib; sourceTree = "<group>"; };
+		04E1281D2D40EBE00004430E /* QWLOptionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QWLOptionHandler.swift; sourceTree = "<group>"; };
+		04E1281E2D40EBE00004430E /* QWLOptionHandler.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QWLOptionHandler.xib; sourceTree = "<group>"; };
+		04E128212D40F18F0004430E /* HYZTCentralNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYZTCentralNode.swift; sourceTree = "<group>"; };
+		04E128222D40F18F0004430E /* HYZTCentralNode.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HYZTCentralNode.xib; sourceTree = "<group>"; };
+		04E128252D40FA660004430E /* V6Z3NovaClipStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V6Z3NovaClipStream.swift; sourceTree = "<group>"; };
+		04E128262D40FA660004430E /* V6Z3NovaClipStream.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = V6Z3NovaClipStream.xib; sourceTree = "<group>"; };
 		65057D74C17694EED63C749F /* Pods_Gintuemojir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gintuemojir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9262D8580A5D865F65F7EAE0 /* Pods-Gintuemojir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gintuemojir.release.xcconfig"; path = "Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir.release.xcconfig"; sourceTree = "<group>"; };
 		DCFEBCA9A0874BC8E687EC56 /* Pods-Gintuemojir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gintuemojir.debug.xcconfig"; path = "Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,121 +179,121 @@
 		04AB58002D39EBA400DDC681 /* Gintuemojir */ = {
 			isa = PBXGroup;
 			children = (
-				04AB581C2D3A2C7D00DDC681 /* MineGTEA */,
-				04AB581B2D3A2C7200DDC681 /* HomeGTEA */,
-				04AB58162D3A2C2800DDC681 /* VideoGTEM */,
+				04AB581C2D3A2C7D00DDC681 /* ZQNXCoreUnit */,
+				04AB581B2D3A2C7200DDC681 /* PRBTHomeBase */,
+				04AB58162D3A2C2800DDC681 /* V7X4HyperVision */,
 				04AB57F72D39EBA400DDC681 /* AppDelegate.swift */,
 				04AB57F82D39EBA400DDC681 /* Assets.xcassets */,
 				04AB57F92D39EBA400DDC681 /* Info.plist */,
 				04AB57FB2D39EBA400DDC681 /* LaunchScreen.storyboard */,
-				04AB58082D39F73400DDC681 /* GTEMBeginMoJito.swift */,
-				04AB58092D39F73400DDC681 /* GTEMBeginMoJito.xib */,
-				04AB580C2D3A02CA00DDC681 /* GTEMLogsininerMoJito.swift */,
-				04AB580D2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib */,
-				04AB58102D3A095A00DDC681 /* GTEMELAurrMoJito.swift */,
-				04AB58112D3A095A00DDC681 /* GTEMELAurrMoJito.xib */,
-				04AB58142D3A293900DDC681 /* GTEMoMaintabarJito.swift */,
-				0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */,
+				04AB58082D39F73400DDC681 /* XPLRInitHandler.swift */,
+				04AB58092D39F73400DDC681 /* XPLRInitHandler.xib */,
+				04AB580C2D3A02CA00DDC681 /* WDKRSessionNode.swift */,
+				04AB580D2D3A02CA00DDC681 /* WDKRSessionNode.xib */,
+				04AB58102D3A095A00DDC681 /* QYVXDataPoint.swift */,
+				04AB58112D3A095A00DDC681 /* QYVXDataPoint.xib */,
+				04AB58142D3A293900DDC681 /* ZLNXWidgetCore.swift */,
+				0439A6672D5354FC004C86C2 /* XQZPDataNode.swift */,
 			);
 			path = Gintuemojir;
 			sourceTree = "<group>";
 		};
-		04AB58162D3A2C2800DDC681 /* VideoGTEM */ = {
+		04AB58162D3A2C2800DDC681 /* V7X4HyperVision */ = {
 			isa = PBXGroup;
 			children = (
-				04AB58172D3A2C6400DDC681 /* GTEMVigerMoJito.swift */,
-				04AB58182D3A2C6400DDC681 /* GTEMVigerMoJito.xib */,
-				04E128192D4098C60004430E /* GTEVideocerCell.swift */,
-				04E1281A2D4098C60004430E /* GTEVideocerCell.xib */,
-				04E128252D40FA660004430E /* GTETiaVideoPostMojito.swift */,
-				04E128262D40FA660004430E /* GTETiaVideoPostMojito.xib */,
-				0439A6652D533035004C86C2 /* GTEMPlayerMojito.swift */,
-				041E0B912D549D5400BE6C0E /* GTEMCommenttMojito.swift */,
-				041E0B922D549D5400BE6C0E /* GTEMCommenttMojito.xib */,
-				041E0B952D54A8B500BE6C0E /* GTEMblancelMojito.swift */,
-				041E0B962D54A8B500BE6C0E /* GTEMblancelMojito.xib */,
-				041E0B992D54AF7400BE6C0E /* GTEMblancelCell.swift */,
-				041E0B9A2D54AF7400BE6C0E /* GTEMblancelCell.xib */,
+				04AB58172D3A2C6400DDC681 /* Z5Q8VortexBrew.swift */,
+				04AB58182D3A2C6400DDC681 /* Z5Q8VortexBrew.xib */,
+				04E128192D4098C60004430E /* M9X2SpectraFrame.swift */,
+				04E1281A2D4098C60004430E /* M9X2SpectraFrame.xib */,
+				04E128252D40FA660004430E /* V6Z3NovaClipStream.swift */,
+				04E128262D40FA660004430E /* V6Z3NovaClipStream.xib */,
+				0439A6652D533035004C86C2 /* X9R6QuantumPlayer.swift */,
+				041E0B912D549D5400BE6C0E /* L3V8EchoCommentary.swift */,
+				041E0B922D549D5400BE6C0E /* L3V8EchoCommentary.xib */,
+				041E0B952D54A8B500BE6C0E /* Z5W8BalanceCore.swift */,
+				041E0B962D54A8B500BE6C0E /* Z5W8BalanceCore.xib */,
+				041E0B992D54AF7400BE6C0E /* M4Z9BalanceNode.swift */,
+				041E0B9A2D54AF7400BE6C0E /* M4Z9BalanceNode.xib */,
 			);
-			path = VideoGTEM;
+			path = V7X4HyperVision;
 			sourceTree = "<group>";
 		};
-		04AB581B2D3A2C7200DDC681 /* HomeGTEA */ = {
+		04AB581B2D3A2C7200DDC681 /* PRBTHomeBase */ = {
 			isa = PBXGroup;
 			children = (
-				04E1280C2D3F72700004430E /* RooomwerDetail */,
-				04E128072D3F72260004430E /* CreateRoomo */,
-				04E127FA2D3F6F480004430E /* GTEM_Puplar */,
-				04AB581D2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift */,
-				04AB581E2D3A2C9600DDC681 /* GTEMHomwerMoJito.xib */,
-				04AB58272D3A372000DDC681 /* GTEHomeHeadeCell.swift */,
-				04AB58282D3A372000DDC681 /* GTEHomeHeadeCell.xib */,
-				04AB582B2D3A3AE500DDC681 /* GTEHChatroomeCell.swift */,
-				04AB582C2D3A3AE500DDC681 /* GTEHChatroomeCell.xib */,
+				04E1280C2D3F72700004430E /* MZPTDetailView */,
+				04E128072D3F72260004430E /* KPRVRoomCreator */,
+				04E127FA2D3F6F480004430E /* TQYV_Popular */,
+				04AB581D2D3A2C9600DDC681 /* KXPRHomePage.swift */,
+				04AB581E2D3A2C9600DDC681 /* KXPRHomePage.xib */,
+				04AB58272D3A372000DDC681 /* F7L9NebulaAnchor.swift */,
+				04AB58282D3A372000DDC681 /* F7L9NebulaAnchor.xib */,
+				04AB582B2D3A3AE500DDC681 /* X7T9NebulaTalkCell.swift */,
+				04AB582C2D3A3AE500DDC681 /* X7T9NebulaTalkCell.xib */,
 				0448DC812D3E4EAF000E638C /* MOjiToGTEH.plist */,
 				0448DC832D3E542E000E638C /* GTEHVieedeol.plist */,
-				04E127FB2D3F71510004430E /* GTEMMoRemoteMeaageJito.swift */,
-				04E127FC2D3F71510004430E /* GTEMMoRemoteMeaageJito.xib */,
-				04E127FF2D3F717B0004430E /* GTEMSearchinMeaageJito.swift */,
-				04E128002D3F717B0004430E /* GTEMSearchinMeaageJito.xib */,
-				04E128032D3F71D50004430E /* GTEMAICholeMoJito.swift */,
-				04E128042D3F71D50004430E /* GTEMAICholeMoJito.xib */,
-				041E0B872D54613B00BE6C0E /* GTEMAiChateCell.swift */,
+				04E127FB2D3F71510004430E /* Z8K5VortexMessageHub.swift */,
+				04E127FC2D3F71510004430E /* Z8K5VortexMessageHub.xib */,
+				04E127FF2D3F717B0004430E /* QX7RSearchPulseCore.swift */,
+				04E128002D3F717B0004430E /* QX7RSearchPulseCore.xib */,
+				04E128032D3F71D50004430E /* W4X2AetherMixCore.swift */,
+				04E128042D3F71D50004430E /* W4X2AetherMixCore.xib */,
+				041E0B872D54613B00BE6C0E /* Y3Z9AetherChatNode.swift */,
 			);
-			path = HomeGTEA;
+			path = PRBTHomeBase;
 			sourceTree = "<group>";
 		};
-		04AB581C2D3A2C7D00DDC681 /* MineGTEA */ = {
+		04AB581C2D3A2C7D00DDC681 /* ZQNXCoreUnit */ = {
 			isa = PBXGroup;
 			children = (
-				04AB58212D3A2CA200DDC681 /* GTEMWoderMoJito.swift */,
-				04AB58222D3A2CA200DDC681 /* GTEMWoderMoJito.xib */,
-				04E1281D2D40EBE00004430E /* GTESetingMojito.swift */,
-				04E1281E2D40EBE00004430E /* GTESetingMojito.xib */,
-				04E128212D40F18F0004430E /* GTETiaAchleCenterMojito.swift */,
-				04E128222D40F18F0004430E /* GTETiaAchleCenterMojito.xib */,
-				041E0B892D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift */,
-				041E0B8A2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib */,
-				041E0B8D2D54903500BE6C0E /* GTEMusVifedertMojito.swift */,
-				041E0B8E2D54903500BE6C0E /* GTEMusVifedertMojito.xib */,
-				041E0BA22D55D92700BE6C0E /* GTEMHEditMojito.swift */,
-				041E0BA32D55D92700BE6C0E /* GTEMHEditMojito.xib */,
+				04AB58212D3A2CA200DDC681 /* VYKEFlowManager.swift */,
+				04AB58222D3A2CA200DDC681 /* VYKEFlowManager.xib */,
+				04E1281D2D40EBE00004430E /* QWLOptionHandler.swift */,
+				04E1281E2D40EBE00004430E /* QWLOptionHandler.xib */,
+				04E128212D40F18F0004430E /* HYZTCentralNode.swift */,
+				04E128222D40F18F0004430E /* HYZTCentralNode.xib */,
+				041E0B892D54900100BE6C0E /* QXZTUserDataCore.swift */,
+				041E0B8A2D54900100BE6C0E /* QXZTUserDataCore.xib */,
+				041E0B8D2D54903500BE6C0E /* LQXPRDataModule.swift */,
+				041E0B8E2D54903500BE6C0E /* LQXPRDataModule.xib */,
+				041E0BA22D55D92700BE6C0E /* BVXUEditHandler.swift */,
+				041E0BA32D55D92700BE6C0E /* BVXUEditHandler.xib */,
 			);
-			path = MineGTEA;
+			path = ZQNXCoreUnit;
 			sourceTree = "<group>";
 		};
-		04E127FA2D3F6F480004430E /* GTEM_Puplar */ = {
+		04E127FA2D3F6F480004430E /* TQYV_Popular */ = {
 			isa = PBXGroup;
 			children = (
-				04E127F22D3F4EAC0004430E /* GTEMPopularMOjito.swift */,
-				04E127F32D3F4EAC0004430E /* GTEMPopularMOjito.xib */,
-				04E127F62D3F50990004430E /* GTEMPopularliasCell.swift */,
-				04E127F72D3F50990004430E /* GTEMPopularliasCell.xib */,
-				04E128112D3F730D0004430E /* GTEMStepDetaillMoJito.swift */,
-				04E128122D3F730D0004430E /* GTEMStepDetaillMoJito.xib */,
+				04E127F22D3F4EAC0004430E /* KZQXPopularDrink.swift */,
+				04E127F32D3F4EAC0004430E /* KZQXPopularDrink.xib */,
+				04E127F62D3F50990004430E /* VQZTPopularItemCell.swift */,
+				04E127F72D3F50990004430E /* VQZTPopularItemCell.xib */,
+				04E128112D3F730D0004430E /* ZPXQStepDetailView.swift */,
+				04E128122D3F730D0004430E /* ZPXQStepDetailView.xib */,
 			);
-			path = GTEM_Puplar;
+			path = TQYV_Popular;
 			sourceTree = "<group>";
 		};
-		04E128072D3F72260004430E /* CreateRoomo */ = {
+		04E128072D3F72260004430E /* KPRVRoomCreator */ = {
 			isa = PBXGroup;
 			children = (
-				04E128082D3F72390004430E /* GTEMAholeRoomSetupMoJito.swift */,
-				04E128092D3F72390004430E /* GTEMAholeRoomSetupMoJito.xib */,
+				04E128082D3F72390004430E /* XYTQRoomConfiguration.swift */,
+				04E128092D3F72390004430E /* XYTQRoomConfiguration.xib */,
 			);
-			path = CreateRoomo;
+			path = KPRVRoomCreator;
 			sourceTree = "<group>";
 		};
-		04E1280C2D3F72700004430E /* RooomwerDetail */ = {
+		04E1280C2D3F72700004430E /* MZPTDetailView */ = {
 			isa = PBXGroup;
 			children = (
-				04E1280D2D3F72840004430E /* GTEMAcholeDeatilMoJito.swift */,
-				04E1280E2D3F72840004430E /* GTEMAcholeDeatilMoJito.xib */,
-				04E128152D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift */,
-				04E128162D3F988B0004430E /* GTEMrepoaweDetaillMoJito.xib */,
-				0439A6692D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift */,
+				04E1280D2D3F72840004430E /* KPTZAchievementDetail.swift */,
+				04E1280E2D3F72840004430E /* KPTZAchievementDetail.xib */,
+				04E128152D3F988B0004430E /* PLQXDataDetailView.swift */,
+				04E128162D3F988B0004430E /* PLQXDataDetailView.xib */,
+				0439A6692D5364FA004C86C2 /* LZQXRoomChatCell.swift */,
 			);
-			path = RooomwerDetail;
+			path = MZPTDetailView;
 			sourceTree = "<group>";
 		};
 		3DE29B3B1CAC8EF55074CABA /* Pods */ = {
@@ -376,37 +376,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E128142D3F730D0004430E /* GTEMStepDetaillMoJito.xib in Resources */,
-				04E1281C2D4098C60004430E /* GTEVideocerCell.xib in Resources */,
+				04E128142D3F730D0004430E /* ZPXQStepDetailView.xib in Resources */,
+				04E1281C2D4098C60004430E /* M9X2SpectraFrame.xib in Resources */,
 				04AB58042D39EBA400DDC681 /* Assets.xcassets in Resources */,
 				0448DC842D3E542E000E638C /* GTEHVieedeol.plist in Resources */,
-				04E128102D3F72840004430E /* GTEMAcholeDeatilMoJito.xib in Resources */,
-				041E0B942D549D5400BE6C0E /* GTEMCommenttMojito.xib in Resources */,
-				04E128202D40EBE00004430E /* GTESetingMojito.xib in Resources */,
+				04E128102D3F72840004430E /* KPTZAchievementDetail.xib in Resources */,
+				041E0B942D549D5400BE6C0E /* L3V8EchoCommentary.xib in Resources */,
+				04E128202D40EBE00004430E /* QWLOptionHandler.xib in Resources */,
 				04AB58062D39EBA400DDC681 /* LaunchScreen.storyboard in Resources */,
-				04AB582E2D3A3AE500DDC681 /* GTEHChatroomeCell.xib in Resources */,
-				04AB580F2D3A02CA00DDC681 /* GTEMLogsininerMoJito.xib in Resources */,
-				041E0BA42D55D92700BE6C0E /* GTEMHEditMojito.xib in Resources */,
-				04E127F92D3F50990004430E /* GTEMPopularliasCell.xib in Resources */,
-				04E128242D40F18F0004430E /* GTETiaAchleCenterMojito.xib in Resources */,
-				04E128062D3F71D50004430E /* GTEMAICholeMoJito.xib in Resources */,
-				04E1280B2D3F72390004430E /* GTEMAholeRoomSetupMoJito.xib in Resources */,
+				04AB582E2D3A3AE500DDC681 /* X7T9NebulaTalkCell.xib in Resources */,
+				04AB580F2D3A02CA00DDC681 /* WDKRSessionNode.xib in Resources */,
+				041E0BA42D55D92700BE6C0E /* BVXUEditHandler.xib in Resources */,
+				04E127F92D3F50990004430E /* VQZTPopularItemCell.xib in Resources */,
+				04E128242D40F18F0004430E /* HYZTCentralNode.xib in Resources */,
+				04E128062D3F71D50004430E /* W4X2AetherMixCore.xib in Resources */,
+				04E1280B2D3F72390004430E /* XYTQRoomConfiguration.xib in Resources */,
 				0448DC822D3E4EAF000E638C /* MOjiToGTEH.plist in Resources */,
-				04E127FE2D3F71510004430E /* GTEMMoRemoteMeaageJito.xib in Resources */,
-				04AB58132D3A095A00DDC681 /* GTEMELAurrMoJito.xib in Resources */,
-				04AB58242D3A2CA200DDC681 /* GTEMWoderMoJito.xib in Resources */,
-				04E127F52D3F4EAC0004430E /* GTEMPopularMOjito.xib in Resources */,
-				041E0B982D54A8B500BE6C0E /* GTEMblancelMojito.xib in Resources */,
-				041E0B8C2D54900100BE6C0E /* GTEMusernmeaasfeMojito.xib in Resources */,
-				04E128022D3F717B0004430E /* GTEMSearchinMeaageJito.xib in Resources */,
-				04E128182D3F988B0004430E /* GTEMrepoaweDetaillMoJito.xib in Resources */,
-				04AB58202D3A2C9600DDC681 /* GTEMHomwerMoJito.xib in Resources */,
-				041E0B9C2D54AF7400BE6C0E /* GTEMblancelCell.xib in Resources */,
-				04AB581A2D3A2C6400DDC681 /* GTEMVigerMoJito.xib in Resources */,
-				04AB582A2D3A372000DDC681 /* GTEHomeHeadeCell.xib in Resources */,
-				04E128282D40FA660004430E /* GTETiaVideoPostMojito.xib in Resources */,
-				041E0B902D54903500BE6C0E /* GTEMusVifedertMojito.xib in Resources */,
-				04AB580B2D39F73400DDC681 /* GTEMBeginMoJito.xib in Resources */,
+				04E127FE2D3F71510004430E /* Z8K5VortexMessageHub.xib in Resources */,
+				04AB58132D3A095A00DDC681 /* QYVXDataPoint.xib in Resources */,
+				04AB58242D3A2CA200DDC681 /* VYKEFlowManager.xib in Resources */,
+				04E127F52D3F4EAC0004430E /* KZQXPopularDrink.xib in Resources */,
+				041E0B982D54A8B500BE6C0E /* Z5W8BalanceCore.xib in Resources */,
+				041E0B8C2D54900100BE6C0E /* QXZTUserDataCore.xib in Resources */,
+				04E128022D3F717B0004430E /* QX7RSearchPulseCore.xib in Resources */,
+				04E128182D3F988B0004430E /* PLQXDataDetailView.xib in Resources */,
+				04AB58202D3A2C9600DDC681 /* KXPRHomePage.xib in Resources */,
+				041E0B9C2D54AF7400BE6C0E /* M4Z9BalanceNode.xib in Resources */,
+				04AB581A2D3A2C6400DDC681 /* Z5Q8VortexBrew.xib in Resources */,
+				04AB582A2D3A372000DDC681 /* F7L9NebulaAnchor.xib in Resources */,
+				04E128282D40FA660004430E /* V6Z3NovaClipStream.xib in Resources */,
+				041E0B902D54903500BE6C0E /* LQXPRDataModule.xib in Resources */,
+				04AB580B2D39F73400DDC681 /* XPLRInitHandler.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,39 +476,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AB58292D3A372000DDC681 /* GTEHomeHeadeCell.swift in Sources */,
-				041E0B8F2D54903500BE6C0E /* GTEMusVifedertMojito.swift in Sources */,
-				04AB58232D3A2CA200DDC681 /* GTEMWoderMoJito.swift in Sources */,
-				04E1281F2D40EBE00004430E /* GTESetingMojito.swift in Sources */,
-				0439A66A2D5364FA004C86C2 /* GTEMMojitallRoomtalkCell.swift in Sources */,
-				041E0B882D54613B00BE6C0E /* GTEMAiChateCell.swift in Sources */,
-				04E1280F2D3F72840004430E /* GTEMAcholeDeatilMoJito.swift in Sources */,
-				041E0B972D54A8B500BE6C0E /* GTEMblancelMojito.swift in Sources */,
-				04AB580A2D39F73400DDC681 /* GTEMBeginMoJito.swift in Sources */,
-				04E128052D3F71D50004430E /* GTEMAICholeMoJito.swift in Sources */,
-				04E128272D40FA660004430E /* GTETiaVideoPostMojito.swift in Sources */,
-				04E127FD2D3F71510004430E /* GTEMMoRemoteMeaageJito.swift in Sources */,
-				04E128132D3F730D0004430E /* GTEMStepDetaillMoJito.swift in Sources */,
-				04E127F42D3F4EAC0004430E /* GTEMPopularMOjito.swift in Sources */,
-				041E0B9B2D54AF7400BE6C0E /* GTEMblancelCell.swift in Sources */,
-				04E128012D3F717B0004430E /* GTEMSearchinMeaageJito.swift in Sources */,
-				04E128232D40F18F0004430E /* GTETiaAchleCenterMojito.swift in Sources */,
-				041E0B8B2D54900100BE6C0E /* GTEMusernmeaasfeMojito.swift in Sources */,
-				041E0BA52D55D92700BE6C0E /* GTEMHEditMojito.swift in Sources */,
-				04AB58152D3A293900DDC681 /* GTEMoMaintabarJito.swift in Sources */,
-				0439A6662D533035004C86C2 /* GTEMPlayerMojito.swift in Sources */,
-				04E127F82D3F50990004430E /* GTEMPopularliasCell.swift in Sources */,
-				04AB580E2D3A02CA00DDC681 /* GTEMLogsininerMoJito.swift in Sources */,
+				04AB58292D3A372000DDC681 /* F7L9NebulaAnchor.swift in Sources */,
+				041E0B8F2D54903500BE6C0E /* LQXPRDataModule.swift in Sources */,
+				04AB58232D3A2CA200DDC681 /* VYKEFlowManager.swift in Sources */,
+				04E1281F2D40EBE00004430E /* QWLOptionHandler.swift in Sources */,
+				0439A66A2D5364FA004C86C2 /* LZQXRoomChatCell.swift in Sources */,
+				041E0B882D54613B00BE6C0E /* Y3Z9AetherChatNode.swift in Sources */,
+				04E1280F2D3F72840004430E /* KPTZAchievementDetail.swift in Sources */,
+				041E0B972D54A8B500BE6C0E /* Z5W8BalanceCore.swift in Sources */,
+				04AB580A2D39F73400DDC681 /* XPLRInitHandler.swift in Sources */,
+				04E128052D3F71D50004430E /* W4X2AetherMixCore.swift in Sources */,
+				04E128272D40FA660004430E /* V6Z3NovaClipStream.swift in Sources */,
+				04E127FD2D3F71510004430E /* Z8K5VortexMessageHub.swift in Sources */,
+				04E128132D3F730D0004430E /* ZPXQStepDetailView.swift in Sources */,
+				04E127F42D3F4EAC0004430E /* KZQXPopularDrink.swift in Sources */,
+				041E0B9B2D54AF7400BE6C0E /* M4Z9BalanceNode.swift in Sources */,
+				04E128012D3F717B0004430E /* QX7RSearchPulseCore.swift in Sources */,
+				04E128232D40F18F0004430E /* HYZTCentralNode.swift in Sources */,
+				041E0B8B2D54900100BE6C0E /* QXZTUserDataCore.swift in Sources */,
+				041E0BA52D55D92700BE6C0E /* BVXUEditHandler.swift in Sources */,
+				04AB58152D3A293900DDC681 /* ZLNXWidgetCore.swift in Sources */,
+				0439A6662D533035004C86C2 /* X9R6QuantumPlayer.swift in Sources */,
+				04E127F82D3F50990004430E /* VQZTPopularItemCell.swift in Sources */,
+				04AB580E2D3A02CA00DDC681 /* WDKRSessionNode.swift in Sources */,
 				04AB58012D39EBA400DDC681 /* AppDelegate.swift in Sources */,
-				041E0B932D549D5400BE6C0E /* GTEMCommenttMojito.swift in Sources */,
-				04E128172D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift in Sources */,
-				04AB582D2D3A3AE500DDC681 /* GTEHChatroomeCell.swift in Sources */,
-				04AB58192D3A2C6400DDC681 /* GTEMVigerMoJito.swift in Sources */,
-				04AB581F2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift in Sources */,
-				0439A6682D5354FC004C86C2 /* GTEMCombingUser.swift in Sources */,
-				04E1281B2D4098C60004430E /* GTEVideocerCell.swift in Sources */,
-				04AB58122D3A095A00DDC681 /* GTEMELAurrMoJito.swift in Sources */,
-				04E1280A2D3F72390004430E /* GTEMAholeRoomSetupMoJito.swift in Sources */,
+				041E0B932D549D5400BE6C0E /* L3V8EchoCommentary.swift in Sources */,
+				04E128172D3F988B0004430E /* PLQXDataDetailView.swift in Sources */,
+				04AB582D2D3A3AE500DDC681 /* X7T9NebulaTalkCell.swift in Sources */,
+				04AB58192D3A2C6400DDC681 /* Z5Q8VortexBrew.swift in Sources */,
+				04AB581F2D3A2C9600DDC681 /* KXPRHomePage.swift in Sources */,
+				0439A6682D5354FC004C86C2 /* XQZPDataNode.swift in Sources */,
+				04E1281B2D4098C60004430E /* M9X2SpectraFrame.swift in Sources */,
+				04AB58122D3A095A00DDC681 /* QYVXDataPoint.swift in Sources */,
+				04E1280A2D3F72390004430E /* XYTQRoomConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,8 +533,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MZJ9G935YV;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -556,7 +556,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.linqian.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aunicmu.coulas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -575,8 +575,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MZJ9G935YV;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -598,7 +598,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.linqian.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aunicmu.coulas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

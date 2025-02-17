@@ -20,22 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared().isEnabled = true
         
         if UserDefaults.standard.bool(forKey: "oooggStatuelGTEm") == false {
-            window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMBeginMoJito())
+            window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: XPLRInitHandler())
         }else{
-            GTEMCombingUser.lovderGTEm.personMeGTEm["teachername"] = "Quill"
-            GTEMCombingUser.lovderGTEm.personMeGTEm["teacherphoto"] = "teacherw9"
+            XQZPDataNode.W7N4FavorData.V6K3UserProfile["teachername"] = "Quill"
+            XQZPDataNode.W7N4FavorData.V6K3UserProfile["teacherphoto"] = "teacherw9"
               
             
-            GTEMCombingUser.lovderGTEm.personMeGTEm["gtemBlancecoin"] = "500"
-            GTEMCombingUser.lovderGTEm.personMeGTEm["gtemContact"] = "ginne88@gmail.com"
+            XQZPDataNode.W7N4FavorData.V6K3UserProfile["xqulZypherVault"] = "500"
+            XQZPDataNode.W7N4FavorData.V6K3UserProfile["gtemContact"] = "ginne88@gmail.com"
           
-            GTEMCombingUser.lovderGTEm.personMeGTEm["gtemID"] = "4534567"
+            XQZPDataNode.W7N4FavorData.V6K3UserProfile["gtemID"] = "4534567"
          
-            GTEMCombingUser.lovderGTEm.personMehEagerGTEm = UIImage(named:"teacherw9")
+            XQZPDataNode.W7N4FavorData.W9Z7UserIntentData = UIImage(named:"teacherw9")
             
-            GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.shuffled().prefix(1))
-            GTEMCombingUser.lovderGTEm.fnnceAllGTEm = Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.shuffled().prefix(1))
-            window?.rootViewController = GTEMoMaintabarJito.init()
+            XQZPDataNode.W7N4FavorData.B3J7CompleteData = Array(XQZPDataNode.W7N4FavorData.T2P9ViewerCount.shuffled().prefix(1))
+            XQZPDataNode.W7N4FavorData.H5K3FullRange = Array(XQZPDataNode.W7N4FavorData.T2P9ViewerCount.shuffled().prefix(1))
+            window?.rootViewController = ZLNXWidgetCore.init()
         }
         
         
