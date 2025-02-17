@@ -11,7 +11,7 @@ pod 'SnapKit'
 pod 'IQKeyboardManager'
 pod 'SwiftyStoreKit'
 pod 'Alamofire'
-pod 'SVProgressHUD'
+#pod 'SVProgressHUD'
 #pod 'BMPlayer/CacheSupport'
 pod 'TagListView'
 #pod "Player"

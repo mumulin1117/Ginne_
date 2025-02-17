@@ -45,6 +45,7 @@
 		04AB582A2D3A372000DDC681 /* F7L9NebulaAnchor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB58282D3A372000DDC681 /* F7L9NebulaAnchor.xib */; };
 		04AB582D2D3A3AE500DDC681 /* X7T9NebulaTalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB582B2D3A3AE500DDC681 /* X7T9NebulaTalkCell.swift */; };
 		04AB582E2D3A3AE500DDC681 /* X7T9NebulaTalkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AB582C2D3A3AE500DDC681 /* X7T9NebulaTalkCell.xib */; };
+		04E083312D63351A00A8FD1A /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 04E083302D63351A00A8FD1A /* SVProgressHUD */; };
 		04E127F42D3F4EAC0004430E /* KZQXPopularDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127F22D3F4EAC0004430E /* KZQXPopularDrink.swift */; };
 		04E127F52D3F4EAC0004430E /* KZQXPopularDrink.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E127F32D3F4EAC0004430E /* KZQXPopularDrink.xib */; };
 		04E127F82D3F50990004430E /* VQZTPopularItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E127F62D3F50990004430E /* VQZTPopularItemCell.swift */; };
@@ -151,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E083312D63351A00A8FD1A /* SVProgressHUD in Frameworks */,
 				8A035C6CBFB5329802227BAE /* Pods_Gintuemojir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +363,9 @@
 			);
 			mainGroup = 04AB57D62D39EB9B00DDC681;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				04E0832F2D63351A00A8FD1A /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 04AB57E02D39EB9B00DDC681 /* Products */;
 			projectDirPath = "";
@@ -533,7 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -575,7 +580,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -598,7 +603,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gunntuemo.ginne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linqian.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -751,6 +756,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04E0832F2D63351A00A8FD1A /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVProgressHUD/SVProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04E083302D63351A00A8FD1A /* SVProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04E0832F2D63351A00A8FD1A /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
+			productName = SVProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04AB57D72D39EB9B00DDC681 /* Project object */;
 }
