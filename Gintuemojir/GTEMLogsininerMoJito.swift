@@ -30,10 +30,11 @@ class GTEMLogsininerMoJito: UIViewController {
         gtemEmail.background = UIImage.init(named: "inpwertbgGTU")
         gtempaswer.background = UIImage.init(named: "inpwertbgGTU")
         
-        
+        linkURLGTEMButton.addTarget(self, action: #selector(gokillopEluad), for: .touchUpInside)
         centerStatausGTEm.addTarget(self, action: #selector(changrStatusillopEluad), for: .touchUpInside)
         elauaGTEM.addTarget(self, action: #selector(gokillopEluad), for: .touchUpInside)
     }
+    @IBOutlet weak var linkURLGTEMButton: UIButton!
     
    @objc func gokillopEluad(){
       
@@ -43,12 +44,18 @@ class GTEMLogsininerMoJito: UIViewController {
     
     @objc func changrStatusillopEluad(){
         centerStatausGTEm.isSelected = !centerStatausGTEm.isSelected
-        GTEMELAurrMoJito.boolkSholkd = elauaGTEM.isSelected
+        GTEMELAurrMoJito.boolkSholkd = centerStatausGTEm.isSelected
        
     }
 
     @IBAction func bekLopSure(_ sender: UIButton) {
         
+        
+        if centerStatausGTEm.isSelected == false {
+            SVProgressHUD.showInfo(withStatus: "Please,read and agree to our Terms of Service and Privacy Policy first!")
+           
+            return
+        }
         guard let emaikDSOR = gtemEmail.text,
         emaikDSOR.count != 0,
               let dsorPASD = gtempaswer.text,
