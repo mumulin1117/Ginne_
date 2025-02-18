@@ -67,7 +67,7 @@
                         <constraint firstAttribute="height" constant="30" id="Wuc-RO-Mq3"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="Rewort_GTEA"/>
+                    <state key="normal" image="RewoTEA"/>
                 </button>
                 <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgf-KP-Ivp">
                     <rect key="frame" x="8" y="67" width="40" height="26"/>
@@ -121,7 +121,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Rewort_GTEA" width="28" height="28"/>
+        <image name="RewoTEA" width="28" height="28"/>
         <image name="hangup_GETEM" width="70" height="70"/>
         <image name="maxgtem" width="58" height="58"/>
         <image name="rexocreifng_" width="58" height="58"/>

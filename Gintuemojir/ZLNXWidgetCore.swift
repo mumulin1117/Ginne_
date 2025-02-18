@@ -30,7 +30,7 @@ class ZLNXWidgetCore: UITabBarController {
         tabBar.standardAppearance = appearancePEA
         tabBar.scrollEdgeAppearance = appearancePEA
         self.viewControllers = [apppacrtYnoweintPEA(peaForIcon: "GTME_voder_", PERroot: Z5Q8VortexBrew.init(),perTITLe:gintuemojir(f1g2h3i4j5: "Viiydzeio")),
-                                apppacrtYnoweintPEA(peaForIcon: "GTME_cent_", PERroot:KXPRHomePage.init() ,perTITLe:gintuemojir(f1g2h3i4j5: "Hoocmoe")),
+                                apppacrtYnoweintPEA(peaForIcon: "GTME_cent_", PERroot:KXPRHafgage.init() ,perTITLe:gintuemojir(f1g2h3i4j5: "Hoocmoe")),
                                 apppacrtYnoweintPEA(peaForIcon: "GTME_miw_", PERroot: VYKEFlowManager.init(),perTITLe:gintuemojir(f1g2h3i4j5: "Moirnae"))]
     }
 

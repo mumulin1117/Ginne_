@@ -63,19 +63,28 @@ class Z5Q8VortexBrew: UIViewController,UICollectionViewDelegate,UICollectionView
         gteuCell.b8Q3ProfilePic.image = UIImage(named: mojitoAcholeData[indexPath.row]["teacherphoto"] ?? "")
         gteuCell.r7X9ProfileID.text = mojitoAcholeData[indexPath.row]["teacherphoto"]
         gteuCell.z4R6ClipName.text = mojitoAcholeData[indexPath.row]["viowenan0"]
-        if let urlname = URL(string: mojitoAcholeData[indexPath.row]["vieeoull0"] ?? ""){
-            Z5Q8VortexBrew.startImageAsset(for: urlname, cgtemompletion: { geitimage in
-                DispatchQueue.main.async {
-                    gteuCell.thunmbImageGTEA.image = geitimage
-                }
-                
-            })
-        }
+        
+        let path = Bundle.main.path(forResource: mojitoAcholeData[indexPath.row]["vieeoull0"], ofType: "mp4") ?? ""
+        let urlname = URL(fileURLWithPath: path)
+        Z5Q8VortexBrew.startImageAsset(for: urlname, cgtemompletion: { geitimage in
+            DispatchQueue.main.async {
+                gteuCell.thunmbImageGTEA.image = geitimage
+            }
+            
+        })
+//        if let urlname = URL(string: mojitoAcholeData[indexPath.row]["vieeoull0"] ?? ""){
+//            Z5Q8VortexBrew.startImageAsset(for: urlname, cgtemompletion: { geitimage in
+//                DispatchQueue.main.async {
+//                    gteuCell.thunmbImageGTEA.image = geitimage
+//                }
+//                
+//            })
+//        }
 //        gteuCell.actionTriggerGTEA.tag = indexPath.row
 //        gteuCell.actionTriggerGTEA.addTarget(self, action: #selector(tapvideoplayGTUE(refGTUE:)), for: .touchUpInside)
 //       
 //        if recordingisSubTupwder == true {
-//            gteuCell.interactionGTEU.setBackgroundImage(UIImage.init(named: "Tosubvideo"), for: .normal)
+//            gteuCell.interactionGTEU.setBackgroundImage(UIImage.init(named: "Tosubveo"), for: .normal)
 //            gteuCell.diomonelog.isHidden = false
 //        }else{
             
@@ -115,7 +124,7 @@ class Z5Q8VortexBrew: UIViewController,UICollectionViewDelegate,UICollectionView
 //            dataFlag.view.backgroundColor = UIColor(red: 0.17, green: 0.02, blue: 0.01, alpha: 1)
 //        
 //            N5X8DisplayView = dataFlag
-//            let needImage = UIImageView.init(image: UIImage.init(named: "100nnedbgcontent"))
+//            let needImage = UIImageView.init(image: UIImage.init(named: "nnedbgconte"))
 //            needImage.contentMode = .scaleAspectFill
 //            dataFlag.view.addSubview(needImage)
 //            needImage.isUserInteractionEnabled = true
@@ -162,10 +171,13 @@ class Z5Q8VortexBrew: UIViewController,UICollectionViewDelegate,UICollectionView
         
         
         
+        let path = video["vieeoull0"] ?? ""//Bundle.main.path(forResource: video["vieeoull0"], ofType: "mp4") ?? ""
         
-        if let link = video["vieeoull0"]{
-            self.navigationController?.pushViewController(X9R6QuantumPlayer.init(linkUrl: link), animated: false)
-        }
+        self.navigationController?.pushViewController(X9R6QuantumPlayer.init(linkUrl: path), animated: false)
+
+//        if let link = video["vieeoull0"]{
+//            self.navigationController?.pushViewController(X9R6QuantumPlayer.init(linkUrl: link), animated: false)
+//        }
     }
     
     @objc func dismissNeedCoinGTEm() {
@@ -183,7 +195,7 @@ class Z5Q8VortexBrew: UIViewController,UICollectionViewDelegate,UICollectionView
 //            let aleracGTEmControllerv = UIAlertController(title: gintuemojir(f1g2h3i4j5: "Iinzspuafefyigceilepnmtd nBvaslyahnecze"), message: "", preferredStyle: .alert)
 //            let rechargeGTEmAction = UIAlertAction(title: gintuemojir(f1g2h3i4j5: "Rpejczhlamrngde"), style: .default) { scd in
 //                self.N5X8DisplayView?.dismiss(animated: true)
-//                self.navigationController?.pushViewController(Z5W8BalanceCore.init(), animated: true)
+//                self.navigationController?.pushViewController(Z5WanceCore.init(), animated: true)
 //            }
 //            aleracGTEmControllerv.addAction(rechargeGTEmAction)
 //            aleracGTEmControllerv.addAction(UIAlertAction(title: gintuemojir(f1g2h3i4j5: "Ciaondcyecl"), style: .default))

@@ -1,5 +1,5 @@
 //
-//  KXPRHomePage.swift
+//  KXPRHafgage.swift
 //  Gintuemojir
 //
 //  Created by Gintuemojir on 2025/1/17.
@@ -7,7 +7,7 @@
 import AVFoundation
 import UIKit
 
-class KXPRHomePage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+class KXPRHafgage: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
             return CGSize(width: self.view.frame.width, height: 471)
@@ -131,7 +131,7 @@ class KXPRHomePage: UIViewController ,UICollectionViewDelegate,UICollectionViewD
             
             if gtemBlksdgb < 120 {
                 
-                self.navigationController?.pushViewController(Z5W8BalanceCore.init(), animated: true)
+                self.navigationController?.pushViewController(Z5WanceCore.init(), animated: true)
                 
                 return
             }

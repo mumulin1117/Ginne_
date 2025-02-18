@@ -22,7 +22,7 @@ class VYKEFlowManager: UIViewController {
     
     @IBAction func qiaoqiaoWallentGTEm(_ sender: UIButton) {
         if sender.tag == 300 {
-            self.navigationController?.pushViewController(Z5W8BalanceCore.init(), animated: true)
+            self.navigationController?.pushViewController(Z5WanceCore.init(), animated: true)
         }
         
         if sender.tag == 400 {
@@ -30,7 +30,7 @@ class VYKEFlowManager: UIViewController {
         }
         
         if sender.tag == 500 {
-            self.navigationController?.pushViewController(BVXUEditHandler.init(), animated: true)
+            self.navigationController?.pushViewController(BVXUEdandler.init(), animated: true)
         }
         
     }

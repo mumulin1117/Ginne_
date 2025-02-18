@@ -40,7 +40,7 @@
                         <constraint firstAttribute="height" constant="32" id="Tds-V1-agV"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="Rewort_GTEA"/>
+                    <state key="normal" image="RewoTEA"/>
                     <connections>
                         <action selector="beginReportContentVideo:" destination="-1" eventType="touchUpInside" id="JB7-BN-TZ5"/>
                     </connections>
@@ -52,8 +52,8 @@
                         <constraint firstAttribute="height" constant="32" id="D9U-72-4A1"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="substaus_sel_video"/>
-                    <state key="selected" image="substaus_video"/>
+                    <state key="normal" image="substaus_sedeo"/>
+                    <state key="selected" image="substaudeo"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaG-MI-IsP">
                     <rect key="frame" x="163" y="68.666666666666671" width="91" height="29"/>
@@ -62,8 +62,8 @@
                         <constraint firstAttribute="width" constant="91" id="56t-bO-CcK"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="trends_video"/>
-                    <state key="selected" image="trends_sel_video"/>
+                    <state key="normal" image="trenideo"/>
+                    <state key="selected" image="trends_sedeo"/>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Cfi-gN-xTO">
                     <rect key="frame" x="0.0" y="115" width="393" height="737"/>
@@ -117,13 +117,13 @@
     </objects>
     <resources>
         <image name="GTEM_seracj" width="27" height="28"/>
-        <image name="Rewort_GTEA" width="28" height="28"/>
+        <image name="RewoTEA" width="28" height="28"/>
         <image name="cereate_GETu" width="50" height="50"/>
         <image name="homert_GENT" width="375" height="933"/>
-        <image name="substaus_sel_video" width="118" height="29"/>
-        <image name="substaus_video" width="126" height="32"/>
-        <image name="trends_sel_video" width="112" height="32"/>
-        <image name="trends_video" width="102.66666412353516" height="24"/>
+        <image name="substaudeo" width="126" height="32"/>
+        <image name="substaus_sedeo" width="118" height="29"/>
+        <image name="trends_sedeo" width="112" height="32"/>
+        <image name="trenideo" width="102.66666412353516" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

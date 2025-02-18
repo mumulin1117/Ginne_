@@ -100,14 +100,23 @@ class HYZTCentralNode: GTEMUserAboutAchole {
             }
         }
         
-        if let urlname = URL(string: realingUserDtaGTEm["vieeoull0"] ?? ""){
-            Z5Q8VortexBrew.startImageAsset(for: urlname, cgtemompletion: { geitimage in
-                DispatchQueue.main.async {
-                    self.showingVideoViewGTEm.image = geitimage
-                }
-                
-            })
-        }
+        let path = Bundle.main.path(forResource: realingUserDtaGTEm["vieeoull0"], ofType: "mp4") ?? ""
+        let urlname = URL(fileURLWithPath: path)
+        Z5Q8VortexBrew.startImageAsset(for: urlname, cgtemompletion: { geitimage in
+            DispatchQueue.main.async {
+                self.showingVideoViewGTEm.image = geitimage
+            }
+            
+        })
+        
+//        if let urlname = URL(string: realingUserDtaGTEm["vieeoull0"] ?? ""){
+//            Z5Q8VortexBrew.startImageAsset(for: urlname, cgtemompletion: { geitimage in
+//                DispatchQueue.main.async {
+//                    self.showingVideoViewGTEm.image = geitimage
+//                }
+//                
+//            })
+//        }
         
         
         NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
@@ -130,7 +139,7 @@ class HYZTCentralNode: GTEMUserAboutAchole {
 //            dataFlag.view.backgroundColor = UIColor(red: 0.17, green: 0.02, blue: 0.01, alpha: 1)
 //        
 //            N5X8DisplayView = dataFlag
-//            let needImage = UIImageView.init(image: UIImage.init(named: "100nnedbgcontent"))
+//            let needImage = UIImageView.init(image: UIImage.init(named: "nnedbgconte"))
 //            needImage.contentMode = .scaleAspectFill
 //            dataFlag.view.addSubview(needImage)
 //            needImage.isUserInteractionEnabled = true
@@ -217,7 +226,7 @@ class HYZTCentralNode: GTEMUserAboutAchole {
         }
         
         if sender.tag == 40 {//message按钮
-            self.navigationController?.pushViewController(QXZTUserDataCore.init(realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
+            self.navigationController?.pushViewController(QXZTUsetaCore.init(realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
            
             
             return

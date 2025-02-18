@@ -40,15 +40,24 @@ class X9R6QuantumPlayer: UIViewController {
 
                
         let playerManager = ZFAVPlayerManager() // 使用 ZFAVPlayerManager 作为播放器管理器
-        guard let url = URL.init(string: linkUrlGTEM) else{
+//        let gtemAsseturl =
+        
+        guard let url = Bundle.main.url(forResource: linkUrlGTEM, withExtension: "mp4") else{
             SVProgressHUD.showInfo(withStatus: gintuemojir(f1g2h3i4j5: "Smolrcrryv,m ftuhfei svficdpemos haldidbrpenszsy cdxoseqsy onuomto reuxqissct"))
             backendGTEm()
             return
         }
         
+//        guard let url = URL.init(string: linkUrlGTEM) else{
+//            SVProgressHUD.showInfo(withStatus: gintuemojir(f1g2h3i4j5: "Smolrcrryv,m ftuhfei svficdpemos haldidbrpenszsy cdxoseqsy onuomto reuxqissct"))
+//            backendGTEm()
+//            return
+//        }
+        
         playerManager.assetURL = url
              
         playerGTEM = ZFPlayerController(playerManager: playerManager, containerView: playerViewGTEM)
+        
         let controlView = ZFPlayerControlView.init()
         controlView.fastViewAnimated = true
         controlView.autoHiddenTimeInterval = 5
