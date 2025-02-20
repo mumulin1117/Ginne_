@@ -110,7 +110,7 @@ class KXPRHafgage: UIViewController ,UICollectionViewDelegate,UICollectionViewDa
     
     
     @IBAction func starnAddhospcGTEm(_ sender: UIButton) {
-        self.navigationController?.pushViewController(XYTQhospcConfiguration.init(), animated: true)
+        self.navigationController?.pushViewController(GTEMPOstroMokiotoer.init(), animated: true)
         
     }
     

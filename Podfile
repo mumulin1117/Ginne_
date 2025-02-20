@@ -11,7 +11,7 @@ pod 'SnapKit'
 pod 'IQKeyboardManager'
 pod 'SwiftyStoreKit'
 pod 'Alamofire'
-#pod 'SVProgressHUD'
+pod 'SVProgressHUD'
 #pod 'BMPlayer/CacheSupport'
 pod 'TagListView'
 #pod "Player"
@@ -21,19 +21,14 @@ pod 'ZFPlayer/AVPlayer'
 pod 'ZFPlayer/ControlView', '~> 4.0'
 end
 
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      # 设置所有 Pods 的最低 iOS 部署版本
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+post_install do |installer_representation|
+installer_representation.pods_project.targets.each do |target|
+target.build_configurations.each do |config|
+  config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+  config.build_settings[‘APPLICATION_EXTENSION_API_ONLY’] = ‘NO’
+  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
 
-      # 设置 Swift 版本
-      config.build_settings['SWIFT_VERSION'] = '5.0'
-
-      # 统一设置 Swift 优化级别为 -Onone
-      config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'
-    end
-  end
 end
-
+end
+end
 

@@ -1,13 +1,16 @@
 //
-//  XYTQhospcConfiguration.swift
+//  GTEMPOstroMokiotoer.swift
 //  Gintuemojir
 //
-//  Created by Gintuemojir on 2025/1/21.
+//  Created by mumu on 2025/2/20.
 //
 
 import UIKit
 import SVProgressHUD
-class XYTQhospcConfiguration: UIViewController {
+
+class GTEMPOstroMokiotoer: UIViewController {
+    
+ 
     var pickingGTEAimag:UIImage?
     
     @IBOutlet weak var sendImageButton: UIButton!
@@ -88,7 +91,7 @@ Once any violations are found, we will close your live streaming hospc. Thank yo
 }
 
 
-extension  XYTQhospcConfiguration :UINavigationControllerDelegate, UIImagePickerControllerDelegate{
+extension  GTEMPOstroMokiotoer :UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 
          if let image : UIImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{

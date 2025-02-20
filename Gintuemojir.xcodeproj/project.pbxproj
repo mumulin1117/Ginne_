@@ -20,12 +20,13 @@
 		041E0B9C2D54AF7400BE6C0E /* M4Z9nceNode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0B9A2D54AF7400BE6C0E /* M4Z9nceNode.xib */; };
 		041E0BA42D55D92700BE6C0E /* BVXUEdandler.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E0BA32D55D92700BE6C0E /* BVXUEdandler.xib */; };
 		041E0BA52D55D92700BE6C0E /* BVXUEdandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E0BA22D55D92700BE6C0E /* BVXUEdandler.swift */; };
-		04347A2F2D642C7F0098D1A0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 04347A2E2D642C7F0098D1A0 /* SVProgressHUD */; };
 		0439A6662D533035004C86C2 /* X9R6QuantumPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6652D533035004C86C2 /* X9R6QuantumPlayer.swift */; };
 		0439A6682D5354FC004C86C2 /* XQZPDataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6672D5354FC004C86C2 /* XQZPDataNode.swift */; };
 		0439A66A2D5364FA004C86C2 /* LZQomChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439A6692D5364FA004C86C2 /* LZQomChatCell.swift */; };
 		0448DC822D3E4EAF000E638C /* MOjiToGTEH.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0448DC812D3E4EAF000E638C /* MOjiToGTEH.plist */; };
 		0448DC842D3E542E000E638C /* GTEHVieedeol.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0448DC832D3E542E000E638C /* GTEHVieedeol.plist */; };
+		048AA0B32D673BEC00228F5F /* GTEMPOstroMokiotoer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048AA0B22D673BEC00228F5F /* GTEMPOstroMokiotoer.xib */; };
+		048AA0B42D673BEC00228F5F /* GTEMPOstroMokiotoer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AA0B12D673BEC00228F5F /* GTEMPOstroMokiotoer.swift */; };
 		04AB58012D39EBA400DDC681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB57F72D39EBA400DDC681 /* AppDelegate.swift */; };
 		04AB58042D39EBA400DDC681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AB57F82D39EBA400DDC681 /* Assets.xcassets */; };
 		04AB58062D39EBA400DDC681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AB57FB2D39EBA400DDC681 /* LaunchScreen.storyboard */; };
@@ -56,8 +57,6 @@
 		04E128022D3F717B0004430E /* QX7RSearchPulseCore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128002D3F717B0004430E /* QX7RSearchPulseCore.xib */; };
 		04E128052D3F71D50004430E /* W4X2AetherMixCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128032D3F71D50004430E /* W4X2AetherMixCore.swift */; };
 		04E128062D3F71D50004430E /* W4X2AetherMixCore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128042D3F71D50004430E /* W4X2AetherMixCore.xib */; };
-		04E1280A2D3F72390004430E /* XYTomConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128082D3F72390004430E /* XYTomConfiguration.swift */; };
-		04E1280B2D3F72390004430E /* XYTomConfiguration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128092D3F72390004430E /* XYTomConfiguration.xib */; };
 		04E1280F2D3F72840004430E /* KPTZAchievementDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1280D2D3F72840004430E /* KPTZAchievementDetail.swift */; };
 		04E128102D3F72840004430E /* KPTZAchievementDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E1280E2D3F72840004430E /* KPTZAchievementDetail.xib */; };
 		04E128132D3F730D0004430E /* ZPXQStepDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128112D3F730D0004430E /* ZPXQStepDetailView.swift */; };
@@ -100,6 +99,8 @@
 		0439A6692D5364FA004C86C2 /* LZQomChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZQomChatCell.swift; sourceTree = "<group>"; };
 		0448DC812D3E4EAF000E638C /* MOjiToGTEH.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MOjiToGTEH.plist; sourceTree = "<group>"; };
 		0448DC832D3E542E000E638C /* GTEHVieedeol.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GTEHVieedeol.plist; sourceTree = "<group>"; };
+		048AA0B12D673BEC00228F5F /* GTEMPOstroMokiotoer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMPOstroMokiotoer.swift; sourceTree = "<group>"; };
+		048AA0B22D673BEC00228F5F /* GTEMPOstroMokiotoer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTEMPOstroMokiotoer.xib; sourceTree = "<group>"; };
 		04AB57DF2D39EB9B00DDC681 /* Gintuemojir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gintuemojir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AB57F72D39EBA400DDC681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AB57F82D39EBA400DDC681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,8 +133,6 @@
 		04E128002D3F717B0004430E /* QX7RSearchPulseCore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QX7RSearchPulseCore.xib; sourceTree = "<group>"; };
 		04E128032D3F71D50004430E /* W4X2AetherMixCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = W4X2AetherMixCore.swift; sourceTree = "<group>"; };
 		04E128042D3F71D50004430E /* W4X2AetherMixCore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = W4X2AetherMixCore.xib; sourceTree = "<group>"; };
-		04E128082D3F72390004430E /* XYTomConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYTomConfiguration.swift; sourceTree = "<group>"; };
-		04E128092D3F72390004430E /* XYTomConfiguration.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XYTomConfiguration.xib; sourceTree = "<group>"; };
 		04E1280D2D3F72840004430E /* KPTZAchievementDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPTZAchievementDetail.swift; sourceTree = "<group>"; };
 		04E1280E2D3F72840004430E /* KPTZAchievementDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KPTZAchievementDetail.xib; sourceTree = "<group>"; };
 		04E128112D3F730D0004430E /* ZPXQStepDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZPXQStepDetailView.swift; sourceTree = "<group>"; };
@@ -164,7 +163,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04347A2F2D642C7F0098D1A0 /* SVProgressHUD in Frameworks */,
 				8A035C6CBFB5329802227BAE /* Pods_Gintuemojir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +206,8 @@
 				04AB58112D3A095A00DDC681 /* QYVXDataPoint.xib */,
 				04AB58142D3A293900DDC681 /* ZLNXWidgetCore.swift */,
 				0439A6672D5354FC004C86C2 /* XQZPDataNode.swift */,
+				048AA0B12D673BEC00228F5F /* GTEMPOstroMokiotoer.swift */,
+				048AA0B22D673BEC00228F5F /* GTEMPOstroMokiotoer.xib */,
 			);
 			path = Gintuemojir;
 			sourceTree = "<group>";
@@ -298,8 +298,6 @@
 		04E128072D3F72260004430E /* KPRVRoomCreator */ = {
 			isa = PBXGroup;
 			children = (
-				04E128082D3F72390004430E /* XYTomConfiguration.swift */,
-				04E128092D3F72390004430E /* XYTomConfiguration.xib */,
 			);
 			path = KPRVRoomCreator;
 			sourceTree = "<group>";
@@ -382,7 +380,6 @@
 			mainGroup = 04AB57D62D39EB9B00DDC681;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				04347A2D2D642C7F0098D1A0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 04AB57E02D39EB9B00DDC681 /* Products */;
@@ -412,12 +409,12 @@
 				04AB58062D39EBA400DDC681 /* LaunchScreen.storyboard in Resources */,
 				04AB582E2D3A3AE500DDC681 /* X7T9NebulaTalkCell.xib in Resources */,
 				04AB580F2D3A02CA00DDC681 /* WDKRSessionNode.xib in Resources */,
+				048AA0B32D673BEC00228F5F /* GTEMPOstroMokiotoer.xib in Resources */,
 				041E0BA42D55D92700BE6C0E /* BVXUEdandler.xib in Resources */,
 				04E127F92D3F50990004430E /* VQZTPopularItemCell.xib in Resources */,
 				04E128242D40F18F0004430E /* HYZTCentralNode.xib in Resources */,
 				04E128062D3F71D50004430E /* W4X2AetherMixCore.xib in Resources */,
 				BFF078362D641E9900D97401 /* lvorbrdusbhjnkhyertgs.mp4 in Resources */,
-				04E1280B2D3F72390004430E /* XYTomConfiguration.xib in Resources */,
 				0448DC822D3E4EAF000E638C /* MOjiToGTEH.plist in Resources */,
 				04E127FE2D3F71510004430E /* Z8K5VortexMessageHub.xib in Resources */,
 				04AB58132D3A095A00DDC681 /* QYVXDataPoint.xib in Resources */,
@@ -520,6 +517,7 @@
 				04E128132D3F730D0004430E /* ZPXQStepDetailView.swift in Sources */,
 				04E127F42D3F4EAC0004430E /* KZQXPopularDrink.swift in Sources */,
 				041E0B9B2D54AF7400BE6C0E /* M4Z9nceNode.swift in Sources */,
+				048AA0B42D673BEC00228F5F /* GTEMPOstroMokiotoer.swift in Sources */,
 				04E128012D3F717B0004430E /* QX7RSearchPulseCore.swift in Sources */,
 				04E128232D40F18F0004430E /* HYZTCentralNode.swift in Sources */,
 				041E0B8B2D54900100BE6C0E /* QXZTUsetaCore.swift in Sources */,
@@ -537,7 +535,6 @@
 				0439A6682D5354FC004C86C2 /* XQZPDataNode.swift in Sources */,
 				04E1281B2D4098C60004430E /* M9X2SpectraFrame.swift in Sources */,
 				04AB58122D3A095A00DDC681 /* QYVXDataPoint.swift in Sources */,
-				04E1280A2D3F72390004430E /* XYTomConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +559,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -575,7 +572,7 @@
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow saving processed photos/videos to your library after editing or downloading content.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access your photo library to select existing photos/videos for profile pictures, room covers, and uploading content creation.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = ZPXQStepDetailView.xib;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -604,7 +601,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -617,7 +614,7 @@
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Allow saving processed photos/videos to your library after editing or downloading content.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access your photo library to select existing photos/videos for profile pictures, room covers, and uploading content creation.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = ZPXQStepDetailView.xib;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -780,25 +777,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		04347A2D2D642C7F0098D1A0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SVProgressHUD/SVProgressHUD.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		04347A2E2D642C7F0098D1A0 /* SVProgressHUD */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 04347A2D2D642C7F0098D1A0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
-			productName = SVProgressHUD;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04AB57D72D39EB9B00DDC681 /* Project object */;
 }
