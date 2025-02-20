@@ -86,7 +86,7 @@ class X9R6QuantumPlayer: UIViewController {
     
     
     @objc func backendGTEm() {
-        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
         
     }
     
