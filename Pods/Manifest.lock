@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.10.0)
+  - Alamofire (5.10.2)
   - IQKeyboardManager (6.5.19)
   - SnapKit (5.7.1)
   - SwiftyStoreKit (0.16.1)
@@ -32,13 +32,13 @@ SPEC REPOS:
     - ZFPlayer
 
 SPEC CHECKSUMS:
-  Alamofire: cd0b98508df05796dd2ff278f3bb055a631b5390
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
   IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
   SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
   ZFPlayer: 5cf39e8d9f0c2394a014b0db4767b5b5a6bffe13
 
-PODFILE CHECKSUM: 955ac6529fef20e0b3ddd8384a60176f8b0f5a43
+PODFILE CHECKSUM: 84fda9442cf764826112adce5d723cb13e3aee96
 
 COCOAPODS: 1.16.2
