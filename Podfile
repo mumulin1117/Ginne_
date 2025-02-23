@@ -18,7 +18,6 @@ pod 'Alamofire'
 pod 'TagListView'
 
 pod 'JGProgressHUD'
-po
 
 end
 
