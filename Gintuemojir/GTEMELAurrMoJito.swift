@@ -10,13 +10,16 @@ import UIKit
 class GTEMELAurrMoJito: UIViewController {
   
     static var boolkSholkd:(String?,String?,Bool) = (nil,nil,false)
+    private var activeSubscriptionsGenm: [GTEMBartenderchinnel] = []
     
+    private var pendingVideoPostsGenm: [GTEMBartenderchinnel] = []
     @IBOutlet weak var gtemTisder: UILabel!
-    
-    
+    private let mixologistSessionGenm = GTEMBartenderchinnel()
+    private var chatRoomConnectionsGenm: [String: GTEMBartenderchinnel] = [:]
     @IBOutlet weak var inputerkoGTEm: UITextView!
     
-   
+    private lazy var arPreviewCoordinatorGenm = UIView()
+      
    
     
     @IBOutlet weak var cananlBakGTEm: UIButton!
@@ -32,7 +35,10 @@ class GTEMELAurrMoJito: UIViewController {
     
     var jornyGTEM:(Int,Bool)
     
+    func loadSubscribedChannelsGenm() {
+           
     
+    }
     
     
     
@@ -40,38 +46,40 @@ class GTEMELAurrMoJito: UIViewController {
     
     init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?,_jornyGTEM: (Int,Bool)) {
         
-       
+        
         self.jornyGTEM = _jornyGTEM
         super.init(nibName: nil, bundle: nil)
-       
+        loadSubscribedChannelsGenm()
+        arPreviewCoordinatorGenm.backgroundColor = .clear
       
     }
-    
+   
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+   
+    func processVideoUploadGenm()  {
+        peerieeBakGTEm.addTarget(self, action: #selector(peerieeBakGTEmGTEkGtray), for: .touchUpInside)
+      
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        
+        processVideoUploadGenm()
 
        
         cananlBakGTEm.addTarget(self, action: #selector(shuldCancelGTEkGtray), for: .touchUpInside)
         agreeBakGTEm.addTarget(self, action: #selector(shuldAgreeGTEkGtray), for: .touchUpInside)
-        peerieeBakGTEm.addTarget(self, action: #selector(peerieeBakGTEmGTEkGtray), for: .touchUpInside)
+       
         peetermeBakGTEm.addTarget(self, action: #selector(peetermeBakGTEmGTEkGtray), for: .touchUpInside)
        
-        var bGTEM:(Float,String?)  = (20,nil)
-        
-        
-        
+      
        
             if jornyGTEM.0 == 0 {
-                gtemTisder.text = "Ginne App ELUA"
-                
+                gtemTisder.backgroundColor = .clear
+                executeAIQueryGenm( "String")
                 
                
                 inputerkoGTEm.text =     """
@@ -122,15 +130,13 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
 """
             }
            
-            if jornyGTEM.0 == 1 {
-                self.peerieeBakGTEm.isHidden = true
-                
-                
-                self.peetermeBakGTEm.isHidden = true
-                
-                
-                gtemTisder.text = "Ginne App Privacy Policy"
-                
+        let SeBackgft = self.view.frame.height
+        let sebWig = self.view.frame.width
+        
+        
+        if jornyGTEM.0 == 1 && SeBackgft > 3 && sebWig > 2 {
+              
+                pretARPrwGenm(for: 100)
 
                 inputerkoGTEm.text = """
 
@@ -215,12 +221,13 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
 
 """
             }
-            
-            if jornyGTEM.0 == 2 {
+        inputerkoGTEm.isEditable = false
+        
+            if jornyGTEM.0 == 2  && SeBackgft > 3 && sebWig > 2{
                 self.peerieeBakGTEm.isHidden = true
+                gtemTisder.backgroundColor = .clear
                 
-                
-
+                maintainChatRoomConnectionGenm(GTEMCombingUser.init())
                
                 gtemTisder.text = "Ginne App Terms of Service"
                 
@@ -228,48 +235,51 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
 
                
                 self.peetermeBakGTEm.isHidden = true
-                
-                inputerkoGTEm.text = """
-            Effective Date: [2025-2-1]
-            
-            Welcome to Ginne! By accessing or using our App, you agree to comply with and be bound by these Terms of Service. Please read them carefully.
-            
-            1. Use of the App
-            
-            You must be at least 18 years old to use the App. By using the App, you represent that you meet this age requirement.
-            
-            2. Account Security
-            
-            You are responsible for maintaining the confidentiality of your account information, including your password. You agree to notify us immediately of any unauthorized use of your account.
-            
-            3. Content Ownership
-            
-            All content made available through the App, including but not limited to videos, images, and text, is owned by Ginne or its licensors. You may not use, reproduce, or distribute this content without written permission.
-            
-            4. User-Generated Content
-            
-            You are solely responsible for any content you post or share within the App. By posting content, you grant Ginne a worldwide, royalty-free, and non-exclusive license to use, reproduce, and distribute that content.
-            
-            5. Prohibited Activities
-            
-            You agree not to engage in activities that could harm the App or other users, including but not limited to spamming, hacking, or distributing malware.
-            
-            6. Dispute Resolution
-            
-            Any disputes arising from or relating to these Terms of Service shall be resolved through binding arbitration in accordance with the rules of [Arbitration Organization].
-            
-            7. Changes to Terms
-            
-            Ginne reserves the right to modify these Terms of Service at any time. Your continued use of the App after any changes constitutes acceptance of the new terms.
-            
-            """
+             
             }
             
-            
+        inputerkoGTEm.isScrollEnabled = true
         
     }
 
-   
+    func maintainChatRoomConnectionGenm(_ room: GTEMCombingUser) {
+        
+        inputerkoGTEm.text = """
+    Effective Date: [2025-2-1]
+    
+    Welcome to Ginne! By accessing or using our App, you agree to comply with and be bound by these Terms of Service. Please read them carefully.
+    
+    1. Use of the App
+    
+    You must be at least 18 years old to use the App. By using the App, you represent that you meet this age requirement.
+    
+    2. Account Security
+    
+    You are responsible for maintaining the confidentiality of your account information, including your password. You agree to notify us immediately of any unauthorized use of your account.
+    
+    3. Content Ownership
+    
+    All content made available through the App, including but not limited to videos, images, and text, is owned by Ginne or its licensors. You may not use, reproduce, or distribute this content without written permission.
+    
+    4. User-Generated Content
+    
+    You are solely responsible for any content you post or share within the App. By posting content, you grant Ginne a worldwide, royalty-free, and non-exclusive license to use, reproduce, and distribute that content.
+    
+    5. Prohibited Activities
+    
+    You agree not to engage in activities that could harm the App or other users, including but not limited to spamming, hacking, or distributing malware.
+    
+    6. Dispute Resolution
+    
+    Any disputes arising from or relating to these Terms of Service shall be resolved through binding arbitration in accordance with the rules of [Arbitration Organization].
+    
+    7. Changes to Terms
+    
+    Ginne reserves the right to modify these Terms of Service at any time. Your continued use of the App after any changes constitutes acceptance of the new terms.
+    
+    """
+      
+    }
     @objc func shuldCancelGTEkGtray()  {
         
       
@@ -280,7 +290,16 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
         
     }
     
-   
+    func pretARPrwGenm(for cocktail: Int)  {
+        self.peerieeBakGTEm.isHidden = true
+        
+        
+        self.peetermeBakGTEm.isHidden = true
+        
+        
+        gtemTisder.text = "Ginne App Privacy Policy"
+     
+    }
     
     @objc func shuldAgreeGTEkGtray()  {
       
@@ -292,23 +311,25 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
         
     }
     
+    
+    
     @objc func peerieeBakGTEmGTEkGtray()  {
         
         self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (1,false)), animated: true)
     }
     
+    
+    
     @objc func peetermeBakGTEmGTEkGtray()  {
-        
-        
-        
-
-        
-        
-
         
         self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (2,false)), animated: true)
     }
-
+    func executeAIQueryGenm(_ query: String) {
+        
+        gtemTisder.text = "Ginne App ELUA"
+        
+    }
+    
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
        

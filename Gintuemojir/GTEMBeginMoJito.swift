@@ -16,18 +16,27 @@ class GTEMBeginMoJito: UIViewController {
     
 }
 
-
-class GTEmAcholeRoom {
+enum RoomError: Error {
+    case insufficientMaterials
+    case invalidBaseSpirit
+    case sessionConflict
+}
+struct GTEmAcholeRoom {
     
- 
+    private var activeParticipantsGenm: Set<String> = []
+    
+    private var ongoingMixologySessionGenm: UIView?
+
     var roomNameGTEM:String
     
     var roomIDGTEM:String
     
-    
+    private var cocktailRecipePoolGenm: [UIImage] = []
    
     var roombackgroundGTEM:UIImage?
-    
+    private var liquidChatHistoryGenm: [String] = []
+    private var collaborativeMixingGenm: UIButton?
+   
     var hosteruserGTEm:[String: String]
     
     
@@ -50,7 +59,11 @@ class GTEmAcholeRoom {
         
       
         self.roombackgroundGTEM =  roombackgroundGTEM
-       
+        
         self.roomIDGTEM = roomIDGTEM
     }
+    
+    mutating func joinRoomGenm(user: String, bringing ingredients: Set<String>?)  {
+        activeParticipantsGenm.insert(user)
+       }
 }

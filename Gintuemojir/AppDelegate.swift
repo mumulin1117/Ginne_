@@ -7,7 +7,7 @@
 
 import UIKit
 import IQKeyboardManager
-import SwiftyStoreKit
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        IQKeyboardManager.shared().isEnabled = true
         
         if UserDefaults.standard.bool(forKey: "oooggStatuelGTEm") == false {
             window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMBeginMoJito())
@@ -33,29 +32,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
 
             
-
+            var GtEmgetft =  updateLiveSessionGenm(session: true, traninputDic: minUserGTEM)
             
-            minUserGTEM["teacherphoto"] = "teacherw9"
-              
-            
-            minUserGTEM["gtemBlancecoin"] = "55"
-            
-            minUserGTEM["gtemContact"] = "ginne88@gmail.com"
-            
-            minUserGTEM["gtemID"] = "4534567"
+           
+            GtEmgetft["gtemID"] = "4534567"
             
             if GTEMCombingUser.lovderGTEm.personMeGTEm.count == 0 {
-                GTEMCombingUser.lovderGTEm.personMeGTEm.append(minUserGTEM)
+                GTEMCombingUser.lovderGTEm.personMeGTEm.append(GtEmgetft)
             }else{
-                GTEMCombingUser.lovderGTEm.personMeGTEm[0] = minUserGTEM
+                GTEMCombingUser.lovderGTEm.personMeGTEm[0] = GtEmgetft
             }
            
             
             GTEMCombingUser.lovderGTEm.personMehEagerGTEm.append(UIImage(named:"teacherw9")!)
             
-//            GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = (false,false,Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.prefix(1)))
-            
-//            GTEMCombingUser.lovderGTEm.fnnceAllGTEm = (false,false, Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.suffix(1)))
             
             window?.rootViewController = GTEMoMaintabarJito.init()
             
@@ -63,59 +53,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
        
         
+        finalizeMixingSessionGenm()
         
+      
        
         
         
-      
-        SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
-            
-            
-            
-            
-            
-           
-            for purchase in purchases {
-               
-                    
-                    switch purchase.transaction.transactionState {
-                    case .purchased, .restored:
-                        
-                        
-                        
-                        let downloads = purchase.transaction.downloads
-                        
-                        
-                        
-                        if !downloads.isEmpty {
-                            SwiftyStoreKit.start(downloads)
-                            
-                            
-                        } else if purchase.needsFinishTransaction {
-                            SwiftyStoreKit.finishTransaction(purchase.transaction)
-                            
-                            
-                        }
-                    case .failed, .purchasing, .deferred:
-                        
-                        
-                        break
-
-                    
-                    @unknown default:
-                     break
-                    }
-                
-               
-            }
-            
-            
-        }
-        
-        window?.makeKeyAndVisible()
         
         return true
     }
    
+    
+    func finalizeMixingSessionGenm() {
+        
+        window?.makeKeyAndVisible()
+        
+        if window != nil {
+            GTEMCombingUser.lovderGTEm.enedCompleterPauie()
+           
+        }
+        
+       
+       
+    }
+    
+    func updateLiveSessionGenm(session: Bool,traninputDic:Dictionary<String,String>)->Dictionary<String,String>{
+        
+        var changeGTER = traninputDic
+        
+        
+        if session {
+            IQKeyboardManager.shared().isEnabled = true
+           
+        }
+        
+        changeGTER["teacherphoto"] = "teacherw9"
+          
+        
+        changeGTER["gtemBlancecoin"] = "55"
+        
+        changeGTER["gtemContact"] = "ginne88@gmail.com"
+        
+        
+        return changeGTER
+        }
 }
 

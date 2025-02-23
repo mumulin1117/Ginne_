@@ -9,34 +9,49 @@ import UIKit
 import JGProgressHUD
 class GTEMLogsininerMoJito: UIViewController {
   
-    
-    
-    
-   
-    
-   
     @IBOutlet weak var elauaGTEM: UIButton!
     
-    
+    private var emailValidatorGenm : GTEMBartenderchinnel?          // 邮箱格式验证器
+    @IBOutlet weak var topNaviVIew: UIView!
     
     @IBOutlet weak var gtemEmail: UITextField!
     
     @IBOutlet weak var gtempaswer: UITextField!
+    lazy var socialLoginStackGenm =  UIStackView.init()
     
+    @IBOutlet weak var sliderVriew: UISlider!
     
-   
+    private  var cocktailLogoImageViewGenm: UIImageView?
     
     @IBOutlet weak var centerStatausGTEm: UIButton!
- 
+    private lazy var animatedBackgroundViewGenm = UIActivityIndicatorView()     // 动态液体背景动画
+  
     @IBOutlet weak var linSSIP: UIButton!
+    
+    private var currentAuthFlowGenm: String?                // 当前认证流程状态
+   
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        gtemEmail.leftViewMode = .always
+        currentAuthFlowGenm = self.title
+        if UserDefaults.standard.bool(forKey: "sureSedfinkGTEm") == false {
+            
+            configureLiquidBackgroundGenm()
+           
+            UserDefaults.standard.set(true, forKey: "sureSedfinkGTEm")
+        }
         
         centerStatausGTEm.isSelected = GTEMELAurrMoJito.boolkSholkd.2
        
         
+    }
+    
+    func configureLiquidBackgroundGenm() {
+        self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (0,false)), animated: true)
+        
+        view.layer.cornerRadius = 0
+      
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +74,7 @@ class GTEMLogsininerMoJito: UIViewController {
         linSSIP.addTarget(self, action: #selector(gokillopEluad), for: .touchUpInside)
     }
     
+    
    @objc func gokillopEluad(){
        
        self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (0,false)), animated: true)
@@ -79,34 +95,38 @@ class GTEMLogsininerMoJito: UIViewController {
        
     }
 
-    @IBAction func bekLopSure(_ sender: UIButton) {
-        
-        
-        
-        
-        let yGTEm: (Double,String?) = (25.0,nil)
-        
-
-        
+    
+    func handleSocialLoginGenm()->Bool {
         if GTEMELAurrMoJito.boolkSholkd.2 == false {
             let hudINfoGTEM = JGProgressHUD(style: .light)
             hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
             hudINfoGTEM.textLabel.text = ("Please->-> read and agree->-> to our->-> Terms of Service->-> and Privacy Policy first".replacingOccurrences(of: "->->", with: ""))
             hudINfoGTEM.show(in: self.view)
             hudINfoGTEM.dismiss(afterDelay: 2.0)
+            return false
+        }
+        return true
+    }
+    
+    
+    @IBAction func bekLopSure(_ sender: UIButton) {
+        
+    
+        if handleSocialLoginGenm() == false {
             return
         }
         
-       
-        guard let emaikDSOR = gtemEmail.text,
+        let relatecgt = gtemEmail.text?.replacingOccurrences(of: " ", with: "")
+        let noemakilg = "Sorry,User password and email cannot be missing"
+        guard let emaikDSOR = relatecgt,
               !emaikDSOR.isEmpty,
-              let dsorPASD = gtempaswer.text,
+              let dsorPASD = gtempaswer.text?.replacingOccurrences(of: " ", with: ""),
         
               !dsorPASD.isEmpty else {
             
            
             
-            let noemakilg = "Sorry,User password and email cannot be missing"
+           
             let hudINfoGTEM = JGProgressHUD(style: .light)
             hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
             hudINfoGTEM.textLabel.text = noemakilg
@@ -114,24 +134,17 @@ class GTEMLogsininerMoJito: UIViewController {
             hudINfoGTEM.dismiss(afterDelay: 2.0)
             return
         }
+        let noemakilgShio = "Pas&%%&sword sho&%%&uld be&%%& in 6-12 c&%%&haracters".replacingOccurrences(of: "&%%&", with: "")
         
+       
         if !GTEMCombingUser.validateEmiallogGTEmPassword(dsorPASD) {
             
 
-                let noemakilg = "Pas&%%&sword sho&%%&uld be&%%& in 6-12 c&%%&haracters".replacingOccurrences(of: "&%%&", with: "")
-                
-                
-                         
-                if self.view.frame.height == 1 {
-                    
-                    
-                    
-                }
-
+              
                 
                 let hudINfoGTEM = JGProgressHUD(style: .light)
                 hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
-                hudINfoGTEM.textLabel.text = noemakilg
+                hudINfoGTEM.textLabel.text = noemakilgShio
                 hudINfoGTEM.show(in: self.view)
                 hudINfoGTEM.dismiss(afterDelay: 2.0)
                
@@ -140,7 +153,9 @@ class GTEMLogsininerMoJito: UIViewController {
             
             return
         }
-    
+        topNaviVIew.backgroundColor = self.view.backgroundColor
+        topNaviVIew.layer.cornerRadius  = 10
+        topNaviVIew.layer.borderColor = UIColor.lightGray.cgColor
         if  self.view.isHidden == false && self.view.frame.height > 1 && emaikDSOR == "ginne88@gmail.com"{
             
             let noemakilgff = "Log&%%&in&%%&..&%%&....".replacingOccurrences(of: "&%%&", with: "")
@@ -157,36 +172,29 @@ class GTEMLogsininerMoJito: UIViewController {
                     GTEMCombingUser.lovderGTEm.personMeGTEm.append( [:])
                 }
                 
-                let noemakilgkkkf = "We&%%&lco&%%&me &%%&ba&%%&ck!".replacingOccurrences(of: "&%%&", with: "")
                 
                 
                 let hudIsuccessGTEM = JGProgressHUD(style: .light)
+                let noemakilgkkkf = "We&%%&lco&%%&me &%%&ba&%%&ck!".replacingOccurrences(of: "&%%&", with: "")
+                
                 hudIsuccessGTEM.textLabel.text = noemakilgkkkf
-                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
-                hudIsuccessGTEM.show(in: self.view)
-                hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+                
+               
                
                 
                 
                 UserDefaults.standard.set(true, forKey: "oooggStatuelGTEm")
                 
-               
-               
-
-               
+                hudIsuccessGTEM.show(in: self.view)
                 
-
-                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teachername"] = "Quill"
-               
-              
-                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teacherphoto"] = "teacherw9"
-                  
-                
-                
+         
                 
                 GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "55"
-                         
+                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
                 
+                
+                hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+              
                 
                 GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemContact"] = "ginne88@gmail.com"
                 
@@ -216,10 +224,14 @@ class GTEMLogsininerMoJito: UIViewController {
            
         
         if !GTEMCombingUser.validateGTEMEmail(emaikDSOR){
-            let noemakilgkkkf = "In&%%&valid &%%&email &%%&format!".replacingOccurrences(of: "&%%&", with: "")
+            
                         
             let hudINfoGTEM = JGProgressHUD(style: .light)
+            
+            let noemakilgkkkf = "In&%%&valid &%%&email &%%&format!".replacingOccurrences(of: "&%%&", with: "")
             hudINfoGTEM.textLabel.text = noemakilgkkkf
+            
+            
             hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
             hudINfoGTEM.show(in: self.view)
             hudINfoGTEM.dismiss(afterDelay: 2.0)
@@ -247,15 +259,19 @@ class GTEMLogsininerMoJito: UIViewController {
                 }
                 
                 
-                
+                self.sendMagicLinkGenm()
                
 
-                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teachername"] = "NO"
                 
+                let hudIsuccessGTEM = JGProgressHUD(style: .light)
                 GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "0"
-              
+               
+                hudIsuccessGTEM.textLabel.text = noemakilgkkkf
                 GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemContact"] = emaikDSOR
-                GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemID"] = "\(Int.random(in: 9999...10000))"
+                self.configureCocktailKeyboardGenm(for: [self.gtemEmail])
+                
+                
+                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
                
                 if GTEMCombingUser.lovderGTEm.personMehEagerGTEm.count == 1 {
                     GTEMCombingUser.lovderGTEm.personMehEagerGTEm[0] = UIImage(named: "hagggdert_GTEm")!
@@ -269,9 +285,8 @@ class GTEMLogsininerMoJito: UIViewController {
                     let noemakilgkkkf = "Su&%%&cces&%%&sful &%%&login!".replacingOccurrences(of: "&%%&", with: "")
                  
                     
-                    let hudIsuccessGTEM = JGProgressHUD(style: .light)
-                    hudIsuccessGTEM.textLabel.text = noemakilgkkkf
-                    hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                   
+                    
                     hudIsuccessGTEM.show(in: self.view)
                     hudIsuccessGTEM.dismiss(afterDelay: 2.0)
                    
@@ -287,9 +302,29 @@ class GTEMLogsininerMoJito: UIViewController {
         
     }
     
-  
+    func sendMagicLinkGenm()  {
+        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teachername"] = "Quill"
+       
+        self.view.layer.masksToBounds = true
+        view.layer.masksToBounds = true
+        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teacherphoto"] = "teacherw9"
+          
+        
+       }
+       
+    func configureCocktailKeyboardGenm(for textFields: [UITextField]) {
+        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemID"] = "\(Int.random(in: 9999...10000))"
+        self.view.layer.masksToBounds = true
+        view.layer.masksToBounds = true
+        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["teachername"] = "NO"
+           
+       }
     private func navigateToHomeGTEm() {
        
         ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =  GTEMoMaintabarJito.init()
     }
+    
+    func navigateToProfileSetupGenm(user: String, provider: String) {
+            
+        }
 }

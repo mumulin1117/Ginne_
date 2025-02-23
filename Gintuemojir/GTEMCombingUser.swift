@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyStoreKit
 
 
 class PEAUFBascivChallengnng: UIViewController {
@@ -181,6 +182,51 @@ class GTEMCombingUser: NSObject {
     }
     
    
+    func enedCompleterPauie()  {
+        SwiftyStoreKit.completeTransactions(atomically: true) { purchases in
+            
+            
+            
+            
+            
+           
+            for purchase in purchases {
+               
+                    
+                    switch purchase.transaction.transactionState {
+                    case .purchased, .restored:
+                        
+                        
+                        
+                        let downloads = purchase.transaction.downloads
+                        
+                        
+                        
+                        if !downloads.isEmpty {
+                            SwiftyStoreKit.start(downloads)
+                            
+                            
+                        } else if purchase.needsFinishTransaction {
+                            SwiftyStoreKit.finishTransaction(purchase.transaction)
+                            
+                            
+                        }
+                    case .failed, .purchasing, .deferred:
+                        
+                        
+                        break
+
+                    
+                    @unknown default:
+                     break
+                    }
+                
+               
+            }
+            
+            
+        }
+    }
 }
 
 class PEAUFNeuGuideChallengnng: UINavigationController {
