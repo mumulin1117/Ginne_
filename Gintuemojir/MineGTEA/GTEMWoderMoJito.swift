@@ -96,9 +96,9 @@ class GTEMWoderMoJito: UIViewController {
         
 
       
-        profileFollowGTEm.text = "\(GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.count)"
+        profileFollowGTEm.text = "0"//(GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.count)"
         
         
-        profileFancGTEm.text = "\(GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.count)"
+        profileFancGTEm.text = "0"//"\(GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.count)"
     }
 }

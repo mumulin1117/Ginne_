@@ -72,6 +72,7 @@
 		04E128272D40FA660004430E /* GTETiaVideoPostMojito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E128252D40FA660004430E /* GTETiaVideoPostMojito.swift */; };
 		04E128282D40FA660004430E /* GTETiaVideoPostMojito.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E128262D40FA660004430E /* GTETiaVideoPostMojito.xib */; };
 		8A035C6CBFB5329802227BAE /* Pods_Gintuemojir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65057D74C17694EED63C749F /* Pods_Gintuemojir.framework */; };
+		CE7E050D2D6B20F40052B735 /* GTEMBartenderchinnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E050C2D6B20F40052B735 /* GTEMBartenderchinnel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +144,7 @@
 		04E128262D40FA660004430E /* GTETiaVideoPostMojito.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTETiaVideoPostMojito.xib; sourceTree = "<group>"; };
 		65057D74C17694EED63C749F /* Pods_Gintuemojir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gintuemojir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9262D8580A5D865F65F7EAE0 /* Pods-Gintuemojir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gintuemojir.release.xcconfig"; path = "Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir.release.xcconfig"; sourceTree = "<group>"; };
+		CE7E050C2D6B20F40052B735 /* GTEMBartenderchinnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTEMBartenderchinnel.swift; sourceTree = "<group>"; };
 		DCFEBCA9A0874BC8E687EC56 /* Pods-Gintuemojir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gintuemojir.debug.xcconfig"; path = "Target Support Files/Pods-Gintuemojir/Pods-Gintuemojir.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +196,7 @@
 				04AB58112D3A095A00DDC681 /* GTEMELAurrMoJito.xib */,
 				04AB58142D3A293900DDC681 /* GTEMoMaintabarJito.swift */,
 				0439A6672D5354FC004C86C2 /* GTEMCombingUser.swift */,
+				CE7E050C2D6B20F40052B735 /* GTEMBartenderchinnel.swift */,
 			);
 			path = Gintuemojir;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				04AB58012D39EBA400DDC681 /* AppDelegate.swift in Sources */,
 				041E0B932D549D5400BE6C0E /* GTEMCommenttMojito.swift in Sources */,
 				04E128172D3F988B0004430E /* GTEMrepoaweDetaillMoJito.swift in Sources */,
+				CE7E050D2D6B20F40052B735 /* GTEMBartenderchinnel.swift in Sources */,
 				04AB582D2D3A3AE500DDC681 /* GTEHChatroomeCell.swift in Sources */,
 				04AB58192D3A2C6400DDC681 /* GTEMVigerMoJito.swift in Sources */,
 				04AB581F2D3A2C9600DDC681 /* GTEMHomwerMoJito.swift in Sources */,

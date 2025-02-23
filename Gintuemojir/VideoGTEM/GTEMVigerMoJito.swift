@@ -85,7 +85,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         
 
        
-        gteuCell.userGTEUName.text = relaiGTEMDAta[indexPath.row]["teacherphoto"]
+        gteuCell.userGTEUName.text = relaiGTEMDAta[indexPath.row]["AochleName"]
        
         gteuCell.videoTitleGTEM.text = relaiGTEMDAta[indexPath.row]["videowenan0"]
         

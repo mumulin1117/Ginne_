@@ -53,9 +53,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             GTEMCombingUser.lovderGTEm.personMehEagerGTEm.append(UIImage(named:"teacherw9")!)
             
-            GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = (false,false,Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.prefix(1)))
+//            GTEMCombingUser.lovderGTEm.fhhowerAllGTEm = (false,false,Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.prefix(1)))
             
-            GTEMCombingUser.lovderGTEm.fnnceAllGTEm = (false,false, Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.suffix(1)))
+//            GTEMCombingUser.lovderGTEm.fnnceAllGTEm = (false,false, Array(GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.suffix(1)))
             
             window?.rootViewController = GTEMoMaintabarJito.init()
             

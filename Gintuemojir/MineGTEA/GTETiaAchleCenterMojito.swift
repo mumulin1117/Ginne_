@@ -90,20 +90,16 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             idcardLogoGTEM.setImage(UIImage.init(named: "aready_gou"), for: .selected)
             idcardLogoGTEM.setImage(UIImage.init(named: "tonofolGTEm"), for: .normal)
             
-            if GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter({ infol in
-                
-                
-                         
-                if self.view.frame.height == 1 {
-                    
-                    
-                    
-                }
-               
-                return infol["gtemID"] == realingUserDtaGTEm["gtemID"]
-            }).count > 0 {
-                idcardLogoGTEM.isSelected = true
-            }
+//            if GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter({ infol in
+//                
+//                
+//                         
+//              
+//               
+//                return infol["gtemID"] == realingUserDtaGTEm["gtemID"]
+//            }).count > 0 {
+//                idcardLogoGTEM.isSelected = true
+//            }
 //        }
    
         let urlioklinkGTEM = (realingUserDtaGTEm["viedeourll0"] ?? "").replacingOccurrences(of: "^^>", with: "")
@@ -230,34 +226,34 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
                 
                 sender.isSelected = !sender.isSelected
                 
-                let ifcontain = GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter({ infol in
-                   
-                    return infol["gtemID"] == self.realingUserDtaGTEm["gtemID"]
-                }).count > 0
+//                let ifcontain = GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter({ infol in
+//                   
+//                    return infol["gtemID"] == self.realingUserDtaGTEm["gtemID"]
+//                }).count > 0
                 
                 
                
-                if !ifcontain && sender.isSelected{
-                    GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.append(self.realingUserDtaGTEm)
-                    return
-                }
+//                if !ifcontain && sender.isSelected{
+//                    GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.append(self.realingUserDtaGTEm)
+//                    return
+//                }
                 
              
-                if ifcontain && sender.isSelected == false{
-                   
-                        for (kdj,item) in GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.enumerated() {
-                            if item["gtemID"] == self.realingUserDtaGTEm["gtemID"] {
-                                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.remove(at: kdj)
-                            }
-                            
-                        }
-                    
-
-                    
-                   
-                   
-                    return
-                }
+//                if ifcontain && sender.isSelected == false{
+//                   
+//                        for (kdj,item) in GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.enumerated() {
+//                            if item["gtemID"] == self.realingUserDtaGTEm["gtemID"] {
+//                                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.remove(at: kdj)
+//                            }
+//                            
+//                        }
+//                    
+//
+//                    
+//                   
+//                   
+//                    return
+//                }
                 
             }
             return
@@ -427,24 +423,24 @@ class GTEMUserAboutAchole: UIViewController {
                 let onlyID = self.realingUserDtaGTEm["gtemID"] ?? ""
 
               
-                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2 =  GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter {
-                    
-                    
-                    
-                  
-                    
-                    return !($0["gtemID"]  == onlyID)
-                    
-                }
+//                GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2 =  GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter {
+//                    
+//                    
+//                    
+//                  
+//                    
+//                    return !($0["gtemID"]  == onlyID)
+//                    
+//                }
                 
 
                 
-                GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2 = GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.filter {
-                    
-                    
-                    return  !($0["gtemID"]  == onlyID)
-                    
-                }
+//                GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2 = GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.filter {
+//                    
+//                    
+//                    return  !($0["gtemID"]  == onlyID)
+//                    
+//                }
                 
 
                 

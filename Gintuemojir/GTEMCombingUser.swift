@@ -12,30 +12,45 @@ class PEAUFBascivChallengnng: UIViewController {
 }
 
 class GTEMCombingUser: NSObject {
+    private var subscribedBartenderChannelsGenm: [GTEMBartenderchinnel] = []
+   
+   
+
+  
     
     
     static let lovderGTEm = GTEMCombingUser.init()
+    private let mixologistAIConversationGenm = GTEMMixologistAI()
     
+   
     
      
       var videoTotaluserGTEm:(Bool,Array<Dictionary<String,String>>,Bool) = (false,Array<Dictionary<String,String>>(),true)
     
- 
+    private var cocktailRecipeCollectionGenm: [String: String] = [:]
+    private var chatRoomParticipantsGenm: Set<Dictionary<String,String>> = []
+   
 
      var personMeGTEm:Array<Dictionary<String,String>> = Array<Dictionary<String,String>>()
     
-
+    private var personalizedTipsGenm: [String] = []
+   
     
      var personMehEagerGTEm:Array<UIImage> = Array<UIImage>()
     
-    
+    private var virtualBarInventoryGenm: [String: Int] = [:] // 虚拟调酒工具库存
+   
      var ancholeRoomGTEm:(String,[GTEmAcholeRoom]) = ("GTEMCombingUser",[GTEmAcholeRoom]())
     
+    private var liveEventNotificationsGenm: [String] = [] // 实时活动通知
    
     
-     var fhhowerAllGTEm = (true,true,[[String: String]]())
+//     var fhhowerAllGTEm = (true,true,[[String: String]]())
     
-     var fnnceAllGTEm = (true,true,[[String: String]]())
+    private var userMixingHistoryGenm: [String: Dictionary<String,String>] = [:] // 录
+   
+    
+//     var fnnceAllGTEm = (true,true,[[String: String]]())
 
     
     override init() {
@@ -74,8 +89,28 @@ class GTEMCombingUser: NSObject {
         }
         
 
+        askMixologistAIGenm(question: "facsercount")
         
-        let begRoomIGTEm = [("Mixology Musings","begroomGTEM0","001"),
+      
+
+        
+    }
+   
+    func subscribeToChannelGenm()->Array<String> {
+        return [
+            "Hello! What’s everyone drinking today?",
+            "I’m new here—any recommendations for a beginner?",
+            "Can’t wait to learn more about different wine varieties!",
+            "What’s the most memorable wine you’ve ever tasted?",
+            "I love discussing pairings—what do you all like with red wine?",
+            "Looking forward to sharing and discovering new favorites!"
+            
+]
+    }
+
+ 
+    func uploadMixingVideoGenm()->Array<(String,String,String)>   {
+        return  [("Mixology Musings","begroomGTEM0","001"),
                            ("Cocktail Chatterbox","begroomGTEM1","002"),
                            ("Bar Banter","begroomGTEM2","003"),
                            ("Shaker Social","begroomGTEM3","004"),
@@ -84,73 +119,54 @@ class GTEMCombingUser: NSObject {
         
         
         ]
-        
+    }
+
+    func askMixologistAIGenm(question: String) {
+        let begRoomIGTEm =  uploadMixingVideoGenm()
+       
         for (k,item) in begRoomIGTEm.enumerated() {
-            
-          
-          
-            
+    
             guard  let sleUseringoGTEm = videoTotaluserGTEm.1.filter({ dijui in
                 return dijui["gtemID"] != self.videoTotaluserGTEm.1[k]["gtemID"]
             }).shuffled().suffix(1).first else{
                 
-                
-                         
-               
                 return
                 
             }
             
             
-            let welcomeRoomlog = "Talk about:\(item.0 )"
+          
             
-            
-            
-            let allLioGTEM = (false, [
-                "Hello! What’s everyone drinking today?",
-                "I’m new here—any recommendations for a beginner?",
-                "Can’t wait to learn more about different wine varieties!",
-                "What’s the most memorable wine you’ve ever tasted?",
-                "I love discussing pairings—what do you all like with red wine?",
-                "Looking forward to sharing and discovering new favorites!"
-                
-])
+            let allLioGTEM = (false, subscribeToChannelGenm())
             
             let gtemSendingContents = allLioGTEM.1[k]
             
             
-            let duhua0GTEm = ("notme",self.videoTotaluserGTEm.1[k],welcomeRoomlog)
+            let duhua0GTEm = ("notme",self.videoTotaluserGTEm.1[k],"Talk about:\(item.0 )")
             
 
             
             let duhu10GTEm = ("notme",sleUseringoGTEm,gtemSendingContents)
             
 
-            var arrarDiolog = [duhua0GTEm,duhu10GTEm] as [(logMeGTEM:String,enterProuserGTEM:Dictionary<String,String>,gtemSendingContent:String)]
-            
-            let reamROomAncholeGTEm =   (GTEmAcholeRoom.init(roomIDGTEM: item.2, roomNameGTEM: item.0,roombackgroundGTEM: UIImage(named:item.1),roomHosterGTEm: self.videoTotaluserGTEm.1[k], roomMesageListGTEm: arrarDiolog))
+            let reamROomAncholeGTEm =   (GTEmAcholeRoom.init(roomIDGTEM: item.2, roomNameGTEM: item.0,roombackgroundGTEM: UIImage(named:item.1),roomHosterGTEm: self.videoTotaluserGTEm.1[k], roomMesageListGTEm: [duhua0GTEm,duhu10GTEm]))
            
             
             ancholeRoomGTEm.1.append(reamROomAncholeGTEm)
            
         }
         
-
-        
     }
-   
-    
 
+    
+    
+    
     class func validateGTEMEmail(_ eGTEMmail: String) -> Bool {
         
         
         
         let regexGTEM = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
-       
-       
-        
-        
-        
+    
         
         let getmkkk = NSPredicate(format: "SELF MATCHES %@", regexGTEM)
         
@@ -160,11 +176,7 @@ class GTEMCombingUser: NSObject {
 
       
     class func validateEmiallogGTEmPassword(_ passwordGTEm: String) -> Bool {
-        
-        
-        
-        
-        
+    
         return passwordGTEm.count >= 6 && passwordGTEm.count <= 12
     }
     
@@ -172,35 +184,41 @@ class GTEMCombingUser: NSObject {
 }
 
 class PEAUFNeuGuideChallengnng: UINavigationController {
+    private var virtualBarInventoryGenm: [String: Int] = [:] 
     
-   
-    
-  
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        sendActivityNotificationGenm()
         
         
-        self.navigationBar.isHidden = true
     }
+    private var liveEventNotificationsGenm: [GTEMMixologistAI] = [] // 用户调酒历史记录
+
+    
+    func updateBarToolsGenm(gtemg:UIViewController) {
+        if children.count > 0  && !gtemg.isMember(of:PEAUFBascivChallengnng.self) {
+            gtemg.hidesBottomBarWhenPushed = true
+        }
+        virtualBarInventoryGenm["hidesBottomBarWhenPushed"] = 33
+       
+    }
+
+   
     
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        
-        
-        
-        
-        
-        
-        if children.count > 0  && !viewController.isMember(of:PEAUFBascivChallengnng.self) {
-            viewController.hidesBottomBarWhenPushed = true
-           
-         
-        }
-        
+        updateBarToolsGenm(gtemg: viewController)
+      
        
         super.pushViewController(viewController, animated: false)
     }
+    
+    func sendActivityNotificationGenm() {
+        self.navigationBar.isHidden = true
+    }
+
+  
 }
 
 

@@ -92,11 +92,11 @@ class GTESetingMojito: UIViewController {
                     
                     GTEMCombingUser.lovderGTEm.personMehEagerGTEm.removeAll()
                     
-                    GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.removeAll()
+//                    GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.removeAll()
                     
                     
                     
-                    GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.removeAll()
+//                    GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.removeAll()
                     
 //                    GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.removeAll()
                     ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMLogsininerMoJito.init())
@@ -134,7 +134,7 @@ class GTESetingMojito: UIViewController {
             
 
            
-            GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.removeAll() 
+//            GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.removeAll() 
             ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController =  PEAUFNeuGuideChallengnng.init(rootViewController: GTEMLogsininerMoJito.init())
            
         }
