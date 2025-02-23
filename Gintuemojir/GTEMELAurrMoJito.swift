@@ -16,11 +16,11 @@ class GTEMELAurrMoJito: UIViewController {
     
     @IBOutlet weak var inputerkoGTEm: UITextView!
     
-    private  var HoperGTEM:UIView?
+   
    
     
     @IBOutlet weak var cananlBakGTEm: UIButton!
-    var treesHaGTEM:UIButton?
+    
     @IBOutlet weak var agreeBakGTEm: UIButton!
     
     
@@ -32,30 +32,19 @@ class GTEMELAurrMoJito: UIViewController {
     
     var jornyGTEM:(Int,Bool)
     
-    private var _fermentationTimerGTEM: Timer?
-    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
-    private var _muddleToolGTEM: CGFloat = 0.87
-    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
-    private var _zhunreaToolGTEM: CGFloat = 2.87
+    
+    
+    
+    
+    
     
     init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?,_jornyGTEM: (Int,Bool)) {
-        _fermentationTimerGTEM = tationTimerGTEM
+        
        
         self.jornyGTEM = _jornyGTEM
         super.init(nibName: nil, bundle: nil)
-        if aginestGTEm == nil {
-            _agitatorValuesGTEM.append(22)
-        }
-        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
-        let pinghio = UIColor.red
-        var colfulLisftGTEM = Array<UIColor>.init()
-
-        colfulLisftGTEM.append(alpgocoloe)
-        colfulLisftGTEM.append(pinghio)
-
-        if colfulLisftGTEM.last == .blue{
-            return //恒为假
-        }
+       
+      
     }
     
     required init?(coder: NSCoder) {
@@ -65,9 +54,9 @@ class GTEMELAurrMoJito: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var aGTEm:(Float,String?) = (10,nil)
-        aGTEm.0 += 2
-        aGTEm.1 = "\(aGTEm.0)"
+        
+        
+        
 
        
         cananlBakGTEm.addTarget(self, action: #selector(shuldCancelGTEkGtray), for: .touchUpInside)
@@ -76,14 +65,14 @@ class GTEMELAurrMoJito: UIViewController {
         peetermeBakGTEm.addTarget(self, action: #selector(peetermeBakGTEmGTEkGtray), for: .touchUpInside)
        
         var bGTEM:(Float,String?)  = (20,nil)
-        bGTEM.0 -= 1
-        bGTEM.1 = "\(bGTEM.0)"
-        var cGTEM:Float  = aGTEm.0 + bGTEM.0
+        
+        
+        
        
             if jornyGTEM.0 == 0 {
                 gtemTisder.text = "Ginne App ELUA"
-                HoperGTEM = UIView()
-                HoperGTEM?.layer.borderColor = UIColor.blue.cgColor
+                
+                
                
                 inputerkoGTEm.text =     """
 
@@ -132,38 +121,17 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
 
 """
             }
-            HoperGTEM?.alpha = 0.4
-            HoperGTEM?.layer.borderWidth = 4
-
-            if _muddleToolGTEM < 0 &&  HoperGTEM != nil{
-                self.view.addSubview(HoperGTEM!)
-                HoperGTEM?.alpha = 0
-            }
+           
             if jornyGTEM.0 == 1 {
                 self.peerieeBakGTEm.isHidden = true
-                treesHaGTEM?.setTitleColor(.blue, for: .normal)
-                treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+                
+                
                 self.peetermeBakGTEm.isHidden = true
                 
                 
                 gtemTisder.text = "Ginne App Privacy Policy"
                 
 
-                treesHaGTEM?.alpha = 0.4
-                treesHaGTEM?.layer.borderWidth = 4
-                cGTEM  += 12
-
-                var dGTEM:Float  = aGTEm.0*3 - bGTEM.0
-
-                dGTEM += 12
-                if (cGTEM >=  aGTEm.0 + bGTEM.0) && dGTEM > 0{
-                    dGTEM += 3
-                    
-                }
-                if _muddleToolGTEM < 0 {
-                    self.view.addSubview(treesHaGTEM!)
-                    treesHaGTEM?.alpha = 0
-                }
                 inputerkoGTEm.text = """
 
      At Ginne, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App"). By using the App, you agree to the collection and use of information in accordance with this policy.
@@ -250,18 +218,15 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
             
             if jornyGTEM.0 == 2 {
                 self.peerieeBakGTEm.isHidden = true
-                treesHaGTEM?.setTitleColor(.blue, for: .normal)
-                treesHaGTEM?.layer.borderColor = UIColor.blue.cgColor
+                
+                
 
                
                 gtemTisder.text = "Ginne App Terms of Service"
-                treesHaGTEM?.alpha = 0.4
-                treesHaGTEM?.layer.borderWidth = 4
+                
+                
 
-                if _muddleToolGTEM < 0 {
-                    self.view.addSubview(treesHaGTEM!)
-                    treesHaGTEM?.alpha = 0
-                }
+               
                 self.peetermeBakGTEm.isHidden = true
                 
                 inputerkoGTEm.text = """
@@ -306,110 +271,47 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
 
    
     @objc func shuldCancelGTEkGtray()  {
-        var aGTEm:(Float,String?) = (10,nil)
-        aGTEm.0 += 2
-        aGTEm.1 = "\(aGTEm.0)"
-
-        var bGTEM:(Float,String?)  = (20,nil)
-        bGTEM.0 -= 1
-       
+        
+      
         GTEMELAurrMoJito.boolkSholkd = (nil,nil,false)
-        bGTEM.1 = "\(bGTEM.0)"
-        var cGTEM:Float  = aGTEm.0 + bGTEM.0
-        cGTEM  += 12
-
-        var dGTEM:Float  = aGTEm.0*3 - bGTEM.0
-
-        dGTEM += 12
-        if (cGTEM >=  aGTEm.0 + bGTEM.0) && dGTEM > 0{
-            dGTEM += 3
-            self.navigationController?.popViewController(animated: true)
-        }
+        
+        self.navigationController?.popViewController(animated: true)
         
         
     }
     
-    private func gtemGteDeleter() {
-    
-        let QuikingGTEM = UIPageControl.init()
-        QuikingGTEM.numberOfPages = 3
-        let afvie = UIView.init()
-        afvie.addSubview(QuikingGTEM)
-        if self.view.frame.height == 0 {
-            afvie.center = self.view.center
-            self.view.addSubview(afvie)
-        }
-        
-    }
+   
     
     @objc func shuldAgreeGTEkGtray()  {
       
         if jornyGTEM.0 == 0 {
             GTEMELAurrMoJito.boolkSholkd = (nil,nil,true)
         }
-        var aGTEm:(Float,String?) = (10,nil)
-        aGTEm.0 += 2
-        aGTEm.1 = "\(aGTEm.0)"
-
-        var bGTEM:(Float,String?)  = (20,nil)
-        bGTEM.0 -= 1
-        bGTEM.1 = "\(bGTEM.0)"
-        var cGTEM:Float  = aGTEm.0 + bGTEM.0
-        cGTEM  += 12
-
-        var dGTEM:Float  = aGTEm.0*3 - bGTEM.0
-
-        dGTEM += 12
-        if (cGTEM >=  aGTEm.0 + bGTEM.0) && dGTEM > 0{
-            dGTEM += 3
-            self.navigationController?.popViewController(animated: true)
-        }
-            
-       
+        
+        self.navigationController?.popViewController(animated: true)
         
     }
     
     @objc func peerieeBakGTEmGTEkGtray()  {
-        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
-        let pinghio = UIColor.red
-        var colfulLisftGTEM = Array<UIColor>.init()
-
-        colfulLisftGTEM.append(alpgocoloe)
-        colfulLisftGTEM.append(pinghio)
-
-        if colfulLisftGTEM.last == .blue{
-            return //恒为假
-        }
+        
         self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (1,false)), animated: true)
     }
     
     @objc func peetermeBakGTEmGTEkGtray()  {
-        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
-        let pinghio = UIColor.red
-        var colfulLisftGTEM = Array<UIColor>.init()
+        
+        
+        
 
-        colfulLisftGTEM.append(alpgocoloe)
-        colfulLisftGTEM.append(pinghio)
+        
+        
 
-        if colfulLisftGTEM.last == .blue{
-            return //恒为假
-        }
+        
         self.navigationController?.pushViewController(GTEMELAurrMoJito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, _jornyGTEM: (2,false)), animated: true)
     }
 
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
-        
-        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
-        let pinghio = UIColor.red
-        var colfulLisftGTEM = Array<UIColor>.init()
-
-        colfulLisftGTEM.append(alpgocoloe)
-        colfulLisftGTEM.append(pinghio)
-
-        if colfulLisftGTEM.last == .blue{
-            return //恒为假
-        }
+       
         self.navigationController?.popViewController(animated: true)
     }
     

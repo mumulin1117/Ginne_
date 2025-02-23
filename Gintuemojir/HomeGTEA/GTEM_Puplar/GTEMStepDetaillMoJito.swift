@@ -35,20 +35,18 @@ class GTEMStepDetaillMoJito: UIViewController {
     
     private var detgiolGTEA :Dictionary<String,String>
     
-    private var _fermentationTimerGTEM: Timer?
-    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
-    private var _muddleToolGTEM: CGFloat = 0.87
-    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
-    private var _zhunreaToolGTEM: CGFloat = 2.87
+    
+    
+    
+    
+    
     
    
     init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?, detgiolGTEA: Dictionary<String, String>) {
-        _fermentationTimerGTEM = tationTimerGTEM
+        
         self.detgiolGTEA = detgiolGTEA
         super.init(nibName: nil, bundle: nil)
-        if aginestGTEm == nil {
-            _agitatorValuesGTEM.append(22)
-        }
+        
     }
     
     required init?(coder: NSCoder) {
@@ -59,30 +57,8 @@ class GTEMStepDetaillMoJito: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    private func gtemGteDeleterTotal() {
-    
-        let QuikingGTEM = UIPageControl.init()
-        QuikingGTEM.numberOfPages = 3
-        let afvie = UIView.init()
-        afvie.addSubview(QuikingGTEM)
-        if UIScreen.main.bounds.height == 0 {
-            afvie.center.x = 2
-            self.view.addSubview(afvie)
-        }
-        
-    }
-    private func gtemGteDeleterAll() {
-    
-        let QuikingGTEM = UIPageControl.init()
-        QuikingGTEM.numberOfPages = 3
-        let afvie = UIView.init()
-        afvie.addSubview(QuikingGTEM)
-        if UIScreen.main.bounds.height == 0 {
-            afvie.center.x = 1
-            self.view.addSubview(afvie)
-        }
-        
-    }
+  
+   
    @objc func navibaTorepohGTEM(_ sender: UIButton) {
        self.navigationController?.pushViewController(GTEMrepoaweDetaillMoJito.init(), animated: true)
     }

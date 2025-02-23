@@ -14,14 +14,11 @@ pod 'ZFPlayer/AVPlayer'
 pod 'SwiftyStoreKit'
 pod 'ZFPlayer/ControlView', '~> 4.0'
 pod 'Alamofire'
-#pod 'SVProgressHUD'
-#pod 'BMPlayer/CacheSupport'
+
 pod 'TagListView'
-#pod "Player"
-#pod "Player", "~> 0.13.2"
 
 pod 'JGProgressHUD'
-
+po
 
 end
 

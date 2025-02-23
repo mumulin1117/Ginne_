@@ -15,8 +15,8 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     @IBOutlet weak var profileIconGTEm: UIImageView!
     
     @IBOutlet weak var profilenicknGTEm: UILabel!
-    private var _fermentationTimerGTEM: Timer?
-    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
+    
+    
    
     
     @IBOutlet weak var profileFollowGTEm: UILabel!
@@ -25,14 +25,14 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     
     
     @IBOutlet weak var idcardLogoGTEM: UIButton!
-    private var _muddleToolGTEM: CGFloat = 0.87
+    
    
     
     @IBOutlet weak var showingVideoViewGTEm: UIImageView!
-    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
+    
    
     @IBOutlet weak var videobiankuaniconGTEm: UIImageView!
-    private var _zhunreaToolGTEM: CGFloat = 2.87
+    
 
     @IBOutlet weak var noiconholderGTEm: UIImageView!
     
@@ -80,16 +80,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             noiconholderGTEm.isHidden = true
             noitextholderGTEm.isHidden = true
         }
-        let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
-        let pinghio = UIColor.red
-        var colfulLisftGTEM = Array<UIColor>.init()
-
-        colfulLisftGTEM.append(alpgocoloe)
-        colfulLisftGTEM.append(pinghio)
-
-        if colfulLisftGTEM.last == .blue{
-            return //恒为假
-        }
+       
 
 //        if realingUserDtaGTEm["ifneedsubGTEM"] ==  "1"{
 //            
@@ -100,19 +91,15 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             idcardLogoGTEM.setImage(UIImage.init(named: "tonofolGTEm"), for: .normal)
             
             if GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter({ infol in
-                let labelgGTEm = UILabel.init()
-                labelgGTEm.textAlignment = .right
-                labelgGTEm.adjustsFontSizeToFitWidth = true
-                labelgGTEm.addSubview(UIView.init(frame: .zero))
-                if self.view.frame.height == 1 {
-                    labelgGTEm.isEnabled = true
-                    labelgGTEm.isUserInteractionEnabled = true
-                    self.view.addSubview(labelgGTEm)
-                }
                 
-                if labelgGTEm.superview == self.view {
-                    return infol["gtemID"] == realingUserDtaGTEm["gtemID"]
+                
+                         
+                if self.view.frame.height == 1 {
+                    
+                    
+                    
                 }
+               
                 return infol["gtemID"] == realingUserDtaGTEm["gtemID"]
             }).count > 0 {
                 idcardLogoGTEM.isSelected = true
@@ -142,30 +129,6 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         self.navigationController?.popViewController(animated: true)
     }
 
-    private func gtemGteDeleterTotal() {
-    
-        let QuikingGTEM = UIPageControl.init()
-        QuikingGTEM.numberOfPages = 3
-        let afvie = UIView.init()
-        afvie.addSubview(QuikingGTEM)
-        if UIScreen.main.bounds.height == 0 {
-            afvie.center.x = 2
-            self.view.addSubview(afvie)
-        }
-        
-    }
-    private func gtemGteDeleterAll() {
-    
-        let QuikingGTEM = UIPageControl.init()
-        QuikingGTEM.numberOfPages = 3
-        let afvie = UIView.init()
-        afvie.addSubview(QuikingGTEM)
-        if UIScreen.main.bounds.height == 0 {
-            afvie.center.x = 1
-            self.view.addSubview(afvie)
-        }
-        
-    }
     @IBAction func benginToplaingVirwwr(_ sender: UIButton) {
         
         //需要订阅没订阅
@@ -230,65 +193,45 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
 //            return
 //        }
         
-        var xGTEm:(Double,String?) = (15.0,nil)
-        xGTEm.0 += 30
-        var yGTEm: (Double,String?) = (25.0,nil)
-        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
+        
+        
+        
+        
        
        
         
         if realingUserDtaGTEm["ifneedsubGTEM"] == "1" &&  realingUserDtaGTEm["issubedeGTEm"] == "1" ,sender.tag == 30 {//订阅按钮
-            zGTEm.0 += 10.5
-            zGTEm.0 -= 0.2
-
-            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
-
-            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-              
-                let hudIsuccessGTEM = JGProgressHUD(style: .light)
-                hudIsuccessGTEM.textLabel.text = "You have already subscribed to this user"
-                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
-                hudIsuccessGTEM.show(in: self.view)
-                hudIsuccessGTEM.dismiss(afterDelay: 2.0)
-            }
             
+            
+
+            
+
+            let hudIsuccessGTEM = JGProgressHUD(style: .light)
+            hudIsuccessGTEM.textLabel.text = "You have already subscribed to this user"
+            hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+            hudIsuccessGTEM.show(in: self.view)
+            hudIsuccessGTEM.dismiss(afterDelay: 2.0)
             return
         }
-        zGTEm.0 += 10.5
-        zGTEm.0 -= 0.2
+        
+        
         if realingUserDtaGTEm["ifneedsubGTEM"] == "0" ,sender.tag == 30 {//关注按钮
-            zGTEm.0 += 10.5
-            zGTEm.0 -= 0.2
+            
 
-            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
-
-//            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
                 let hudLoadingGTEM = JGProgressHUD(style: .light)
                 hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
                 hudLoadingGTEM.show(in: self.view)
             
-            zGTEm.0 += 10.5
-            zGTEm.0 -= 0.2
+            
+            
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
                 hudLoadingGTEM.dismiss()
-                zGTEm.0 += 10.5
-                zGTEm.0 -= 0.2
+                
+                
                 sender.isSelected = !sender.isSelected
                 
                 let ifcontain = GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter({ infol in
-                    var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-                    modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
-                    modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
-                    let indefHTEM = Int.random(in: 200...30000)
-
-                    modifiedRecipe["agingDuration"] = 2020 + indefHTEM
-                    if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
-                        return infol["gtemID"] == self.realingUserDtaGTEm["gtemID"]
-                    }
-
-                    if (modifiedRecipe.values.randomElement() ?? 0 ) > 20 {
-                        
-                    }
+                   
                     return infol["gtemID"] == self.realingUserDtaGTEm["gtemID"]
                 }).count > 0
                 
@@ -298,22 +241,17 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
                     GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.append(self.realingUserDtaGTEm)
                     return
                 }
-                var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-                modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
-                modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
-                let indefHTEM = Int.random(in: 200...30000)
-
-                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
                 
+             
                 if ifcontain && sender.isSelected == false{
-                    if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
+                   
                         for (kdj,item) in GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.enumerated() {
                             if item["gtemID"] == self.realingUserDtaGTEm["gtemID"] {
                                 GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.remove(at: kdj)
                             }
                             
                         }
-                    }
+                    
 
                     
                    
@@ -324,54 +262,38 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             }
             return
         }
-        zGTEm.0 += 10.5
-        zGTEm.0 -= 0.2
+        
+        
         if sender.tag == 40 {//message按钮
-            zGTEm.0 += 10.5
-            zGTEm.0 -= 0.2
+            
+            
 
-            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
+            
 
-            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                self.navigationController?.pushViewController(GTEMusernmeaasfeMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil,realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
-            }
-           
-           
+            self.navigationController?.pushViewController(GTEMusernmeaasfeMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil,realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
             
             return
         }
         
         
-        zGTEm.0 += 10.5
-        zGTEm.0 -= 0.2
+        
+        
         if sender.tag == 50 {//video call
-            zGTEm.0 += 10.5
-            zGTEm.0 -= 0.2
-
-            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
-
-            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                self.navigationController?.pushViewController(GTEMusVifedertMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
-            }
-           
+            
+            
+            self.navigationController?.pushViewController(GTEMusVifedertMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
             
             return
         }
-        zGTEm.0 += 10.5
-        zGTEm.0 -= 0.2
+        
+        
         
         let urlioklinkGTEM = (realingUserDtaGTEm["viedeourll0"])?.replacingOccurrences(of: "^^>", with: "")
         
         if let link = urlioklinkGTEM,sender.tag == 60{
-            zGTEm.0 += 10.5
-            zGTEm.0 -= 0.2
-
-            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
-
-            if (zGTEm.0 > 30.0) && ((wGTEM.0 - 10000) < 10.0) {
-                self.navigationController?.pushViewController(GTEMPlayerMojito.init(linkGTEM_Url: link), animated: false)
-            }
-           
+            
+            
+            self.navigationController?.pushViewController(GTEMPlayerMojito.init(linkGTEM_Url: link), animated: false)
             return
         }
     }
@@ -383,20 +305,20 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     
 
 //    @objc func surepayingNeedCoinGTEm() {
-//        var xGTEm:(Double,String?) = (15.0,nil)
-//        xGTEm.0 += 30
+//        
+//        
 //        
 //        var gtemBlksdgb =  Int( GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] ?? "0") ?? 0
-//        var yGTEm: (Double,String?) = (25.0,nil)
-//        var zGTEm: (Double,String?) = (xGTEm.0 + yGTEm.0 + 33,nil)
+//        
+//        
 //        
 //        if gtemBlksdgb < 100 {
-//            zGTEm.0 += 10.5
-//            zGTEm.0 -= 0.2
+//            
+//            
 //
 //            
 //            let alertv = UIAlertController(title: "Balance is Low", message: "", preferredStyle: .alert)
-//            var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
+//            
 //
 //            
 //            let rechargeGTEmAction = UIAlertAction(title: "Increase Balance", style: .default) { scd in
@@ -414,32 +336,32 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
 //        }
 //        
 //        gtemBlksdgb -= 100
-//        xGTEm.0 += 30
+//        
 //        
 //        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
-//        var wGTEM: (Double,String?) = ((xGTEm.0 * 2.0) - (yGTEm.0 / 5.0),nil)
-//        wGTEM.0  = wGTEM.0 - 2.0
+//        
+//       
 //        let hudIsuccessGTEM = JGProgressHUD(style: .light)
 //        hudIsuccessGTEM.textLabel.text = "Subscription successful！"
 //        hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
 //        hudIsuccessGTEM.show(in: self.view)
 //        hudIsuccessGTEM.dismiss(afterDelay: 2.0)
 //     
-//        zGTEm.0 += 10.5
+//        
 //        
 //        self.presentVCGTEm?.dismiss(animated: true)
 //      //修改数据订阅状态
-//        zGTEm.0 -= 0.2
-//        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-//        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
+//        
+//        
+//        
 //       
 //        for (i,iuy) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.enumerated() {
 //            modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
-//            let indefHTEM = Int.random(in: 200...30000)
+//            
 //
 //        
 //            if iuy["gtemID"] == realingUserDtaGTEm["gtemID"]   {
-//                modifiedRecipe["agingDuration"] = 2020 + indefHTEM
+//               
 //                if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
 //                    GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[i]["issubedeGTEm"] = "1"
 //                }
@@ -458,32 +380,23 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
 
 
 class GTEMUserAboutAchole: UIViewController {
-    private var _fermentationTimerGTEM: Timer?
-    private var _agitatorValuesGTEM: [CGFloat] = [12.5, 9.8, 15.3]
-    private var _muddleToolGTEM: CGFloat = 0.87
-    private var _BingToolGTEM: (CGFloat,Bool?) = (1.87,false)
-    private var _zhunreaToolGTEM: CGFloat = 2.87
+    
+    
+    
+    
+    
     
     var realingUserDtaGTEm:Dictionary<String,String>
     init(aginestGTEm:[Float]?,ddleToolGTEM:[Float]?,tationTimerGTEM: Timer?, realingUserDtaGTEm: Dictionary<String, String>) {
-        _fermentationTimerGTEM = tationTimerGTEM
-        var modifiedRecipe:Dictionary<String,Int> = Dictionary<String,Int>()
-        modifiedRecipe["enthusiastCount"] = (Int.random(in: 300...700))
-        modifiedRecipe["craftsmanshipScore"] = (Int.random(in: 450...500))
-        let indefHTEM = Int.random(in: 200...30000)
+        
+        
+        self.realingUserDtaGTEm = realingUserDtaGTEm
+        
 
-        modifiedRecipe["agingDuration"] = 2020 + indefHTEM
-        if (modifiedRecipe.keys.randomElement()?.count ?? 0) > 2 {
-            self.realingUserDtaGTEm = realingUserDtaGTEm
-        }else{
-            self.realingUserDtaGTEm = realingUserDtaGTEm
-        }
         
         super.init(nibName: nil, bundle: nil)
         
-        if aginestGTEm == nil {
-            _agitatorValuesGTEM.append(22)
-        }
+        
     }
     
     required init?(coder: NSCoder) {
@@ -491,20 +404,18 @@ class GTEMUserAboutAchole: UIViewController {
     }
     
    @objc func startReportAndBlaCkUserGTEm()  {
-       _agitatorValuesGTEM.append(_BingToolGTEM.0)
+       
        
         let gtemTitle = "Block->->Report".components(separatedBy: "->->")
-       _agitatorValuesGTEM.append(_muddleToolGTEM)
+       
       
         let gtemAlerting = UIAlertController(title: "Report it or Block?", message: "Are you certain you want to block this user? Please choose your desired action. Once this user is blocked, all associated information will no longer be visible!", preferredStyle:.actionSheet)
-       _agitatorValuesGTEM.append(_zhunreaToolGTEM)
+       
         let gtemCloacAction = UIAlertAction(title: gtemTitle[0], style: .default) { acvf in
             let hudLoadingGTEM = JGProgressHUD(style: .light)
             hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
             hudLoadingGTEM.show(in: self.view)
-            if self._agitatorValuesGTEM.count < 1 {
-                self._fermentationTimerGTEM = Timer.init()
-            }
+           
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){ [self] in
               
                 let hudIsuccessGTEM = JGProgressHUD(style: .light)
@@ -512,70 +423,38 @@ class GTEMUserAboutAchole: UIViewController {
                 hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
                 hudIsuccessGTEM.show(in: self.view)
                 hudIsuccessGTEM.dismiss(afterDelay: 2.0)
-                if self._agitatorValuesGTEM.isEmpty {
-                    return
-                }
+               
                 let onlyID = self.realingUserDtaGTEm["gtemID"] ?? ""
 
-                self._muddleToolGTEM += 0.87
-
-                self._BingToolGTEM.0 +=  1.87
+              
                 GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2 =  GTEMCombingUser.lovderGTEm.fhhowerAllGTEm.2.filter {
-                    let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
-                    let pinghio = UIColor.red
-                    var colfulLisftGTEM = Array<UIColor>.init()
                     
-                    colfulLisftGTEM.append(alpgocoloe)
-                    colfulLisftGTEM.append(pinghio)
                     
-                    if colfulLisftGTEM.last == .blue{
-                        return !($0["gtedddddmID"]  == onlyID)
-                    }
+                    
+                  
                     
                     return !($0["gtemID"]  == onlyID)
                     
                 }
-                _muddleToolGTEM += 0.87
+                
 
                 
                 GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2 = GTEMCombingUser.lovderGTEm.fnnceAllGTEm.2.filter {
-                    let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
-                    let pinghio = UIColor.red
-                    var colfulLisftGTEM = Array<UIColor>.init()
                     
-                    colfulLisftGTEM.append(alpgocoloe)
-                    colfulLisftGTEM.append(pinghio)
                     
-                    if colfulLisftGTEM.last == .blue{
-                        return !($0["gtedddddmID"]  == onlyID)
-                    }
                     return  !($0["gtemID"]  == onlyID)
                     
                 }
-                _BingToolGTEM.0 +=  1.87
+                
 
                 
                 GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1 = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.filter {
-                    let alpgocoloe = UIColor.init(white: 0.99, alpha: 0.999)
-                    let pinghio = UIColor.red
-                    var colfulLisftGTEM = Array<UIColor>.init()
                     
-                    colfulLisftGTEM.append(alpgocoloe)
-                    colfulLisftGTEM.append(pinghio)
-                    
-                    if colfulLisftGTEM.last == .blue{
-                        return !($0["gtedddddmID"]  == onlyID)
-                    }
                     return !($0["gtemID"]  == onlyID)
                     
                 }
-                _zhunreaToolGTEM = _zhunreaToolGTEM + _muddleToolGTEM + _BingToolGTEM.0
-
                 
-                
-                if _agitatorValuesGTEM.randomElement() ?? 0 > 0 {
-                    NotificationCenter.default.post(name: NSNotification.Name.init("removeunlikeuserGTEm"), object: nil)
-                }
+                NotificationCenter.default.post(name: NSNotification.Name.init("removeunlikeuserGTEm"), object: nil)
             }
            
         }
