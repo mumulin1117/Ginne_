@@ -41,7 +41,7 @@ class GTEMCombingUser: NSObject {
     
     private var virtualBarInventoryGenm: [String: Int] = [:] // 虚拟调酒工具库存
    
-     var ancholeRoomGTEm:(String,[GTEmAcholeRoom]) = ("GTEMCombingUser",[GTEmAcholeRoom]())
+     var ancholeRoomGTEm:(String,[GTEmAcholeFangjian]) = ("GTEMCombingUser",[GTEmAcholeFangjian]())
     
     private var liveEventNotificationsGenm: [String] = [] // 实时活动通知
    
@@ -150,7 +150,7 @@ class GTEMCombingUser: NSObject {
             let duhu10GTEm = ("notme",sleUseringoGTEm,gtemSendingContents)
             
 
-            let reamROomAncholeGTEm =   (GTEmAcholeRoom.init(roomIDGTEM: item.2, roomNameGTEM: item.0,roombackgroundGTEM: UIImage(named:item.1),roomHosterGTEm: self.videoTotaluserGTEm.1[k], roomMesageListGTEm: [duhua0GTEm,duhu10GTEm]))
+            let reamROomAncholeGTEm =   (GTEmAcholeFangjian.init(roomIDGTEM: item.2, roomNameGTEM: item.0,roombackgroundGTEM: UIImage(named:item.1),roomHosterGTEm: self.videoTotaluserGTEm.1[k], roomMesageListGTEm: [duhua0GTEm,duhu10GTEm]))
            
             
             ancholeRoomGTEm.1.append(reamROomAncholeGTEm)

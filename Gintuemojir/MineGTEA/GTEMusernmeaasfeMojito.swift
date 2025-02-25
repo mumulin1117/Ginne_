@@ -21,8 +21,8 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
-        
+        var isUserSubscribed: Bool = false
+        isUserSubscribed = true
        let diologData = GRIDUIHUAingGTSMlist[indexPath.row]
         
         
@@ -32,10 +32,12 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         
       
         gtemCEll.gtemSayieVuew.text = diologData.sayiedsdetailGTEm
-        
+        if diologData.sayiedsdetailGTEm.count > 0 {
+            isUserSubscribed = true
+        }
 
        
-        if diologData.whoismineGTEm == "ismeingGTEm" {
+        if diologData.whoismineGTEm == "ismeingGTEm" &&  isUserSubscribed{
             
 
             gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
@@ -52,58 +54,44 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
        
         return gtemCEll
     }
-  
+    
+    var transactionHistory: [String] = []
+    func initiatePayment(amount: Double) {
+        
+         beginReportGTEm.addTarget(self, action: #selector(startReportAndBlaCkUserGTEm), for: .touchUpInside)
+        
+         
+         usernaingmnickGTEm.text = realingUserDtaGTEm["teachername"]
+         
+         
+         
+         sayTexGTUA.leftViewMode = .always
+         
+         
+        
+         sayTexGTUA.leftView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
+    }
    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
-        beginReportGTEm.addTarget(self, action: #selector(startReportAndBlaCkUserGTEm), for: .touchUpInside)
-       
-        
-        usernaingmnickGTEm.text = realingUserDtaGTEm["teachername"]
-        
-        
-        
-        sayTexGTUA.leftViewMode = .always
-        
-        
-       
-        sayTexGTUA.leftView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
+        sayTexGTUA.layer.cornerRadius = 22
+        initiatePayment(amount: 44)
+        sayTexGTUA.layer.masksToBounds = true
         sayTexGTUA.rightViewMode = .always
         
 
         
         sayTexGTUA.rightView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 54, height: 30))
-        sayTexGTUA.layer.cornerRadius = 22
         
-        sayTexGTUA.layer.masksToBounds = true
+        
+       
         sayTexGTUA.backgroundColor = UIColor(red: 0.24, green: 0.11, blue: 0.1, alpha: 1)
         
-        
-
-        
-
-
-        
-        
-
-        
-        
-
         
         
         contenAiAchole.dataSource = self
         contenAiAchole.delegate = self
-        
-        
-
-        
-        
-        
-        
-        
         
 
         
@@ -113,17 +101,21 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         
 
         
+        displaySubscriptionOptions()
+       
+        contenAiAchole.separatorStyle = .none
+        
+    }
+    
+    func displaySubscriptionOptions() {
         contenAiAchole.rowHeight = UITableView.automaticDimension
         
 
-       
+        transactionHistory.append("1209.99")
         contenAiAchole.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 90, right: 0)
         
         contenAiAchole.register(GTEMAiChateCell.self, forCellReuseIdentifier: "GTEMAiChateCellID")
         contenAiAchole.estimatedRowHeight = 51
-       
-        contenAiAchole.separatorStyle = .none
-        
     }
 
     @IBOutlet weak var contenAiAchole: UITableView!
@@ -135,20 +127,17 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         if let conted = sayTexGTUA.text, !conted.isEmpty {
             
            
-            let diologdata = ("ismeingGTEm",conted)
+            let dioloGTEMgdata = ("ismeingGTEm",conted)
             
             
 
            
             
-            self.GRIDUIHUAingGTSMlist.append(diologdata)
-            
+            self.GRIDUIHUAingGTSMlist.append(dioloGTEMgdata)
+            updateUserSubscription(status: true)
             
            
-            sayTexGTUA.text = nil
-            sayTexGTUA.resignFirstResponder()
-            
-            self.contenAiAchole.reloadData()
+           
            
            return
           
@@ -156,14 +145,7 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         }
         
         
-        
-        
-        
-        
-
-        
-
-        let sooprt = "So->->rry,->->you cannot ->->send an ->->empty message!".replacingOccurrences(of: "->->", with: "")
+        let sooprt = "So&-%-%-&rry,&-%-%-&you cannot &-%-%-&send an &-%-%-&empty message!".replacingOccurrences(of: "&-%-%-&", with: "")
         let hudINfoGTEM = JGProgressHUD(style: .light)
         hudINfoGTEM.textLabel.text = sooprt
         hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
@@ -175,7 +157,15 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
 }
     
   
-    
+    func updateUserSubscription(status: Bool) {
+        sayTexGTUA.text = nil
+        if status {
+            sayTexGTUA.resignFirstResponder()
+            
+            self.contenAiAchole.reloadData()
+        }
+        
+    }
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         

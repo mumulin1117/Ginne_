@@ -122,7 +122,7 @@ class GTEMPopularMOjito: UIViewController,UICollectionViewDelegate,UICollectionV
         
         homewrserDataView.isHidden = true
         let hudLoadingGTEM = JGProgressHUD(style: .light)
-        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
         hudLoadingGTEM.show(in: self.view)
         
 

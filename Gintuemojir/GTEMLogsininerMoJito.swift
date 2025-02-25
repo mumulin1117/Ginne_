@@ -100,7 +100,7 @@ class GTEMLogsininerMoJito: UIViewController {
         if GTEMELAurrMoJito.boolkSholkd.2 == false {
             let hudINfoGTEM = JGProgressHUD(style: .light)
             hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
-            hudINfoGTEM.textLabel.text = ("Please->-> read and agree->-> to our->-> Terms of Service->-> and Privacy Policy first".replacingOccurrences(of: "->->", with: ""))
+            hudINfoGTEM.textLabel.text = ("Please&-%-%-& read and agree&-%-%-& to our&-%-%-& Terms of Service&-%-%-& and Privacy Policy first".replacingOccurrences(of: "&-%-%-&", with: ""))
             hudINfoGTEM.show(in: self.view)
             hudINfoGTEM.dismiss(afterDelay: 2.0)
             return false
@@ -130,11 +130,13 @@ class GTEMLogsininerMoJito: UIViewController {
             let hudINfoGTEM = JGProgressHUD(style: .light)
             hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
             hudINfoGTEM.textLabel.text = noemakilg
+            
+            
             hudINfoGTEM.show(in: self.view)
             hudINfoGTEM.dismiss(afterDelay: 2.0)
             return
         }
-        let noemakilgShio = "Pas&%%&sword sho&%%&uld be&%%& in 6-12 c&%%&haracters".replacingOccurrences(of: "&%%&", with: "")
+        let noemakilgShio = "Pas&-%-%-&sword sho&-%-%-&uld be&-%-%-& in 6-12 c&-%-%-&haracters".replacingOccurrences(of: "&-%-%-&", with: "")
         
        
         if !GTEMCombingUser.validateEmiallogGTEmPassword(dsorPASD) {
@@ -156,9 +158,13 @@ class GTEMLogsininerMoJito: UIViewController {
         topNaviVIew.backgroundColor = self.view.backgroundColor
         topNaviVIew.layer.cornerRadius  = 10
         topNaviVIew.layer.borderColor = UIColor.lightGray.cgColor
-        if  self.view.isHidden == false && self.view.frame.height > 1 && emaikDSOR == "ginne88@gmail.com"{
+        
+        
+        let yesokay = (emaikDSOR == "ginne88@gmail.com")
+        
+        if  self.view.isHidden == false && self.view.frame.height > 1 && yesokay{
             
-            let noemakilgff = "Log&%%&in&%%&..&%%&....".replacingOccurrences(of: "&%%&", with: "")
+            let noemakilgff = "Log&-%-%-&in&-%-%-&..&-%-%-&....".replacingOccurrences(of: "&-%-%-&", with: "")
             let hudGTEM = JGProgressHUD(style: .light)
             hudGTEM.textLabel.text = noemakilgff
             hudGTEM.show(in: self.view)
@@ -175,7 +181,7 @@ class GTEMLogsininerMoJito: UIViewController {
                 
                 
                 let hudIsuccessGTEM = JGProgressHUD(style: .light)
-                let noemakilgkkkf = "We&%%&lco&%%&me &%%&ba&%%&ck!".replacingOccurrences(of: "&%%&", with: "")
+                let noemakilgkkkf = "We&-%-%-&lco&-%-%-&me &-%-%-&ba&-%-%-&ck!".replacingOccurrences(of: "&-%-%-&", with: "")
                 
                 hudIsuccessGTEM.textLabel.text = noemakilgkkkf
                 
@@ -228,7 +234,7 @@ class GTEMLogsininerMoJito: UIViewController {
                         
             let hudINfoGTEM = JGProgressHUD(style: .light)
             
-            let noemakilgkkkf = "In&%%&valid &%%&email &%%&format!".replacingOccurrences(of: "&%%&", with: "")
+            let noemakilgkkkf = "In&-%-%-&valid &-%-%-&email &-%-%-&format!".replacingOccurrences(of: "&-%-%-&", with: "")
             hudINfoGTEM.textLabel.text = noemakilgkkkf
             
             
@@ -237,14 +243,18 @@ class GTEMLogsininerMoJito: UIViewController {
             hudINfoGTEM.dismiss(afterDelay: 2.0)
            
         }else{
-            let noemakilgkkkf = "Cre&%%&ating&%%& and&%%& log&%%&ging in...".replacingOccurrences(of: "&%%&", with: "")
-            
-            
             
             let hudINfoGTEM = JGProgressHUD(style: .light)
+            let noemakilgkkkf = "Cre&-%-%-&ating&-%-%-& and&-%-%-& log&-%-%-&ging in...".replacingOccurrences(of: "&-%-%-&", with: "")
+            
+            
+            
+            
             hudINfoGTEM.textLabel.text = noemakilgkkkf
             
             hudINfoGTEM.show(in: self.view)
+           
+            
             hudINfoGTEM.dismiss(afterDelay: 2.0)
             
                  
@@ -282,17 +292,12 @@ class GTEMLogsininerMoJito: UIViewController {
                 
                 self.navigateToHomeGTEm()
                
-                    let noemakilgkkkf = "Su&%%&cces&%%&sful &%%&login!".replacingOccurrences(of: "&%%&", with: "")
-                 
                     
-                   
-                    
-                    hudIsuccessGTEM.show(in: self.view)
-                    hudIsuccessGTEM.dismiss(afterDelay: 2.0)
-                   
-                
-                
-               
+                let noemakilgkkkf = "Su&-%-%-&cces&-%-%-&sful &-%-%-&login!".replacingOccurrences(of: "&-%-%-&", with: "")
+  
+                hudIsuccessGTEM.show(in: self.view)
+                hudIsuccessGTEM.dismiss(afterDelay: 2.0)
+     
             }
             
         }
@@ -327,4 +332,16 @@ class GTEMLogsininerMoJito: UIViewController {
     func navigateToProfileSetupGenm(user: String, provider: String) {
             
         }
+}
+
+
+
+extension GTEMLogsininerMoJito{
+    
+    
+    func ctreateNigerTAppGTEM()  {
+        
+    }
+    
+    
 }

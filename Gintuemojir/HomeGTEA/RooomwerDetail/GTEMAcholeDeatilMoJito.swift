@@ -33,11 +33,11 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     @IBOutlet weak var thirdNameGTEm: UILabel!
     
     private  var ismineBackgroundRoom:Bool = false
-    private  var roomInfoGTEm :GTEmAcholeRoom
+    private  var roomInfoGTEm :GTEmAcholeFangjian
     
     private var ijiuGTERER:Int
     
-    init( ismineBackgroundRoom: Bool,roomInfoGTEm:(Int,GTEmAcholeRoom)) {
+    init( ismineBackgroundRoom: Bool,roomInfoGTEm:(Int,GTEmAcholeFangjian)) {
         self.ismineBackgroundRoom = ismineBackgroundRoom
         self.roomInfoGTEm = roomInfoGTEm.1
         ijiuGTERER = roomInfoGTEm.0
@@ -82,7 +82,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         sayTexGTUA.layer.masksToBounds = true
         sayTexGTUA.backgroundColor = UIColor(red: 0.24, green: 0.11, blue: 0.1, alpha: 1)
         
-        self.roomAcholeName.text = roomInfoGTEm.roomNameGTEM
+        self.roomAcholeName.text = roomInfoGTEm.fangjainNameGTEM
         self.hosterIonGTEM.image = roomInfoGTEm.roombackgroundGTEM
         
         hosterIonGTEM.layer.cornerRadius = 30
@@ -142,7 +142,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         contenAiAchole.estimatedRowHeight = 55
         contenAiAchole.isHidden = true
         let hudLoadingGTEM = JGProgressHUD(style: .light)
-        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
         hudLoadingGTEM.show(in: self.view)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
            
@@ -165,7 +165,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
              
             
 
-            let alert = UIAlertController(title: "Destroy the room?".replacingOccurrences(of: "->->", with: ""), message: "After the creator leaves the room, the room information will be destroyed", preferredStyle:.alert)
+            let alert = UIAlertController(title: "Destroy the room?".replacingOccurrences(of: "&-%-%-&", with: ""), message: "After the creator leaves the room, the room information will be destroyed", preferredStyle:.alert)
             
             
 
@@ -208,7 +208,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
            
             
             let hudLoadingGTEM = JGProgressHUD(style: .light)
-            hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+            hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
             hudLoadingGTEM.show(in: self.view)
             
             
@@ -247,7 +247,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
             
 
            
-            if  item.roomIDGTEM == self.roomInfoGTEm.roomIDGTEM {
+            if  item.fangjainIDGTEM == self.roomInfoGTEm.fangjainIDGTEM {
                 GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1[i] = self.roomInfoGTEm
                 
             }

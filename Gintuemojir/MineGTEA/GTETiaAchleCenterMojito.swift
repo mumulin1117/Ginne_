@@ -215,7 +215,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             
 
                 let hudLoadingGTEM = JGProgressHUD(style: .light)
-                hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+                hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
                 hudLoadingGTEM.show(in: self.view)
             
             
@@ -402,14 +402,14 @@ class GTEMUserAboutAchole: UIViewController {
    @objc func startReportAndBlaCkUserGTEm()  {
        
        
-        let gtemTitle = "Block->->Report".components(separatedBy: "->->")
+        let gtemTitle = "Block&-%-%-&Report".components(separatedBy: "&-%-%-&")
        
       
         let gtemAlerting = UIAlertController(title: "Report it or Block?", message: "Are you certain you want to block this user? Please choose your desired action. Once this user is blocked, all associated information will no longer be visible!", preferredStyle:.actionSheet)
        
         let gtemCloacAction = UIAlertAction(title: gtemTitle[0], style: .default) { acvf in
             let hudLoadingGTEM = JGProgressHUD(style: .light)
-            hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+            hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
             hudLoadingGTEM.show(in: self.view)
            
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){ [self] in

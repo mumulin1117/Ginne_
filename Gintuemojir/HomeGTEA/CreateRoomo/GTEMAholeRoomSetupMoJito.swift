@@ -51,7 +51,7 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
             return
         }
         
-        let kdijijhg = "Sorry->->,No ->->album ->->permission!".replacingOccurrences(of: "->->", with: "")
+        let kdijijhg = "Sorry&-%-%-&,No &-%-%-&album &-%-%-&permission!".replacingOccurrences(of: "&-%-%-&", with: "")
         
        
         let hudINfoGTEM = JGProgressHUD(style: .light)
@@ -112,12 +112,12 @@ class GTEMAholeRoomSetupMoJito: UIViewController {
         
         
         let alertINfog = """
-The chat room theme you->-> created is ->->pending our review.
+The chat room theme you&-%-%-& created is &-%-%-&pending our review.
 
-You will receive->-> a notification ->->regarding approval or->-> the reason for rejection->-> within the system. Please ensure that you adhere to all relevant laws, regulations, and our privacy policy.
+You will receive&-%-%-& a notification &-%-%-&regarding approval or&-%-%-& the reason for rejection&-%-%-& within the system. Please ensure that you adhere to all relevant laws, regulations, and our privacy policy.
 
-If any violations are ->->detected, we reserve->-> the right->-> to close ->->your live streaming room. Thank you for your support->-> and understanding.
-""".replacingOccurrences(of: "->->", with: "")
+If any violations are &-%-%-&detected, we reserve&-%-%-& the right&-%-%-& to close &-%-%-&your live streaming room. Thank you for your support&-%-%-& and understanding.
+""".replacingOccurrences(of: "&-%-%-&", with: "")
         
         
 
@@ -159,7 +159,7 @@ If any violations are ->->detected, we reserve->-> the right->-> to close ->->yo
 
                 let minUserGTEM = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
                 
-                let minroom = GTEMAcholeDeatilMoJito.init(ismineBackgroundRoom: true, roomInfoGTEm: (1,GTEmAcholeRoom.init(roomIDGTEM: comeiIDtitle, roomNameGTEM: comeingtitle, roombackgroundGTEM: self.pickingGTEAimag!, roomHosterGTEm: minUserGTEM, roomMesageListGTEm: [])))
+                let minroom = GTEMAcholeDeatilMoJito.init(ismineBackgroundRoom: true, roomInfoGTEm: (1,GTEmAcholeFangjian.init(roomIDGTEM: comeiIDtitle, roomNameGTEM: comeingtitle, roombackgroundGTEM: self.pickingGTEAimag!, roomHosterGTEm: minUserGTEM, roomMesageListGTEm: [])))
                 
                
 

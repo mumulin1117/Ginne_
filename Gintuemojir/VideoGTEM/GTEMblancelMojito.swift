@@ -14,6 +14,7 @@ import JGProgressHUD
 class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
    
+    @IBOutlet weak var surelisteng: UIButton!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        
@@ -22,26 +23,30 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
     }
     
 
-    var recordingSelGTEm:IndexPath = IndexPath.init(row: 0, section: 0)
+    @IBOutlet weak var typerBgs: UIView!
     
+    let appGENName = "Ginne - Realm of Flavors"
+    
+    var recordingSelGTEm:IndexPath = IndexPath.init(row: 0, section: 0)
+    let currencySymbol = "$"
     
     private  let dataGTEM:Array<(String,String,Int,Bool,Bool)> = [
-        ("$&%%&0.&%%&99".replacingOccurrences(of: "&%%&", with: "")
+        ("$&-%-%-&0.&-%-%-&99".replacingOccurrences(of: "&-%-%-&", with: "")
          ,"cotcsdtspojiyywc",400,false,false),
                      
-        ("$&%%&1.&%%&99".replacingOccurrences(of: "&%%&", with: ""),"vfckmvvzjeaaoahs",800,false,false),
-        ("$2&%%&.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"kiloeerlisnibhungert",1550,false,false),
+        ("$&-%-%-&1.&-%-%-&99".replacingOccurrences(of: "&-%-%-&", with: ""),"vfckmvvzjeaaoahs",800,false,false),
+        ("$2&-%-%-&.9&-%-%-&9".replacingOccurrences(of: "&-%-%-&", with: ""),"kiloeerlisnibhungert",1550,false,false),
                     
-        ("$&%%&4.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"ivudncxlqrfvmpoj",2450,false,false),
-           ("$9&%%&.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"fdvlkwlpkgbiaaat",4900,false,false),
-        ("$&%%&19.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"rwrhgqdpxaoldceb",9800,false,false),
+        ("$&-%-%-&4.9&-%-%-&9".replacingOccurrences(of: "&-%-%-&", with: ""),"ivudncxlqrfvmpoj",2450,false,false),
+           ("$9&-%-%-&.9&-%-%-&9".replacingOccurrences(of: "&-%-%-&", with: ""),"fdvlkwlpkgbiaaat",4900,false,false),
+        ("$&-%-%-&19.9&-%-%-&9".replacingOccurrences(of: "&-%-%-&", with: ""),"rwrhgqdpxaoldceb",9800,false,false),
 
-        ("$&%%&29.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"zhunbeiyuiinghj",16500,false,false),
-        ("$4&%%&9.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"vmmbnuftnbmphmbk",24500,false,false),
+        ("$&-%-%-&29.9&-%-%-&9".replacingOccurrences(of: "&-%-%-&", with: ""),"zhunbeiyuiinghj",16500,false,false),
+        ("$4&-%-%-&9.9&-%-%-&9".replacingOccurrences(of: "&-%-%-&", with: ""),"vmmbnuftnbmphmbk",24500,false,false),
         
-        ("$79.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"dansingeftnbmershi",38450,false,false),
+        ("$79.9&-%-%-&9".replacingOccurrences(of: "&-%-%-&", with: ""),"dansingeftnbmershi",38450,false,false),
 
-        ("$&%%&99.9&%%&9".replacingOccurrences(of: "&%%&", with: ""),"ikgcarevewbdettd",49000,false,false)]
+        ("$&-%-%-&99.9&-%-%-&9".replacingOccurrences(of: "&-%-%-&", with: ""),"ikgcarevewbdettd",49000,false,false)]
     
     
    
@@ -82,7 +87,7 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
        
         
         let hudLoadingGTEM = JGProgressHUD(style: .light)
-        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
         hudLoadingGTEM.show(in: self.view)
        
         
@@ -95,16 +100,17 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
             
             if case .success(let psPurch) = psResult {
                
-              
+                let hudIsuccessGTEM = JGProgressHUD(style: .light)
+               
                 let psdownloads = psPurch.transaction.downloads
-                
+                hudIsuccessGTEM.textLabel.text = "Suc&-%-%-&cessful pa&-%-%-&yme&-%-%-&nt!".replacingOccurrences(of: "&-%-%-&", with: "")
                 if !psdownloads.isEmpty {
                     
                     SwiftyStoreKit.start(psdownloads)
                 }
                
 
-                
+                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
 
               
                 if psPurch.needsFinishTransaction {
@@ -115,6 +121,7 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
 
                
                 let diopuserGTEM =  GTEMCombingUser.lovderGTEm.personMeGTEm[0]
+                
                 var oweneddddGTEm =  Int(diopuserGTEM["gtemBlancecoin"] ?? "0") ?? 0
                
                 oweneddddGTEm = oweneddddGTEm + self.dataGTEM[self.recordingSelGTEm.row].2
@@ -128,9 +135,8 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
 
                 self.wallentblanceGTEm.text = "\(oweneddddGTEm)"
                
-                let hudIsuccessGTEM = JGProgressHUD(style: .light)
-                hudIsuccessGTEM.textLabel.text = "Suc&%%&cessful pa&%%&yme&%%&nt!".replacingOccurrences(of: "&%%&", with: "")
-                hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                
+               
                 hudIsuccessGTEM.show(in: self.view)
                 hudIsuccessGTEM.dismiss(afterDelay: 2.0)
                
@@ -138,19 +144,20 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
           
             }else if case .error(let error) = psResult {
                 
+                let hudINfoGTEM = JGProgressHUD(style: .light)
                 
-                
-                
+                hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
                 if error.code == .paymentCancelled {
                   
                     return
                 }
                 
 
-                let hudINfoGTEM = JGProgressHUD(style: .light)
+               
                 hudINfoGTEM.textLabel.text = error.localizedDescription
-                hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+               
                 hudINfoGTEM.show(in: self.view)
+                
                 hudINfoGTEM.dismiss(afterDelay: 2.0)
                
                
@@ -168,6 +175,8 @@ class GTEMblancelMojito: UIViewController,UICollectionViewDelegate,UICollectionV
         self.navigationController?.popViewController(animated: true)
         
     }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize.init(width: (UIScreen.main.bounds.width - 46 - 16)/3, height: 100)

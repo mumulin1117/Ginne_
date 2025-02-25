@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GTEMblancelMojito" customModule="Gintuemojir" customModuleProvider="target">
             <connections>
                 <outlet property="dataVireGTEm" destination="n19-mg-w4f" id="gqg-AP-0m9"/>
+                <outlet property="surelisteng" destination="KgB-Gx-b0s" id="rxZ-mE-SV6"/>
+                <outlet property="typerBgs" destination="R72-vr-Ked" id="GhX-dN-5Ae"/>
                 <outlet property="view" destination="8ya-or-w8q" id="Rc1-yS-2cV"/>
                 <outlet property="wallentblanceGTEm" destination="nEz-xY-4dD" id="65W-cl-oUq"/>
             </connections>

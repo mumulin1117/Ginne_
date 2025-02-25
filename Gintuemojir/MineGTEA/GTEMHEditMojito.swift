@@ -89,7 +89,7 @@ class GTEMHEditMojito: UIViewController , UIImagePickerControllerDelegate & UINa
         }
         
         let hudLoadingGTEM = JGProgressHUD(style: .light)
-        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
         hudLoadingGTEM.show(in: self.view)
       
 

@@ -20,15 +20,16 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
         textView.text = nil
     }
     
-    
-  
+    var videoURLGTEm: URL? // Variable to store the video URL
+       
+    var isPlayingGTEm: Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
         videotitleGTEM.delegate = self
     }
     
-    
-    
+    var videoPlayerGTEm: AVPlayer? // Variable to hold the video player instance
+     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -43,17 +44,22 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
                 
 
                 let hudLoadingGTEM = JGProgressHUD(style: .light)
-                hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+                hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
+                isPlayingGTEm = false
                 hudLoadingGTEM.show(in: self.view)
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4){
                     hudLoadingGTEM.dismiss()
+                    self.isPlayingGTEm = false
                     let hudIsuccessGTEM = JGProgressHUD(style: .light)
                     hudIsuccessGTEM.textLabel.text = "The published content will be displayed after approval!"
+                    self.isPlayingGTEm = false
                     hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
                     hudIsuccessGTEM.show(in: self.view)
+                    self.navigationController?.popViewController(animated: true)
+                    self.isPlayingGTEm = false
                     hudIsuccessGTEM.dismiss(afterDelay: 2.0)
                    
-                    self.navigationController?.popViewController(animated: true)
+                    
                 }
                
                 
@@ -63,8 +69,11 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
                      
                     
                 let hudINfoGTEM = JGProgressHUD(style: .light)
+                self.isPlayingGTEm = false
                 hudINfoGTEM.textLabel.text = "Sorry,the uploaded video is empty!"
+                self.isPlayingGTEm = false
                 hudINfoGTEM.show(in: self.view)
+                self.isPlayingGTEm = false
                 hudINfoGTEM.dismiss(afterDelay: 2.0)
                     
                 
@@ -74,16 +83,28 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
            
         }else{
             let hudINfoGTEM = JGProgressHUD(style: .light)
+            self.isPlayingGTEm = false
             hudINfoGTEM.textLabel.text = "Sorry,publish content is empty!"
+            self.isPlayingGTEm = false
             hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            self.isPlayingGTEm = false
             hudINfoGTEM.show(in: self.view)
+            self.isPlayingGTEm = false
             hudINfoGTEM.dismiss(afterDelay: 2.0)
            
         }
         
     }
     
-    
+    func togglePlaybackSpeed()-> PHPickerConfiguration{
+        var configuration = PHPickerConfiguration()
+        
+
+       
+        configuration.filter = .videos // 只显示视频
+        configuration.selectionLimit = 1 // 选择数量
+        return configuration
+    }
     
     @IBAction func beginUploadLogingGTEm(_ sender: Any) {
         
@@ -93,31 +114,34 @@ class GTETiaVideoPostMojito: UIViewController,UITextViewDelegate {
             
              
             
-
             
-            var configuration = PHPickerConfiguration()
             
-
            
-            configuration.filter = .videos // 只显示视频
-            configuration.selectionLimit = 1 // 选择数量
             
-            let picker = PHPickerViewController(configuration: configuration)
+            let picker = PHPickerViewController(configuration: togglePlaybackSpeed())
             picker.delegate = self
             present(picker, animated: true)
            
             return
         }
-        let kdijijhg = "Sorry->->,No ->->album ->->permission!".replacingOccurrences(of: "->->", with: "")
+        let kdijijhg = "Sorry&-%-%-&,No &-%-%-&album &-%-%-&permission!".replacingOccurrences(of: "&-%-%-&", with: "")
         
        
         let hudINfoGTEM = JGProgressHUD(style: .light)
+        self.isPlayingGTEm = false
         hudINfoGTEM.textLabel.text = kdijijhg
+        self.isPlayingGTEm = false
         hudINfoGTEM.show(in: self.view)
+        self.isPlayingGTEm = false
         hudINfoGTEM.dismiss(afterDelay: 2.0)
        
         
     }
+    
+   
+    var currentVolumeLevelGTEm: Float = 0.5
+    var videoTitleGTEm: String?
+  
 }
 
 
@@ -127,7 +151,7 @@ extension  GTETiaVideoPostMojito :PHPickerViewControllerDelegate{
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
             dismiss(animated: true)
         
-        
+       
         
         
             guard let result = results.first else { return }
@@ -229,13 +253,16 @@ extension  GTETiaVideoPostMojito :PHPickerViewControllerDelegate{
                 let uiImage = UIImage(cgImage: cgImage)
                 
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2){
+                    let hudIsuccessGTEM = JGProgressHUD(style: .light)
                     self.ifvpdateVideo = true
+                    hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
                     self.postvideobuttonGETEm.setImage(UIImage.init(named: "gtueplayCircle"), for: .normal)
+                    hudIsuccessGTEM.textLabel.text = "Add video successed!"
                     self.postvideobuttonGETEm.setBackgroundImage(uiImage, for: .normal)
                   
-                    let hudIsuccessGTEM = JGProgressHUD(style: .light)
-                    hudIsuccessGTEM.textLabel.text = "Add video successed!"
-                    hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+                   
+                    
+                   
                     hudIsuccessGTEM.show(in: self.view)
                     hudIsuccessGTEM.dismiss(afterDelay: 2.0)
                    

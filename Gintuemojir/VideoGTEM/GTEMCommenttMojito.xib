@@ -11,8 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GTEMCommenttMojito" customModule="Gintuemojir" customModuleProvider="target">
             <connections>
+                <outlet property="bakiGTEMb" destination="CmM-Be-Ejz" id="8jx-TS-tCr"/>
                 <outlet property="commentcontetnlkblGTEm" destination="0V6-c3-zhM" id="mp7-kL-773"/>
                 <outlet property="countGTEm" destination="fZM-nv-UlR" id="TuR-hU-nKI"/>
+                <outlet property="flooweVideo" destination="IpD-m3-n1x" id="GTO-Ds-wY5"/>
                 <outlet property="mephotoonGTEM" destination="hHe-XA-ek1" id="KH0-6w-RO2"/>
                 <outlet property="namecontetnlkblGTEm" destination="nfe-Sd-K8P" id="gBY-dN-LJb"/>
                 <outlet property="sayTexGTUA" destination="M4L-l5-RxL" id="AeJ-9p-6Mu"/>

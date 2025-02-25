@@ -21,15 +21,15 @@ enum RoomError: Error {
     case invalidBaseSpirit
     case sessionConflict
 }
-struct GTEmAcholeRoom {
+struct GTEmAcholeFangjian {
     
     private var activeParticipantsGenm: Set<String> = []
     
     private var ongoingMixologySessionGenm: UIView?
 
-    var roomNameGTEM:String
+    var fangjainNameGTEM:String
     
-    var roomIDGTEM:String
+    var fangjainIDGTEM:String
     
     private var cocktailRecipePoolGenm: [UIImage] = []
    
@@ -54,13 +54,13 @@ struct GTEmAcholeRoom {
         
         
 
-        self.roomNameGTEM = roomNameGTEM
+        self.fangjainNameGTEM = roomNameGTEM
         
         
       
         self.roombackgroundGTEM =  roombackgroundGTEM
         
-        self.roomIDGTEM = roomIDGTEM
+        self.fangjainIDGTEM = roomIDGTEM
     }
     
     mutating func joinRoomGenm(user: String, bringing ingredients: Set<String>?)  {

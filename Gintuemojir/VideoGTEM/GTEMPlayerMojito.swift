@@ -12,19 +12,22 @@ class GTEMPlayerMojito: UIViewController {
     private  var playerGTEM: ZFPlayerController?
     
     var playerViewGTEM: ZFPlayerView = ZFPlayerView()
-    
-    
+    let videoPlayerKeyGTEm = "videoPlayer" // Key for the video player instance
+       
 
   
 
     private  var linkUrlGTEM:String
+    let defaultPlaybackSpeedGTEm: Float = 1.0 // Default playback speed
     
+
     init(linkGTEM_Url: String) {
         
         self.linkUrlGTEM = linkGTEM_Url
         super.init(nibName: nil, bundle: nil)
     }
-    
+    let maxVolumeLevelGTEm: Float = 1.0 // Maximum volume level
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -40,8 +43,7 @@ class GTEMPlayerMojito: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor =  UIColor(red: 0.66, green: 0.22, blue: 0.17, alpha: 1)
-       
+        
         playerViewGTEM = ZFPlayerView()
               
         playerViewGTEM.frame = self.view.bounds
@@ -52,9 +54,12 @@ class GTEMPlayerMojito: UIViewController {
         let playerManagerGTEm = ZFAVPlayerManager()
         guard let url = URL.init(string: linkUrlGTEM) else{
             let hudINfoGTEM = JGProgressHUD(style: .light)
+            
             hudINfoGTEM.textLabel.text = "Sorry, the video address does not exist"
             hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
+            
             hudINfoGTEM.show(in: self.view)
+            
             hudINfoGTEM.dismiss(afterDelay: 2.0)
            
             backendGTEm()
@@ -70,41 +75,35 @@ class GTEMPlayerMojito: UIViewController {
         
 
        
-        let controlView = ZFPlayerControlView.init()
+        let controGTEMlView = ZFPlayerControlView.init()
         
 
-        
+        self.view.backgroundColor =  UIColor(red: 0.66, green: 0.22, blue: 0.17, alpha: 1)
+       
         
          
-        controlView.fastViewAnimated = true
+        controGTEMlView.fastViewAnimated = true
         
         
-        controlView.autoHiddenTimeInterval = 5
+        controGTEMlView.autoHiddenTimeInterval = 5
         
         
         
 
        
-        controlView.autoFadeTimeInterval = 0.5
+        controGTEMlView.autoFadeTimeInterval = 0.5
         
         
         
 
         
-        controlView.showCustomStatusBar = true
+        controGTEMlView.showCustomStatusBar = true
         
-        controlView.prepareShowLoading = true
+        controGTEMlView.prepareShowLoading = true
         
-        controlView.prepareShowControlView = false
+        controGTEMlView.prepareShowControlView = false
         
-        playerGTEM?.controlView = controlView
-        
-        playerGTEM?.shouldAutoPlay = true
-        
-        playerGTEM?.currentPlayerManager.isMuted = false
-        
-        playerGTEM?.currentPlayerManager.volume = 1.0
-        
+        setupVideGTEmoPlayer(controlView: controGTEMlView)
        
         playerGTEM?.currentPlayerManager.play()
      
@@ -119,13 +118,27 @@ class GTEMPlayerMojito: UIViewController {
         view.addSubview(backnoinag)
     }
     
-    
+    func setupVideGTEmoPlayer(controlView:ZFPlayerControlView) {
+         
+        playerGTEM?.controlView = controlView
+        
+        playerGTEM?.shouldAutoPlay = true
+        
+        adjustGTEMVolume(level: 33)
+        
+    }
+
     @objc func backendGTEm() {
         self.navigationController?.popViewController(animated: true)
         
     }
     
-
+    func adjustGTEMVolume(level: Float) {
+          
+        playerGTEM?.currentPlayerManager.isMuted = false
+        
+        playerGTEM?.currentPlayerManager.volume = 1.0
+    }
 }
 
 

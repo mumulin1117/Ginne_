@@ -20,10 +20,15 @@ class GTEMblancelCell: UICollectionViewCell {
     @IBOutlet weak var allDollersGTEm: UILabel!
     
     
+    @IBOutlet weak var gtemBalnvr: UIView!
     
 
     override var isSelected: Bool{
         didSet{
+            gtemBalnvr.isHidden = true
+            gtemBalnvr.layer.borderWidth = 0
+            
+            gtemBalnvr.layer.masksToBounds = true
             if isSelected {
                 
                 

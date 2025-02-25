@@ -36,7 +36,14 @@ class GTEMELAurrMoJito: UIViewController {
     var jornyGTEM:(Int,Bool)
     
     func loadSubscribedChannelsGenm() {
-           
+        maintainChatRoomConnectionGenm(GTEMCombingUser.init())
+       
+        gtemTisder.text = "Ginne App Terms of Service"
+        
+        
+
+       
+        self.peetermeBakGTEm.isHidden = true
     
     }
     
@@ -65,12 +72,12 @@ class GTEMELAurrMoJito: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        cananlBakGTEm.addTarget(self, action: #selector(shuldCancelGTEkGtray), for: .touchUpInside)
         
         processVideoUploadGenm()
 
        
-        cananlBakGTEm.addTarget(self, action: #selector(shuldCancelGTEkGtray), for: .touchUpInside)
+        
         agreeBakGTEm.addTarget(self, action: #selector(shuldAgreeGTEkGtray), for: .touchUpInside)
        
         peetermeBakGTEm.addTarget(self, action: #selector(peetermeBakGTEmGTEkGtray), for: .touchUpInside)
@@ -78,56 +85,7 @@ class GTEMELAurrMoJito: UIViewController {
       
        
             if jornyGTEM.0 == 0 {
-                gtemTisder.backgroundColor = .clear
-                executeAIQueryGenm( "String")
-                
-               
-                inputerkoGTEm.text =     """
-
-1. Acceptance of Terms
-
-By downloading, installing, or using the Ginne mobile application (the "App"), you agree to be bound by these End User License Agreement (EULA) terms and all applicable laws. If you do not agree to these terms, do not install or use the App.
-
-2. License Grant
-
-Ginne grants you a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes on your compatible devices. This license does not allow you to redistribute or sell the App or any part of it.
-
-3. User Obligations
-
-You agree not to:
-
-Use the App for any unlawful purpose or in violation of any local, state, national, or international law.
-Attempt to gain unauthorized access to the App or its related systems or networks.
-Post any content that is defamatory, obscene, abusive, or otherwise objectionable.
-4. Subscription Services
-
-The App may offer subscription services that grant access to premium content, features, and functionalities. By subscribing, you agree to pay all applicable fees. Subscription fees are non-refundable unless otherwise stated.
-
-5. Termination
-
-Ginne reserves the right to terminate or suspend your access to the App at any time for any reason, including if you breach these terms. Upon termination, your right to use the App will cease immediately.
-
-6. Disclaimer of Warranties
-
-The App is provided "as is" and "as available" without warranties of any kind. Ginne does not guarantee the accuracy or reliability of content or any results obtained from using the App.
-
-7. Limitation of Liability
-
-To the fullest extent permitted by law, Ginne shall not be liable for any indirect, incidental, consequential, or punitive damages arising from your use of the App.
-
-8. Changes to Terms
-
-Ginne may modify these terms at any time. You are responsible for reviewing these terms periodically. Your continued use of the App after any changes constitutes acceptance of the new terms.
-
-9. Governing Law
-
-These terms shall be governed by the laws of [Your State/Country], without regard to its conflict of law principles.
-
-10. Contact Information
-
-For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
-
-"""
+                keeHeasth()
             }
            
         let SeBackgft = self.view.frame.height
@@ -140,103 +98,57 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
 
                 inputerkoGTEm.text = """
 
-     At Ginne, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App"). By using the App, you agree to the collection and use of information in accordance with this policy.
+     Effective Date: February 1, 2025
 
-     1. Information We Collect
+     Thank you for using Ginne - Realm of Flavors ("we," "our," or "us"). Your privacy is important to us. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our application.
 
-     1.1 Personal Information
+     Information We Collect
 
-     When you create an account or interact with the App, we may collect personal information, including but not limited to:
-     Name
-     Email address
-     Payment information (if applicable)
-     Profile picture (optional)
-     
-     1.2 Usage Data
+     Personal Information: When you create an account, we may collect personal information such as your name, email address, and profile details.
+     Usage Data: We collect data on how you interact with the app, including your activity logs, preferences, and engagement metrics.
+     Cookies: We use cookies and similar tracking technologies to enhance your experience and analyze app usage.
+     How We Use Your Information
 
-     We may also collect usage data automatically, which includes information such as:
+     We may use the information we collect for various purposes, including:
 
-     Device type
-     Operating system
-     Browser type
-     Pages visited within the App
-     Time and date of visits
-     Duration of each visit
-     
-     1.3 Cookies and Tracking Technologies
+     To create and manage your account.
+     To provide and maintain our services.
+     To respond to inquiries and communicate with you.
+     To personalize user experiences and improve our app features.
+     To send you updates, promotional materials, and other information that may interest you (you can opt out at any time).
+     Disclosure of Your Information
 
-     We may use cookies and similar tracking technologies to monitor activity on our App and store certain information. Cookies are files with a small amount of data that may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.
+     We do not sell or rent your personal information. We may share information in the following circumstances:
 
-     2. How We Use Your Information
+     With Service Providers: We may use third-party services to assist in providing our services, which may involve sharing your information with them.
+     For Legal Reasons: We may disclose your information if required to do so by law or in response to valid requests by public authorities.
+     Security of Your Information
 
-     We may use the information we collect for various purposes, including to:
+     We implement reasonable security measures to protect your personal information from unauthorized access, use, or disclosure. However, no method of transmission over the Internet is completely secure.
 
-     Provide, maintain, and improve our App and its services
-     Create and manage your account
-     Process transactions and send you related information
-     Communicate with you regarding your account or transactions
-     Respond to your comments, questions, and requests
-     Send you updates, newsletters, and promotional materials (if you opt-in)
-     Conduct research and analysis to understand user behavior
-     Monitor usage of the App and detect technical issues
-     3. Disclosure of Your Information
+     Changes to This Privacy Policy
 
-     3.1 Legal Requirements
+     We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
 
-     We may disclose your personal information in the good faith belief that such action is necessary to:
+     Contact Us
 
-     Comply with a legal obligation
-     Protect and defend the rights or property of Ginne
-     Prevent or investigate possible wrongdoing in connection with the App
-     Protect the personal safety of users of the App or the public
-     Protect against legal liability
-     3.2 Third-Party Service Providers
+     If you have any questions about this Privacy Policy, please contact us at:
 
-     We may employ third-party companies and individuals to facilitate our App ("Service Providers"), provide the App on our behalf, perform App-related services, or assist us in analyzing how our App is used. These third parties have access to your personal information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.
-
-     4. Data Security
-
-     The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
-
-     5. Your Rights
-
-     Depending on your location, you may have certain rights regarding your personal information, including:
-
-     The right to access, update, or delete the information we have on you.
-     The right to request a copy of your personal information.
-     The right to withdraw consent for processing your personal information.
-     The right to object to or restrict the processing of your information.
-     To exercise these rights, please contact us at [Insert Contact Email].
-
-     6. Changes to This Privacy Policy
-
-     We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page with a new effective date. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
-
-     7. Contact Us
-
-     If you have any questions about this Privacy Policy, please contact us:
-
-     Email: [Ginne99826@gmail.com]
-     By using the Ginne App, you acknowledge that you have read this Privacy Policy and agree to its terms.            
+     Email: Ginne99826@gmail.com       
 
 """
             }
         inputerkoGTEm.isEditable = false
         
-            if jornyGTEM.0 == 2  && SeBackgft > 3 && sebWig > 2{
-                self.peerieeBakGTEm.isHidden = true
-                gtemTisder.backgroundColor = .clear
-                
-                maintainChatRoomConnectionGenm(GTEMCombingUser.init())
-               
-                gtemTisder.text = "Ginne App Terms of Service"
-                
-                
-
-               
-                self.peetermeBakGTEm.isHidden = true
-             
-            }
+        if jornyGTEM.0 == 2  && SeBackgft > 3 && sebWig > 2{
+            self.peerieeBakGTEm.isHidden = true
+            gtemTisder.backgroundColor = .clear
+            
+            
+            
+            loadSubscribedChannelsGenm()
+         
+        }
             
         inputerkoGTEm.isScrollEnabled = true
         
@@ -245,37 +157,34 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
     func maintainChatRoomConnectionGenm(_ room: GTEMCombingUser) {
         
         inputerkoGTEm.text = """
-    Effective Date: [2025-2-1]
-    
-    Welcome to Ginne! By accessing or using our App, you agree to comply with and be bound by these Terms of Service. Please read them carefully.
-    
-    1. Use of the App
-    
-    You must be at least 18 years old to use the App. By using the App, you represent that you meet this age requirement.
-    
-    2. Account Security
-    
-    You are responsible for maintaining the confidentiality of your account information, including your password. You agree to notify us immediately of any unauthorized use of your account.
-    
-    3. Content Ownership
-    
-    All content made available through the App, including but not limited to videos, images, and text, is owned by Ginne or its licensors. You may not use, reproduce, or distribute this content without written permission.
-    
-    4. User-Generated Content
-    
-    You are solely responsible for any content you post or share within the App. By posting content, you grant Ginne a worldwide, royalty-free, and non-exclusive license to use, reproduce, and distribute that content.
-    
-    5. Prohibited Activities
-    
-    You agree not to engage in activities that could harm the App or other users, including but not limited to spamming, hacking, or distributing malware.
-    
-    6. Dispute Resolution
-    
-    Any disputes arising from or relating to these Terms of Service shall be resolved through binding arbitration in accordance with the rules of [Arbitration Organization].
-    
-    7. Changes to Terms
-    
-    Ginne reserves the right to modify these Terms of Service at any time. Your continued use of the App after any changes constitutes acceptance of the new terms.
+    Effective Date: February 1, 2025
+
+    These User Terms govern your use of the Ginne - Realm of Flavors app. By downloading or using the app, you agree to these terms.
+
+    User Responsibilities
+
+    You must create an account to access certain features of the app.
+    You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+    Community Standards
+
+    When participating in community features, you agree to:
+
+    Respect other users and their creations.
+    Avoid posting offensive, obscene, or inappropriate content.
+    Report any violations of these standards to the app administrators.
+    Intellectual Property
+
+    All content within the app, including text, graphics, and software, is the property of Ginne or its licensors and is protected by intellectual property laws.
+
+    Changes to Terms
+
+    We reserve the right to modify these User Terms at any time. Any changes will be effective upon posting on this page. Continued use of the app after changes constitutes acceptance of the new terms.
+
+    Contact Us
+
+    For any questions or concerns regarding these User Terms, please reach out to us at:
+
+    Email: Ginne99826@gmail.com
     
     """
       
@@ -339,6 +248,52 @@ For questions regarding this EULA, please contact us at [Ginne99826@gmail.com].
     
     
     
+    func keeHeasth()  {
+        gtemTisder.backgroundColor = .clear
+        executeAIQueryGenm( "String")
+        
+       
+        inputerkoGTEm.text =     """
+
+Effective Date: February 1, 2025
+
+This End User License Agreement ("Agreement") is between you ("User" or "You") and Ginne - Realm of Flavors ("Licensor"). By downloading or using the Ginne app, you agree to be bound by the terms of this Agreement.
+
+License Grant
+
+The Licensor grants you a non-exclusive, non-transferable license to use the Ginne app for personal, non-commercial use on devices that you own or control.
+
+Restrictions
+
+You agree not to:
+
+Modify, reverse engineer, or disassemble the app.
+Distribute, sell, or lease the app to others.
+Use the app in any unlawful manner or in violation of any applicable laws.
+Termination
+
+This Agreement is effective until terminated. Your rights under this License will terminate automatically without notice if you fail to comply with any term of this Agreement.
+
+Disclaimer of Warranty
+
+The app is provided on an "as-is" basis. The Licensor makes no warranties regarding the performance or reliability of the app.
+
+Limitation of Liability
+
+In no event shall the Licensor be liable for any damages arising from the use or inability to use the app.
+
+Governing Law
+
+This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction where the Licensor is located.
+
+Contact Information
+
+For inquiries regarding this Agreement, please contact us at:
+
+Email: Ginne99826@gmail.com
+
+"""
+    }
     
     
 }

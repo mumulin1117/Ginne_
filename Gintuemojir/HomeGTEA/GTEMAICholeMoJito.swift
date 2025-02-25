@@ -116,7 +116,7 @@ class GTEMAICholeMoJito: UIViewController {
                 sayTexGTUA.resignFirstResponder()
                 
                 let hudLoadingGTEM = JGProgressHUD(style: .light)
-                hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+                hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
                 hudLoadingGTEM.show(in: self.view)
                 self.contenAiAchole.reloadData()
                 
@@ -124,24 +124,24 @@ class GTEMAICholeMoJito: UIViewController {
                 
                 
                 
-                let gtemOkail0 = "que->->stion->->".replacingOccurrences(of: "->->", with: "")
+                let gtemOkail0 = "que&-%-%-&stion&-%-%-&".replacingOccurrences(of: "&-%-%-&", with: "")
                 
 
                 var bGTEM:(Float,String?)  = (20,nil)
                 
                
-                let gtemOkail1 = "ques->->tionType->->".replacingOccurrences(of: "->->", with: "")
+                let gtemOkail1 = "ques&-%-%-&tionType&-%-%-&".replacingOccurrences(of: "&-%-%-&", with: "")
                 
                 
                
-                let gtemOkail2 = "eq->->No->->".replacingOccurrences(of: "->->", with: "")
+                let gtemOkail2 = "eq&-%-%-&No&-%-%-&".replacingOccurrences(of: "&-%-%-&", with: "")
                
               
                 
                 
 
               
-                var gtemOkail3 = "55->->55->->".replacingOccurrences(of: "->->", with: "")
+                var gtemOkail3 = "55&-%-%-&55&-%-%-&".replacingOccurrences(of: "&-%-%-&", with: "")
                 
 
                 
@@ -149,7 +149,7 @@ class GTEMAICholeMoJito: UIViewController {
                 
                 let dicnGTEM = [gtemOkail0: conted,gtemOkail1: 1,gtemOkail2:gtemOkail3] as [String : Any]
              
-                let urolPinkg = "ht->->tp://www.sunshinew->->anderer99.xyz/tal->->ktwo/askQ->->uestio->->nv2".replacingOccurrences(of: "->->", with: "")
+                let urolPinkg = "ht&-%-%-&tp://www.sunshinew&-%-%-&anderer99.xyz/tal&-%-%-&ktwo/askQ&-%-%-&uestio&-%-%-&nv2".replacingOccurrences(of: "&-%-%-&", with: "")
                 
                 AF.request(urolPinkg, method: .post, parameters:dicnGTEM , encoding: JSONEncoding.default, headers: nil)
                 .responseJSON { response in
@@ -160,9 +160,9 @@ class GTEMAICholeMoJito: UIViewController {
                         
                         
                         
-                        let gtemOkail4 = "data->->".components(separatedBy: "->->")
+                        let gtemOkail4 = "data&-%-%-&".components(separatedBy: "&-%-%-&")
                         
-                        let gtemOkail5 = "Data error->->".components(separatedBy: "->->")
+                        let gtemOkail5 = "Data error&-%-%-&".components(separatedBy: "&-%-%-&")
                         
                         if let json = value as? [String: Any] {
                             
@@ -220,7 +220,7 @@ class GTEMAICholeMoJito: UIViewController {
                 
                 return
             }
-        let meadffgeGTEM = "Sor->->ry,you ->->cannot ->->send ->->an empty->-> message!".replacingOccurrences(of: "->->", with: "")
+        let meadffgeGTEM = "Sor&-%-%-&ry,you &-%-%-&cannot &-%-%-&send &-%-%-&an empty&-%-%-& message!".replacingOccurrences(of: "&-%-%-&", with: "")
         
   
         let hudINfoGTEM = JGProgressHUD(style: .light)

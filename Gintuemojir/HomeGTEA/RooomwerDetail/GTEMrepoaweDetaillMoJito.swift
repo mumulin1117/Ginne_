@@ -89,7 +89,7 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
         
         
         let hudLoadingGTEM = JGProgressHUD(style: .light)
-        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
         hudLoadingGTEM.show(in: self.view)
         
         
@@ -103,7 +103,7 @@ class GTEMrepoaweDetaillMoJito: UIViewController {
             
 
            
-                let fdgosihunuh = "Submit->->ted successfu->->lly, we ->->will review ->->and process ->->your report as ->->soon as possible!".replacingOccurrences(of: "->->", with: "")
+                let fdgosihunuh = "Submit&-%-%-&ted successfu&-%-%-&lly, we &-%-%-&will review &-%-%-&and process &-%-%-&your report as &-%-%-&soon as possible!".replacingOccurrences(of: "&-%-%-&", with: "")
                 
                 
                          

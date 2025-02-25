@@ -71,6 +71,7 @@
             <connections>
                 <outlet property="allDollersGTEm" destination="jln-DE-ZOh" id="jhw-Zs-b88"/>
                 <outlet property="allcountGTEM" destination="3B7-Tb-Ouz" id="qaP-aK-Zkx"/>
+                <outlet property="gtemBalnvr" destination="bNx-Oc-4eD" id="hMx-be-bGK"/>
                 <outlet property="statiusButnGTEm" destination="GfA-Yn-w20" id="bcD-lR-I3e"/>
             </connections>
             <point key="canvasLocation" x="80.152671755725194" y="34.507042253521128"/>

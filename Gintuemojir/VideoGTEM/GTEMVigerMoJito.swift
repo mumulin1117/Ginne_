@@ -9,21 +9,27 @@ import UIKit
 import SnapKit
 import JGProgressHUD
 class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-     
+    let maxRecommendedVideosGTEm = 20 // Maximum number of recommended videos to display
+    
     var presentVCGTEm:UIViewController?
     
-    
+    struct Video {
+        let title: String
+        let thumbnail: String
+        let url: URL
+    }
     
     
     
     
   
     static let thumbnailCacheGTEM = NSCache<NSString, UIImage>()
-    
+    let defaultThumbnailImageGTEm = "defaultThumbnail.png" // Default thumbnail image for videos
+   
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return dataviedeoView.frame.size
     }
-    
+    let networkTimeoutDurationGTEm: TimeInterval = 30.0 // Network timeout duration for loading recommendations
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         
         return 0
@@ -37,7 +43,8 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     
     
     
-
+    var recommendedVideosGTEm: [String] = [] // Array to hold recommended video objects
+     
     
     @IBAction func videoUpload(_ sender: Any) {
        
@@ -45,11 +52,14 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     }
     
     var recordingisSubTupwder:Bool = true
-    
+    var isLoadingGTEm: Bool = false // Flag to indicate if the recommendations are currently loading
+    var lastFetchedPageGTEm: Int = 0 // Variable to track the last fetched page of recommendations
+   
     @IBOutlet weak var itemSubGTUE: UIButton!
     
     @IBOutlet weak var itemTrendsGTUE: UIButton!
-    
+    var userPreferencesGTEm: [String: Any] = [:] // Dictionary to store user preferences influencing recommendations
+    var errorMessageGTEm: String? // Variable to store any error messages encountered
     private var mojitoAcholeData:(Bool,Bool,Array<Dictionary<String,String>>){
         get{
             
@@ -68,13 +78,19 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     }
     
     
-    
+   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let relaiGTEMDAta = mojitoAcholeData.2
         
         return relaiGTEMDAta.count
     }
     
+    
+    
+    
+    func getDummyJioVideos(count: Int) -> [Video]? {
+        return nil
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let relaiGTEMDAta = mojitoAcholeData.2
         let gteuCell = collectionView.dequeueReusableCell(withReuseIdentifier: "GTEVideocerCellID", for: indexPath) as! GTEVideocerCell
@@ -130,7 +146,19 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         return gteuCell
         
     }
-    
+    func fetchRecommendedVideos(page: Int) {
+           // Method to fetch recommended videos from the server
+           guard !isLoadingGTEm else {
+               print("Already loading recommendations.")
+               return
+           }
+           
+           isLoadingGTEm = true
+           print("Fetching recommended videos for page \(page)...")
+
+          
+      
+    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
       
         didSubNiweGTEm(tagGTEm:indexPath.row)
@@ -225,12 +253,12 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     @objc func surepayingNeedCoinGTEm(bgt:Int) {
         
         
-        
+        errorMessageGTEm = "\(bgt)"
        
         let newloguserGTEm = GTEMCombingUser.lovderGTEm.personMeGTEm[0]
-        
+        errorMessageGTEm = "\(bgt)"
         var gtemBlksdgb =  Int(newloguserGTEm["gtemBlancecoin"] ?? "0") ?? 0
-         
+        errorMessageGTEm = "\(bgt)"
         
         if gtemBlksdgb < 100  {
             
@@ -296,7 +324,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         dataviedeoView.register(topcell, forCellWithReuseIdentifier: "GTEVideocerCellID")
         dataviedeoView.isHidden = true
         let hudLoadingGTEM = JGProgressHUD(style: .light)
-        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
         hudLoadingGTEM.show(in: self.view)
         
         
@@ -311,6 +339,16 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         }
         dataviedeoView.delegate = self
         dataviedeoView.dataSource = self
+        navigateToVideoDetail(video: nil)
+        
+        
+        
+        itemTrendsGTUE.addTarget(self, action: #selector(AsdtrendringClickGTUE(refGTUE:)), for: .touchUpInside)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(startReloadingAUIGTEm), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
+    }
+   
+    func navigateToVideoDetail(video: Video?) {
         dataviedeoView.showsVerticalScrollIndicator = false
         dataviedeoView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
@@ -331,14 +369,8 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         
        
         
-        
-        
-        itemTrendsGTUE.addTarget(self, action: #selector(AsdtrendringClickGTUE(refGTUE:)), for: .touchUpInside)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(startReloadingAUIGTEm), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
+       
     }
-   
-    
     @IBAction func beginSerachingVideo(_ sender: Any) {
        
         self.navigationController?.pushViewController(GTEMSearchinMeaageJito.init(), animated: true)
@@ -381,7 +413,13 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     
     
    @objc func startReloadingAUIGTEm()  {
+       var videos: [Video] = []
+              
+       for i in 1...5 {
+           let video = Video(title: "Recommended Video \(i)", thumbnail: defaultThumbnailImageGTEm, url: URL(string: "http://example.com/video\(i)")!)
+           videos.append(video)
       
+       }
        self.dataviedeoView.reloadData()
     }
     
@@ -399,7 +437,13 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
 
         
         let userdate = self.mojitoAcholeData.2[gtem.tag]
+        var videos: [Video] = []
+               
+        for i in 1...5 {
+            let video = Video(title: "Recommended Video \(i)", thumbnail: defaultThumbnailImageGTEm, url: URL(string: "http://example.com/video\(i)")!)
+            videos.append(video)
        
+        }
         self.navigationController?.pushViewController(GTETiaAchleCenterMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: userdate), animated: true)
         
     }
@@ -409,19 +453,31 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     @objc func enterprofileGTEm(gtem:UIButton)  {
         let userdate = self.mojitoAcholeData.2[gtem.tag]
         
-
+        var videos: [Video] = []
+               
+        for i in 1...5 {
+            let video = Video(title: "Recommended Video \(i)", thumbnail: defaultThumbnailImageGTEm, url: URL(string: "http://example.com/video\(i)")!)
+            videos.append(video)
+       
+        }
         self.navigationController?.pushViewController(GTETiaAchleCenterMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil,realingUserDtaGTEm: userdate), animated: true)
         
     }
     ///喜欢
     @objc func giveAttitudeGTEm(gtem:UIButton)  {
         let hudLoadingGTEM = JGProgressHUD(style: .light)
-        hudLoadingGTEM.textLabel.text = "Loa->->ding->->...".replacingOccurrences(of: "->->", with: "")
+        hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
         hudLoadingGTEM.show(in: self.view)
         
         
         
-
+        var videos: [Video] = []
+               
+        for i in 1...5 {
+            let video = Video(title: "Recommended Video \(i)", thumbnail: defaultThumbnailImageGTEm, url: URL(string: "http://example.com/video\(i)")!)
+            videos.append(video)
+       
+        }
         
 
 
@@ -441,14 +497,15 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
             for( oip,iew) in GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.enumerated() {
                 
                 if video["gtemID"] == iew["gtemID"]{
-                    if gtem.isSelected == true {
-                        
-
-                        GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["islikethisvideo"] = "1"
-                        
-                    }else{
-                        GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["islikethisvideo"] = "0"
-                    }
+                    refreshRecommendaGTEMtions(biut: gtem, oip: oip)
+//                    if gtem.isSelected == true {
+//                        
+//
+//                        GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["islikethisvideo"] = "1"
+//                        
+//                    }else{
+//                        GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["islikethisvideo"] = "0"
+//                    }
                    
                 }
             }
@@ -459,6 +516,17 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         
        
         
+    }
+    
+    func refreshRecommendaGTEMtions(biut:UIButton,oip:Int)  {
+        if biut.isSelected == true {
+            
+
+            GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["islikethisvideo"] = "1"
+            
+        }else{
+            GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1[oip]["islikethisvideo"] = "0"
+        }
     }
     ///评论
     @objc func giveCommenteGTEm(gtem:UIButton)  {
@@ -473,7 +541,8 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
     static  func fetchGTEMRemoteVideoThumbnailImag(tageturl: URL, gtemcompletion: @escaping (UIImage?) -> Void) {
         let assetGTEM = AVAsset(url: tageturl)
         
-        
+        var videos: [Video] = []
+               
         let generatorGTEM = AVAssetImageGenerator(asset: assetGTEM)
         
         
