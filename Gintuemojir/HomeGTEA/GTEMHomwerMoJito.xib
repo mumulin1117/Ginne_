@@ -11,7 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GTEMHomwerMoJito" customModule="Gintuemojir" customModuleProvider="target">
             <connections>
+                <outlet property="glaiopGtuhn" destination="Dov-Pv-Mp2" id="gnp-9K-hzH"/>
                 <outlet property="homewrserDataView" destination="UW8-uJ-izP" id="RaN-7E-rWz"/>
+                <outlet property="okiopGtemn" destination="R2v-vw-0DD" id="wNV-a0-BZ5"/>
+                <outlet property="readkiopGTEm" destination="s3s-b1-ATM" id="b7T-5A-G2R"/>
                 <outlet property="view" destination="1cQ-zU-3HD" id="5hW-3q-Qzn"/>
             </connections>
         </placeholder>
@@ -83,6 +86,16 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ginne" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2v-vw-0DD">
+                    <rect key="frame" x="0.0" y="244" width="158" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="158" id="8ax-JO-cxs"/>
+                        <constraint firstAttribute="height" constant="38" id="s57-nK-Yfl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZh-dj-I36">
                     <rect key="frame" x="309" y="471" width="50" height="50"/>
                     <constraints>
@@ -95,10 +108,31 @@
                         <action selector="starnAddRoomGTEm:" destination="-1" eventType="touchUpInside" id="TBh-sw-V2P"/>
                     </connections>
                 </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ginne" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3s-b1-ATM">
+                    <rect key="frame" x="0.0" y="302" width="158" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="gBX-HV-E6L"/>
+                        <constraint firstAttribute="width" constant="158" id="gJl-Gl-icv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ginne" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dov-Pv-Mp2">
+                    <rect key="frame" x="0.0" y="390" width="158" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="158" id="Arn-9m-wQW"/>
+                        <constraint firstAttribute="height" constant="38" id="ziY-Cd-gHi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="BFT-zG-a3X"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="s3s-b1-ATM" firstAttribute="top" secondItem="Cmu-s5-9UE" secondAttribute="bottom" constant="187" id="0Fa-Jv-8V1"/>
                 <constraint firstItem="4q3-Mx-veV" firstAttribute="top" secondItem="1cQ-zU-3HD" secondAttribute="top" id="3A9-Et-npL"/>
                 <constraint firstItem="5i3-JU-YaV" firstAttribute="leading" secondItem="BFT-zG-a3X" secondAttribute="leading" constant="207" id="5x4-8n-bUt"/>
                 <constraint firstItem="YxF-dN-3RJ" firstAttribute="centerY" secondItem="1cQ-zU-3HD" secondAttribute="centerY" id="6P4-7s-KvX"/>
@@ -106,20 +140,25 @@
                 <constraint firstItem="Cmu-s5-9UE" firstAttribute="top" secondItem="BFT-zG-a3X" secondAttribute="top" id="9MN-gm-rFm"/>
                 <constraint firstItem="BFT-zG-a3X" firstAttribute="trailing" secondItem="kZh-dj-I36" secondAttribute="trailing" constant="34" id="EMi-sB-3WT"/>
                 <constraint firstItem="Njx-az-eaj" firstAttribute="height" secondItem="cTE-p0-DwM" secondAttribute="height" id="FbC-OV-MKB"/>
+                <constraint firstItem="Dov-Pv-Mp2" firstAttribute="top" secondItem="s3s-b1-ATM" secondAttribute="bottom" constant="50" id="JgM-fY-Vlz"/>
                 <constraint firstItem="4q3-Mx-veV" firstAttribute="trailing" secondItem="BFT-zG-a3X" secondAttribute="trailing" id="KeU-2a-vFd"/>
                 <constraint firstAttribute="bottom" secondItem="UW8-uJ-izP" secondAttribute="bottom" id="L0i-ke-md7"/>
                 <constraint firstItem="Njx-az-eaj" firstAttribute="width" secondItem="cTE-p0-DwM" secondAttribute="width" multiplier="0.933333" id="Lrw-1F-nZS"/>
                 <constraint firstItem="UW8-uJ-izP" firstAttribute="trailing" secondItem="BFT-zG-a3X" secondAttribute="trailing" id="MXT-gK-njk"/>
+                <constraint firstItem="R2v-vw-0DD" firstAttribute="leading" secondItem="BFT-zG-a3X" secondAttribute="leading" id="MqL-ab-dCg"/>
                 <constraint firstItem="cTE-p0-DwM" firstAttribute="leading" secondItem="Njx-az-eaj" secondAttribute="trailing" constant="28" id="OA7-FL-7Lg"/>
                 <constraint firstItem="5i3-JU-YaV" firstAttribute="top" secondItem="BFT-zG-a3X" secondAttribute="top" constant="130" id="OEk-Qj-SgA"/>
+                <constraint firstItem="R2v-vw-0DD" firstAttribute="top" secondItem="Cmu-s5-9UE" secondAttribute="bottom" constant="129" id="Od3-Nw-opC"/>
                 <constraint firstItem="YxF-dN-3RJ" firstAttribute="centerX" secondItem="1cQ-zU-3HD" secondAttribute="centerX" id="Svd-g7-xYp"/>
                 <constraint firstItem="BFT-zG-a3X" firstAttribute="trailing" secondItem="cTE-p0-DwM" secondAttribute="trailing" constant="12" id="Uj1-iC-idd"/>
                 <constraint firstItem="kZh-dj-I36" firstAttribute="centerY" secondItem="1cQ-zU-3HD" secondAttribute="centerY" constant="70" id="aQN-n7-YGP"/>
                 <constraint firstItem="4q3-Mx-veV" firstAttribute="leading" secondItem="BFT-zG-a3X" secondAttribute="leading" id="fAj-iZ-90p"/>
                 <constraint firstItem="Scr-rb-BHV" firstAttribute="top" secondItem="1cQ-zU-3HD" secondAttribute="top" constant="20" symbolic="YES" id="fns-pG-2hz"/>
+                <constraint firstItem="Dov-Pv-Mp2" firstAttribute="leading" secondItem="BFT-zG-a3X" secondAttribute="leading" id="hf2-8Y-kr7"/>
                 <constraint firstItem="Cmu-s5-9UE" firstAttribute="leading" secondItem="BFT-zG-a3X" secondAttribute="leading" constant="8" id="i8U-Bg-WXE"/>
                 <constraint firstItem="UW8-uJ-izP" firstAttribute="top" secondItem="Cmu-s5-9UE" secondAttribute="bottom" id="nf3-2l-wmx"/>
                 <constraint firstItem="Njx-az-eaj" firstAttribute="centerY" secondItem="Cmu-s5-9UE" secondAttribute="centerY" id="pfe-Dj-zCm"/>
+                <constraint firstItem="s3s-b1-ATM" firstAttribute="leading" secondItem="BFT-zG-a3X" secondAttribute="leading" id="uNx-7w-kQn"/>
                 <constraint firstItem="Scr-rb-BHV" firstAttribute="leading" secondItem="1cQ-zU-3HD" secondAttribute="leading" constant="20" symbolic="YES" id="w6p-Nf-7i7"/>
                 <constraint firstItem="UW8-uJ-izP" firstAttribute="leading" secondItem="BFT-zG-a3X" secondAttribute="leading" id="xOb-0R-UgT"/>
                 <constraint firstAttribute="bottom" secondItem="4q3-Mx-veV" secondAttribute="bottom" id="xaT-6f-wVL"/>

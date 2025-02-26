@@ -13,7 +13,9 @@
             <connections>
                 <outlet property="beginReportGTEm" destination="GUY-f7-3nH" id="xDX-SQ-sVi"/>
                 <outlet property="contenAiAchole" destination="XjZ-Tb-iEq" id="xD8-hN-8BR"/>
+                <outlet property="ershiRread" destination="odG-Tr-RTV" id="1qq-8D-X64"/>
                 <outlet property="sayTexGTUA" destination="aBw-oe-DgA" id="oU8-QZ-i8r"/>
+                <outlet property="treGTEM" destination="UVS-Ee-EAF" id="dqB-Pt-l4s"/>
                 <outlet property="usernaingmnickGTEm" destination="WBP-QY-Olt" id="ymM-cS-TqN"/>
                 <outlet property="view" destination="iaQ-iB-KfQ" id="9HG-Yz-4mt"/>
             </connections>

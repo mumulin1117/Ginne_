@@ -15,9 +15,19 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
     
     @IBOutlet weak var usernaingmnickGTEm: UILabel!
     
+    @IBOutlet weak var ershiRread: UIButton!
     
+    @IBOutlet weak var treGTEM: UIButton!
+    
+    
+    let maxMessageLengthGTEm = 500
     
     var GRIDUIHUAingGTSMlist:Array<(whoismineGTEm:String,sayiedsdetailGTEm:String)> = []
+    
+    
+    var chatMessagesGTEm: [String] = []
+    
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -54,7 +64,7 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
        
         return gtemCEll
     }
-    
+    var isSendingMessageGTEm: Bool = false
     var transactionHistory: [String] = []
     func initiatePayment(amount: Double) {
         
@@ -75,12 +85,8 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sayTexGTUA.layer.cornerRadius = 22
-        initiatePayment(amount: 44)
-        sayTexGTUA.layer.masksToBounds = true
-        sayTexGTUA.rightViewMode = .always
-        
-
+         
+        loadChatHistoryGTEm()
         
         sayTexGTUA.rightView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 54, height: 30))
         
@@ -90,14 +96,11 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         
         
         
-        contenAiAchole.dataSource = self
+        
         contenAiAchole.delegate = self
         
 
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
-        
-        contenAiAchole.allowsSelection = false
+        setupOranUIComponentsGTEm()
         
 
         
@@ -106,6 +109,27 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         contenAiAchole.separatorStyle = .none
         
     }
+    
+    
+    func loadChatHistoryGTEm() {
+        chatMessagesGTEm = [] // 实际应用中应从文件或数据库加载
+        sayTexGTUA.layer.cornerRadius = 22
+        initiatePayment(amount: 44)
+        sayTexGTUA.layer.masksToBounds = true
+        sayTexGTUA.rightViewMode = .always
+     
+    }
+    
+    
+    private func setupOranUIComponentsGTEm() {
+        contenAiAchole.dataSource = self
+        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
+        
+        contenAiAchole.allowsSelection = false
+        
+    }
+    
+    
     
     func displaySubscriptionOptions() {
         contenAiAchole.rowHeight = UITableView.automaticDimension
@@ -150,6 +174,7 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
         hudINfoGTEM.textLabel.text = sooprt
         hudINfoGTEM.indicatorView = JGProgressHUDErrorIndicatorView(image: UIImage.init(named: "Rewort_GTEA")!)
         hudINfoGTEM.show(in: self.view)
+        self.isSendingMessageGTEm = false
         hudINfoGTEM.dismiss(afterDelay: 2.0)
       
         
@@ -169,13 +194,20 @@ class GTEMusernmeaasfeMojito: GTEMUserAboutAchole {
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         
-
+        self.isSendingMessageGTEm = false
         self.navigationController?.popViewController(animated: true)
     }
 }
 
 
 extension GTEMusernmeaasfeMojito:UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
+    
+    
+    
+    
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
         return GRIDUIHUAingGTSMlist.count

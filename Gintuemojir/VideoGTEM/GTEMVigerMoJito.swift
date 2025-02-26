@@ -7,6 +7,7 @@
 import AVFoundation
 import UIKit
 import SnapKit
+
 import JGProgressHUD
 class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     let maxRecommendedVideosGTEm = 20 // Maximum number of recommended videos to display
@@ -101,7 +102,7 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
         
 
        
-        gteuCell.userGTEUName.text = relaiGTEMDAta[indexPath.row]["AochleName"]
+        gteuCell.userGTEUName.text = relaiGTEMDAta[indexPath.row]["teachername"]
        
         gteuCell.videoTitleGTEM.text = relaiGTEMDAta[indexPath.row]["videowenan0"]
         
@@ -337,6 +338,9 @@ class GTEMVigerMoJito: UIViewController,UICollectionViewDelegate,UICollectionVie
             self.dataviedeoView.isHidden = false
             hudLoadingGTEM.dismiss()
         }
+        
+        
+        
         dataviedeoView.delegate = self
         dataviedeoView.dataSource = self
         navigateToVideoDetail(video: nil)

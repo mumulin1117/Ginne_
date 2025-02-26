@@ -50,7 +50,7 @@ class GTEMStepDetaillMoJito: UIViewController {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init GTEMloa&-%-%-&ing werrouu")
     }
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
@@ -64,17 +64,17 @@ class GTEMStepDetaillMoJito: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        repoiuingGTEm.addTarget(self, action: #selector(navibaTorepohGTEM), for: .touchUpInside)
         let tagGTEMview = TagListView.init()
         tagGTEMview.textFont = UIFont.systemFont(ofSize: 15, weight: .bold)
+        repoiuingGTEm.addTarget(self, action: #selector(navibaTorepohGTEM), for: .touchUpInside)
+        
         tagGTEMview.tagBackgroundColor =  UIColor(red: 0.5, green: 0.15, blue: 0.12, alpha: 1)
         tagGTEMview.clipsToBounds = true
         
+        let stepArray = (detgiolGTEA["Aochlematerial"] ?? "").components(separatedBy: ",")
+        tagGTEMview.cornerRadius = 10
         tagGTEMview.paddingX =  6
         tagGTEMview.paddingY = 10
-        let stepArray = (detgiolGTEA["Aochlematerial"] ?? "").components(separatedBy: ",")
-        
         tagGTEMview.addTags(stepArray)
         tagGTEMview.alignment = .center // possible values are [.leading, .trailing, .left, .center, .right]
         

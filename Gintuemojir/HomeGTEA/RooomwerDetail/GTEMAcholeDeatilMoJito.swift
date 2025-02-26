@@ -8,30 +8,30 @@
 import UIKit
 import JGProgressHUD
 class GTEMAcholeDeatilMoJito: UIViewController {
-    
+    let maxMessageLengthGTEm = 250
    
     @IBOutlet weak var roomAcholeName: UILabel!
-    
+    let welcomeMessageGTEm = "Welcome to the Cocktail Chat Room!"
    
     @IBOutlet weak var welcomlabelGTEM: UILabel!
     @IBOutlet weak var hosterIonGTEM: UIImageView!//背景
     
-   
+    var messagesGTEm: [String] = []
     
     @IBOutlet weak var turistIonGTEM: UIImageView!
-    
+    var currentUserNameGTEm: String?
    
     @IBOutlet weak var hosterNameGTEM: UILabel!
-    
+    var isUserLoggedInGTEm: Bool = true
     @IBOutlet weak var turisNameGTEM: UILabel!
     
     @IBOutlet weak var sayTexGTUA: UITextField!
     @IBOutlet weak var contenAiAchole: UITableView!
-    
+    var chatInputTextGTEm: String = ""
     
     @IBOutlet weak var thirdIcon: UIImageView!
     @IBOutlet weak var thirdNameGTEm: UILabel!
-    
+    var participantsCountGTEm: Int = 0
     private  var ismineBackgroundRoom:Bool = false
     private  var roomInfoGTEm :GTEmAcholeFangjian
     
@@ -45,7 +45,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init GTEMloa&-%-%-&ing werrouu")
     }
     
     @IBAction func actioneportIngRoome(_ sender: Any) {
@@ -61,7 +61,16 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         
     }
-
+    func displayGTEMMessages() {
+        sayTexGTUA.rightViewMode = .always
+        sayTexGTUA.layer.cornerRadius = 22
+        welcomlabelGTEM.layer.masksToBounds = true
+        
+        
+        turistIonGTEM.layer.masksToBounds = true
+        thirdIcon.layer.masksToBounds = true
+        sayTexGTUA.layer.masksToBounds = true
+    }
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,48 +79,33 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         
         
         sayTexGTUA.leftView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
-        sayTexGTUA.rightViewMode = .always
+       
         
-        
+        displayGTEMMessages()
         
         sayTexGTUA.rightView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 54, height: 30))
-        sayTexGTUA.layer.cornerRadius = 22
-        
-        
-        
-        sayTexGTUA.layer.masksToBounds = true
+       
         sayTexGTUA.backgroundColor = UIColor(red: 0.24, green: 0.11, blue: 0.1, alpha: 1)
         
         self.roomAcholeName.text = roomInfoGTEm.fangjainNameGTEM
         self.hosterIonGTEM.image = roomInfoGTEm.roombackgroundGTEM
         
-        hosterIonGTEM.layer.cornerRadius = 30
-        
-        hosterIonGTEM.layer.masksToBounds = true
-        
-        turistIonGTEM.layer.cornerRadius = 30
-        turistIonGTEM.layer.masksToBounds = true
-        
-        thirdIcon.layer.cornerRadius = 30
-        thirdIcon.layer.masksToBounds = true
-        
-        welcomlabelGTEM.layer.cornerRadius = 12
-        welcomlabelGTEM.layer.masksToBounds = true
-        
+        gaomasktlayerHGTEM()
+       
         if ismineBackgroundRoom == true {
             turistIonGTEM.isHidden = true
             turisNameGTEM.isHidden = true
             thirdIcon.isHidden = true
             thirdNameGTEm.isHidden = true
             hosterIonGTEM.image =  GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
-            hosterNameGTEM.text = "Me"
+            hosterNameGTEM.text = "M&-%-%-&e".replacingOccurrences(of: "&-%-%-&", with: "")
         }else{
             
             hosterIonGTEM.image =  UIImage(named: roomInfoGTEm.hosteruserGTEm["teacherphoto"] ?? "")
             hosterNameGTEM.text = roomInfoGTEm.hosteruserGTEm["teachername"]
             
             thirdIcon.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
-            thirdNameGTEm.text = "Me"
+            thirdNameGTEm.text = "M&-%-%-&e".replacingOccurrences(of: "&-%-%-&", with: "")
             let diologLater = roomInfoGTEm.roomMesageListGTEm.last?.enterProuserGTEM
             
             turistIonGTEM.image = UIImage(named: diologLater?["teacherphoto"] ?? "")
@@ -125,19 +119,8 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         contenAiAchole.delegate = self
         
 
-       
-        contenAiAchole.allowsSelection = false
-      
-        contenAiAchole.rowHeight = UITableView.automaticDimension
+        sureGTEMlogoutUser()
         
-
-        contenAiAchole.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 90, right: 0)
-        
-        
-        
-
-        contenAiAchole.separatorStyle = .none
-        contenAiAchole.register(GTEMMojitallRoomtalkCell.self, forCellReuseIdentifier: "GTEMMojitallRoomtalkCellID")
        
         contenAiAchole.estimatedRowHeight = 55
         contenAiAchole.isHidden = true
@@ -153,32 +136,59 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         }
         
     }
+    func sureGTEMlogoutUser() {
+        contenAiAchole.allowsSelection = false
+      
+        contenAiAchole.rowHeight = UITableView.automaticDimension
+        
 
+        if isUserLoggedInGTEm {
+            currentUserNameGTEm = nil
+            isUserLoggedInGTEm = true
+            participantsCountGTEm -= 1
+            
+        }
+        
+      
+        contenAiAchole.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 90, right: 0)
+        
+        
+        
+
+        contenAiAchole.separatorStyle = .none
+        contenAiAchole.register(GTEMMojitallRoomtalkCell.self, forCellReuseIdentifier: "GTEMMojitallRoomtalkCellID")
+        
+    }
     
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         
         
-        
+        if isUserLoggedInGTEm {
+            currentUserNameGTEm = nil
+            isUserLoggedInGTEm = true
+            participantsCountGTEm -= 1
+            
+        }
         if ismineBackgroundRoom {
             
              
             
 
-            let alert = UIAlertController(title: "Destroy the room?".replacingOccurrences(of: "&-%-%-&", with: ""), message: "After the creator leaves the room, the room information will be destroyed", preferredStyle:.alert)
+            let aleGTEMrt = UIAlertController(title: "De&-%-%-&stroy &-%-%-&the room?".replacingOccurrences(of: "&-%-%-&", with: ""), message: "After the cre&-%-%-&ator lea&-%-%-&ves the&-%-%-& room, the&-%-%-& room &-%-%-&information &-%-%-&will be destroyed", preferredStyle:.alert)
             
             
 
             
-            alert.addAction(UIAlertAction(title: "Sure", style: .default, handler: { UIAlertAction in
+            aleGTEMrt.addAction(UIAlertAction(title: "S&-%-%-&ure".replacingOccurrences(of: "&-%-%-&", with: ""), style: .default, handler: { UIAlertAction in
                 
                 self.navigationController?.popToRootViewController(animated: true)
                 
             }))
            
-            alert.addAction(UIAlertAction.init(title: "End Action", style: .default))
+            aleGTEMrt.addAction(UIAlertAction.init(title: "En&-%-%-&d Act&-%-%-&ion".replacingOccurrences(of: "&-%-%-&", with: ""), style: .default))
             
-            self.present(alert, animated: true)
+            self.present(aleGTEMrt, animated: true)
            
             return
         }
@@ -191,11 +201,25 @@ class GTEMAcholeDeatilMoJito: UIViewController {
         sayTexGTUA.resignFirstResponder()
         
         
+        guard isUserLoggedInGTEm == true else {
+     
+            return
+        }
         
-           
+     
         if let conted = sayTexGTUA.text, conted.count != 0 {
             
+            guard conted.count <= maxMessageLengthGTEm else {
+                let hudLoadingGTEM = JGProgressHUD(style: .light)
+                hudLoadingGTEM.textLabel.text = "Message exceeds maximum length.".replacingOccurrences(of: "&-%-%-&", with: "")
+                hudLoadingGTEM.show(in: self.view)
+                hudLoadingGTEM.dismiss(afterDelay: 2)
+                return
+            }
+           
             
+            messagesGTEm.append("\(currentUserNameGTEm ?? "Anonymous"): \(conted)")
+         
 
            
             let diologdata = ("isme", GTEMCombingUser.lovderGTEm.personMeGTEm[0],conted)
@@ -204,11 +228,12 @@ class GTEMAcholeDeatilMoJito: UIViewController {
             roomInfoGTEm.roomMesageListGTEm.append(diologdata)
             sayTexGTUA.text = nil
 
-            sayTexGTUA.resignFirstResponder()
+            
            
             
             let hudLoadingGTEM = JGProgressHUD(style: .light)
             hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
+            sayTexGTUA.resignFirstResponder()
             hudLoadingGTEM.show(in: self.view)
             
             
@@ -217,7 +242,7 @@ class GTEMAcholeDeatilMoJito: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0){
                 hudLoadingGTEM.dismiss()
                 
-                
+                self.isUserLoggedInGTEm = true
 
                 self.contenAiAchole.reloadData()
                 
@@ -228,26 +253,32 @@ class GTEMAcholeDeatilMoJito: UIViewController {
        
         
         let hudINfoGTEM = JGProgressHUD(style: .light)
-        hudINfoGTEM.textLabel.text = "Sorry,you cannot send an empty message!"
+        
+        hudINfoGTEM.textLabel.text = "S&-%-%-&orry,yo&-%-%-&u can&-%-%-&not send &-%-%-&an empty me&-%-%-&ssage!".replacingOccurrences(of: "&-%-%-&", with: "")
+        self.isUserLoggedInGTEm = true
         hudINfoGTEM.show(in: self.view)
+        self.isUserLoggedInGTEm = true
         hudINfoGTEM.dismiss(afterDelay: 2.0)
            
       
     }
-
+    func loginGTEMUser(name: String) {
+        // Method to log in the user
+        currentUserNameGTEm = name
+        isUserLoggedInGTEm = true
+        participantsCountGTEm += 1
+       
+        
+    }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        
+        displayFangjainGTEMMessages()
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         for(i, item) in GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.enumerated() {
-            
-            
-
-            
-
-           
+            self.isUserLoggedInGTEm = true
             if  item.fangjainIDGTEM == self.roomInfoGTEm.fangjainIDGTEM {
+                self.isUserLoggedInGTEm = true
                 GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1[i] = self.roomInfoGTEm
                 
             }
@@ -260,6 +291,13 @@ extension GTEMAcholeDeatilMoJito:UITableViewDelegate,UITableViewDataSource,UITex
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
         return roomInfoGTEm.roomMesageListGTEm.count
+    }
+    
+    
+    func displayFangjainGTEMMessages() {
+           
+        messagesGTEm.removeAll()
+      
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -275,14 +313,14 @@ extension GTEMAcholeDeatilMoJito:UITableViewDelegate,UITableViewDataSource,UITex
         
         
        
-        if diologData.logMeGTEM == "isme" {
+        if diologData.logMeGTEM == ("is&-%-%-&me".replacingOccurrences(of: "&-%-%-&", with: "")) {
            
             
 
             
             gtemCEll.gtemIconhreader.image = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
            
-            gtemCEll.gtemNickLbael.text = "Me"
+            gtemCEll.gtemNickLbael.text = "M&-%-%-&e".replacingOccurrences(of: "&-%-%-&", with: "")
             gtemCEll.gtemSayieVuew.text =  diologData.2
             print(diologData.2)
             return gtemCEll
@@ -313,4 +351,17 @@ extension GTEMAcholeDeatilMoJito:UITableViewDelegate,UITableViewDataSource,UITex
         return gtemCEll
     }
     
+    
+    func gaomasktlayerHGTEM() {
+        hosterIonGTEM.layer.cornerRadius = 30
+        
+        hosterIonGTEM.layer.masksToBounds = true
+        
+        turistIonGTEM.layer.cornerRadius = 30
+        
+        thirdIcon.layer.cornerRadius = 30
+        
+        
+        welcomlabelGTEM.layer.cornerRadius = 12
+    }
 }

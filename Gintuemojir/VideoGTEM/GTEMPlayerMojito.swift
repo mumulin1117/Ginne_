@@ -29,7 +29,7 @@ class GTEMPlayerMojito: UIViewController {
     let maxVolumeLevelGTEm: Float = 1.0 // Maximum volume level
 
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init GTEMloa&-%-%-&ing werrouu")
     }
     
   

@@ -9,13 +9,16 @@ import UIKit
 import JGProgressHUD
 
 class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    var isLoadingGTEm: Bool = false
     
+    private let maxDisplayedVideosGTEm = 20
     
+    @IBOutlet weak var readkiopGTEm: UILabel!
     
+    var currentPageGTEm: Int = 1
+    @IBOutlet weak var okiopGtemn: UILabel!
     
-   
-    
-    
+    var totalVideosCountGTEm: Int = 0
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
             return CGSize(width: self.view.frame.width, height: 471)
@@ -26,20 +29,28 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     }
     
     
-   
+    @IBOutlet weak var glaiopGtuhn: UILabel!
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
        
-        return 20
+        return  mockFetchVideosGTEm(iooojuio:true)
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
        
-        return 20
+        return mockFetchVideosGTEm(iooojuio:false)
     }
     
-    
+    func mockFetchVideosGTEm(iooojuio:Bool) -> CGFloat {
+        if iooojuio  {
+            return 20
+        }
+        return 20
+        
+    }
+
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
@@ -48,9 +59,7 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
         if section == 0 {
             return 1
         }
-        
-        
-        
+    
         return GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1.count
     }
     
@@ -82,6 +91,16 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
         
     }
     
+    func didSelectVideoGTEm(videoGTEM: Int) {
+          
+        homewrserDataView.delegate = self
+       
+        homewrserDataView.dataSource = self
+        
+        homewrserDataView.showsVerticalScrollIndicator = false
+       
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.section == 1 {
             let rrromdio = (1,GTEMCombingUser.lovderGTEm.ancholeRoomGTEm.1[indexPath.row])
@@ -98,27 +117,19 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
         
         
         
-
-        
+       
 
         homewrserDataView.register(topcell, forCellWithReuseIdentifier: "GTEHomeHeadeCellID")
         
-
+        
 
        
         homewrserDataView.register(UINib(nibName: "GTEHChatroomeCell", bundle: nil), forCellWithReuseIdentifier: "GTEHChatroomeCellID")
         
         
-
+        didSelectVideoGTEm(videoGTEM: 0)
         
-        homewrserDataView.delegate = self
-        
-
-        
-        homewrserDataView.dataSource = self
-        
-        homewrserDataView.showsVerticalScrollIndicator = false
-       
+      
         homewrserDataView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 120, right: 0)
     }
     
@@ -167,28 +178,24 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
     @objc func aiiajielTochat()  {
         
 
-        
+        isLoadingGTEm = true
         
         let alertNeesub = UIAlertController(title: "Start a conversation with an AI Mixologist", message: "Each conversation will cost 120 balance！", preferredStyle:.alert)
         alertNeesub.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { adfgg in
-            
-            
-           
-          
-            
-            
+            self.isLoadingGTEm = true
+            self.isLoadingGTEm = true
             self.surepayingNeedCoinGTEm()
         }))
-        alertNeesub.addAction(UIAlertAction(title: "cancel", style: .default))
+        alertNeesub.addAction(UIAlertAction(title: "ca&-%-%-&nc&-%-%-&el".replacingOccurrences(of: "&-%-%-&", with: ""), style: .default))
         
         self.present(alertNeesub, animated: true)
-        
+        self.isLoadingGTEm = false
         self.navigationController?.pushViewController(GTEMAICholeMoJito.init(), animated: true)
     }
     
     @objc func surepayingNeedCoinGTEm() {
            
-           
+        let fullkertGTEm = "S&-%-%-&oorry&-%-%-&,Ba&-%-%-&lance &-%-%-&is Low".replacingOccurrences(of: "&-%-%-&", with: "")
    
            var gtemBlksdgb =  Int( GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] ?? "0") ?? 0
            
@@ -199,31 +206,39 @@ class GTEMHomwerMoJito: UIViewController ,UICollectionViewDelegate,UICollectionV
                
    
    
-               let alertv = UIAlertController(title: "Soorry,Balance is Low", message: "", preferredStyle: .alert)
+               let alertv = UIAlertController(title: fullkertGTEm, message: "", preferredStyle: .alert)
                
+               let fullBAikertGTEm = "I&-%-%-&ncre&-%-%-&ase Ba&-%-%-&lan&-%-%-&ce".replacingOccurrences(of: "&-%-%-&", with: "")
    
-   
-               let rechargeGTEmAction = UIAlertAction(title: "Increase Balance", style: .default) { scd in
+               let rechargeGTEmAction = UIAlertAction(title: fullBAikertGTEm, style: .default) { scd in
                    
                    self.navigationController?.pushViewController(GTEMblancelMojito.init(), animated: true)
                }
                alertv.addAction(rechargeGTEmAction)
-               alertv.addAction(UIAlertAction(title: "End Action", style: .default))
+               
+               let fullBSDAikertGTEm = "En&-%-%-&d A&-%-%-&ction".replacingOccurrences(of: "&-%-%-&", with: "")
+   
+               alertv.addAction(UIAlertAction(title: fullBSDAikertGTEm, style: .default))
    
                self.present(alertv, animated: true)
    
                return
            }
    
-          
+        let hudIsuccessGTEM = JGProgressHUD(style: .light)
+     
+        hudIsuccessGTEM.textLabel.text = "L&-%-%-&et's &-%-%-&start your conve&-%-%-&rsation！".replacingOccurrences(of: "&-%-%-&", with: "")
    
-           GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
+          
+        GTEMCombingUser.lovderGTEm.personMeGTEm[0]["gtemBlancecoin"] = "\(gtemBlksdgb)"
            
            
-           let hudIsuccessGTEM = JGProgressHUD(style: .light)
-           hudIsuccessGTEM.textLabel.text = "Let's start your conversation！"
+           
+        
            hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+        
            hudIsuccessGTEM.show(in: self.view)
+        
            hudIsuccessGTEM.dismiss(afterDelay: 2.0)
    
            

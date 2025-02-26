@@ -10,7 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GTEMPopularMOjito" customModule="Gintuemojir" customModuleProvider="target">
             <connections>
+                <outlet property="beginkit" destination="Ryj-kB-Pla" id="UPd-g6-k6d"/>
+                <outlet property="dihiGTEMback" destination="gyF-Qm-mRk" id="VPA-9y-kcL"/>
+                <outlet property="gutCustom" destination="4sJ-Sk-Onv" id="u6O-B5-p1m"/>
                 <outlet property="homewrserDataView" destination="coO-l8-jOS" id="W6d-rU-uR4"/>
+                <outlet property="sinhrGTEm" destination="Fgw-bT-RRn" id="eeZ-0O-HIj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,6 +23,13 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gyF-Qm-mRk">
+                    <rect key="frame" x="76.666666666666686" y="362" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="mVF-OW-Dzf"/>
+                        <constraint firstAttribute="width" constant="240" id="yBd-st-Jsq"/>
+                    </constraints>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YN-cK-BG8">
                     <rect key="frame" x="8" y="67" width="40" height="26"/>
                     <constraints>
@@ -44,8 +55,8 @@
                 <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Fgw-bT-RRn">
                     <rect key="frame" x="16" y="137" width="20" height="20"/>
                 </activityIndicatorView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Cocktail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yx-0e-b8e">
-                    <rect key="frame" x="58" y="65" width="163" height="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hot picks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yx-0e-b8e">
+                    <rect key="frame" x="58" y="65" width="91" height="30"/>
                     <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="24"/>
                     <color key="textColor" red="0.99607843137254903" green="0.73725490196078436" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -53,6 +64,16 @@
                 <activityIndicatorView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Ryj-kB-Pla">
                     <rect key="frame" x="170" y="237" width="20" height="20"/>
                 </activityIndicatorView>
+                <navigationBar hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sJ-Sk-Onv">
+                    <rect key="frame" x="159" y="58" width="150" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3Vp-C1-tc5"/>
+                        <constraint firstAttribute="width" constant="150" id="SO0-mO-bSB"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="Title" id="ppe-Ic-c1Z"/>
+                    </items>
+                </navigationBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.6588235294117647" green="0.2196078431372549" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,13 +82,17 @@
                 <constraint firstItem="7YN-cK-BG8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="9oJ-01-FrO"/>
                 <constraint firstAttribute="bottom" secondItem="coO-l8-jOS" secondAttribute="bottom" id="AKb-fV-jpt"/>
                 <constraint firstItem="3Yx-0e-b8e" firstAttribute="centerY" secondItem="7YN-cK-BG8" secondAttribute="centerY" id="CDu-2A-3ed"/>
+                <constraint firstItem="gyF-Qm-mRk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CtZ-zS-Cg0"/>
+                <constraint firstItem="4sJ-Sk-Onv" firstAttribute="centerY" secondItem="7YN-cK-BG8" secondAttribute="centerY" id="M0d-8x-gte"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="coO-l8-jOS" secondAttribute="trailing" constant="6" id="Msb-Xi-bK4"/>
                 <constraint firstItem="Fgw-bT-RRn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="N9h-c2-YWx"/>
+                <constraint firstItem="gyF-Qm-mRk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SY4-KI-jAB"/>
                 <constraint firstItem="coO-l8-jOS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="6" id="UMi-U2-wB9"/>
                 <constraint firstItem="7YN-cK-BG8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="YCB-V3-G5i"/>
                 <constraint firstItem="3Yx-0e-b8e" firstAttribute="leading" secondItem="7YN-cK-BG8" secondAttribute="trailing" constant="10" id="dRa-JH-vM4"/>
                 <constraint firstItem="coO-l8-jOS" firstAttribute="top" secondItem="3Yx-0e-b8e" secondAttribute="bottom" constant="32" id="iHi-MK-IVk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ryj-kB-Pla" secondAttribute="bottom" constant="561" id="ifE-UY-dSb"/>
+                <constraint firstItem="4sJ-Sk-Onv" firstAttribute="leading" secondItem="3Yx-0e-b8e" secondAttribute="trailing" constant="10" id="sLt-TO-znz"/>
                 <constraint firstItem="Fgw-bT-RRn" firstAttribute="top" secondItem="7YN-cK-BG8" secondAttribute="bottom" constant="44" id="zKa-4q-2Sw"/>
             </constraints>
             <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>

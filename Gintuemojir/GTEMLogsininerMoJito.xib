@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GTEMLogsininerMoJito" customModule="Gintuemojir" customModuleProvider="target">
             <connections>
+                <outlet property="bayiunhICOnGTEm" destination="QuS-dL-GCB" id="apT-XW-cKQ"/>
                 <outlet property="centerStatausGTEm" destination="cLd-Sn-eXo" id="84T-TI-egn"/>
                 <outlet property="elauaGTEM" destination="2hZ-jP-zpb" id="pWE-se-pt0"/>
                 <outlet property="gtemEmail" destination="53B-0W-Vx3" id="9fi-Kg-TY0"/>
@@ -34,7 +35,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="GTEM"/>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_smaikllGTU" translatesAutoresizingMaskIntoConstraints="NO" id="QuS-dL-GCB">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GNNNElogZui" translatesAutoresizingMaskIntoConstraints="NO" id="QuS-dL-GCB">
                     <rect key="frame" x="8" y="36" width="96" height="96"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="96" id="MVt-B7-49u"/>
@@ -81,14 +82,14 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title=" Log  in now" backgroundImage="starterfg_GENR">
+                    <state key="normal" title="Sign  in now" backgroundImage="starterfg_GENR">
                         <color key="titleColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="bekLopSure:" destination="-1" eventType="touchUpInside" id="AF1-GJ-R0A"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing you agree to our Terms of Service and Privacy Policy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4r-aD-QBL">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing, you accept our Terms and Privacy Policy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4r-aD-QBL">
                     <rect key="frame" x="70" y="603" width="275" height="31.5"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                     <color key="textColor" red="1" green="0.8784313725490196" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
@@ -124,8 +125,10 @@
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="E L U A"/>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If the account does not exist, one will be created for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X26-dw-1fG">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X26-dw-1fG">
                     <rect key="frame" x="12" y="340.5" width="351" height="31.5"/>
+                    <string key="text">If no account, 
+We'll set up an account for you.</string>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                     <color key="textColor" red="0.33333333329999998" green="0.043137254899999998" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -201,10 +204,10 @@
         </view>
     </objects>
     <resources>
+        <image name="GNNNElogZui" width="1536" height="1536"/>
         <image name="bejingGENNE" width="375" height="812"/>
         <image name="inGTEMputBG" width="375" height="387"/>
         <image name="inpwertbgGTU" width="327" height="58"/>
-        <image name="logo_smaikllGTU" width="96" height="96"/>
         <image name="meiduigou" width="25" height="25"/>
         <image name="starterfg_GENR" width="328" height="44"/>
         <image name="yiduijing" width="25" height="25"/>

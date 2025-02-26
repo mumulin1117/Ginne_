@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GTEMrepoaweDetaillMoJito" customModule="Gintuemojir" customModuleProvider="target">
             <connections>
+                <outlet property="ForyouGTEM" destination="fRl-iH-MWi" id="8il-U6-lGk"/>
+                <outlet property="gaoShiGTEM" destination="bKb-VJ-gbe" id="Fz4-YP-7Lg"/>
                 <outlet property="reasonOneReportGTEm" destination="Hx2-Zm-T0o" id="wXV-pO-zNe"/>
                 <outlet property="reasonThreeReportGTEm" destination="u2r-ui-vLF" id="T0D-Lq-vcr"/>
                 <outlet property="reasonTwoReportGTEm" destination="pcA-TS-tff" id="zHD-MG-gYL"/>

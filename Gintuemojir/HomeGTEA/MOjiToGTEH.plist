@@ -63,8 +63,6 @@
 		<string>Shake the shaker until frost forms on the outside. Strain the liquid through a strainer into a martini glass.</string>
 		<key>AochleStep2</key>
 		<string>Take an orange peel and gently rub it around the rim of the glass to release the orange oil. Then drop the orange peel into the glass as decoration.</string>
-		<key>AochleStep3</key>
-		<string></string>
 	</dict>
 	<dict>
 		<key>AochleName</key>
@@ -79,8 +77,6 @@
 		<string>Blend the mixture until it becomes a smooth, slushy consistency.</string>
 		<key>AochleStep2</key>
 		<string>Pour the blended mixture into a tall glass. Place a slice of pineapple on the rim for decoration.</string>
-		<key>AochleStep3</key>
-		<string></string>
 	</dict>
 	<dict>
 		<key>AochleName</key>
@@ -95,8 +91,6 @@
 		<string>Shake the shaker vigorously to dissolve the sugar completely and blend the ingredients well.</string>
 		<key>AochleStep2</key>
 		<string>Strain the liquid through a strainer into a cocktail glass. Place a lime wedge on the rim for decoration.</string>
-		<key>AochleStep3</key>
-		<string></string>
 	</dict>
 	<dict>
 		<key>AochleName</key>
@@ -111,8 +105,6 @@
 		<string>Shake the shaker evenly. Strain the liquid through a strainer into a highball glass.</string>
 		<key>AochleStep2</key>
 		<string>Slowly pour in coke until the glass is three-quarters full. Place a lemon wedge on the rim for decoration.</string>
-		<key>AochleStep3</key>
-		<string></string>
 	</dict>
 	<dict>
 		<key>AochleName</key>
@@ -127,8 +119,6 @@
 		<string>Shake the shaker evenly. Strain the liquid through a strainer into a highball glass.</string>
 		<key>AochleStep2</key>
 		<string>Slowly pour in soda water until the glass is three-quarters full. Place a cherries and an orange slice on the rim for decoration.</string>
-		<key>AochleStep3</key>
-		<string></string>
 	</dict>
 </array>
 </plist>

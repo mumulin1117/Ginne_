@@ -8,6 +8,10 @@
 import UIKit
 import JGProgressHUD
 class GTEMLogsininerMoJito: UIViewController {
+    
+    
+    @IBOutlet weak var bayiunhICOnGTEm: UIImageView!
+    
   
     @IBOutlet weak var elauaGTEM: UIButton!
     
@@ -59,7 +63,7 @@ class GTEMLogsininerMoJito: UIViewController {
         gtemEmail.background = UIImage.init(named: "inpwertbgGTU")
         gtempaswer.background = UIImage.init(named: "inpwertbgGTU")
         
-        
+        bayiunhICOnGTEm.layer.cornerRadius = 48
 
         
         centerStatausGTEm.addTarget(self, action: #selector(changrStatusillopEluad), for: .touchUpInside)
@@ -67,7 +71,7 @@ class GTEMLogsininerMoJito: UIViewController {
         
 
         
-        
+        bayiunhICOnGTEm.layer.masksToBounds = true
 
         
         elauaGTEM.addTarget(self, action: #selector(gokillopEluad), for: .touchUpInside)

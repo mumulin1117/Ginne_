@@ -41,7 +41,7 @@ class GTEMCommenttMojito: UIViewController {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init GTEMloa&-%-%-&ing werrouu")
     }
     
     

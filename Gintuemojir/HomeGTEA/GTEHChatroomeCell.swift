@@ -22,25 +22,30 @@ class GTEHChatroomeCell: UICollectionViewCell {
     
     @IBOutlet weak var roomCountGTEA: UILabel!
     
-    
+    func mockFetchVideosGTEm() -> [String]? {
+        roomCountGTEA.layer.cornerRadius = 18
+        randomrImageGTEA.layer.cornerRadius = 18
+        randomrImageGTEA.layer.masksToBounds = true
+        randomrImageLaterGTEA.layer.cornerRadius = 18
+        return nil
+    }
   
     override func awakeFromNib() {
         super.awakeFromNib()
-        randomrImageGTEA.layer.cornerRadius = 18
-        randomrImageGTEA.layer.masksToBounds = true
+      
         bedroomBackgroundGTEA.layer.cornerRadius = 16
         bedroomBackgroundGTEA.layer.masksToBounds = true
         roomNameGTEA.layer.cornerRadius = 18
         roomNameGTEA.layer.masksToBounds = true
         
-        randomrImageLaterGTEA.layer.cornerRadius = 18
+        mockFetchVideosGTEm()
         
         randomrImageLaterGTEA.layer.masksToBounds = true
         
         
 
        
-        roomCountGTEA.layer.cornerRadius = 18
+       
         roomCountGTEA.layer.masksToBounds = true
     }
 

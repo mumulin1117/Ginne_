@@ -56,13 +56,13 @@ class GTEMELAurrMoJito: UIViewController {
         
         self.jornyGTEM = _jornyGTEM
         super.init(nibName: nil, bundle: nil)
-        loadSubscribedChannelsGenm()
+        
         arPreviewCoordinatorGenm.backgroundColor = .clear
       
     }
    
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init GTEMloa&-%-%-&ing werrouu")
     }
    
     func processVideoUploadGenm()  {
@@ -144,7 +144,7 @@ class GTEMELAurrMoJito: UIViewController {
             self.peerieeBakGTEm.isHidden = true
             gtemTisder.backgroundColor = .clear
             
-            
+        
             
             loadSubscribedChannelsGenm()
          

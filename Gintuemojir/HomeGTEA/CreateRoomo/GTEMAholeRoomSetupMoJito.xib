@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GTEMAholeRoomSetupMoJito" customModule="Gintuemojir" customModuleProvider="target">
             <connections>
+                <outlet property="graylayerGTEM" destination="pLa-OF-GEc" id="LRX-C5-a6E"/>
                 <outlet property="roomingIdenGTE" destination="qnf-ej-ezz" id="pOV-AJ-TxX"/>
                 <outlet property="roomingNameGTE" destination="Twl-1B-rfM" id="DKo-jk-jxu"/>
                 <outlet property="uploadPicButtom" destination="rc0-DZ-0wF" id="lBh-O0-bjk"/>

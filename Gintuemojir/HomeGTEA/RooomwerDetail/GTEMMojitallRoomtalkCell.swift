@@ -22,7 +22,24 @@ class GTEMMojitallRoomtalkCell: UITableViewCell {
     
     
     let gtemNickLbael = UILabel.init()
-   
+    func setReportDetails(userName: String, reason: String) {
+        contentView.addSubview(gtemIconhreader)
+        
+
+        
+      
+        contentView.addSubview(dioloagbackGTEm)
+        
+
+        contentView.addSubview(gtemNickLbael)
+        
+
+        
+        contentView.addSubview(gtemSayieVuew)
+     
+        
+    }
+
    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -61,22 +78,9 @@ class GTEMMojitallRoomtalkCell: UITableViewCell {
         dioloagbackGTEm.layer.cornerRadius = 12
         dioloagbackGTEm.layer.maskedCorners = [.layerMaxXMinYCorner,.layerMinXMaxYCorner,.layerMinXMaxYCorner]
         
-        contentView.addSubview(gtemIconhreader)
+       
         
-
-        
-      
-        contentView.addSubview(dioloagbackGTEm)
-        
-
-        contentView.addSubview(gtemNickLbael)
-        
-
-        
-        contentView.addSubview(gtemSayieVuew)
-     
-        
-        
+        setReportDetails(userName: "String", reason: "String")
 
         
         
@@ -101,7 +105,27 @@ class GTEMMojitallRoomtalkCell: UITableViewCell {
             make.height.equalTo(16)
             make.width.greaterThanOrEqualTo(60)
         }
+        clearReportGTEMFields()
+       
         
+        
+        displayReporGTEMtStatus()
+        
+    }
+    
+    
+   
+    func displayReporGTEMtStatus() {
+        dioloagbackGTEm.snp.makeConstraints { make in
+            make.left.equalTo(gtemIconhreader.snp.right).offset(11)
+            make.top.equalTo(gtemIconhreader)
+            make.bottom.equalTo(gtemSayieVuew.snp.bottom).offset(7)
+            make.right.equalTo(gtemSayieVuew).offset(15)
+        }
+      
+    }
+  
+    func clearReportGTEMFields() {
         gtemSayieVuew.snp.makeConstraints { make in
             make.left.equalTo(gtemNickLbael)
             
@@ -110,24 +134,9 @@ class GTEMMojitallRoomtalkCell: UITableViewCell {
             make.width.lessThanOrEqualTo(250)
             make.width.greaterThanOrEqualTo(60)
         }
-        
-        
-  
-        dioloagbackGTEm.snp.makeConstraints { make in
-            make.left.equalTo(gtemIconhreader.snp.right).offset(11)
-            make.top.equalTo(gtemIconhreader)
-            make.bottom.equalTo(gtemSayieVuew.snp.bottom).offset(7)
-            make.right.equalTo(gtemSayieVuew).offset(15)
-        }
-    }
-    
-    
-   
-    
-  
-    
+       }
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init GTEMloa&-%-%-&ing werrouu")
     }
     
 }

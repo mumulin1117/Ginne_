@@ -7,6 +7,7 @@
 
 import UIKit
 import JGProgressHUD
+import AVFoundation
 
 class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
     @IBOutlet weak var beginReportGTEm: UIButton!
@@ -46,14 +47,9 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         super.viewDidLoad()
         beginReportGTEm.addTarget(self, action: #selector(startReportAndBlaCkUserGTEm), for: .touchUpInside)
         showingVideoViewGTEm.contentMode = .scaleAspectFill
-        profileIconGTEm.layer.cornerRadius = 40
-        profileIconGTEm.layer.masksToBounds = true
-        
-        profileIconGTEm.image = UIImage(named: realingUserDtaGTEm["teacherphoto"] ?? "")
-        profilenicknGTEm.text = realingUserDtaGTEm["teachername"]
-        
+       
         profileFollowGTEm.text = realingUserDtaGTEm["follosercount"]
-        
+        setupUIComponentsGTEm()
         profileFancGTEm.text = realingUserDtaGTEm["facsercount"]
         
         if realingUserDtaGTEm["viedeourll0"] == nil {
@@ -70,15 +66,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             
         }else{
             
-            showingVideoViewGTEm.isHidden = false
-            
-            videobiankuaniconGTEm.isHidden = false
-            
-            playGTEmbtn.isHidden = false
-            
-            
-            noiconholderGTEm.isHidden = true
-            noitextholderGTEm.isHidden = true
+            loadUserProfileGTEm()
         }
        
 
@@ -117,11 +105,39 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         }
         
         
-        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
+       
     }
-
+    private var erMessageGTEm: Bool = false
+    
+    private var isSendingMessageGTEm: Bool = false
+   
+    
+    func loadUserProfileGTEm() {
+        
+        showingVideoViewGTEm.isHidden = false
+        
+        videobiankuaniconGTEm.isHidden = false
+        erMessageGTEm = false
+        playGTEmbtn.isHidden = false
+        
+        
+        noiconholderGTEm.isHidden = true
+        noitextholderGTEm.isHidden = true
+        
+    }
+    func setupUIComponentsGTEm() {
+        
+        profileIconGTEm.layer.cornerRadius = 40
+        profileIconGTEm.layer.masksToBounds = true
+        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
+        profileIconGTEm.image = UIImage(named: realingUserDtaGTEm["teacherphoto"] ?? "")
+        profilenicknGTEm.text = realingUserDtaGTEm["teachername"]
+        
+    }
     
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
+        erMessageGTEm = false
+        isSendingMessageGTEm  = false
         self.navigationController?.popViewController(animated: true)
     }
 
@@ -204,14 +220,17 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
 
             let hudIsuccessGTEM = JGProgressHUD(style: .light)
             hudIsuccessGTEM.textLabel.text = "You have already subscribed to this user"
+            erMessageGTEm = false
+           
             hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
+            isSendingMessageGTEm  = false
             hudIsuccessGTEM.show(in: self.view)
             hudIsuccessGTEM.dismiss(afterDelay: 2.0)
             return
         }
         
         
-        if realingUserDtaGTEm["ifneedsubGTEM"] == "0" ,sender.tag == 30 {//关注按钮
+        if sender.tag == 30 {//关注按钮
             
 
                 let hudLoadingGTEM = JGProgressHUD(style: .light)
@@ -222,7 +241,7 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
             
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){
                 hudLoadingGTEM.dismiss()
-                
+                self.erMessageGTEm = false
                 
                 sender.isSelected = !sender.isSelected
                 
@@ -261,9 +280,9 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         
         
         if sender.tag == 40 {//message按钮
+            erMessageGTEm = false
             
-            
-
+            isSendingMessageGTEm = false
             
 
             self.navigationController?.pushViewController(GTEMusernmeaasfeMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil,realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
@@ -272,10 +291,15 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         }
         
         
+        erMessageGTEm = false
         
+        isSendingMessageGTEm = false
         
         if sender.tag == 50 {//video call
-            
+            AVCaptureDevice.requestAccess(for: .video) { granted in
+
+            }
+
             
             self.navigationController?.pushViewController(GTEMusVifedertMojito.init(aginestGTEm: nil, ddleToolGTEM: nil, tationTimerGTEM: nil, realingUserDtaGTEm: self.realingUserDtaGTEm), animated: true)
             
@@ -288,14 +312,21 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
         
         if let link = urlioklinkGTEM,sender.tag == 60{
             
+            erMessageGTEm = false
+            
+           
             
             self.navigationController?.pushViewController(GTEMPlayerMojito.init(linkGTEM_Url: link), animated: false)
+            isSendingMessageGTEm = false
             return
         }
     }
     
     
     @objc func dismissNeedCoinGTEm() {
+        erMessageGTEm = false
+        
+        isSendingMessageGTEm = false
         self.presentVCGTEm?.dismiss(animated: true)
     }
     
@@ -377,9 +408,9 @@ class GTETiaAchleCenterMojito: GTEMUserAboutAchole {
 
 class GTEMUserAboutAchole: UIViewController {
     
+    private var erMessageGTEm: Bool = false
     
-    
-    
+    private var isSendingMessageGTEm: Bool = false
     
     
     var realingUserDtaGTEm:Dictionary<String,String>
@@ -387,37 +418,40 @@ class GTEMUserAboutAchole: UIViewController {
         
         
         self.realingUserDtaGTEm = realingUserDtaGTEm
-        
+        erMessageGTEm = false
 
-        
+        isSendingMessageGTEm = true
         super.init(nibName: nil, bundle: nil)
         
         
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init GTEMloa&-%-%-&ing werrouu")
     }
     
    @objc func startReportAndBlaCkUserGTEm()  {
        
-       
+       erMessageGTEm = false
         let gtemTitle = "Block&-%-%-&Report".components(separatedBy: "&-%-%-&")
-       
-      
+       erMessageGTEm = false
+       erMessageGTEm = false
         let gtemAlerting = UIAlertController(title: "Report it or Block?", message: "Are you certain you want to block this user? Please choose your desired action. Once this user is blocked, all associated information will no longer be visible!", preferredStyle:.actionSheet)
        
         let gtemCloacAction = UIAlertAction(title: gtemTitle[0], style: .default) { acvf in
             let hudLoadingGTEM = JGProgressHUD(style: .light)
             hudLoadingGTEM.textLabel.text = "Loa&-%-%-&ding&-%-%-&...".replacingOccurrences(of: "&-%-%-&", with: "")
             hudLoadingGTEM.show(in: self.view)
-           
+            self.isSendingMessageGTEm = true
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5){ [self] in
               
                 let hudIsuccessGTEM = JGProgressHUD(style: .light)
-                hudIsuccessGTEM.textLabel.text = "successfully blocked!  "
+                isSendingMessageGTEm = true
+                hudIsuccessGTEM.textLabel.text = "success&-%-%-&fully bloc&-%-%-&ked!  ".replacingOccurrences(of: "&-%-%-&", with: "")
+                isSendingMessageGTEm = true
                 hudIsuccessGTEM.indicatorView = JGProgressHUDSuccessIndicatorView()
                 hudIsuccessGTEM.show(in: self.view)
+                isSendingMessageGTEm = true
                 hudIsuccessGTEM.dismiss(afterDelay: 2.0)
                
                 let onlyID = self.realingUserDtaGTEm["gtemID"] ?? ""
@@ -445,9 +479,7 @@ class GTEMUserAboutAchole: UIViewController {
 
                 
                 GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1 = GTEMCombingUser.lovderGTEm.videoTotaluserGTEm.1.filter {
-                    
                     return !($0["gtemID"]  == onlyID)
-                    
                 }
                 
                 NotificationCenter.default.post(name: NSNotification.Name.init("removeunlikeuserGTEm"), object: nil)
@@ -460,7 +492,9 @@ class GTEMUserAboutAchole: UIViewController {
         }
            
         gtemAlerting.addAction(gtemCloacAction)
-        
+       erMessageGTEm = false
+       
+       isSendingMessageGTEm = false
         gtemAlerting.addAction(gtemrepowrAction)
            
             

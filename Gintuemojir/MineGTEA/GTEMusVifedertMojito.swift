@@ -17,6 +17,12 @@ class GTEMusVifedertMojito: GTEMUserAboutAchole {
     
     @IBOutlet weak var hefinIConGTEm: UIImageView!
     
+    @IBOutlet weak var participantsLabelGTEm: UILabel!
+    
+    @IBOutlet weak var notIndicaterGTEm: UIView!
+    
+    
+    @IBOutlet weak var reafinVirew: UIView!
     
     
     
@@ -24,70 +30,42 @@ class GTEMusVifedertMojito: GTEMUserAboutAchole {
         super.viewDidLoad()
         
         
-        hefinIConGTEm.layer.cornerRadius = 20
-        
-        hefinIConGTEm.layer.masksToBounds = true
-        
-        let firstOhoto = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
-        hefinIConGTEm.image = firstOhoto
-        
-        AVAudioSession.sharedInstance().requestRecordPermission { (allowed) in
-            
-            
-            
-             
-            
-
-            
-
-
-        }
-        
+       
+        showAlertGTEm(message: nil)
+     
+        showAlertGTEm(message: "snnnnnnnnn")
         
        
-        vbiguBackgGTEm.image = UIImage(named: realingUserDtaGTEm["teacherphoto"] ?? "")
-        
-        
-        
-        
-
-        
-        
-
-        
-
-        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
-        
-
-        AVCaptureDevice.requestAccess(for: .video) { granted in
-            
-            
-            
-             
-            
-
-         
-
-        }
-
+        cookliopGTEM()
+       
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 6){
            
             
             let hudINfoGTEM = JGProgressHUD(style: .light)
-            hudINfoGTEM.textLabel.text = "Sorry, your call has been disconnected!"
+            self.navigationController?.popViewController(animated: true)
+            hudINfoGTEM.textLabel.text = "Sorry,&-%-%-& your call&-%-%-& has been disconnected!".replacingOccurrences(of: "&-%-%-&", with: "")
+           
             hudINfoGTEM.show(in: self.view)
             hudINfoGTEM.dismiss(afterDelay: 2.0)
 
             
             
             
-            self.navigationController?.popViewController(animated: true)
+            
         }
         
         beginReportGTEm.addTarget(self, action: #selector(startReportAndBlaCkUserGTEm), for: .touchUpInside)
     }
 
-   
+    func cookliopGTEM()  {
+        vbiguBackgGTEm.image = UIImage(named: realingUserDtaGTEm["teacherphoto"] ?? "")
+        
+        
+
+        NotificationCenter.default.addObserver(self, selector: #selector(navibakerinhGTEM), name: NSNotification.Name("removeunlikeuserGTEm"), object: nil)
+        
+
+    }
    
     @IBAction func navibakerinhGTEM(_ sender: UIButton) {
         
@@ -97,27 +75,33 @@ class GTEMusVifedertMojito: GTEMUserAboutAchole {
             
             self.navigationController?.popViewController(animated: true)
             
-            return
+            
+        }else{
+            let hudINfoGTEM = JGProgressHUD(style: .light)
+            AVAudioSession.sharedInstance().requestRecordPermission { (allowed) in
+       
+            }
+            hudINfoGTEM.textLabel.text = "Use the feature after connected phone!"
+            hudINfoGTEM.show(in: self.view)
+            hudINfoGTEM.dismiss(afterDelay: 2.0)
         }
         
         
-        
-        
-        
-
-        
-        
-
        
-        let hudINfoGTEM = JGProgressHUD(style: .light)
-        hudINfoGTEM.textLabel.text = "Use the feature after connected phone!"
-        hudINfoGTEM.show(in: self.view)
-        hudINfoGTEM.dismiss(afterDelay: 2.0)
        
     }
     
     
     
-    
+    func showAlertGTEm(message: String?) {
+      
+        hefinIConGTEm.layer.cornerRadius = 20
+        
+        hefinIConGTEm.layer.masksToBounds = true
+        
+        let firstOhoto = GTEMCombingUser.lovderGTEm.personMehEagerGTEm.first
+        hefinIConGTEm.image = firstOhoto
+        
+    }
     
 }
